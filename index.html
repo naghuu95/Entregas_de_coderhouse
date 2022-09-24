@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./flechaicono.ico">
     <title>NINETY 90</title>
+    <!-- Estilos de bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Estilos propios -->
     <link rel="stylesheet" href="./css/estilo.css">
+    <!-- Animaciones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Iconos del footer -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     
     
@@ -19,8 +23,17 @@
 </head>
 
 <body class="pagina_principal">
+
+
+    <div class="  caja_video">
+        <video loading="lazy" autoplay muted playsinline loop class="video"> 
+            <source src="./asset/Videos/Fondos//FONDO 1.mp4" type="video/mp4">
+        </video>
+
+    </div>
     
-  <!-- NINETY90 es una pagina de venta de cuadros de pelicula de los 90 y 80 -->
+  <!-- NINETY90 es una pagina de venta de cuadros de pelicula de los 80 y 90 -->
+
 
    
   <!-- HEADER -->
@@ -40,21 +53,21 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto ">
+            <ul class="navbar-nav ms-auto  ">
               <li class="nav-item ">
-                <a class="nav-link  px-4  " aria-current="page" href="#">Inicio</a>
+                <a class="nav-link  px-4 menu " aria-current="page" href="#">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link px-4" href="#">Productos</a>
+                <a class="nav-link px-4" href="./paginas/productos.html">Productos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link px-4" href="#">Informacion</a>
+                <a class="nav-link px-4" href="./paginas/informacion.html">Informacion</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link  px-4" href="#" tabindex="-1" aria-disabled="true">Envios</a>
+                <a class="nav-link  px-4" href="./paginas/envios.html" tabindex="-1" aria-disabled="true">Envios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link px-4 " href="#" tabindex="-1" aria-disabled="true">Contacto</a>
+                <a class="nav-link px-4 " href="./paginas/contacto.html" tabindex="-1" aria-disabled="true">Contacto</a>
               </li>
             </ul>
           </div>
@@ -77,13 +90,13 @@
               <h1 class="neon fs-1" data-aos="zoom-out-up"  data-aos-duration="2000">
                 Todo para tu hogar
               </h1>
-              <p class="py-4"  data-aos="zoom-out-up"  data-aos-duration="2000" > >Somos una tienda online amante de lo retro, por eso vivi la experiencia de volver al pasado con nuestros cuadros<p>
-              <a href="#" class="btn btn-outline-secondary btn-lg text-white btn-3" data-aos="zoom-out-up"  data-aos-duration="2000">
+              <p class="py-4"  data-aos="zoom-out-up"  data-aos-duration="2000" > Somos una tienda online amante de lo retro, por eso vivi la experiencia de volver al pasado con nuestros cuadros<p>
+              <a href="./paginas/productos.html" class="btn btn-outline-secondary btn-lg text-white btn-3" data-aos="zoom-out-up"  data-aos-duration="2000">
                 Ver catalogo
               </a>
             </div>
             <div class="col-sm-6">
-              <img src="./imagenes/Cuadros/cuadro_rocky.jpg" class="img-fluid d-none d-sm-block imagenes" loading="lazy" data-aos="zoom-out-up"  data-aos-duration="2000">
+              <img src="./asset/imagenes/Cuadros/cuadro_rocky.jpg" class="img-fluid d-none d-sm-block imagenes" loading="lazy" data-aos="zoom-out-up"  data-aos-duration="2000">
             </div>
           </div>
         </div>
@@ -112,7 +125,7 @@
             
 
             
-            <a  href="./paginas/contacto.html"><img  class="w-100 me-3 w"  src="./imagenes/Cuadros/cuadro_Indiana.jpg" alt="cuadro de indiana jones" loading="lazy">
+            <a  href="./paginas/productos.html"><img  class="w-100 me-3 w"  src="./asset/imagenes/Cuadros/cuadro_Indiana.jpg" alt="cuadro de indiana jones" loading="lazy">
             </a>
 
           </div>
@@ -123,11 +136,8 @@
 
           <hr>
 
-          <div class="pie_contenedor">
-
-            <p class="text-center ">Ver mas</p>
-
-
+          <div class="ver_mas d-flex justify-content-center">
+            <a  href="./paginas/productos.html">Ver mas</a>
           </div>
 
 
@@ -137,7 +147,7 @@
 
           <div class="contenido_img ms-5 ms-md-3 mt-5 mt-md-4 bg-dark">
 
-            <a  href="./paginas/contacto.html"><img  class="w-100 me-3 w"  src="./imagenes/Cuadros/cuadro_Jurassick_park3.jpg" alt="cuadro de jurassic park" loading="lazy">
+            <a  href="./paginas/productos.html"><img  class="w-100 me-3 w"  src="./asset/imagenes/Cuadros/cuadro_Jurassick_park3.jpg" alt="cuadro de jurassic park" loading="lazy">
             </a>
 
           </div>
@@ -148,13 +158,11 @@
 
           <hr>
 
-          <div class="pie_contenedor">
-
-            <p class="text-center ">Ver mas</p>
-
-
-          </div>
-
+          
+            <div class="ver_mas d-flex justify-content-center">
+                <a  href="./paginas/productos.html">Ver mas</a>
+            </div>
+        
 
         </div>
 
@@ -162,7 +170,7 @@
 
           <div class="contenido_img ms-5 ms-md-3 mt-5 mt-md-4 bg-dark">
 
-            <a  href="./paginas/contacto.html"><img  class="w-100 me-3 w"  src="./imagenes/Cuadros/cuadro_martin_alargado.jpg" alt="cuadro de volver al futuro" loading="lazy" >
+            <a  href="./paginas/productos.html"><img  class="w-100 me-3 w"  src="./asset/imagenes/Cuadros/cuadro_poster_volver_al_futuro.jpg" alt="cuadro de volver al futuro" loading="lazy" >
             </a>
 
           </div>
@@ -173,14 +181,11 @@
 
           <hr>
 
-          <div class="pie_contenedor">
-            
           
-
-            <p class="text-center ">Ver mas</p>
-             
-
+          <div class="ver_mas d-flex justify-content-center">
+            <a  href="./paginas/productos.html">Ver mas</a>
           </div>
+          
 
 
         </div>
@@ -199,6 +204,7 @@
 
     <section class=" container w-75 w-md-100   color_fondo "  >
 
+        
 
       <div class="row d-flex justify-content-around align-items-center ">
 
@@ -206,7 +212,7 @@
 
           <div class="caja_imgneon">
             
-            <a href="./paginas/contacto.html " > <img  class="img-fluid image " data-aos="fade-up" data-aos-duration="3000" src="./imagenes/FONDOS/back-to-80s-neonmod.jpg " alt="80" loading="lazy"> </a>
+            <a href="./paginas/informacion.html " > <img  class="img-fluid image " data-aos="fade-up" data-aos-duration="3000" src="./asset/imagenes/Neon/back-to-80s-neonmod.jpg " alt="80" loading="lazy"> </a>
             
 
           </div>
@@ -239,7 +245,7 @@
 
           <div class="caja_imgneon">
 
-            <a href="./paginas/contacto.html"><img  class="img-fluid image " data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" src="./imagenes/FONDOS/BACKTOTHE90mod.jpg  " alt="90" loading="lazy"> </a>
+            <a href="./paginas/informacion.html"><img  class="img-fluid image " data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" src="./asset/imagenes/Neon/90_back_to_the_90.jpg " alt="90" loading="lazy"> </a>
 
             
 
@@ -261,7 +267,7 @@
 
     <footer class="footer ">
 
-      
+       
 
       <div class="row">
 
@@ -274,17 +280,17 @@
 
         </div>
 
-        <div class="col-12 col-md-4  d-flex flex-column justify-content-center align-items-center">
+        <div class="col-12 col-md-4 ">
 
-          <h4 class=" pt-3 ">Menu principal</h4>
+          <h4 class=" pt-5 text-center ">Menu principal</h4>
 
-          <nav class="pt-4">
+          <nav class="pt-4 d-block">
             <ul class="ul  ">
-              <li class=""><a  href=""></a>Inicio</li>
-              <li class="" ><a   href=""></a>Productos</li>
-              <li class="" ><a   href=""></a>Informacion</li>
-              <li class=""  ><a   href=""></a>Envios</li>
-              <li class="" ><a   href=""></a>Contactos</li>
+              <li><a  href="#"> Inicio</a></li>
+              <li><a  href="./paginas/productos.html">Productos</a></li>
+              <li><a href="./paginas/informacion.html">Informacion</a></li>
+              <li><a   href="./paginas/envios.html">Envios</a></li>
+              <li><a   href="./paginas/contacto.html">Contacto</a></li>
             </ul>
           </nav>
 
@@ -295,24 +301,20 @@
 
           <p class="fs-4  d-flex justify-content-center align-items-center pb-4 ">Redes sociales</p>
 
-          <div class="icons-wrapper">
-            <a href="./paginas/contacto.html"> <i class="ri-instagram-line icon px-3"></i></a>
-            <a href="#"><i class="ri-facebook-circle-line icon px-3"></i> </a>
-            <a href="#"> <i class="ri-whatsapp-line icon px-3"></i></a>
-            
-            
+            <div class="icons-wrapper">
+              <a href="https://www.instagram.com/cuadros.modernos/"target="_blank"> <i class="ri-instagram-line icon px-3"></i></a>
+              <a href="https://www.facebook.com/cuadrosvintageweb"target="_blank"><i class="ri-facebook-circle-line icon px-3"></i> </a>
+              <a href="https://www.whatsapp.com/?lang=es" target="_blank"> <i class="ri-whatsapp-line icon px-3"></i></a>
+            </div>
 
         </div>
           
-        </div>
 
-      </div>
 
       <div class=" container-fluid row ">
 
         <div class="col ">
-
-          <p class="h6 fw-light copy text-end py-2"> &copy; Derechos reservado NINETY90 2022</p>
+          <p class="h6 fw-light copy text-center text-md-end py-2"> &copy; Derechos reservado NINETY90 2022</p>
         </div>
       </div>
 
@@ -335,7 +337,7 @@
     <script src="../Sitio web-NINETY90/js/wow.min.js"></script>
     <script>new WOW().init();</script>
 
-
+   
     
     
 </body>

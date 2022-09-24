@@ -5,6 +5,8 @@
 /*ESPERO QUE TE GUSTE EL ESTILO QUE LE PUSE ME COSTO MUCHO TRABAJO LLEGAR A ESTO NO QUEDO NADA QUE VER A LO QUE ERA LA PRIMERA PRE ENTREGA 
 TRATE DE APLICAR TODAS LAS COSAS QUE ME ENSEÑARON ME QUEDA TODAVIA MEJORAR LAS OTRAS PAGINAS*/
 
+/*LAS PAGINAS QUE SELECCIONE PARA DESARROLLAR SON : LA DE INDEX.HTML Y LA DE CONTACTO.HTML , LAS OTRAS TODAVIA NO LAS DESARROLLE DEL TODO APLIQUE ALGUNAS COSAS PERO LES FALTA , PERO SI QUERE CHUSMEALAS JAJJA*/
+
 
 *{
   box-sizing: border-box;
@@ -17,29 +19,29 @@ TRATE DE APLICAR TODAS LAS COSAS QUE ME ENSEÑARON ME QUEDA TODAVIA MEJORAR LAS 
 
 @font-face{
     font-family: quick ;
-    src: url(../FUENTES/Quicksand-Regular.ttf)
+    src: url(../asset/Fuentes/Quicksand-Regular.ttf)
 
 }
 
 
 @font-face{
     font-family: audiow ;
-    src: url(../FUENTES/Audiowide-Regular.ttf)
+    src: url(../asset/Fuentes/Audiowide-Regular.ttf)
 
 }
 
 @font-face{
     font-family: orbi ;
-    src: url(../FUENTES/Orbitron-Regular.ttf)
+    src: url(../asset/Fuentes/Orbitron-Regular.ttf)
 
 }
 
-/* ARME LA PAGINA CON BOOSTRAP CON EL SISTEMA DE COLUMNAS Y FILAS PORQUE ERA MAS FACIL, TAMBIEN APLIQUE MEDIAQUERIE CON BOODSTRAP PORQUE SE ME HACIA MAS SENCILLO . ESTA ADAPTADO PARA DESKTOP COMO PARA MOBILE*/
+/* ARME LA PAGINA CON BOOTSTRAP CON EL SISTEMA DE COLUMNAS Y FILAS PORQUE ERA MAS FACIL, TAMBIEN APLIQUE MEDIAQUERIE CON BOOTSTRAP PORQUE SE ME HACIA MAS SENCILLO . ESTA ADAPTADO PARA PC COMO PARA MOBILE*/
 
 
 
 
-/* APLICANDO ALGUNOS ESTILOS AL BODY 
+/* APLICANDO ALGUNOS ESTILOS AL BODY DE LA PAGINA PRINCIPAL
 LE DI UNA CLASE LLAMDA PAGINA PRINCIPAL */
 
 
@@ -50,7 +52,7 @@ LE DI UNA CLASE LLAMDA PAGINA PRINCIPAL */
     background-image: linear-gradient( 0deg,
     rgba(0, 0, 0, 0.547),
     rgba(0,0,0,0.5) )
-     ,url(../imagenes/fondo10.png);
+     ,url(../asset/imagenes/Backgrounds/fondo10.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -58,8 +60,22 @@ LE DI UNA CLASE LLAMDA PAGINA PRINCIPAL */
     letter-spacing: 1px;
     word-spacing: 5px;
     
+    
 
 }
+
+/*CLASE  DE BACKGROUND QUE UTILICE EN VARIAS DE LAS PAGINAS*/
+.caja_video {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+  filter: brightness(30%);
+}
+
 
 
 
@@ -78,30 +94,35 @@ LE DI UNA CLASE LLAMDA PAGINA PRINCIPAL */
     -webkit-backdrop-filter: blur(2px);
 }
 
+
+
+
 /*NAV*/ 
 /*Use el nav de boodstrap*/
 /*Personalice el menu como yo lo queria */
 
 
-
-
-
 .navbar .navbar-nav .nav-item .nav-link {
   color: white;
-  text-shadow: 2px 2px 5px rgb(250, 133, 217);
+  letter-spacing: 4px;
   margin-right: 15px;
+  font-size: 17px;
+  
+}
 
+.navbar .navbar-nav .nav-item .nav-link:hover{
+  color: #ef79b2;
+  text-shadow: 2px 2px 10px rgb(12, 72, 168);
+  font-weight: bold;
 }
 
 
 /*BANNER*/ 
 /*puse una imagen de fondo y le aplique gradientes para que resalte el texto y la imagen */
 
-
-
 .banner {
   position: relative;
-  background:linear-gradient(rgb(0 0 0 /.5), rgb(0 0 0 /.5) ),  url(../imagenes/banners/banner4.jpg) ;
+  background:linear-gradient(rgb(0 0 0 /.5), rgb(0 0 0 /.5) ),  url(../asset/imagenes/banners/banner4.jpg) ;
   background-size: cover;
  
   border-bottom: solid rgb(58, 4, 81);
@@ -122,10 +143,17 @@ LE DI UNA CLASE LLAMDA PAGINA PRINCIPAL */
   box-shadow: 20px 20px 30px 15px rgba(0, 0, 0, 0.918);
 }
 
+/* BOTON VER CATALOGO*/
+
+.btn-3:hover {
+  background: #ff96ad00;
+  box-shadow: 0 0 5px #ffffff, 0 0 25px #ffffff, 0 0 50px #ffffff, 0 0 200px #ffffff;
+}
 
 
 
 /*CARDS*/
+
 
 main{
   padding-bottom: 10%;
@@ -168,6 +196,16 @@ main{
 }
 /* aplique un poco de animacion al tocar con el cursor*/
 
+
+.caja_tarjetas:hover{
+  transform: translateY(-20px);
+}
+
+
+.image{
+  border-radius: 15px;
+}
+
 .caja_tarjetas:hover .contenido_img img {
 
    transform: scale(1.1)
@@ -175,16 +213,25 @@ main{
 }
 
 
-.caja_tarjetas:hover{
-  transform: translateY(-20px);
+
+
+
+
+/*aplique estilos a ver mas que esta en cada card*/
+/* tambien le di un hover para que se vea mas bonito*/
+
+
+.ver_mas a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 
-
-.image{
-  border-radius: 15px;
+.ver_mas a:hover {
+  color: #ef79b2;
+  text-shadow: 2px 2px 10px rgb(12, 72, 168);
+  font-weight: bold;
 }
-
 
 
 /*SECTION 80 Y 90 */
@@ -193,7 +240,7 @@ main{
   .color_fondo{
     padding-top: 10%;
     padding-bottom: 10%;
-    background-color: #0000006f;
+    background-color: #0000004f;
     box-shadow: 20px 20px 50px rgba(98, 8, 140, 0.57);
     border-radius: 15px;
     border: 3px solid rgba(161, 48, 218, 0.362);
@@ -202,10 +249,14 @@ main{
      
   }
 
-  .caja_imgneon .image:hover {
-    background: #fffffffb;
+  .caja_imgneon{
+    background-color: #434a4500;
+  
+  }
+
+
+  .image:hover {
     box-shadow: 0 0 5px #00000093, 0 0 25px #e537e887, 0 0 50px #fa5ced, 0 0 200px #7f0999eb;
-    
   }
 
 
@@ -222,26 +273,41 @@ main{
     background-image: linear-gradient( 0deg,
     rgba(0, 0, 0, 0.547),
     rgba(0,0,0,0.5) )
-     ,url(../imagenes/FONDOS/fondofooter11.jpg);
+     ,url(../asset/imagenes/Footer/fondofooter11.jpg);
 
      background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
   }
-
-
-  .copy{
-    color: #4d4d4d;
-  }
-
+  
+  /*Menu footer*/
   .ul{
     list-style: none
   }
 
+  .ul li a {
+    color: #fffcfc;
+    font-size: 18px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+    padding-right: 30px;
+
+}
+
+
+  
+  /*Estilos derechos reservados*/
+  .copy{
+    color: #4d4d4d;
+  }
+
+ 
 
 
 
-  /*ANIMACIONES REDES SOCIALES*/
+  /*Estilos y ANIMACIONES REDES SOCIALES*/
 
   .icons-wrapper{
     position: relative;
@@ -262,7 +328,7 @@ main{
     transform: translateX(-50%);
     bottom: 0;
 }
-/* ======================== */
+
 .icon{
     display: inline-block; 
     font-size: 44px;
@@ -279,12 +345,12 @@ main{
 }
 
 .ri-facebook-circle-line{
-    color: #1877f2;
+    color: #16519e;
     animation-delay: 0.5s; 
 }
 
 .ri-whatsapp-line{
-    color: #25d366;
+    color: #23a954;
     animation-delay: 1s; 
 }
 
@@ -301,27 +367,6 @@ main{
 }
 
 
-/*Boton*/
-
-
-
-.buton{
-  font-size: 14px;
-  font-weight: bold;
-  padding: 5px 9px;
-  border-radius: 5px;
-  border: 1px solid rgb(5, 5, 5);
-  box-shadow: 3px 3px 10px rgb(31, 31, 31);
-  color: rgb(255, 255, 255);
-  background-color: rgb(84, 26, 82);
-
-}
-
-
-.buton:hover{
-  background-color: rgb(234, 8, 237);
-  box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad, 0 0 200px #910826 ,0 0 50px #520113, 0 0 50px 
-}
 
 
 /* NEON*/
@@ -391,23 +436,19 @@ animation: flux 4s linear infinite;
 
 
 
-.btn-3:hover {
-  background: #ff96ad00;
-  box-shadow: 0 0 5px #ffffff, 0 0 25px #ffffff, 0 0 50px #ffffff, 0 0 200px #ffffff;
-}
 
 
 
+/* PAGINA CONTACTO*/
 
-/*CONTACTO*/
-
+/* Body de la pagina contacto*/
 .pagina_contacto{
 
   color: #ffffff;
   background-image: linear-gradient( 0deg,
   rgba(0, 0, 0, 0.547),
   rgba(0,0,0,0.5) )
-   ,url(../imagenes/fondo10.png);
+   ,url(../asset/imagenes/Backgrounds/fondo10.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -418,10 +459,10 @@ animation: flux 4s linear infinite;
 
 }
 
-
+/* Contenedor del formulario de contacto*/
 
 .caja_contacto {
-  height: 570px;
+  height: 600px;
   box-shadow: 20px 20px 50px rgba(37, 37, 37, 0.57);
   background: rgba(255, 255, 255, 0.1);
   border-radius: 15px;
@@ -447,10 +488,7 @@ animation: flux 4s linear infinite;
     border-bottom: 2px solid #ffffff86;
 }
 
-.mapa{
-  border-radius: 15px;
-  
-}
+
 
 .caja_contacto .form .boton_contacto {
   font-weight: bold;
@@ -475,10 +513,42 @@ animation: flux 4s linear infinite;
   
 }
 
+/*Mapa de google*/
+
+.mapa{
+  border-radius: 15px;
+  width: 300px;
+  height: 300px;
+  
+}
 
 
 
 
+
+
+/*PRODUCTOS*/
+/*Boton de comprar PAGINA PRODUCTOS*/
+
+
+
+.buton{
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 9px;
+  border-radius: 5px;
+  border: 1px solid rgb(5, 5, 5);
+  box-shadow: 3px 3px 10px rgb(31, 31, 31);
+  color: rgb(255, 255, 255);
+  background-color: rgba(92, 31, 90, 0.145);
+
+}
+
+
+.buton:hover{
+  background-color: rgb(234, 8, 237);
+  box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad, 0 0 200px #910826 ,0 0 50px #520113, 0 0 50px 
+}
 
 
 
