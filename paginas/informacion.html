@@ -21,7 +21,7 @@
     
     
 </head>
-<body class="pagina_principal">
+<body class="pagina_principal_info ">
 
     <!-- NINETY90 es una pagina de venta de cuadros de pelicula de los 90 y 80 -->
 
@@ -50,8 +50,14 @@
             <li class="nav-item">
               <a class="nav-link px-4" href="./productos.html">Productos</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link px-4" href="#">Informacion</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle  px-4" href="#"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >Informacion</a>
+
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="menu-item" href="#">80s</a></li>
+                <li><a class="menu-item" href="#">90s</a></li>
+              </ul>
+
             </li>
             <li class="nav-item">
               <a class="nav-link  px-4" href="./envios.html" tabindex="-1" aria-disabled="true">Envios</a>
@@ -67,55 +73,137 @@
       
   </header>
 
-    <main class="text-center">
+    <main class="text-center container">
 
-        <h2>Informacion</h2>
+      <h2 >Informacion</h2>
        
 
-        <h3>HISTORIA DEL CINE (1980-1989) </h3>
-        
-        <div class=" info">
+      <h3 class="py-3">HISTORIA DEL CINE (1980-1989) </h3>
+    
+       
+      <h4 class="py-3"> LOS OCHENTAS, DE LA TRANSICIÓN A LOS SUPERTAQUILLAZOS</h4>
 
-            <h4> LOS OCHENTAS, DE LA TRANSICIÓN A LOS SUPERTAQUILLAZOS</h4>
+      
 
+      <div class="row justify-content-around align-items-center  caja_informacion">
 
+        <div class="col-6  order-2 caja_texto">
 
-            <p> Sin duda, los años 80 fueron de transición, la televisión había conquistado ya definitivamente los hogares y junto con la aparición de los primeros aparatos de vídeo, conquistaron el monopolio del ocio audiovisual en detrimento de las salas de cine. Además, la televisión trajo un nuevo tipo de espectador muy joven, “criado” en la sala de estar, y que en ningún caso superaba los veinticinco años.</p>
-    
-            <p>En Hollywood apostaron por unirse al enemigo, de forma que se crearon inmensas empresas que controlaban todo el ámbito audiovisual.
-            </p>
-    
-            <p>Por otro lado, con el propósito de atraer a las salas a esa díscola generación de espectadores casi adolescentes, desde la década anterior la industria había tomado el camino de la espectacularidad, corriente que durante los 80 se incrementó aprovechando las crecientes posibilidades técnicas de sonido y postproducción digital.</p>
-    
-            <p>Una cosa llevó a la otra, y por el camino de la espectacularidad Hollywood encontró la solución en la redefinición de los géneros clásicos, ya fulminados por su propio agotamiento en la década anterior. Así las cosas, los géneros que mejor se adaptaban a las nuevas posibilidades del digital y a los gustos de los espectadores que se pretendía captar eran el de terror, el de aventuras y el de ciencia ficción.</p>
-    
-            <p>Entre los actores mas destacados podemos encontrar a Sean Connery, Charles Bronson, Sylvester Stallone, Chuck Norris, Christopher Lee, Harrison Ford, Mel Gibson, Terence Hill, Bud Spencer, Lina Romay, Bo Derek, Richard Harris, Rutger Hauer, Arnold Schwarzenegger, Tom Hanks, Louis De Funès, Ricardo Montalban, Paco Martínez Soria, Paul Naschy, John Travolta, Robert De Niro, Ornella Muti, Alfredo Landa, Juanito Navarro, Eddie Murphy, Michael Douglas, Kathleen Turner, Danny DeVito, Jane Fonda, Michael J. Fox, Sigourney Weaver, Barbra Streisand, Bruce Willis… etc.. etc.. etc…</p>
-    
-            <p>La década de los 80 se sacó de la manga aquel espontáneo, desenfadado y agradecido género de la comedia sexual universitaria, tipo Porky´s. Y, con la excusa de la guerra fría, también resultó prodiga en títulos bélicos. La antigua Unión Soviética intenta prolongar su larga agonía hasta su desintegración definitiva con la caída del Muro en 1989.
-            </p>
-    
-            <p>En el resto del mundo, los problemas del cine eran prácticamente los mismos, pero la industria no era en ningún caso tan poderosa como la americana, por lo que recurrieron a protecciones y ayudas estatales, situación, que se sigue manteniendo aun hoy en día. En los 80, viejos y jóvenes cineastas como Clint Eastwood, David Cronenberg, Steven Spielberg, James Cameron, Akira Kurosawa, Stanley Kubrick, Francis Ford Coppola, Brian Depalma, Robert Zemeckis, Tim Burton, Pedro Almodóvar, Michael Crichton o Bernardo Bertolucci, entre otros… mantuvieron durante esta década un altísimo nivel.</p>
-    
-            <p>A finales de la década, en 1989, la industria Americana, recaudó 22,6 Billones de Dólares en todo el mundo, incrementando en el 100% x 100% los resultados de 1984 y convirtiéndose, en este corto periodo de tiempo, en el segundo sector exportador del país, solo superado por el todopoderoso departamento de defensa</p>
-
+          <p class=""> Sin duda, los años 80 fueron de transición, la televisión había conquistado ya definitivamente los hogares y junto con la aparición de los primeros aparatos de vídeo, conquistaron el monopolio del ocio audiovisual en detrimento de las salas de cine. Además, la televisión trajo un nuevo tipo de espectador muy joven, “criado” en la sala de estar, y que en ningún caso superaba los veinticinco años.</p>
+          <p>En Hollywood apostaron por unirse al enemigo, de forma que se crearon inmensas empresas que controlaban todo el ámbito audiovisual.
+          </p>
         </div>
-       
 
-        
+        <div class="col-5 order-1 ">
 
-        <div class="  caja_video">
-            <video  autoplay muted playsinline loop class="video"> 
-                <source src="../asset/Videos/Fondos/FONDO 5.mp4" type="video/mp4">
-    
-    
+          <div class="  caja_video_info ">
+
+            <video loading="lazy" controls playsinline loop class="video" > 
+                <source src="../asset/Videos/Peliculas/RAMBO1 (1982) - Trailer.mp4" type="video/mp4">
             </video>
 
+            
+    
+          </div> 
+        
+
         </div>
 
-       
+      </div>
+
+
+      <div class="row justify-content-around align-items-center  caja_informacion">
+
+        <div class="col-6 caja_texto" >
+          <p>Por otro lado, con el propósito de atraer a las salas a esa díscola generación de espectadores casi adolescentes, desde la década anterior la industria había tomado el camino de la espectacularidad, corriente que durante los 80 se incrementó aprovechando las crecientes posibilidades técnicas de sonido y postproducción digital.</p>
+          <p>Una cosa llevó a la otra, y por el camino de la espectacularidad Hollywood encontró la solución en la redefinición de los géneros clásicos, ya fulminados por su propio agotamiento en la década anterior. Así las cosas, los géneros que mejor se adaptaban a las nuevas posibilidades del digital y a los gustos de los espectadores que se pretendía captar eran el de terror, el de aventuras y el de ciencia ficción.</p>
+        </div>
+
+        
+
+        <div class="col-5 ">
+
+          <div class=" caja_video_info ">
+
+            <video loading="lazy" autoplay muted playsinline loop class="video" > 
+                <source src="../asset/Videos/Peliculas/Volver al Futuro - Trailer subtitulado - Cine Cartelera.mp4" type="video/mp4">
+            </video>
+
+            <audio class="audio" controls autoplay>
+              <source src="../asset/y2mate.com - The Power Of Love.mp3" type="audio/mpeg" >
+            </audio>
+    
+    
+          </div> 
+        
+
+        </div>
+
+        
+
+
+      </div>
+
+
+      <div class="row justify-content-around align-items-center  caja_informacion">
+
+        <div class="col-6 order-2 caja_texto">
+          <p>Entre los actores mas destacados podemos encontrar a Sean Connery, Charles Bronson, Sylvester Stallone, Chuck Norris, Christopher Lee, Harrison Ford, Mel Gibson, Terence Hill, Bud Spencer, Lina Romay, Bo Derek, Richard Harris, Rutger Hauer, Arnold Schwarzenegger, Tom Hanks, Louis De Funès, Ricardo Montalban, Paco Martínez Soria, Paul Naschy, John Travolta, Robert De Niro, Ornella Muti, Alfredo Landa, Juanito Navarro, Eddie Murphy, Michael Douglas, Kathleen Turner, Danny DeVito, Jane Fonda, Michael J. Fox, Sigourney Weaver, Barbra Streisand, Bruce Willis… etc.. etc.. etc…</p>
+            <p>La década de los 80 se sacó de la manga aquel espontáneo, desenfadado y agradecido género de la comedia sexual universitaria, tipo Porky´s. Y, con la excusa de la guerra fría, también resultó prodiga en títulos bélicos. La antigua Unión Soviética intenta prolongar su larga agonía hasta su desintegración definitiva con la caída del Muro en 1989.</p>
+        </div>
+
+        <div class="col-5  order-1 bg-waarning">
+
+          <div class="  caja_video_info ">
+
+            <video loading="lazy" autoplay muted playsinline loop class="video" > 
+                <source src="../asset/Videos/Peliculas/TERMINATOR 1-TRAILER.mp4" type="video/mp4">
+            </video>
+
+            <audio class="audio" controls autoplay>
+              <source src="../asset/y2mate.com - The Power Of Love.mp3" type="audio/mpeg" >
+            </audio>
+    
+          </div> 
+        
+
+        </div>
+
+      </div>
+
+
+      <div class="row justify-content-around align-items-center   caja_informacion ">
+
+        <div class="col-6 caja_texto">
+          <p>En el resto del mundo, los problemas del cine eran prácticamente los mismos, pero la industria no era en ningún caso tan poderosa como la americana, por lo que recurrieron a protecciones y ayudas estatales, situación, que se sigue manteniendo aun hoy en día. En los 80, viejos y jóvenes cineastas como Clint Eastwood, David Cronenberg, Steven Spielberg, James Cameron, Akira Kurosawa, Stanley Kubrick, Francis Ford Coppola, Brian Depalma, Robert Zemeckis, Tim Burton, Pedro Almodóvar, Michael Crichton o Bernardo Bertolucci, entre otros… mantuvieron durante esta década un altísimo nivel.</p>
+    
+          <p>A finales de la década, en 1989, la industria Americana, recaudó 22,6 Billones de Dólares en todo el mundo, incrementando en el 100% x 100% los resultados de 1984 y convirtiéndose, en este corto periodo de tiempo, en el segundo sector exportador del país, solo superado por el todopoderoso departamento de defensa</p>
+
+
+        </div>
+
+        <div class="col-5 bg-waarning">
+
+          <div class="  caja_video_info ">
+            <video loading="lazy" autoplay muted playsinline loop class="video" > 
+                <source src="../asset/Videos/Peliculas/Gremlins (1984)  Trailer.mp4" type="video/mp4">
+            </video>
+
+            <audio class="audio" controls autoplay>
+              <source src="../asset/y2mate.com - The Power Of Love.mp3" type="audio/mpeg" >
+            </audio>
+    
+          </div> 
+        
+
+        </div>
+
+
+      </div>
         
         
         
+        <hr>
         
         
         
