@@ -1,0 +1,473 @@
+@charset "UTF-8";
+/* NINETY 90 QUISE HACERLA CON ESTILO OCHENTOSO Y CON COSAS DE NEON PORQUE SE TRATA DE VENTAS DE CUADROS DE ESA EPOCA Y DE LOS 90 */
+/*ESPERO QUE TE GUSTE EL ESTILO QUE LE PUSE ME COSTO MUCHO TRABAJO LLEGAR A ESTO NO QUEDO NADA QUE VER A LO QUE ERA LA PRIMERA PRE ENTREGA 
+TRATE DE APLICAR TODAS LAS COSAS QUE ME ENSEÑARON ME QUEDA TODAVIA MEJORAR LAS OTRAS PAGINAS*/
+/*LAS PAGINAS QUE SELECCIONE PARA DESARROLLAR SON : LA DE INDEX.HTML Y LA DE CONTACTO.HTML , LAS OTRAS TODAVIA NO LAS DESARROLLE DEL TODO APLIQUE ALGUNAS COSAS PERO LES FALTA , PERO SI QUERE CHUSMEALAS JAJJA*/
+/*TIPOGRAFIA*/
+/*TAMAÑO FUENTE*/
+/*TIPOGRAFIA*/
+/*COLORES*/
+/*ESPACIADOS*/
+/*TAMAÑOS*/
+/*BORDES*/
+/*MARGENES*/
+/*SOMBRAS*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+/*FUENTES*/
+@font-face {
+  font-family: quick;
+  src: url(../asset/Fuentes/Quicksand-Regular.ttf); }
+
+@font-face {
+  font-family: opensans;
+  src: url(../asset/Fuentes/OpenSans-Regular.ttf); }
+
+@font-face {
+  font-family: orbi;
+  src: url(../asset/Fuentes/Orbitron-Regular.ttf); }
+
+@font-face {
+  font-family: poppins;
+  src: url(../asset/Fuentes/Poppins-Regular.ttf); }
+
+/* APLICANDO ALGUNOS ESTILOS AL BODY DE LA PAGINA PRINCIPAL
+  LE DI UNA CLASE LLAMDA PAGINA PRINCIPAL */
+body {
+  /*background-image: linear-gradient(to left bottom, #000000, #010001, #030001, #040102, #050103, #090105, #0c0106, #0f0108, #14010a, #18010c, #1c000e, #1f000f);*/
+  /*background-image: linear-gradient(to top, #000000, #030101, #050103, #080204, #0a0306, #14060d, #1b0913, #210c17, #2f0d1e, #3e0c24, #4d0829, #5d002d);*/
+  /*EL MEJOR TMBN*/
+  /*background-image: linear-gradient(to bottom, #000000, #030101, #050103, #080204, #0a0306, #14060d, #1b0913, #210c17, #2f0d1e, #3e0c24, #4d0829, #5d002d);*/
+  /*EL MEJOR*/
+  /*background-image: radial-gradient(circle, #000000, #030101, #050103, #080204, #0a0306, #10050a, #15060e, #190812, #1f0b17, #250c1b, #2c0d20, #330c24);*/
+  /*background-image: linear-gradient(to top, #11040c, #15050f, #180612, #1b0614, #1e0716, #210818, #230919, #260a1b, #290b1d, #2c0b1f, #300c22, #330c24);*/
+  /*background-color: $color-fondo;*/
+  /*background-image: linear-gradient( 0deg,
+    rgba(0, 0, 0, 0.547),
+    rgba(0,0,0,0.5) )
+     ,url(../asset/imagenes/Backgrounds/fondo10.png);*/
+  background-color: black;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: poppins;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  color: #c7c7c7bd;
+  font-weight: lighter; }
+
+/*HEADER*/
+/*Aca comence a darle estilos al header*/
+/* queria hacer un header */
+/*NAV*/
+/*Use el nav de boodstrap*/
+/*Personalice el menu como yo lo queria */
+header {
+  background-color: #000000d4;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-bottom: 1px solid #4b0b2b78; }
+  header .navbar .navbar-nav .nav-item .nav-link {
+    color: #ef5abe;
+    letter-spacing: 5px;
+    margin-right: 15px;
+    font-size: 12px;
+    /*font-weight: bolder;*/ }
+    header .navbar .navbar-nav .nav-item .nav-link:hover {
+      font-weight: bold;
+      color: #ffffff;
+      text-shadow: 2px 2px 10px #130847;
+      border: 2px solid #42063eb3;
+      border-radius: 5px;
+      background-color: #10000dfc;
+      box-shadow: 2px 2px 50px 2px #ef5abe; }
+
+/*BANNER*/
+/*puse una imagen de fondo y le aplique gradientes para que resalte el texto y la imagen */
+.banner {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../asset/imagenes/banners/banner4.jpg);
+  background-size: cover;
+  border-bottom: 2px solid #42063eb3;
+  box-shadow: 15px 15px 100px 15px #000000d4; }
+  .banner .background-overlay1 {
+    background: rgba(23, 23, 23, 0.437) f;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+    .banner .background-overlay1 .imagenes {
+      border-radius: 20px;
+      box-shadow: 20px 20px 30px 15px rgba(23, 23, 23, 0.437) f; }
+
+/*BANNER_2*/
+.banner_2 {
+  height: 150px;
+  margin-top: 200px;
+  margin-bottom: 200px; }
+  .banner_2 div .contenedor_iconos {
+    width: 150px;
+    height: 100px;
+    border: 7px solid #42063eb3; }
+
+.banner_2 div .contenedor_iconos_tel {
+  width: 110px;
+  height: 100px;
+  border: 7px solid #42063eb3; }
+
+.banner_2 div .contenedor_iconos_tarjeta {
+  width: 110px;
+  height: 100px;
+  border: 7px solid #42063eb3; }
+
+/*CARDS*/
+.caja_tarjetas {
+  height: 670px;
+  margin-bottom: 50px;
+  box-shadow: 3px 3px 50px 3px rgba(235, 8, 193, 0.453);
+  background: #00000032;
+  border-radius: 10px;
+  border: 2px solid #42063eb3;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  transition: all 300ms; }
+  .caja_tarjetas .contenido_img {
+    width: 270px;
+    height: 340px;
+    border-radius: 14px;
+    overflow: hidden; }
+    .caja_tarjetas .contenido_img img {
+      width: 110%;
+      transition: all 200ms;
+      /* aplique un poco de animacion al tocar con el cursor*/ }
+      .caja_tarjetas .contenido_img img:hover {
+        transform: scale(1.6); }
+  .caja_tarjetas .borde_titulos {
+    border: 2px solid rgba(121, 7, 81, 0.689);
+    background-color: #f168cf00;
+    border-radius: 5px; }
+
+.boton_comprar {
+  font-weight: bold;
+  width: 7em;
+  color: #c7c7c7bd;
+  background: #00000032;
+  border-radius: 5px;
+  border: 2px solid rgba(121, 7, 81, 0.689); }
+  .boton_comprar:hover {
+    font-weight: bold;
+    color: #000000;
+    background: #f9f9f9d7;
+    box-shadow: 0 0 5px #e537e887, 0 0 25px #ef5abe, 0 0 50px #ef5abe, 0 0 200px #e537e887;
+    width: 9em;
+    height: 2em; }
+
+/*SECTION 80 Y 90 */
+.section_80_90 {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  background-color: #00000032;
+  /*box-shadow: 20px 20px 50px rgba(98, 8, 140, 0.57);*/
+  border-radius: 2px;
+  /*border: 3px solid rgba(161, 48, 218, 0.362);*/
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px); }
+  .section_80_90 div div div a img {
+    border-radius: 10px; }
+    .section_80_90 div div div a img:hover {
+      box-shadow: 0 0 5px #000000, 0 0 25px #e537e887, 0 0 50px #ef5abe, 0 0 200px #e537e887; }
+
+@keyframes float {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-25px); }
+  100% {
+    transform: translateY(0); } }
+
+.titulo_paginas {
+  background-color: #100309ad;
+  border-bottom: 3px solid #3f0823b8;
+  height: 7vw; }
+  .titulo_paginas div h4 {
+    color: #ef5abe;
+    border-left: 4px solid #ef5abe;
+    padding-left: 15px;
+    letter-spacing: 8px; }
+
+.section_propaganda {
+  margin-top: 100px;
+  box-shadow: 3px 3px 50px 3px rgba(235, 8, 193, 0.453);
+  /*box-shadow: 0px 0px 50px rgb(255, 1, 208);*/
+  border-top: 2px solid #e537e887;
+  border-bottom: 2px solid #e537e887;
+  height: 30vw;
+  width: 100%;
+  background-color: black; }
+  .section_propaganda div h2 {
+    line-height: 2;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 5px 0px 20px rgba(18, 62, 132, 0.696); }
+  .section_propaganda div span {
+    color: #ef5abe;
+    font-size: 45px; }
+  .section_propaganda div p {
+    padding-top: 30px;
+    line-height: 2;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    font-weight: 300;
+    color: #ee32c9;
+    text-shadow: 5px 0px 20px rgba(18, 62, 132, 0.696); }
+  .section_propaganda .contenedor_propaganda {
+    height: 18vw;
+    width: 18vw; }
+
+main .contenedor_productos {
+  padding-top: 100px; }
+
+/* PAGINA INFORMACION*/
+main h3 {
+  word-spacing: 15px;
+  letter-spacing: 17px;
+  font-weight: bold;
+  text-shadow: 5px 0px 20px #ff00d0;
+  padding-top: 150px;
+  padding-bottom: 50px; }
+
+main .caja_informacion {
+  padding-top: 5px;
+  height: 35rem;
+  margin-top: 5px; }
+  main .caja_informacion .caja_texto {
+    /*box-shadow: 20px 20px 50px rgba(98, 8, 140, 0.57);*/
+    /*background: $color-borde;*/
+    border-radius: 5px;
+    /* border-left: 1px solid rgba(123, 7, 181, 0.362);
+            border-top: 1px solid rgba(172, 57, 244, 0.5);*/
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    /*transition: all 300ms;*/ }
+    main .caja_informacion .caja_texto .texto_info {
+      line-height: 2;
+      font-size: 14px;
+      word-spacing: 10px;
+      font-weight: 100; }
+
+main div .contenedor_img {
+  background-image: linear-gradient(to right top, #33071c, #2d081a, #270818, #220715, #1d0512, #1a040f, #16020c, #110108, #0e0106, #0a0003, #050002, #000000); }
+
+main div div .caja_video_info {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  width: 100%; }
+  main div div .caja_video_info video {
+    padding: 10px 10px 0px 10px;
+    width: 100%;
+    height: 100%; }
+  main div div .caja_video_info audio {
+    color: black;
+    background-color: #00000000;
+    width: 93%;
+    height: 20px;
+    margin-bottom: 5px; }
+
+main .contenedor_envios {
+  margin-top: 80px; }
+  main .contenedor_envios div {
+    background-color: aqua; }
+  main .contenedor_envios div {
+    background-color: black; }
+    main .contenedor_envios div h4 {
+      letter-spacing: 8px;
+      font-weight: bold;
+      color: #ef5abe; }
+
+/* PAGINA CONTACTO*/
+/* Contenedor del formulario de contacto*/
+section div .caja_contacto {
+  padding-top: 20px;
+  height: 600px;
+  box-shadow: 3px 3px 50px 3px rgba(235, 8, 193, 0.453);
+  background: #00000032;
+  border-radius: 15px;
+  border: 2px solid #42063eb3;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  transition: all 300ms; }
+  section div .caja_contacto .form {
+    /*Utilice @extend para llevarme los estilos del input a los otros componentes del formulario*/ }
+    section div .caja_contacto .form input, section div .caja_contacto .form textarea, section div .caja_contacto .form .boton_contacto {
+      width: 100%;
+      padding: .7em;
+      border: none;
+      background: none;
+      outline: none;
+      color: #ffffff;
+      border-bottom: 2px solid rgba(70, 37, 69, 0.675); }
+    section div .caja_contacto .form .boton_contacto {
+      font-weight: bold;
+      width: 18em;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 5px;
+      border: solid #a4a4a497; }
+      section div .caja_contacto .form .boton_contacto:hover {
+        color: #000000;
+        border: 3px solid #520880;
+        background: #ffffff;
+        box-shadow: 0 0 5px #ef5abe, 0 0 25px #ef5abe, 0 0 50px #ef5abe, 0 0 200px #e537e887; }
+  section div .caja_contacto ul {
+    list-style: none; }
+  section div .caja_contacto div {
+    /*Mapa de google*/ }
+    section div .caja_contacto div .mapa {
+      border-radius: 15px;
+      width: 300px;
+      height: 300px; }
+
+/*FOOTER*/
+/* personace un poco mi footer para darle mas vida*/
+footer {
+  margin-top: 100px;
+  width: 100%;
+  /*border-top: 2px solid  #ed33e778;*/
+  /*box-shadow: 15px 15px 50px 50px rgba(225, 83, 187, 0.549);*/
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.547), rgba(0, 0, 0, 0.5)), url(../asset/imagenes/Footer/fondofooter11.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /*Estilos y ANIMACIONES REDES SOCIALES*/ }
+  footer div div {
+    /*Menu footer*/ }
+    footer div div nav ul {
+      list-style: none; }
+      footer div div nav ul li a {
+        color: #c7c7c7bd;
+        font-size: 18px;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        letter-spacing: 2px;
+        padding-right: 30px; }
+        footer div div nav ul li a:hover {
+          color: #ef5abe;
+          font-weight: bold; }
+  footer div div .icons-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px; }
+    footer div div .icons-wrapper:after {
+      position: absolute;
+      width: 100%;
+      height: 5px;
+      border-radius: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0; }
+    footer div div .icons-wrapper a .icon {
+      display: inline-block;
+      font-size: 44px;
+      animation: float 4s ease-in-out infinite; }
+    footer div div .icons-wrapper a .ri-instagram-line {
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+    footer div div .icons-wrapper a .ri-facebook-circle-line {
+      color: #2b5c9c;
+      animation-delay: 0.5s; }
+    footer div div .icons-wrapper a .ri-whatsapp-line {
+      color: #13873e;
+      animation-delay: 1s; }
+
+/* ARME LA PAGINA CON BOOTSTRAP CON EL SISTEMA DE COLUMNAS Y FILAS PORQUE ERA MAS FACIL, TAMBIEN APLIQUE MEDIAQUERIE CON BOOTSTRAP PORQUE SE ME HACIA MAS SENCILLO . ESTA ADAPTADO PARA PC COMO PARA MOBILE*/
+/*CLASE  DE BACKGROUND QUE UTILICE EN VARIAS DE LAS PAGINAS*/
+.caja_video {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+  filter: brightness(30%); }
+
+/* BOTON VER CATALOGO*/
+.btn:hover {
+  background: #00000032;
+  box-shadow: 0 0 5px #ffffff, 0 0 25px #ffffff, 0 0 50px #ffffff, 0 0 200px #ffffff; }
+
+.color_gris {
+  font-weight: bolder;
+  color: #b0aeaea9; }
+
+.hr {
+  margin-top: 100px;
+  border-bottom: 3px solid #42063eb3;
+  width: 80%; }
+
+.separacion {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+
+/*USO ESTA CLASE PARA TEXTOS CHICOS CON POCA IMPORTANCIA*/
+.fuente_pequeña {
+  font-size: 14px;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  color: #a4a4a497; }
+
+/* FLUX*/
+/* Efecto neon PARA LOGO*/
+.flux {
+  font-weight: bold;
+  letter-spacing: 10px;
+  font-family: orbi;
+  color: #f789d2;
+  font-size: orbi;
+  text-shadow: 0 0 3vw #ffffff;
+  animation: flux 4s linear infinite;
+  -moz-animation: flux 4s linear infinite;
+  -webkit-animation: flux 4s linear infinite;
+  -o-animation: flux 4s linear infinite; }
+
+@keyframes flux {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #42063eb3, 0 0 3vw #ef5abe, 0 0 10vw #ffffff, 0 0 10vw #000000, 0 0 0.4vw #000000, 0.5vw 0.5vw 0.1vw #130847;
+    color: #3ce7ed; }
+  50% {
+    text-shadow: 0 0 0.5vw #130847, 0 0 1.5vw #e537e887, 0 0 5vw #520880, 0 0 5vw #520880, 0 0 0.2vw #520880, 0.5vw 0.5vw 0.1vw #130847;
+    color: #ef5abe; } }
+
+/*PRODUCTOS*/
+/*Boton de comprar PAGINA PRODUCTOS*/
+/* NAVEGADOR DESPLEGABLE*/
+.dropdown-menu {
+  color: #ffffff;
+  background-color: #000000;
+  border: 2px solid rgba(121, 7, 81, 0.689); }
+
+.menu-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1rem;
+  clear: both;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none; }
+
+/* PAGINA ENVIOS */
+/* ANIMACION DE FONDO */

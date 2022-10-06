@@ -1,0 +1,27 @@
+/*BANNER*/ 
+  /*puse una imagen de fondo y le aplique gradientes para que resalte el texto y la imagen */
+  
+  .banner {
+    position: relative;
+    background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8) ),  url(../asset/imagenes/banners/banner4.jpg) ;
+    background-size: cover;
+   
+    border-bottom: 2px solid $color-borde;
+    box-shadow: 15px 15px 100px 15px $color-header;
+
+    .background-overlay1 {
+        background: $color-negro-transparente;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        .imagenes{
+            border-radius: 20px;
+            box-shadow: 20px 20px 30px 15px $color-negro-transparente;
+        }
+    
+    }
+
+  }
+  

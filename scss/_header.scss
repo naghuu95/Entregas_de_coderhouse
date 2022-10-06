@@ -1,0 +1,44 @@
+/*HEADER*/ 
+  /*Aca comence a darle estilos al header*/
+  /* queria hacer un header */
+  
+  /*NAV*/ 
+  /*Use el nav de boodstrap*/
+  /*Personalice el menu como yo lo queria */
+  
+  header{
+    background-color: $color-header;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    backdrop-filter: blur(2px );
+    -webkit-backdrop-filter: blur(2px);
+    border-bottom:1px solid #4b0b2b78;
+
+    .navbar{
+      .navbar-nav{
+          .nav-item{
+              .nav-link {
+                  color: $color-rosa;
+                  letter-spacing: $espacio-letra-3;
+                  margin-right: $margen-s ;
+                  font-size: $fuente-s;
+                  /*font-weight: bolder;*/ 
+
+                  &:hover{
+                      font-weight: bold;
+                      color: $color-blanco;
+                      text-shadow: 2px 2px 10px $color-azul-obscuro;
+                      border: $borde-normal solid $color-borde;
+                      border-radius: 5px;
+                      background-color: $color-violeta-obscuro ;
+                      box-shadow:2px 2px 50px 2px $color-rosa;
+                  }
+              }
+
+          }
+      }
+    }
+
+  }
+

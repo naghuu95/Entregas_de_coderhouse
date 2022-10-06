@@ -1,0 +1,6 @@
+@mixin fondo_img {
+    position: relative;
+    background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8) ),  url(../asset/imagenes/banners/banner4.jpg) ;
+    background-size: cover;
+    
+}

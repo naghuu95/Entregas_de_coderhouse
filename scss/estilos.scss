@@ -1,0 +1,170 @@
+/* NINETY 90 QUISE HACERLA CON ESTILO OCHENTOSO Y CON COSAS DE NEON PORQUE SE TRATA DE VENTAS DE CUADROS DE ESA EPOCA Y DE LOS 90 */
+
+/*ESPERO QUE TE GUSTE EL ESTILO QUE LE PUSE ME COSTO MUCHO TRABAJO LLEGAR A ESTO NO QUEDO NADA QUE VER A LO QUE ERA LA PRIMERA PRE ENTREGA 
+TRATE DE APLICAR TODAS LAS COSAS QUE ME ENSEÑARON ME QUEDA TODAVIA MEJORAR LAS OTRAS PAGINAS*/
+
+/*LAS PAGINAS QUE SELECCIONE PARA DESARROLLAR SON : LA DE INDEX.HTML Y LA DE CONTACTO.HTML , LAS OTRAS TODAVIA NO LAS DESARROLLE DEL TODO APLIQUE ALGUNAS COSAS PERO LES FALTA , PERO SI QUERE CHUSMEALAS JAJJA*/
+
+
+@import "variables";
+@import "reset";
+@import"mixins";
+@import "fuentes";
+@import "body";
+@import "header";
+@import "banner1_index";
+@import "banner2_index";
+@import "main_index";
+@import "section_index";
+@import "main_productos";
+@import "main_info";
+@import "main_envios";
+@import "main_contacto";
+
+@import "footer";
+  
+  
+  /* ARME LA PAGINA CON BOOTSTRAP CON EL SISTEMA DE COLUMNAS Y FILAS PORQUE ERA MAS FACIL, TAMBIEN APLIQUE MEDIAQUERIE CON BOOTSTRAP PORQUE SE ME HACIA MAS SENCILLO . ESTA ADAPTADO PARA PC COMO PARA MOBILE*/
+  
+  
+  
+  /*CLASE  DE BACKGROUND QUE UTILICE EN VARIAS DE LAS PAGINAS*/
+  .caja_video {
+    position: fixed;
+    min-width: $ancho-maximo;
+    min-height: $largo-maximo;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+    filter: brightness(30%);
+  }
+  
+  
+  
+  
+  /* BOTON VER CATALOGO*/
+  
+  .btn:hover {
+    background: $color-transparente;
+    box-shadow: 0 0 5px $color-blanco, 0 0 25px $color-blanco, 0 0 50px $color-blanco, 0 0 200px $color-blanco;
+  }
+  
+  
+  
+  
+  .color_gris{
+    font-weight: bolder;
+    color: #b0aeaea9;
+  }
+ 
+  
+  
+  
+  
+  .hr{
+    margin-top: $margen-secciones;
+    border-bottom:3px solid $color-borde;
+    width: 80%;
+  }
+  
+  
+  
+  .separacion{
+  
+    margin-top: $margen-secciones;
+    margin-bottom: $margen-secciones;
+  }
+  
+  
+  
+  /*USO ESTA CLASE PARA TEXTOS CHICOS CON POCA IMPORTANCIA*/
+  .fuente_pequeña{
+    font-size: $fuente-standar;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    color: $color-gris-fuente;
+  }
+  
+  
+  
+  /* FLUX*/
+  /* Efecto neon PARA LOGO*/
+  
+  
+  
+  .flux {
+   font-weight:bold;
+   letter-spacing: 10px;
+   font-family:$fuente-logo ;
+   color: $color-rosa-claro;
+   font-size: $fuente-logo;
+   text-shadow: 0 0 3vw #ffffff;
+
+   animation: flux 4s linear infinite;
+   -moz-animation: flux 4s linear infinite;
+   -webkit-animation: flux 4s linear infinite;
+   -o-animation: flux 4s linear infinite;
+  }
+  
+  
+  @keyframes flux {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw $color-borde, 0 0 3vw $color-rosa, 0 0 10vw $color-blanco, 0 0 10vw $color-negro, 0 0 .4vw $color-negro, .5vw .5vw .1vw $color-azul-obscuro;
+    color:  $color-celeste ;
+  }
+  50% {
+    text-shadow: 0 0 .5vw $color-azul-obscuro, 0 0 1.5vw $color-violeta, 0 0 5vw $color-violeta-medio, 0 0 5vw $color-violeta-medio, 0 0 .2vw $color-violeta-medio, .5vw .5vw .1vw $color-azul-obscuro;
+    color: $color-rosa;
+  }
+  }
+  
+  
+  
+  /*PRODUCTOS*/
+  /*Boton de comprar PAGINA PRODUCTOS*/
+  
+ 
+  
+  
+  
+  
+  /* NAVEGADOR DESPLEGABLE*/
+  
+  
+  .dropdown-menu {
+   
+    color: $color-blanco;
+    background-color: $color-negro;
+    border: $borde-normal solid $color-violeta-2;
+   
+  }
+  
+  .menu-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: $color-blanco;
+    text-decoration: none;
+     }
+  
+  
+  
+  
+  
+  /* PAGINA ENVIOS */
+  
+  /* ANIMACION DE FONDO */
+
+  
+
+    
+  
+  
+  
+  
+  
+  

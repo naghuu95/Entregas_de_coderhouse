@@ -1,0 +1,32 @@
+
+/* APLICANDO ALGUNOS ESTILOS AL BODY DE LA PAGINA PRINCIPAL
+  LE DI UNA CLASE LLAMDA PAGINA PRINCIPAL */
+  
+body{
+  /*background-image: linear-gradient(to left bottom, #000000, #010001, #030001, #040102, #050103, #090105, #0c0106, #0f0108, #14010a, #18010c, #1c000e, #1f000f);*/
+  /*background-image: linear-gradient(to top, #000000, #030101, #050103, #080204, #0a0306, #14060d, #1b0913, #210c17, #2f0d1e, #3e0c24, #4d0829, #5d002d);*//*EL MEJOR TMBN*/
+
+  /*background-image: linear-gradient(to bottom, #000000, #030101, #050103, #080204, #0a0306, #14060d, #1b0913, #210c17, #2f0d1e, #3e0c24, #4d0829, #5d002d);*/ /*EL MEJOR*/
+
+  /*background-image: radial-gradient(circle, #000000, #030101, #050103, #080204, #0a0306, #10050a, #15060e, #190812, #1f0b17, #250c1b, #2c0d20, #330c24);*/
+
+  /*background-image: linear-gradient(to top, #11040c, #15050f, #180612, #1b0614, #1e0716, #210818, #230919, #260a1b, #290b1d, #2c0b1f, #300c22, #330c24);*/
+
+    /*background-color: $color-fondo;*/
+    /*background-image: linear-gradient( 0deg,
+    rgba(0, 0, 0, 0.547),
+    rgba(0,0,0,0.5) )
+     ,url(../asset/imagenes/Backgrounds/fondo10.png);*/
+
+     background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: poppins ;
+    letter-spacing: $espacio-letra-1;
+    word-spacing: $espacio-palabra-1;
+    color: $color-fuente;
+    font-weight: lighter;
+    
+ 
+}

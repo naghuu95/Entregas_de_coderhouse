@@ -1,0 +1,26 @@
+{
+  "name": "proyecto_ninety90",
+  "version": "1.0.0",
+  "description": "proyecto coderhouse sitioweb ninety90",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css":"node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naghuu95/Entregas_de_coderhouse.git"
+  },
+  "author": "Braian Nahuel Mercado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naghuu95/Entregas_de_coderhouse/issues"
+  },
+  "homepage": "https://github.com/naghuu95/Entregas_de_coderhouse#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20"
+  }
+}
