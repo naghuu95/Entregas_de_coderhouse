@@ -12,7 +12,7 @@
             box-shadow: 3px 3px 50px 3px rgba(235, 8, 193, 0.453);
             background: $color-transparente;
             border-radius: 15px;
-            border: $borde-normal solid $color-borde ;
+            border: $borde-s solid $color-borde ;
             backdrop-filter: blur(2px );
             -webkit-backdrop-filter: blur(2px);
             transition: all 300ms;
@@ -27,7 +27,7 @@
                     background: none;
                     outline: none;
                     color: $color-blanco;
-                    border-bottom: $borde-normal solid rgba(70, 37, 69, 0.675);
+                    border-bottom: $borde-s solid rgba(70, 37, 69, 0.675);
                 }
 
               /*Utilice @extend para llevarme los estilos del input a los otros componentes del formulario*/
@@ -63,12 +63,14 @@
                 list-style: none;
               
             }
+
             div{
+
                 /*Mapa de google*/
                 .mapa{
                     border-radius: 15px;
                     width: 300px;
-                    height: 300px;
+                    height: 280px;
                     
                 }
             }
@@ -76,4 +78,83 @@
         }
     }
   }
+
+
+
+
   
+  /* 
+   LO ADAPTE PARA TODOS LOS BREAKPOINT DE BOOTSTRAP
+  */
+  
+  @media (min-width: 992px) and (max-width: 1199px) {
+    
+    section{
+        div{
+            .caja_contacto{
+                margin-bottom: 30px;
+    
+                div{
+                   
+                    /*Mapa de google*/
+                    .mapa{
+                        border-radius: 15px;
+                        width: 260px;
+                        height: 270px;
+                        
+                    }
+                }
+            }
+        }
+       }
+    
+  }
+  
+  /* 
+    ADAPTADO PARA TABLET MODIFIQUE UN POCO LA CAJA QUE CONTIENE EL MAPA PORQUE SE VEIA MAL
+  */
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    
+   section{
+    div{
+        .caja_contacto{
+            margin-bottom: 30px;
+
+            div{
+               
+                /*Mapa de google*/
+                .mapa{
+                    border-radius: 15px;
+                    width: 400px;
+                    height: 270px;
+                    
+                }
+            }
+        }
+    }
+   }
+    
+  }
+  
+  /* 
+    ##Device = Baja resolución Tablets, Mobiles (Landscape/horizontal)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    /* CSS */
+    
+  }
+  
+  
+    
+
+
+
+
+
+
+
+ 

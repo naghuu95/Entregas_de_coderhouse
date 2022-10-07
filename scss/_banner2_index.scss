@@ -2,22 +2,23 @@
   
 .banner_2{
   
-    height: 150px;
-    margin-top: 200px;
-    margin-bottom: 200px;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 
 
        div{
            .contenedor_iconos{
-            width: 150px;
-            height: 100px;
+            width: 9vw;
+            height: 7vw;
             border: 7px solid $color-borde ;
                
-
-              
-           
            }
 
+           p{
+            font-size: 1vw;
+           }
+
+           
        }
    }
 
@@ -25,10 +26,14 @@
 
        div{
            .contenedor_iconos_tel{
-               width: 110px;
-               height: 100px;
-               border: 7px solid $color-borde ;
+            width: 7vw;
+            height: 7vw;
+            border: 7px solid $color-borde;
 
+           }
+
+           p{
+            font-size: 1vw;
            }
        }
    }
@@ -37,13 +42,111 @@
 
        div{
            .contenedor_iconos_tarjeta{
-               width: 110px;
-               height: 100px;
-               border: 7px solid $color-borde ;
+            width: 7vw;
+            height: 7vw;
+            border: 7px solid $color-borde;
 
+           }
+
+           p{
+            font-size: 1vw;
            }
 
        }
    }
    
+
+/* 
+  ##Device = Desktops (Escritorio)
+  ##Screen = 1281px pantallas de escritorio de alta resolución
+*/
+
+@media (min-width: 1281px) {
+  
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait/Vertical)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    .banner_2{
+  
+    
+        div{
+          
+            i{
+              ;
+             }
+    
+        }
+    }
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape/horizontal)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    .banner_2{
+  
+    
+        div{
+          
+            i{
+              ;
+             }
+    
+        }
+    }
+    
+  }
+  
+  /* 
+    ##Device = Baja resolución Tablets, Mobiles (Landscape/horizontal)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = La mayoría de los Smartphones Móviles (Portrait/Vertical)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    /* CSS */
+    
+  }
+    
+
+
+
+
+
+
+
  

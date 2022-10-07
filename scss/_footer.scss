@@ -61,7 +61,7 @@
                       &:after{
                           
                           position: absolute;
-                          width: 100%;
+                          width: $ancho-maximo;
                           height: 5px;
                           border-radius: 10px;
                           left: 50%;
@@ -72,6 +72,7 @@
   
                       a{
                           .icon{
+                            font-size: 100px;
                               display: inline-block; 
                               font-size: $fuente-l;
                               animation: float 4s ease-in-out infinite; 

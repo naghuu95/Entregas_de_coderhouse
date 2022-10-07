@@ -2,19 +2,16 @@
 /*TIPOGRAFIA*/
 
 $fuente-principal: poppins;
-$fuente-logo: orbi;
+$fuente-principal-2: poppins_2;
+$fuente-logo: orbi ;
 
 /*TAMAÑO FUENTE*/
 $fuente-s:12px;
-$fuente-standar: 14px;
-$fuente-m: 18px;
-$fuente-l: 44px;
-$fuente-logo: 6vw;
+$fuente-m: 1em;
+$fuente-l: 18px;
+$fuente-xl: 44px;
+$fuente-grande: 6vw;
 
-/*TIPOGRAFIA*/
-
-$fuente-principal: opensans;
-$fuente-logo: orbi;
 
 /*COLORES*/
 
@@ -44,9 +41,12 @@ $color-celeste: #3ce7ed;
 
 /*ESPACIADOS*/
 
+/*letras*/
 $espacio-letra-1: 1px;
 $espacio-letra-2: 2px;
 $espacio-letra-3:5px;
+
+/*palabras*/
 $espacio-palabra-1: 5px;
 
 /*TAMAÑOS*/
@@ -56,7 +56,9 @@ $largo-maximo: 100%;
 
 /*BORDES*/
 
-$borde-normal: 2px;
+$borde-s: 2px;
+$borde-m: 15px;
+$borde-l: 20px;
 
 /*MARGENES*/
 

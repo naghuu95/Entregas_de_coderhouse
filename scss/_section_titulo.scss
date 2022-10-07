@@ -1,0 +1,49 @@
+.titulo_paginas{
+    background-color: #100309ad;
+    border-bottom: 3px solid #3f0823b8;
+    height: 7vw;
+
+    div{
+
+        h4{
+        
+            color:$color-rosa ;
+            border-left: 4px solid $color-rosa;
+            padding-left: 15px;
+            letter-spacing: 8px;
+            
+        }
+    }
+    
+}
+
+
+
+  /* 
+    UTILICE MEDIAQUERIE PARA MODIFICAR LA SECTION DEL TITULO QUE SE ME QUEDABA MUY CHICA CUANDO ESTABA EN MODO MOBILE Y TABLET
+   
+  */
+  
+@media (min-width: 481px) and (max-width: 1024px) {
+    
+    .titulo_paginas{
+       
+        height:8vh ;
+    
+    }
+    
+    
+}
+  
+
+  
+  
+    
+
+
+
+
+
+
+
+ 

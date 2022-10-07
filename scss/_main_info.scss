@@ -7,12 +7,14 @@ main{
 
 
     h3{
+        font-size: 30px;
+        line-height: 2;
         word-spacing: 15px;
         letter-spacing: 17px;
         font-weight: bold;
         text-shadow: 5px 0px 20px rgb(255, 0, 208);
         padding-top: 150px;
-        padding-bottom: 50px;
+        padding-bottom: 30px;
 
         
     }
@@ -58,49 +60,7 @@ main{
         }
     }
 
-
-    div{
-        div{
-            p{
-
-            }
-
-            .caja_video_info{
-                background: rgba(255, 255, 255, 0.1);
-                border-radius: 10px;
-                backdrop-filter: blur(2px );
-                -webkit-backdrop-filter: blur(2px);
-                width: 100%;
-
-                video{
-                    padding: 10px 10px 0px 10px ;
-                    width: 100%;
-                    height: 100%;
-                }
-
-
-                p{
-
-                }
-
-                audio{
-                    color: black;
-                    background-color: #00000000;
-                    width: 93%;
-                    height: 20px;
-                    margin-bottom: 5px ;
-                    
-                }
-            }
-
-
-        }
-    }
-
-
 }
 
-
-  
 
    

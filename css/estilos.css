@@ -5,9 +5,10 @@ TRATE DE APLICAR TODAS LAS COSAS QUE ME ENSEÑARON ME QUEDA TODAVIA MEJORAR LAS 
 /*LAS PAGINAS QUE SELECCIONE PARA DESARROLLAR SON : LA DE INDEX.HTML Y LA DE CONTACTO.HTML , LAS OTRAS TODAVIA NO LAS DESARROLLE DEL TODO APLIQUE ALGUNAS COSAS PERO LES FALTA , PERO SI QUERE CHUSMEALAS JAJJA*/
 /*TIPOGRAFIA*/
 /*TAMAÑO FUENTE*/
-/*TIPOGRAFIA*/
 /*COLORES*/
 /*ESPACIADOS*/
+/*letras*/
+/*palabras*/
 /*TAMAÑOS*/
 /*BORDES*/
 /*MARGENES*/
@@ -19,20 +20,16 @@ TRATE DE APLICAR TODAS LAS COSAS QUE ME ENSEÑARON ME QUEDA TODAVIA MEJORAR LAS 
 
 /*FUENTES*/
 @font-face {
-  font-family: quick;
-  src: url(../asset/Fuentes/Quicksand-Regular.ttf); }
-
-@font-face {
-  font-family: opensans;
-  src: url(../asset/Fuentes/OpenSans-Regular.ttf); }
-
-@font-face {
   font-family: orbi;
   src: url(../asset/Fuentes/Orbitron-Regular.ttf); }
 
 @font-face {
   font-family: poppins;
   src: url(../asset/Fuentes/Poppins-Regular.ttf); }
+
+@font-face {
+  font-family: poppins_2;
+  src: url(../asset/Fuentes/Poppins-ExtraLight.ttf); }
 
 /* APLICANDO ALGUNOS ESTILOS AL BODY DE LA PAGINA PRINCIPAL
   LE DI UNA CLASE LLAMDA PAGINA PRINCIPAL */
@@ -53,6 +50,15 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  font-family: poppins;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  font-size: 1em;
+  color: #c7c7c7bd;
+  font-weight: lighter; }
+
+.body_contacto {
+  background-color: black;
   font-family: poppins;
   letter-spacing: 1px;
   word-spacing: 5px;
@@ -88,6 +94,29 @@ header {
       background-color: #10000dfc;
       box-shadow: 2px 2px 50px 2px #ef5abe; }
 
+/* FLUX*/
+/* Efecto neon PARA LOGO*/
+.flux {
+  font-weight: bold;
+  letter-spacing: 10px;
+  font-family: orbi;
+  color: #f789d2;
+  font-size: 6vw;
+  text-shadow: 0 0 3vw #ffffff;
+  animation: flux 4s linear infinite;
+  -moz-animation: flux 4s linear infinite;
+  -webkit-animation: flux 4s linear infinite;
+  -o-animation: flux 4s linear infinite; }
+
+@keyframes flux {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #42063eb3, 0 0 3vw #ef5abe, 0 0 10vw #ffffff, 0 0 10vw #000000, 0 0 0.4vw #000000, 0.5vw 0.5vw 0.1vw #130847;
+    color: #3ce7ed; }
+  50% {
+    text-shadow: 0 0 0.5vw #130847, 0 0 1.5vw #e537e887, 0 0 5vw #520880, 0 0 5vw #520880, 0 0 0.2vw #520880, 0.5vw 0.5vw 0.1vw #130847;
+    color: #ef5abe; } }
+
 /*BANNER*/
 /*puse una imagen de fondo y le aplique gradientes para que resalte el texto y la imagen */
 .banner {
@@ -102,34 +131,120 @@ header {
     left: 0;
     width: 100%;
     height: 100%; }
+    .banner .background-overlay1 div div h1 {
+      color: #ef5abe;
+      font-weight: bold; }
+    .banner .background-overlay1 div div p {
+      font-family: poppins_2;
+      font-size: 1em; }
     .banner .background-overlay1 .imagenes {
-      border-radius: 20px;
-      box-shadow: 20px 20px 30px 15px rgba(23, 23, 23, 0.437) f; }
+      border-radius: 15px;
+      box-shadow: 20px 20px 30px 15px #000000; }
+
+/* 
+  ##Device = Desktops (Escritorio)
+  ##Screen = 1281px pantallas de escritorio de alta resolución
+*/
+@media (min-width: 1281px) {
+  /* CSS */ }
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+/* 
+  ##Device = Tablets, Ipads (portrait/Vertical)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* CSS */ }
+
+/* 
+  ##Device = Tablets, Ipads (landscape/horizontal)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* CSS */ }
+
+/* 
+  ##Device = Baja resolución Tablets, Mobiles (Landscape/horizontal)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+  /* CSS */ }
+
+/* 
+  ##Device = La mayoría de los Smartphones Móviles (Portrait/Vertical)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  /* CSS */ }
 
 /*BANNER_2*/
 .banner_2 {
-  height: 150px;
-  margin-top: 200px;
-  margin-bottom: 200px; }
+  margin-top: 10vh;
+  margin-bottom: 10vh; }
   .banner_2 div .contenedor_iconos {
-    width: 150px;
-    height: 100px;
+    width: 9vw;
+    height: 7vw;
     border: 7px solid #42063eb3; }
+  .banner_2 div p {
+    font-size: 1vw; }
 
 .banner_2 div .contenedor_iconos_tel {
-  width: 110px;
-  height: 100px;
+  width: 7vw;
+  height: 7vw;
   border: 7px solid #42063eb3; }
 
+.banner_2 div p {
+  font-size: 1vw; }
+
 .banner_2 div .contenedor_iconos_tarjeta {
-  width: 110px;
-  height: 100px;
+  width: 7vw;
+  height: 7vw;
   border: 7px solid #42063eb3; }
+
+.banner_2 div p {
+  font-size: 1vw; }
+
+/* 
+  ##Device = Desktops (Escritorio)
+  ##Screen = 1281px pantallas de escritorio de alta resolución
+*/
+@media (min-width: 1281px) {
+  /* CSS */ }
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+/* 
+    ##Device = Tablets, Ipads (portrait/Vertical)
+    ##Screen = B/w 768px to 1024px
+  */
+/* 
+    ##Device = Tablets, Ipads (landscape/horizontal)
+    ##Screen = B/w 768px to 1024px
+  */
+/* 
+    ##Device = Baja resolución Tablets, Mobiles (Landscape/horizontal)
+    ##Screen = B/w 481px to 767px
+  */
+@media (min-width: 481px) and (max-width: 767px) {
+  /* CSS */ }
+
+/* 
+    ##Device = La mayoría de los Smartphones Móviles (Portrait/Vertical)
+    ##Screen = B/w 320px to 479px
+  */
+@media (min-width: 320px) and (max-width: 480px) {
+  /* CSS */ }
 
 /*CARDS*/
 .caja_tarjetas {
-  height: 670px;
-  margin-bottom: 50px;
+  height: 730px;
+  width: 350px;
+  margin-bottom: 5em;
   box-shadow: 3px 3px 50px 3px rgba(235, 8, 193, 0.453);
   background: #00000032;
   border-radius: 10px;
@@ -138,11 +253,12 @@ header {
   -webkit-backdrop-filter: blur(2px);
   transition: all 300ms; }
   .caja_tarjetas .contenido_img {
-    width: 270px;
-    height: 340px;
+    height: 400px;
+    width: 290px;
     border-radius: 14px;
     overflow: hidden; }
     .caja_tarjetas .contenido_img img {
+      height: 100%;
       width: 110%;
       transition: all 200ms;
       /* aplique un poco de animacion al tocar con el cursor*/ }
@@ -191,26 +307,17 @@ header {
   100% {
     transform: translateY(0); } }
 
-.titulo_paginas {
-  background-color: #100309ad;
-  border-bottom: 3px solid #3f0823b8;
-  height: 7vw; }
-  .titulo_paginas div h4 {
-    color: #ef5abe;
-    border-left: 4px solid #ef5abe;
-    padding-left: 15px;
-    letter-spacing: 8px; }
-
 .section_propaganda {
-  margin-top: 100px;
+  /*margin-top: 10vh;*/
   box-shadow: 3px 3px 50px 3px rgba(235, 8, 193, 0.453);
   /*box-shadow: 0px 0px 50px rgb(255, 1, 208);*/
   border-top: 2px solid #e537e887;
   border-bottom: 2px solid #e537e887;
-  height: 30vw;
+  height: 35vw;
   width: 100%;
   background-color: black; }
   .section_propaganda div h2 {
+    font-size: 2vw;
     line-height: 2;
     letter-spacing: 2px;
     word-spacing: 4px;
@@ -219,9 +326,10 @@ header {
     text-shadow: 5px 0px 20px rgba(18, 62, 132, 0.696); }
   .section_propaganda div span {
     color: #ef5abe;
-    font-size: 45px; }
+    font-size: 4vw; }
   .section_propaganda div p {
-    padding-top: 30px;
+    font-size: 1vw;
+    padding-top: 0.8vh;
     line-height: 2;
     letter-spacing: 2px;
     word-spacing: 4px;
@@ -229,20 +337,22 @@ header {
     color: #ee32c9;
     text-shadow: 5px 0px 20px rgba(18, 62, 132, 0.696); }
   .section_propaganda .contenedor_propaganda {
-    height: 18vw;
-    width: 18vw; }
+    height: 30vw;
+    width: 30vw; }
 
 main .contenedor_productos {
   padding-top: 100px; }
 
 /* PAGINA INFORMACION*/
 main h3 {
+  font-size: 30px;
+  line-height: 2;
   word-spacing: 15px;
   letter-spacing: 17px;
   font-weight: bold;
   text-shadow: 5px 0px 20px #ff00d0;
   padding-top: 150px;
-  padding-bottom: 50px; }
+  padding-bottom: 30px; }
 
 main .caja_informacion {
   padding-top: 5px;
@@ -265,23 +375,6 @@ main .caja_informacion {
 
 main div .contenedor_img {
   background-image: linear-gradient(to right top, #33071c, #2d081a, #270818, #220715, #1d0512, #1a040f, #16020c, #110108, #0e0106, #0a0003, #050002, #000000); }
-
-main div div .caja_video_info {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
-  width: 100%; }
-  main div div .caja_video_info video {
-    padding: 10px 10px 0px 10px;
-    width: 100%;
-    height: 100%; }
-  main div div .caja_video_info audio {
-    color: black;
-    background-color: #00000000;
-    width: 93%;
-    height: 20px;
-    margin-bottom: 5px; }
 
 main .contenedor_envios {
   margin-top: 80px; }
@@ -334,7 +427,58 @@ section div .caja_contacto {
     section div .caja_contacto div .mapa {
       border-radius: 15px;
       width: 300px;
-      height: 300px; }
+      height: 280px; }
+
+/* 
+   LO ADAPTE PARA TODOS LOS BREAKPOINT DE BOOTSTRAP
+  */
+@media (min-width: 992px) and (max-width: 1199px) {
+  section div .caja_contacto {
+    margin-bottom: 30px; }
+    section div .caja_contacto div {
+      /*Mapa de google*/ }
+      section div .caja_contacto div .mapa {
+        border-radius: 15px;
+        width: 260px;
+        height: 270px; } }
+
+/* 
+    ADAPTADO PARA TABLET MODIFIQUE UN POCO LA CAJA QUE CONTIENE EL MAPA PORQUE SE VEIA MAL
+  */
+@media (min-width: 768px) and (max-width: 991px) {
+  section div .caja_contacto {
+    margin-bottom: 30px; }
+    section div .caja_contacto div {
+      /*Mapa de google*/ }
+      section div .caja_contacto div .mapa {
+        border-radius: 15px;
+        width: 400px;
+        height: 270px; } }
+
+/* 
+    ##Device = Baja resolución Tablets, Mobiles (Landscape/horizontal)
+    ##Screen = B/w 481px to 767px
+  */
+@media (min-width: 481px) and (max-width: 767px) {
+  /* CSS */ }
+
+.titulo_paginas {
+  background-color: #100309ad;
+  border-bottom: 3px solid #3f0823b8;
+  height: 7vw; }
+  .titulo_paginas div h4 {
+    color: #ef5abe;
+    border-left: 4px solid #ef5abe;
+    padding-left: 15px;
+    letter-spacing: 8px; }
+
+/* 
+    UTILICE MEDIAQUERIE PARA MODIFICAR LA SECTION DEL TITULO QUE SE ME QUEDABA MUY CHICA CUANDO ESTABA EN MODO MOBILE Y TABLET
+   
+  */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .titulo_paginas {
+    height: 8vh; } }
 
 /*FOOTER*/
 /* personace un poco mi footer para darle mas vida*/
@@ -354,7 +498,7 @@ footer {
       list-style: none; }
       footer div div nav ul li a {
         color: #c7c7c7bd;
-        font-size: 18px;
+        font-size: 1em;
         text-decoration: none;
         display: flex;
         justify-content: center;
@@ -377,8 +521,9 @@ footer {
       transform: translateX(-50%);
       bottom: 0; }
     footer div div .icons-wrapper a .icon {
+      font-size: 100px;
       display: inline-block;
-      font-size: 44px;
+      font-size: 18px;
       animation: float 4s ease-in-out infinite; }
     footer div div .icons-wrapper a .ri-instagram-line {
       background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
@@ -416,7 +561,7 @@ footer {
 .hr {
   margin-top: 100px;
   border-bottom: 3px solid #42063eb3;
-  width: 80%; }
+  width: 100%; }
 
 .separacion {
   margin-top: 100px;
@@ -424,33 +569,10 @@ footer {
 
 /*USO ESTA CLASE PARA TEXTOS CHICOS CON POCA IMPORTANCIA*/
 .fuente_pequeña {
-  font-size: 14px;
+  font-size: 1em;
   letter-spacing: 0px;
   word-spacing: 0px;
   color: #a4a4a497; }
-
-/* FLUX*/
-/* Efecto neon PARA LOGO*/
-.flux {
-  font-weight: bold;
-  letter-spacing: 10px;
-  font-family: orbi;
-  color: #f789d2;
-  font-size: orbi;
-  text-shadow: 0 0 3vw #ffffff;
-  animation: flux 4s linear infinite;
-  -moz-animation: flux 4s linear infinite;
-  -webkit-animation: flux 4s linear infinite;
-  -o-animation: flux 4s linear infinite; }
-
-@keyframes flux {
-  0%,
-  100% {
-    text-shadow: 0 0 1vw #42063eb3, 0 0 3vw #ef5abe, 0 0 10vw #ffffff, 0 0 10vw #000000, 0 0 0.4vw #000000, 0.5vw 0.5vw 0.1vw #130847;
-    color: #3ce7ed; }
-  50% {
-    text-shadow: 0 0 0.5vw #130847, 0 0 1.5vw #e537e887, 0 0 5vw #520880, 0 0 5vw #520880, 0 0 0.2vw #520880, 0.5vw 0.5vw 0.1vw #130847;
-    color: #ef5abe; } }
 
 /*PRODUCTOS*/
 /*Boton de comprar PAGINA PRODUCTOS*/
@@ -468,6 +590,3 @@ footer {
   font-weight: 400;
   color: #ffffff;
   text-decoration: none; }
-
-/* PAGINA ENVIOS */
-/* ANIMACION DE FONDO */
