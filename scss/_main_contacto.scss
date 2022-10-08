@@ -7,7 +7,7 @@
   section{
     div{
         .caja_contacto {
-            padding-top: 20px;
+            padding-top: $paddin-20;
             height: 600px;
             box-shadow: 3px 3px 50px 3px rgba(235, 8, 193, 0.453);
             background: $color-transparente;
@@ -21,7 +21,7 @@
                 
                 input {
                 
-                    width: 100%;
+                    width:$ancho-maximo;
                     padding: .7em;
                     border: none;
                     background: none;
@@ -40,10 +40,10 @@
                 .boton_contacto {
 
                     @extend input ;
-                    font-weight: bold;
+                    font-weight: map-get($fuente-grosor, negrita );
                     width: 18em;
                     background: $color-n-gradiente-2;
-                    border-radius: 5px;
+                    border-radius: $borde-sm;
                     border: solid $color-gris-fuente;
 
                     &:hover {

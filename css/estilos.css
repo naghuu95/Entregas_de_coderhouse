@@ -2,9 +2,18 @@
 /* NINETY 90 QUISE HACERLA CON ESTILO OCHENTOSO Y CON COSAS DE NEON PORQUE SE TRATA DE VENTAS DE CUADROS DE ESA EPOCA Y DE LOS 90 */
 /*ESPERO QUE TE GUSTE EL ESTILO QUE LE PUSE ME COSTO MUCHO TRABAJO LLEGAR A ESTO NO QUEDO NADA QUE VER A LO QUE ERA LA PRIMERA PRE ENTREGA 
 TRATE DE APLICAR TODAS LAS COSAS QUE ME ENSEÑARON ME QUEDA TODAVIA MEJORAR LAS OTRAS PAGINAS*/
-/*LAS PAGINAS QUE SELECCIONE PARA DESARROLLAR SON : LA DE INDEX.HTML Y LA DE CONTACTO.HTML , LAS OTRAS TODAVIA NO LAS DESARROLLE DEL TODO APLIQUE ALGUNAS COSAS PERO LES FALTA , PERO SI QUERE CHUSMEALAS JAJJA*/
+/*DE MANERA ORDENADA ORGANICE TODO EN SECCIONES
+CREE VARIOS ARCHIVOS DE SCSS DE CADA SECCION DE LA PAGINA PARA QUE SE ME HAGA MAS FACIL
+MODIFICAR TODO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*CREE VARIABLES PARA NO REPETIR CODIGO Y DISTINGIR CADA ALGUN COLOR,FUENTE,ETC */
 /*TIPOGRAFIA*/
 /*TAMAÑO FUENTE*/
+/* hice solo un mapa que es este GROSOR FUENTE*/
 /*COLORES*/
 /*ESPACIADOS*/
 /*letras*/
@@ -12,12 +21,16 @@ TRATE DE APLICAR TODAS LAS COSAS QUE ME ENSEÑARON ME QUEDA TODAVIA MEJORAR LAS 
 /*TAMAÑOS*/
 /*BORDES*/
 /*MARGENES*/
+/*PADDING*/
 /*SOMBRAS*/
+/*ESTE ES EL RESETEO DEL SITIO WEB */
 * {
-  box-sizing: border-box;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
+/* MIXINS */
+/*ORDENE LAS FUENTES ACA*/
 /*FUENTES*/
 @font-face {
   font-family: orbi;
@@ -31,34 +44,29 @@ TRATE DE APLICAR TODAS LAS COSAS QUE ME ENSEÑARON ME QUEDA TODAVIA MEJORAR LAS 
   font-family: poppins_2;
   src: url(../asset/Fuentes/Poppins-ExtraLight.ttf); }
 
-/* APLICANDO ALGUNOS ESTILOS AL BODY DE LA PAGINA PRINCIPAL
-  LE DI UNA CLASE LLAMDA PAGINA PRINCIPAL */
+/* APLICANDO ALGUNOS ESTILOS AL BODY DE TODAS LAS PAGINAS
+UTILICE VARIABLES PARA DAR ESPACIADOS,COLOR Y FUENTE*/
 body {
-  /*background-image: linear-gradient(to left bottom, #000000, #010001, #030001, #040102, #050103, #090105, #0c0106, #0f0108, #14010a, #18010c, #1c000e, #1f000f);*/
-  /*background-image: linear-gradient(to top, #000000, #030101, #050103, #080204, #0a0306, #14060d, #1b0913, #210c17, #2f0d1e, #3e0c24, #4d0829, #5d002d);*/
-  /*EL MEJOR TMBN*/
-  /*background-image: linear-gradient(to bottom, #000000, #030101, #050103, #080204, #0a0306, #14060d, #1b0913, #210c17, #2f0d1e, #3e0c24, #4d0829, #5d002d);*/
-  /*EL MEJOR*/
-  /*background-image: radial-gradient(circle, #000000, #030101, #050103, #080204, #0a0306, #10050a, #15060e, #190812, #1f0b17, #250c1b, #2c0d20, #330c24);*/
-  /*background-image: linear-gradient(to top, #11040c, #15050f, #180612, #1b0614, #1e0716, #210818, #230919, #260a1b, #290b1d, #2c0b1f, #300c22, #330c24);*/
   /*background-color: $color-fondo;*/
   /*background-image: linear-gradient( 0deg,
     rgba(0, 0, 0, 0.547),
     rgba(0,0,0,0.5) )
      ,url(../asset/imagenes/Backgrounds/fondo10.png);*/
   background-color: black;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  /* background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;*/
   font-family: poppins;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   word-spacing: 5px;
   font-size: 1em;
   color: #c7c7c7bd;
-  font-weight: lighter; }
+  font-weight: lighter;
+  max-width: 100% !important;
+  overflow-x: hidden !important; }
 
 .body_contacto {
-  background-color: black;
+  background-color: #000000;
   font-family: poppins;
   letter-spacing: 1px;
   word-spacing: 5px;
@@ -70,7 +78,8 @@ body {
 /* queria hacer un header */
 /*NAV*/
 /*Use el nav de boodstrap*/
-/*Personalice el menu como yo lo queria */
+/*Personalice el menu como yo lo queria 
+  ANIDE TODO Y QUEDO MAS ORDENADO Y CON MAYOR ESPICIDAD*/
 header {
   background-color: #000000d4;
   position: sticky;
@@ -84,7 +93,8 @@ header {
     letter-spacing: 5px;
     margin-right: 15px;
     font-size: 12px;
-    /*font-weight: bolder;*/ }
+    /*font-weight: bolder;*/
+    /* UTILICE CASI TODO VARIABLES PARA HACER EL HOVER*/ }
     header .navbar .navbar-nav .nav-item .nav-link:hover {
       font-weight: bold;
       color: #ffffff;
@@ -95,7 +105,8 @@ header {
       box-shadow: 2px 2px 50px 2px #ef5abe; }
 
 /* FLUX*/
-/* Efecto neon PARA LOGO*/
+/* Efecto neon PARA LOGO
+  ACA TMBN UTILICE VARIABLES */
 .flux {
   font-weight: bold;
   letter-spacing: 10px;
@@ -108,6 +119,7 @@ header {
   -webkit-animation: flux 4s linear infinite;
   -o-animation: flux 4s linear infinite; }
 
+/*UTILICE VARIABLES PARA DARLE EL EFECTO NEON EN EL TEXT-SHADOW Y EL COLOR*/
 @keyframes flux {
   0%,
   100% {
@@ -121,7 +133,7 @@ header {
 /*puse una imagen de fondo y le aplique gradientes para que resalte el texto y la imagen */
 .banner {
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../asset/imagenes/banners/banner4.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../asset/imagenes/seccion_inicio_fondos/banner4-min.jpg);
   background-size: cover;
   border-bottom: 2px solid #42063eb3;
   box-shadow: 15px 15px 100px 15px #000000d4; }
@@ -131,54 +143,20 @@ header {
     left: 0;
     width: 100%;
     height: 100%; }
-    .banner .background-overlay1 div div h1 {
-      color: #ef5abe;
-      font-weight: bold; }
-    .banner .background-overlay1 div div p {
-      font-family: poppins_2;
-      font-size: 1em; }
+    .banner .background-overlay1 div div {
+      /* BOTON VER CATALOGO*/ }
+      .banner .background-overlay1 div div h1 {
+        color: #ef5abe;
+        font-weight: bold; }
+      .banner .background-overlay1 div div p {
+        font-family: poppins_2;
+        font-size: 1em; }
+      .banner .background-overlay1 div div .btn:hover {
+        background: #00000032;
+        box-shadow: 0 0 5px #ffffff, 0 0 25px #ffffff, 0 0 50px #ffffff, 0 0 200px #ffffff; }
     .banner .background-overlay1 .imagenes {
       border-radius: 15px;
       box-shadow: 20px 20px 30px 15px #000000; }
-
-/* 
-  ##Device = Desktops (Escritorio)
-  ##Screen = 1281px pantallas de escritorio de alta resolución
-*/
-@media (min-width: 1281px) {
-  /* CSS */ }
-
-/* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
-/* 
-  ##Device = Tablets, Ipads (portrait/Vertical)
-  ##Screen = B/w 768px to 1024px
-*/
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* CSS */ }
-
-/* 
-  ##Device = Tablets, Ipads (landscape/horizontal)
-  ##Screen = B/w 768px to 1024px
-*/
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  /* CSS */ }
-
-/* 
-  ##Device = Baja resolución Tablets, Mobiles (Landscape/horizontal)
-  ##Screen = B/w 481px to 767px
-*/
-@media (min-width: 481px) and (max-width: 767px) {
-  /* CSS */ }
-
-/* 
-  ##Device = La mayoría de los Smartphones Móviles (Portrait/Vertical)
-  ##Screen = B/w 320px to 479px
-*/
-@media (min-width: 320px) and (max-width: 480px) {
-  /* CSS */ }
 
 /*BANNER_2*/
 .banner_2 {
@@ -207,39 +185,6 @@ header {
 .banner_2 div p {
   font-size: 1vw; }
 
-/* 
-  ##Device = Desktops (Escritorio)
-  ##Screen = 1281px pantallas de escritorio de alta resolución
-*/
-@media (min-width: 1281px) {
-  /* CSS */ }
-
-/* 
-    ##Device = Laptops, Desktops
-    ##Screen = B/w 1025px to 1280px
-  */
-/* 
-    ##Device = Tablets, Ipads (portrait/Vertical)
-    ##Screen = B/w 768px to 1024px
-  */
-/* 
-    ##Device = Tablets, Ipads (landscape/horizontal)
-    ##Screen = B/w 768px to 1024px
-  */
-/* 
-    ##Device = Baja resolución Tablets, Mobiles (Landscape/horizontal)
-    ##Screen = B/w 481px to 767px
-  */
-@media (min-width: 481px) and (max-width: 767px) {
-  /* CSS */ }
-
-/* 
-    ##Device = La mayoría de los Smartphones Móviles (Portrait/Vertical)
-    ##Screen = B/w 320px to 479px
-  */
-@media (min-width: 320px) and (max-width: 480px) {
-  /* CSS */ }
-
 /*CARDS*/
 .caja_tarjetas {
   height: 730px;
@@ -247,7 +192,7 @@ header {
   margin-bottom: 5em;
   box-shadow: 3px 3px 50px 3px rgba(235, 8, 193, 0.453);
   background: #00000032;
-  border-radius: 10px;
+  border-radius: 15px;
   border: 2px solid #42063eb3;
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
@@ -255,7 +200,7 @@ header {
   .caja_tarjetas .contenido_img {
     height: 400px;
     width: 290px;
-    border-radius: 14px;
+    border-radius: 15px;
     overflow: hidden; }
     .caja_tarjetas .contenido_img img {
       height: 100%;
@@ -307,38 +252,43 @@ header {
   100% {
     transform: translateY(0); } }
 
-.section_propaganda {
-  /*margin-top: 10vh;*/
-  box-shadow: 3px 3px 50px 3px rgba(235, 8, 193, 0.453);
-  /*box-shadow: 0px 0px 50px rgb(255, 1, 208);*/
+.contenedor_2x1 {
   border-top: 2px solid #e537e887;
   border-bottom: 2px solid #e537e887;
-  height: 35vw;
-  width: 100%;
-  background-color: black; }
-  .section_propaganda div h2 {
-    font-size: 2vw;
-    line-height: 2;
-    letter-spacing: 2px;
-    word-spacing: 4px;
-    font-weight: bold;
-    color: white;
-    text-shadow: 5px 0px 20px rgba(18, 62, 132, 0.696); }
-  .section_propaganda div span {
-    color: #ef5abe;
-    font-size: 4vw; }
-  .section_propaganda div p {
-    font-size: 1vw;
-    padding-top: 0.8vh;
-    line-height: 2;
-    letter-spacing: 2px;
-    word-spacing: 4px;
-    font-weight: 300;
-    color: #ee32c9;
-    text-shadow: 5px 0px 20px rgba(18, 62, 132, 0.696); }
-  .section_propaganda .contenedor_propaganda {
-    height: 30vw;
-    width: 30vw; }
+  box-shadow: 3px 3px 50px 3px rgba(235, 8, 193, 0.453);
+  background-color: black !important;
+  width: 100%; }
+  .contenedor_2x1 .section_propaganda {
+    /*margin-top: 10vh;*/
+    /*box-shadow: 3px 3px 50px 3px rgba(235, 8, 193, 0.453);*/
+    /*box-shadow: 0px 0px 50px rgb(255, 1, 208);*/
+    /* border-top: $borde-s solid $color-violeta;
+        border-bottom: $borde-s solid $color-violeta;*/
+    height: 35vw;
+    width: 100%; }
+    .contenedor_2x1 .section_propaganda div h2 {
+      font-size: 2vw;
+      line-height: 2;
+      letter-spacing: 2px;
+      word-spacing: 5px;
+      font-weight: bold;
+      color: white;
+      text-shadow: 5px 0px 20px rgba(18, 62, 132, 0.696); }
+    .contenedor_2x1 .section_propaganda div span {
+      color: #ef5abe;
+      font-size: 4vw; }
+    .contenedor_2x1 .section_propaganda div p {
+      font-size: 1vw;
+      padding-top: 0.8vh;
+      line-height: 2;
+      letter-spacing: 2px;
+      word-spacing: 5px;
+      font-weight: 300;
+      color: #ef5abe;
+      text-shadow: 5px 0px 20px rgba(18, 62, 132, 0.696); }
+    .contenedor_2x1 .section_propaganda .contenedor_propaganda {
+      height: 30vw;
+      width: 30vw; }
 
 main .contenedor_productos {
   padding-top: 100px; }
@@ -347,8 +297,8 @@ main .contenedor_productos {
 main h3 {
   font-size: 30px;
   line-height: 2;
-  word-spacing: 15px;
-  letter-spacing: 17px;
+  word-spacing: 10px;
+  letter-spacing: 10px;
   font-weight: bold;
   text-shadow: 5px 0px 20px #ff00d0;
   padding-top: 150px;
@@ -358,20 +308,10 @@ main .caja_informacion {
   padding-top: 5px;
   height: 35rem;
   margin-top: 5px; }
-  main .caja_informacion .caja_texto {
-    /*box-shadow: 20px 20px 50px rgba(98, 8, 140, 0.57);*/
-    /*background: $color-borde;*/
-    border-radius: 5px;
-    /* border-left: 1px solid rgba(123, 7, 181, 0.362);
-            border-top: 1px solid rgba(172, 57, 244, 0.5);*/
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
-    /*transition: all 300ms;*/ }
-    main .caja_informacion .caja_texto .texto_info {
-      line-height: 2;
-      font-size: 14px;
-      word-spacing: 10px;
-      font-weight: 100; }
+  main .caja_informacion .caja_texto .texto_info {
+    line-height: 2;
+    word-spacing: 2px;
+    font-weight: 100; }
 
 main div .contenedor_img {
   background-image: linear-gradient(to right top, #33071c, #2d081a, #270818, #220715, #1d0512, #1a040f, #16020c, #110108, #0e0106, #0a0003, #050002, #000000); }
@@ -383,7 +323,7 @@ main .contenedor_envios {
   main .contenedor_envios div {
     background-color: black; }
     main .contenedor_envios div h4 {
-      letter-spacing: 8px;
+      letter-spacing: 10px;
       font-weight: bold;
       color: #ef5abe; }
 
@@ -470,7 +410,7 @@ section div .caja_contacto {
     color: #ef5abe;
     border-left: 4px solid #ef5abe;
     padding-left: 15px;
-    letter-spacing: 8px; }
+    letter-spacing: 10px; }
 
 /* 
     UTILICE MEDIAQUERIE PARA MODIFICAR LA SECTION DEL TITULO QUE SE ME QUEDABA MUY CHICA CUANDO ESTABA EN MODO MOBILE Y TABLET
@@ -487,7 +427,7 @@ footer {
   width: 100%;
   /*border-top: 2px solid  #ed33e778;*/
   /*box-shadow: 15px 15px 50px 50px rgba(225, 83, 187, 0.549);*/
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.547), rgba(0, 0, 0, 0.5)), url(../asset/imagenes/Footer/fondofooter11.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.547), rgba(0, 0, 0, 0.5)), url(../asset/imagenes/seccion_footer/fondofooter11-min.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -507,6 +447,8 @@ footer {
         footer div div nav ul li a:hover {
           color: #ef5abe;
           font-weight: bold; }
+  footer div .contenedor_mp {
+    width: 100%; }
   footer div div .icons-wrapper {
     position: relative;
     display: flex;
@@ -521,7 +463,6 @@ footer {
       transform: translateX(-50%);
       bottom: 0; }
     footer div div .icons-wrapper a .icon {
-      font-size: 100px;
       display: inline-block;
       font-size: 18px;
       animation: float 4s ease-in-out infinite; }
@@ -536,57 +477,3 @@ footer {
     footer div div .icons-wrapper a .ri-whatsapp-line {
       color: #13873e;
       animation-delay: 1s; }
-
-/* ARME LA PAGINA CON BOOTSTRAP CON EL SISTEMA DE COLUMNAS Y FILAS PORQUE ERA MAS FACIL, TAMBIEN APLIQUE MEDIAQUERIE CON BOOTSTRAP PORQUE SE ME HACIA MAS SENCILLO . ESTA ADAPTADO PARA PC COMO PARA MOBILE*/
-/*CLASE  DE BACKGROUND QUE UTILICE EN VARIAS DE LAS PAGINAS*/
-.caja_video {
-  position: fixed;
-  min-width: 100%;
-  min-height: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  z-index: -1;
-  filter: brightness(30%); }
-
-/* BOTON VER CATALOGO*/
-.btn:hover {
-  background: #00000032;
-  box-shadow: 0 0 5px #ffffff, 0 0 25px #ffffff, 0 0 50px #ffffff, 0 0 200px #ffffff; }
-
-.color_gris {
-  font-weight: bolder;
-  color: #b0aeaea9; }
-
-.hr {
-  margin-top: 100px;
-  border-bottom: 3px solid #42063eb3;
-  width: 100%; }
-
-.separacion {
-  margin-top: 100px;
-  margin-bottom: 100px; }
-
-/*USO ESTA CLASE PARA TEXTOS CHICOS CON POCA IMPORTANCIA*/
-.fuente_pequeña {
-  font-size: 1em;
-  letter-spacing: 0px;
-  word-spacing: 0px;
-  color: #a4a4a497; }
-
-/*PRODUCTOS*/
-/*Boton de comprar PAGINA PRODUCTOS*/
-/* NAVEGADOR DESPLEGABLE*/
-.dropdown-menu {
-  color: #ffffff;
-  background-color: #000000;
-  border: 2px solid rgba(121, 7, 81, 0.689); }
-
-.menu-item {
-  display: block;
-  width: 100%;
-  padding: 0.25rem 1rem;
-  clear: both;
-  font-weight: 400;
-  color: #ffffff;
-  text-decoration: none; }

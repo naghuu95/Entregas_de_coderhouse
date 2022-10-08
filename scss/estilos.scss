@@ -3,12 +3,17 @@
 /*ESPERO QUE TE GUSTE EL ESTILO QUE LE PUSE ME COSTO MUCHO TRABAJO LLEGAR A ESTO NO QUEDO NADA QUE VER A LO QUE ERA LA PRIMERA PRE ENTREGA 
 TRATE DE APLICAR TODAS LAS COSAS QUE ME ENSEÑARON ME QUEDA TODAVIA MEJORAR LAS OTRAS PAGINAS*/
 
-/*LAS PAGINAS QUE SELECCIONE PARA DESARROLLAR SON : LA DE INDEX.HTML Y LA DE CONTACTO.HTML , LAS OTRAS TODAVIA NO LAS DESARROLLE DEL TODO APLIQUE ALGUNAS COSAS PERO LES FALTA , PERO SI QUERE CHUSMEALAS JAJJA*/
-
-
-@import "variables";
+/*DE MANERA ORDENADA ORGANICE TODO EN SECCIONES
+CREE VARIOS ARCHIVOS DE SCSS DE CADA SECCION DE LA PAGINA PARA QUE SE ME HAGA MAS FACIL
+MODIFICAR TODO */
 @import "reset";
+/*CREE VARIABLES PARA NO REPETIR CODIGO Y DISTINGIR CADA ALGUN COLOR,FUENTE,ETC */
+@import "variables";
+/*ESTE ES EL RESETEO DEL SITIO WEB */
+@import "reset";
+/* MIXINS */
 @import"mixins";
+/*ORDENE LAS FUENTES ACA*/
 @import "fuentes";
 @import "body";
 @import "body_contacto";
@@ -27,101 +32,12 @@ TRATE DE APLICAR TODAS LAS COSAS QUE ME ENSEÑARON ME QUEDA TODAVIA MEJORAR LAS 
 @import "footer";
   
   
-  /* ARME LA PAGINA CON BOOTSTRAP CON EL SISTEMA DE COLUMNAS Y FILAS PORQUE ERA MAS FACIL, TAMBIEN APLIQUE MEDIAQUERIE CON BOOTSTRAP PORQUE SE ME HACIA MAS SENCILLO . ESTA ADAPTADO PARA PC COMO PARA MOBILE*/
   
-  
-  
-  /*CLASE  DE BACKGROUND QUE UTILICE EN VARIAS DE LAS PAGINAS*/
-  .caja_video {
-    position: fixed;
-    min-width: $ancho-maximo;
-    min-height: $largo-maximo;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    z-index: -1;
-    filter: brightness(30%);
-  }
-  
-  
-  
-  
-  /* BOTON VER CATALOGO*/
-  
-  .btn:hover {
-    background: $color-transparente;
-    box-shadow: 0 0 5px $color-blanco, 0 0 25px $color-blanco, 0 0 50px $color-blanco, 0 0 200px $color-blanco;
-  }
-  
-  
-  
-  
-  .color_gris{
-    font-weight: bolder;
-    color: #b0aeaea9;
-  }
- 
-  
-  
-  
-  
-  .hr{
-    margin-top: $margen-secciones;
-    border-bottom:3px solid $color-borde;
-    width: 100%;
-  }
-  
-  
-  
-  .separacion{
-  
-    margin-top: $margen-secciones;
-    margin-bottom: $margen-secciones;
-  }
-  
-  
-  
-  /*USO ESTA CLASE PARA TEXTOS CHICOS CON POCA IMPORTANCIA*/
-  .fuente_pequeña{
-    font-size: $fuente-m;
-    letter-spacing: 0px;
-    word-spacing: 0px;
-    color: $color-gris-fuente;
-  }
-  
-  
-  
-  
-  
-  /*PRODUCTOS*/
-  /*Boton de comprar PAGINA PRODUCTOS*/
   
  
   
   
-  
-  
-  /* NAVEGADOR DESPLEGABLE*/
-  
-  
-  .dropdown-menu {
-   
-    color: $color-blanco;
-    background-color: $color-negro;
-    border: $borde-s solid $color-violeta-2;
-   
-  }
-  
-  .menu-item {
-    display: block;
-    width: 100%;
-    padding: 0.25rem 1rem;
-    clear: both;
-    font-weight: 400;
-    color: $color-blanco;
-    text-decoration: none;
-     }
-  
+
   
   
 

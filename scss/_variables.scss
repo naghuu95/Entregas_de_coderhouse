@@ -9,8 +9,24 @@ $fuente-logo: orbi ;
 $fuente-s:12px;
 $fuente-m: 1em;
 $fuente-l: 18px;
-$fuente-xl: 44px;
+$fuente-xl:30px;
+$fuente-xxl:44px;
 $fuente-grande: 6vw;
+
+/* hice solo un mapa que es este GROSOR FUENTE*/
+$fuente-grosor: (
+
+    fina:100,
+    fina-2: 200,
+    fina-3: 300,
+    normal: 400,
+    normal-2: 500,
+    gruesa: 600,
+    negrita:bold,
+    negrita-2:900,
+
+);
+
 
 
 /*COLORES*/
@@ -45,18 +61,22 @@ $color-celeste: #3ce7ed;
 $espacio-letra-1: 1px;
 $espacio-letra-2: 2px;
 $espacio-letra-3:5px;
+$espacio-letra-4:10px;
 
 /*palabras*/
 $espacio-palabra-1: 5px;
+$espacio-palabra-2:10px;
 
 /*TAMAÑOS*/
 
 $ancho-maximo: 100%;
-$largo-maximo: 100%;
+$ancho-maximo-2:110%;
+$alto-maximo: 100%;
 
 /*BORDES*/
 
 $borde-s: 2px;
+$borde-sm:5px;
 $borde-m: 15px;
 $borde-l: 20px;
 
@@ -64,5 +84,10 @@ $borde-l: 20px;
 
 $margen-s: 15px; 
 $margen-secciones:100px;
+
+/*PADDING*/
+$paddin-20: 20px;
+$padding-30: 30px;
+$paddin-100:100px;
 
 /*SOMBRAS*/

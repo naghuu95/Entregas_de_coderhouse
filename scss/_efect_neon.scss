@@ -1,10 +1,11 @@
 
 /* FLUX*/
-  /* Efecto neon PARA LOGO*/
+  /* Efecto neon PARA LOGO
+  ACA TMBN UTILICE VARIABLES */
   
 .flux {
-    font-weight:bold;
-    letter-spacing: 10px;
+    font-weight:map-get($fuente-grosor, negrita );
+    letter-spacing:$espacio-letra-4;
     font-family:$fuente-logo;
     color: $color-rosa-claro;
     font-size: $fuente-grande;
@@ -16,7 +17,7 @@
     -o-animation: flux 4s linear infinite;
    }
    
-   
+   /*UTILICE VARIABLES PARA DARLE EL EFECTO NEON EN EL TEXT-SHADOW Y EL COLOR*/
    @keyframes flux {
    0%,
    100% {

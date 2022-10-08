@@ -3,7 +3,7 @@
   
   .banner {
     position: relative;
-    background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8) ),  url(../asset/imagenes/banners/banner4.jpg) ;
+    background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8) ),  url(../asset/imagenes/seccion_inicio_fondos/banner4-min.jpg) ;
     background-size: cover;
    
     border-bottom: 2px solid $color-borde;
@@ -14,7 +14,7 @@
         top: 0;
         left: 0;
         width: $ancho-maximo;
-        height:$largo-maximo;
+        height:$alto-maximo;
 
         div{
           div{
@@ -22,7 +22,7 @@
             h1{
               
               color: $color-rosa;
-              font-weight: bold;
+              font-weight: map-get($fuente-grosor, negrita );
             }
 
             p{
@@ -30,6 +30,14 @@
               font-size: $fuente-m;
              
             }
+
+            /* BOTON VER CATALOGO*/
+  
+            .btn:hover {
+              background: $color-transparente;
+              box-shadow: 0 0 5px $color-blanco, 0 0 25px $color-blanco, 0 0 50px $color-blanco, 0 0 200px $color-blanco;
+            }
+
           }
         }
 
@@ -42,69 +50,5 @@
 
   }
 
-  /* 
-  ##Device = Desktops (Escritorio)
-  ##Screen = 1281px pantallas de escritorio de alta resolución
-*/
+ 
 
-@media (min-width: 1281px) {
-  
-  /* CSS */
-  
-}
-
-/* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  
-  
-  
-}
-
-/* 
-  ##Device = Tablets, Ipads (portrait/Vertical)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  
-  /* CSS */
-  
-}
-
-/* 
-  ##Device = Tablets, Ipads (landscape/horizontal)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  
-  /* CSS */
-  
-}
-
-/* 
-  ##Device = Baja resolución Tablets, Mobiles (Landscape/horizontal)
-  ##Screen = B/w 481px to 767px
-*/
-
-@media (min-width: 481px) and (max-width: 767px) {
-  
-  /* CSS */
-  
-}
-
-/* 
-  ##Device = La mayoría de los Smartphones Móviles (Portrait/Vertical)
-  ##Screen = B/w 320px to 479px
-*/
-
-@media (min-width: 320px) and (max-width: 480px) {
-  
-  /* CSS */
-  
-}
-  

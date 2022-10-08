@@ -6,7 +6,7 @@
     margin-bottom: 5em;
     box-shadow: 3px 3px 50px 3px rgba(235, 8, 193, 0.453);
     background: $color-transparente;
-    border-radius: 10px;
+    border-radius: $borde-m;
     border: $borde-s solid $color-borde ;
     backdrop-filter: blur(2px );
     -webkit-backdrop-filter: blur(2px);
@@ -16,13 +16,13 @@
     .contenido_img {
         height: 400px;
         width:  290px;
-        border-radius: 14px ;
+        border-radius: $borde-m ;
         overflow: hidden;
 
             img{
-             height: 100%;
-            width: 110%;
-            transition: all 200ms;
+             height: $alto-maximo;
+             width: $ancho-maximo-2;
+             transition: all 200ms;
 /* aplique un poco de animacion al tocar con el cursor*/
             &:hover{
 
@@ -39,18 +39,18 @@
     .borde_titulos{
         border: $borde-s solid $color-violeta-2;
         background-color: #f168cf00;
-        border-radius: 5px;
+        border-radius: $borde-sm;
     }
 
 
 }
 
 .boton_comprar {
-    font-weight: bold;
+    font-weight:map-get($fuente-grosor, negrita );
     width: 7em;
     color: $color-fuente;
     background: $color-transparente;
-    border-radius: 5px;
+    border-radius: $borde-sm;
     border: $borde-s solid  $color-violeta-2;
     
     &:hover {
@@ -63,6 +63,6 @@
     }
 
   
-  }
+}
 
 
