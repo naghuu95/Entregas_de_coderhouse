@@ -15,6 +15,8 @@ MODIFICAR TODO */
 /*TAMAÑO FUENTE*/
 /* hice solo un mapa que es este GROSOR FUENTE*/
 /*COLORES*/
+/*$color-borde :#42063eb3;*/
+/*$color-violeta-2: rgba(121, 7, 81, 0.689);*/
 /*ESPACIADOS*/
 /*letras*/
 /*palabras*/
@@ -52,7 +54,8 @@ body {
     rgba(0, 0, 0, 0.547),
     rgba(0,0,0,0.5) )
      ,url(../asset/imagenes/Backgrounds/fondo10.png);*/
-  background-color: black;
+  background-color: #03030f;
+  /* background-color: rgb(1, 1, 10);*/
   /* background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;*/
@@ -60,8 +63,8 @@ body {
   letter-spacing: 2px;
   word-spacing: 5px;
   font-size: 1em;
-  color: #c7c7c7bd;
-  font-weight: lighter;
+  color: #ffffffe4;
+  font-weight: 100;
   max-width: 100% !important;
   overflow-x: hidden !important; }
 
@@ -70,7 +73,7 @@ body {
   font-family: poppins;
   letter-spacing: 1px;
   word-spacing: 5px;
-  color: #c7c7c7bd;
+  color: #ffffffe4;
   font-weight: lighter; }
 
 /*HEADER*/
@@ -89,7 +92,7 @@ header {
   -webkit-backdrop-filter: blur(2px);
   border-bottom: 1px solid #4b0b2b78; }
   header .navbar .navbar-nav .nav-item .nav-link {
-    color: #ef5abe;
+    color: #ff004c;
     letter-spacing: 5px;
     margin-right: 15px;
     font-size: 12px;
@@ -99,10 +102,10 @@ header {
       font-weight: bold;
       color: #ffffff;
       text-shadow: 2px 2px 10px #130847;
-      border: 2px solid #42063eb3;
+      border: 2px solid #ff004c;
       border-radius: 5px;
       background-color: #10000dfc;
-      box-shadow: 2px 2px 50px 2px #ef5abe; }
+      box-shadow: 2px 2px 50px 2px #ff004c; }
 
 /* FLUX*/
 /* Efecto neon PARA LOGO
@@ -123,11 +126,11 @@ header {
 @keyframes flux {
   0%,
   100% {
-    text-shadow: 0 0 1vw #42063eb3, 0 0 3vw #ef5abe, 0 0 10vw #ffffff, 0 0 10vw #000000, 0 0 0.4vw #000000, 0.5vw 0.5vw 0.1vw #130847;
+    text-shadow: 0 0 1vw #ff004c, 0 0 3vw #ff004c, 0 0 10vw #ffffff, 0 0 10vw #000000, 0 0 0.4vw #000000, 0.5vw 0.5vw 0.1vw #130847;
     color: #3ce7ed; }
   50% {
     text-shadow: 0 0 0.5vw #130847, 0 0 1.5vw #e537e887, 0 0 5vw #520880, 0 0 5vw #520880, 0 0 0.2vw #520880, 0.5vw 0.5vw 0.1vw #130847;
-    color: #ef5abe; } }
+    color: #ff004c; } }
 
 /*BANNER*/
 /*puse una imagen de fondo y le aplique gradientes para que resalte el texto y la imagen */
@@ -135,7 +138,7 @@ header {
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../asset/imagenes/seccion_inicio_fondos/banner4-min.jpg);
   background-size: cover;
-  border-bottom: 2px solid #42063eb3;
+  border-bottom: 2px solid #ff004c;
   box-shadow: 15px 15px 100px 15px #000000d4; }
   .banner .background-overlay1 {
     background: rgba(23, 23, 23, 0.437) f;
@@ -146,7 +149,7 @@ header {
     .banner .background-overlay1 div div {
       /* BOTON VER CATALOGO*/ }
       .banner .background-overlay1 div div h1 {
-        color: #ef5abe;
+        color: #ff004c;
         font-weight: bold; }
       .banner .background-overlay1 div div p {
         font-family: poppins_2;
@@ -161,26 +164,27 @@ header {
 /*BANNER_2*/
 .banner_2 {
   margin-top: 10vh;
-  margin-bottom: 10vh; }
+  margin-bottom: 10vh;
+  color: #ef5abe; }
   .banner_2 div .contenedor_iconos {
     width: 9vw;
-    height: 7vw;
-    border: 7px solid #42063eb3; }
+    height: 12vh;
+    border: 7px solid #ff004c; }
   .banner_2 div p {
     font-size: 1vw; }
 
 .banner_2 div .contenedor_iconos_tel {
   width: 7vw;
-  height: 7vw;
-  border: 7px solid #42063eb3; }
+  height: 12vh;
+  border: 7px solid #ff004c; }
 
 .banner_2 div p {
   font-size: 1vw; }
 
 .banner_2 div .contenedor_iconos_tarjeta {
   width: 7vw;
-  height: 7vw;
-  border: 7px solid #42063eb3; }
+  height: 12vh;
+  border: 7px solid #ff004c; }
 
 .banner_2 div p {
   font-size: 1vw; }
@@ -193,7 +197,7 @@ header {
   box-shadow: 3px 3px 50px 3px rgba(235, 8, 193, 0.453);
   background: #00000032;
   border-radius: 15px;
-  border: 2px solid #42063eb3;
+  border: 2px solid #ff004c;
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   transition: all 300ms; }
@@ -210,22 +214,22 @@ header {
       .caja_tarjetas .contenido_img img:hover {
         transform: scale(1.6); }
   .caja_tarjetas .borde_titulos {
-    border: 2px solid rgba(121, 7, 81, 0.689);
+    border: 2px solid #ff004c;
     background-color: #f168cf00;
     border-radius: 5px; }
 
 .boton_comprar {
   font-weight: bold;
   width: 7em;
-  color: #c7c7c7bd;
+  color: #ffffffe4;
   background: #00000032;
   border-radius: 5px;
-  border: 2px solid rgba(121, 7, 81, 0.689); }
+  border: 2px solid #ff004c; }
   .boton_comprar:hover {
     font-weight: bold;
     color: #000000;
     background: #f9f9f9d7;
-    box-shadow: 0 0 5px #e537e887, 0 0 25px #ef5abe, 0 0 50px #ef5abe, 0 0 200px #e537e887;
+    box-shadow: 0 0 5px #e537e887, 0 0 25px #ff004c, 0 0 50px #ff004c, 0 0 200px #e537e887;
     width: 9em;
     height: 2em; }
 
@@ -242,7 +246,7 @@ header {
   .section_80_90 div div div a img {
     border-radius: 10px; }
     .section_80_90 div div div a img:hover {
-      box-shadow: 0 0 5px #000000, 0 0 25px #e537e887, 0 0 50px #ef5abe, 0 0 200px #e537e887; }
+      box-shadow: 0 0 5px #000000, 0 0 25px #e537e887, 0 0 50px #ff004c, 0 0 200px #e537e887; }
 
 @keyframes float {
   0% {
@@ -275,7 +279,7 @@ header {
       color: white;
       text-shadow: 5px 0px 20px rgba(18, 62, 132, 0.696); }
     .contenedor_2x1 .section_propaganda div span {
-      color: #ef5abe;
+      color: #ff004c;
       font-size: 4vw; }
     .contenedor_2x1 .section_propaganda div p {
       font-size: 1vw;
@@ -284,7 +288,7 @@ header {
       letter-spacing: 2px;
       word-spacing: 5px;
       font-weight: 300;
-      color: #ef5abe;
+      color: #ff004c;
       text-shadow: 5px 0px 20px rgba(18, 62, 132, 0.696); }
     .contenedor_2x1 .section_propaganda .contenedor_propaganda {
       height: 30vw;
@@ -325,7 +329,7 @@ main .contenedor_envios {
     main .contenedor_envios div h4 {
       letter-spacing: 10px;
       font-weight: bold;
-      color: #ef5abe; }
+      color: #ff004c; }
 
 /* PAGINA CONTACTO*/
 /* Contenedor del formulario de contacto*/
@@ -335,7 +339,7 @@ section div .caja_contacto {
   box-shadow: 3px 3px 50px 3px rgba(235, 8, 193, 0.453);
   background: #00000032;
   border-radius: 15px;
-  border: 2px solid #42063eb3;
+  border: 2px solid #ff004c;
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   transition: all 300ms; }
@@ -359,7 +363,7 @@ section div .caja_contacto {
         color: #000000;
         border: 3px solid #520880;
         background: #ffffff;
-        box-shadow: 0 0 5px #ef5abe, 0 0 25px #ef5abe, 0 0 50px #ef5abe, 0 0 200px #e537e887; }
+        box-shadow: 0 0 5px #ff004c, 0 0 25px #ff004c, 0 0 50px #ff004c, 0 0 200px #e537e887; }
   section div .caja_contacto ul {
     list-style: none; }
   section div .caja_contacto div {
@@ -407,8 +411,8 @@ section div .caja_contacto {
   border-bottom: 3px solid #3f0823b8;
   height: 7vw; }
   .titulo_paginas div h4 {
-    color: #ef5abe;
-    border-left: 4px solid #ef5abe;
+    color: #ff004c;
+    border-left: 4px solid #ff004c;
     padding-left: 15px;
     letter-spacing: 10px; }
 
@@ -437,7 +441,7 @@ footer {
     footer div div nav ul {
       list-style: none; }
       footer div div nav ul li a {
-        color: #c7c7c7bd;
+        color: #ffffffe4;
         font-size: 1em;
         text-decoration: none;
         display: flex;
@@ -445,7 +449,7 @@ footer {
         letter-spacing: 2px;
         padding-right: 30px; }
         footer div div nav ul li a:hover {
-          color: #ef5abe;
+          color: #ff004c;
           font-weight: bold; }
   footer div .contenedor_mp {
     width: 100%; }
@@ -477,3 +481,77 @@ footer {
     footer div div .icons-wrapper a .ri-whatsapp-line {
       color: #13873e;
       animation-delay: 1s; }
+
+.caja_cuadros {
+  height: 680px;
+  width: 510px;
+  margin-bottom: 5em;
+  box-shadow: 3px 3px 50px 3px rgba(235, 8, 193, 0.453);
+  background: #00000032;
+  border-radius: 15px;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  transition: all 300ms; }
+  .caja_cuadros .contenido_cuadros {
+    height: 640px;
+    width: 470px;
+    overflow: hidden; }
+    .caja_cuadros .contenido_cuadros img {
+      height: 100%;
+      width: 110%;
+      transition: all 200ms;
+      /* aplique un poco de animacion al tocar con el cursor*/ }
+      .caja_cuadros .contenido_cuadros img:hover {
+        transform: scale(1.6); }
+  .caja_cuadros .borde_titulos {
+    border: 2px solid #ff004c;
+    background-color: #f168cf00;
+    border-radius: 5px; }
+
+.boton_comprar_cuadros {
+  font-weight: bold;
+  width: 17em;
+  height: 3em;
+  color: #ffffffe4;
+  background: #00000032;
+  border-radius: 5px;
+  border: 2px solid #ff004c; }
+  .boton_comprar_cuadros:hover {
+    font-weight: bold;
+    color: #000000;
+    background: #f9f9f9d7;
+    box-shadow: 0 0 5px #e537e887, 0 0 25px #ff004c, 0 0 50px #ff004c, 0 0 200px #e537e887;
+    width: 20em;
+    height: 3.5em; }
+
+.elegi_opcion {
+  color: #868686;
+  background-color: black;
+  width: 200px;
+  border: solid 2px #ff004c;
+  border-radius: 15px; }
+
+.contenedor_info_compras {
+  color: #ff004c;
+  /*color: rgb(255, 13, 130);*/
+  border: 2px solid #ff004c;
+  border-radius: 15px;
+  box-shadow: 3px 3px 50px 3px rgba(235, 8, 193, 0.453); }
+
+.subtitulos_compras {
+  color: #ff004c;
+  border-left: 4px solid #ff004c;
+  padding-left: 15px;
+  letter-spacing: 10px;
+  font-weight: bold; }
+  .subtitulos_compras:hover {
+    text-shadow: 4px 5px 3px #ff004c;
+    color: #ffffff; }
+
+.subtitulos_cuadros {
+  color: #ff004c;
+  padding-left: 5px;
+  letter-spacing: 5px; }
+  .subtitulos_cuadros:hover {
+    text-shadow: 4px 5px 3px #ff004c;
+    color: #ffffff; }

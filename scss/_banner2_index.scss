@@ -4,13 +4,15 @@
   
     margin-top: 10vh;
     margin-bottom: 10vh;
+    color: $color-rosa-2;
 
 
        div{
            .contenedor_iconos{
             width: 9vw;
-            height: 7vw;
+            height: 12vh;
             border: 7px solid $color-borde ;
+            
                
            }
 
@@ -27,7 +29,7 @@
        div{
            .contenedor_iconos_tel{
             width: 7vw;
-            height: 7vw;
+            height: 12vh;
             border: 7px solid $color-borde;
 
            }
@@ -43,7 +45,7 @@
        div{
            .contenedor_iconos_tarjeta{
             width: 7vw;
-            height: 7vw;
+            height: 12vh;
             border: 7px solid $color-borde;
 
            }

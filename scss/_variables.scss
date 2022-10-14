@@ -31,14 +31,16 @@ $fuente-grosor: (
 
 /*COLORES*/
 
-$color-fuente: #c7c7c7bd ;
+$color-fuente: #ffffffe4 ;
 $color-fondo : #000000 ;
 $color-header : #000000d4 ;
-$color-rosa :rgb(239, 90, 190);
-$color-borde :#42063eb3;
+$color-rosa-2 :rgb(239, 90, 190);
+$color-borde :rgb(255, 0, 76);
+/*$color-borde :#42063eb3;*/
 $color-violeta-medio:#520880;
 $color-violeta:#e537e887;
-$color-violeta-2: rgba(121, 7, 81, 0.689);
+/*$color-violeta-2: rgba(121, 7, 81, 0.689);*/
+$color-violeta-2: rgb(255, 0, 76);
 $color-violeta-obscuro :#10000dfc;
 $color-negro-transparente :rgba(23, 23, 23, 0.437)f;
 $color-transparente:#00000032;
@@ -53,6 +55,10 @@ $color-wp: #13873e;
 $color-rosa-claro: rgb(247, 137, 210);
 $color-azul-obscuro : #130847;
 $color-celeste: #3ce7ed;
+$color-rosa-3: rgb(255, 13, 130);
+$color-rosa-4: rgb(255, 0, 76);
+$color-rosa: rgb(255, 0, 76);
+
 
 
 /*ESPACIADOS*/

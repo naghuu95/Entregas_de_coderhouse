@@ -78,36 +78,58 @@
        
    </header>
 
+   <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <a href="./paginas/productos.html"><img src="./asset/imagenes/seccion_inicio_fondos/cyber-monday-2000x900.jpg" class="d-block w-100 ro-img" alt="..." width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></a>
+
+        </div>
+
+        <div class="carousel-item">
+            <a href="./paginas/productos.html"><img src="./asset/imagenes/seccion_inicio_fondos/anuncio2-grande-2000x900-2x1-mipobre_angelito.jpg" class="d-block w-100 ro-img" alt="..." width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></a>
+            
+        </div>
+
+        <div class="carousel-item">
+            <a href="./paginas/productos.html"><img src="./asset/imagenes/seccion_inicio_fondos/annuncio-principal-grande-2000x900.jpg" class="d-block w-100 ro-img" alt="..." width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></a>
+            
+        </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+
+
+
+
+
  <!-- BANNER -->
  <!-- Es con propaganda y una imagen de un producto , lo que cree con el sistema de filas y columnas en boodstrap 
  Cuando se esta en modo mobile el producto desaparece y solo queda la propaganda -->
 
 
-   <section class="banner ">
-     <div class="background-overlay1 text-white py-5" >
-       <div class="container">
-         <div class="row justify-content-sm-center justify-content-md-between h-100 ">
-           <div class="col-sm-8 col-md-6 text-center justify-content-center align-self-center">
-             <h1 class="fw-bolder fs-1" data-aos="zoom-out-up"  data-aos-duration="2000">
-               TODO LO QUE NECESITAS A UN CLICK
-             </h1>
-             <p class="py-4"  data-aos="zoom-out-up"  data-aos-duration="2000" > Somos una tienda online amante de lo retro, por eso vivi la experiencia de volver al pasado con nuestros cuadros<p>
-             <a href="./paginas/productos.html" class="btn btn-outline-secondary btn-lg text-white " data-aos="zoom-out-up"  data-aos-duration="2000">
-               Ver catalogo
-             </a>
-           </div>
-           <div class="col-5">
-             <img src="./asset/imagenes/Cuadros/cuadro_rocky-min.jpg" class="img-fluid d-none d-sm-none d-md-block imagenes" loading="lazy" data-aos="zoom-out-up"  data-aos-duration="2000" alt="Cuadro de rocky">
-           </div> 
-         </div>
-       </div>
-     </div>
-   </section>
+  
 
   
    
 
-  <section class=" container fluid  ">
+  <section class=" container fluid py-5 ">
 
     <div class="row banner_2 d-none d-sm-none d-md-flex  d-lg-flex   d-xl-flex d-xxl-d-flex justify-content-evenly">
        
@@ -294,10 +316,33 @@
 
    </main>
 
-   <div class="container ">
-     <hr class="hr ">
+  
 
-   </div>
+
+   <section class="banner ">
+    <div class="background-overlay1 text-white py-5" >
+      <div class="container">
+        <div class="row justify-content-sm-center justify-content-md-between h-100 ">
+          <div class="col-sm-8 col-md-6 order-2 text-center justify-content-center align-self-center">
+            <h1 class="fw-bolder fs-1" data-aos="zoom-out-up"  data-aos-duration="2000">
+              TODO LO QUE NECESITAS A UN CLICK
+            </h1>
+            <p class="py-4"  data-aos="zoom-out-up"  data-aos-duration="2000" > Somos una tienda online amante de lo retro, por eso vivi la experiencia de volver al pasado con nuestros cuadros<p>
+            <a href="./paginas/productos.html" class="btn btn-outline-secondary btn-lg text-white " data-aos="zoom-out-up"  data-aos-duration="2000">
+              Ver catalogo
+            </a>
+          </div>
+          <div class="col-5 order-1">
+            <img src="./asset/imagenes/Cuadros/cuadro_rocky-min.jpg" class="img-fluid d-none d-sm-none d-md-block imagenes" loading="lazy" data-aos="zoom-out-up"  data-aos-duration="2000" alt="Cuadro de rocky">
+          </div> 
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+
    
 
    <!-- SECTION 80 Y 90 -->

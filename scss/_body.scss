@@ -9,18 +9,18 @@ body{
     rgba(0, 0, 0, 0.547),
     rgba(0,0,0,0.5) )
      ,url(../asset/imagenes/Backgrounds/fondo10.png);*/
-
-     background-color: black;
+     background-color: rgb(3, 3, 15);
+    /* background-color: rgb(1, 1, 10);*/
    /* background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;*/
     font-family: $fuente-principal ;
     letter-spacing: $espacio-letra-2;
-    
+  
     word-spacing: $espacio-palabra-1;
     font-size: $fuente-m;
     color: $color-fuente;
-    font-weight: lighter;
+    font-weight: 100;
     max-width: 100% !important;
     overflow-x: hidden !important;
    
