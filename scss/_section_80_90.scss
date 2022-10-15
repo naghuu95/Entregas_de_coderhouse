@@ -2,9 +2,9 @@
   
   
 .section_80_90{
-    margin-top: 10%;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    margin-top: 2%;
+    padding-top: 15%;
+    padding-bottom: 20%;
     position: relative;
     background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6) ),  url(../asset/imagenes/seccion_inicio_fondos/pexels-cottonbro-4842564.jpg) ;
     background-attachment: fixed;
@@ -17,7 +17,11 @@
     backdrop-filter: blur(2px );
     -webkit-backdrop-filter: blur(2px);
 
-    div{
+    .fila_80{
+
+          padding-bottom: 15%;
+          
+
         div{
             div{
                 a{
@@ -34,12 +38,6 @@
             }
         }
 
-
-        
-    }
-
-    div{
-
         div{
 
             p{
@@ -49,7 +47,44 @@
                 word-spacing: 2px;
             }
         }
+        
     }
+
+
+    .fila_90{
+
+        padding-bottom: 15%;
+        padding-top: 10%;
+
+      div{
+          div{
+              a{
+                  img{
+
+                    border-radius: 10px;
+
+                      &:hover {
+
+                        box-shadow: 0 0 5px $color-negro, 0 0 25px $color-violeta, 0 0 50px $color-rosa, 0 0 200px $color-violeta;
+                      }
+                  }
+              }
+          }
+      }
+
+      div{
+
+          p{
+              font-size: 20px;
+              font-weight: lighter;
+              line-height: 2;
+              word-spacing: 2px;
+          }
+      }
+      
+  }
+
+    
      
 }
 

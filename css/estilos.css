@@ -172,36 +172,41 @@ header {
 .banner_2 {
   background-color: rgba(3, 2, 25, 0.5);
   height: 200px;
-  margin-top: 20vh;
-  margin-bottom: 20vh;
+  margin-top: 34vh;
+  margin-bottom: 30vh;
   color: #cbcbcbe4;
   text-shadow: 4px 5px 1px #930748; }
   .banner_2 div .contenedor_iconos {
+    font-size: 15px;
     width: 8vw;
     height: 12vh;
-    border: 5px solid #ff0d82; }
+    border: 6px solid #ff004c; }
   .banner_2 div p {
     font-size: 1vw;
     text-shadow: none; }
 
 .banner_2 div .contenedor_iconos_tel {
+  font-size: 15px;
   width: 6vw;
   height: 12vh;
-  border: 5px solid #ff0d82; }
+  border: 6px solid #ff004c; }
 
 .banner_2 div p {
   font-size: 1vw; }
 
 .banner_2 div .contenedor_iconos_tarjeta {
+  font-size: 14px;
   width: 6vw;
   height: 12vh;
-  border: 5px solid #ff0d82; }
+  border: 6px solid #ff004c; }
 
 .banner_2 div p {
   font-size: 1vw; }
 
 /*CARDS*/
 .caja_tarjetas {
+  /* width:24% ;
+    height:97vh ;*/
   height: 730px;
   width: 350px;
   margin-bottom: 5em;
@@ -226,7 +231,7 @@ header {
         transform: scale(1.6); }
   .caja_tarjetas .borde_titulos {
     text-shadow: 5px 3px 1px #930748;
-    border: 2px solid #ff004c;
+    border: 2px solid #ff0d82;
     background-color: #f168cf00;
     border-radius: 5px; }
 
@@ -248,7 +253,8 @@ header {
 
 .titulo {
   /*background-color: rgba(22, 7, 36, 0);*/
-  font-size: 40px;
+  font-size: 3vw;
+  line-height: 3;
   padding-top: 10vh;
   padding-bottom: 10vh;
   margin-bottom: 20vh;
@@ -257,9 +263,9 @@ header {
 
 /*SECTION 80 Y 90 */
 .section_80_90 {
-  margin-top: 10%;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  margin-top: 2%;
+  padding-top: 15%;
+  padding-bottom: 20%;
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../asset/imagenes/seccion_inicio_fondos/pexels-cottonbro-4842564.jpg);
   background-attachment: fixed;
@@ -271,15 +277,29 @@ header {
   /*border: 3px solid rgba(161, 48, 218, 0.362);*/
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px); }
-  .section_80_90 div div div a img {
-    border-radius: 10px; }
-    .section_80_90 div div div a img:hover {
-      box-shadow: 0 0 5px #000000, 0 0 25px #e537e887, 0 0 50px #ff0d82, 0 0 200px #e537e887; }
-  .section_80_90 div div p {
-    font-size: 20px;
-    font-weight: lighter;
-    line-height: 2;
-    word-spacing: 2px; }
+  .section_80_90 .fila_80 {
+    padding-bottom: 15%; }
+    .section_80_90 .fila_80 div div a img {
+      border-radius: 10px; }
+      .section_80_90 .fila_80 div div a img:hover {
+        box-shadow: 0 0 5px #000000, 0 0 25px #e537e887, 0 0 50px #ff0d82, 0 0 200px #e537e887; }
+    .section_80_90 .fila_80 div p {
+      font-size: 20px;
+      font-weight: lighter;
+      line-height: 2;
+      word-spacing: 2px; }
+  .section_80_90 .fila_90 {
+    padding-bottom: 15%;
+    padding-top: 10%; }
+    .section_80_90 .fila_90 div div a img {
+      border-radius: 10px; }
+      .section_80_90 .fila_90 div div a img:hover {
+        box-shadow: 0 0 5px #000000, 0 0 25px #e537e887, 0 0 50px #ff0d82, 0 0 200px #e537e887; }
+    .section_80_90 .fila_90 div p {
+      font-size: 20px;
+      font-weight: lighter;
+      line-height: 2;
+      word-spacing: 2px; }
 
 @keyframes float {
   0% {
@@ -619,34 +639,38 @@ main div .contenedor_info_compras {
     height: 3.5em; }
 
 .section_suscripcion {
-  background-color: black; }
-  .section_suscripcion .contenedor_suscripcion .resaltado {
-    text-shadow: 5px 3px 1px #930748; }
-  .section_suscripcion .contenedor_suscripcion .form_index {
-    width: 100%; }
-    .section_suscripcion .contenedor_suscripcion .form_index input, .section_suscripcion .contenedor_suscripcion .form_index section div .caja_contacto .form textarea, section div .caja_contacto .form .section_suscripcion .contenedor_suscripcion .form_index textarea, .section_suscripcion .contenedor_suscripcion .form_index section div .caja_contacto .form .boton_contacto, section div .caja_contacto .form .section_suscripcion .contenedor_suscripcion .form_index .boton_contacto {
-      width: 600px;
-      padding: .7em;
-      border: none;
-      background: rgba(0, 0, 0, 0);
-      outline: none;
-      color: #cbcbcbe4;
-      border: 2px solid rgba(70, 37, 69, 0.675); }
-    .section_suscripcion .contenedor_suscripcion .form_index div .btn_env {
-      background-color: aqua;
-      font-weight: bold;
-      width: 8em;
-      color: #cbcbcbe4;
-      background: #00000032;
-      border-radius: 5px;
-      border: 2px solid #ff004c; }
-      .section_suscripcion .contenedor_suscripcion .form_index div .btn_env:hover {
+  background-color: black;
+  padding-top: 15%;
+  padding-bottom: 15%; }
+  .section_suscripcion .contenedor_suscripcion {
+    font-size: 1em; }
+    .section_suscripcion .contenedor_suscripcion .resaltado {
+      text-shadow: 5px 3px 1px #930748; }
+    .section_suscripcion .contenedor_suscripcion .form_index {
+      width: 100%; }
+      .section_suscripcion .contenedor_suscripcion .form_index input, .section_suscripcion .contenedor_suscripcion .form_index section div .caja_contacto .form textarea, section div .caja_contacto .form .section_suscripcion .contenedor_suscripcion .form_index textarea, .section_suscripcion .contenedor_suscripcion .form_index section div .caja_contacto .form .boton_contacto, section div .caja_contacto .form .section_suscripcion .contenedor_suscripcion .form_index .boton_contacto {
+        width: 600px;
+        padding: .7em;
+        border: none;
+        background: rgba(0, 0, 0, 0);
+        outline: none;
+        color: #cbcbcbe4;
+        border: 2px solid rgba(70, 37, 69, 0.675); }
+      .section_suscripcion .contenedor_suscripcion .form_index div .btn_env {
+        background-color: aqua;
         font-weight: bold;
-        color: #000000;
-        background: #f9f9f9d7;
-        box-shadow: 0 0 5px #e537e887, 0 0 25px #ff0d82, 0 0 50px #ff0d82, 0 0 200px #e537e887;
         width: 8em;
-        transition: all .5s; }
+        color: #cbcbcbe4;
+        background: #00000032;
+        border-radius: 5px;
+        border: 2px solid #ff004c; }
+        .section_suscripcion .contenedor_suscripcion .form_index div .btn_env:hover {
+          font-weight: bold;
+          color: #000000;
+          background: #f9f9f9d7;
+          box-shadow: 0 0 5px #e537e887, 0 0 25px #ff0d82, 0 0 50px #ff0d82, 0 0 200px #e537e887;
+          width: 8em;
+          transition: all .5s; }
 
 .boton_comprar1 {
   font-weight: bold;
