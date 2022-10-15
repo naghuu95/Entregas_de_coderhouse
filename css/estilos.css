@@ -46,6 +46,10 @@ MODIFICAR TODO */
   font-family: poppins_2;
   src: url(../asset/Fuentes/Poppins-ExtraLight.ttf); }
 
+@font-face {
+  font-family: monserrat;
+  src: url(../asset/Fuentes/Montserrat-Regular.ttf); }
+
 /* APLICANDO ALGUNOS ESTILOS AL BODY DE TODAS LAS PAGINAS
 UTILICE VARIABLES PARA DAR ESPACIADOS,COLOR Y FUENTE*/
 body {
@@ -54,26 +58,26 @@ body {
     rgba(0, 0, 0, 0.547),
     rgba(0,0,0,0.5) )
      ,url(../asset/imagenes/Backgrounds/fondo10.png);*/
-  background-color: #03030f;
+  background-color: #01010a;
   /* background-color: rgb(1, 1, 10);*/
   /* background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;*/
-  font-family: poppins;
+  font-family: monserrat;
   letter-spacing: 2px;
   word-spacing: 5px;
   font-size: 1em;
-  color: #ffffffe4;
+  color: #cbcbcbe4;
   font-weight: 100;
   max-width: 100% !important;
   overflow-x: hidden !important; }
 
 .body_contacto {
-  background-color: #000000;
-  font-family: poppins;
+  background-color: #01010a;
+  font-family: monserrat;
   letter-spacing: 1px;
   word-spacing: 5px;
-  color: #ffffffe4;
+  color: #cbcbcbe4;
   font-weight: lighter; }
 
 /*HEADER*/
@@ -92,7 +96,7 @@ header {
   -webkit-backdrop-filter: blur(2px);
   border-bottom: 1px solid #4b0b2b78; }
   header .navbar .navbar-nav .nav-item .nav-link {
-    color: #ff004c;
+    color: #ff0d82;
     letter-spacing: 5px;
     margin-right: 15px;
     font-size: 12px;
@@ -102,10 +106,11 @@ header {
       font-weight: bold;
       color: #ffffff;
       text-shadow: 2px 2px 10px #130847;
-      border: 2px solid #ff004c;
+      border: 2px solid #ff0d82;
       border-radius: 5px;
       background-color: #10000dfc;
-      box-shadow: 2px 2px 50px 2px #ff004c; }
+      box-shadow: 2px 2px 50px 2px #ff0d82;
+      transition: all 0.6s; }
 
 /* FLUX*/
 /* Efecto neon PARA LOGO
@@ -126,19 +131,21 @@ header {
 @keyframes flux {
   0%,
   100% {
-    text-shadow: 0 0 1vw #ff004c, 0 0 3vw #ff004c, 0 0 10vw #ffffff, 0 0 10vw #000000, 0 0 0.4vw #000000, 0.5vw 0.5vw 0.1vw #130847;
+    text-shadow: 0 0 1vw #ff0d82, 0 0 3vw #ff0d82, 0 0 10vw #ffffff, 0 0 10vw #000000, 0 0 0.4vw #000000, 0.5vw 0.5vw 0.1vw #130847;
     color: #3ce7ed; }
   50% {
     text-shadow: 0 0 0.5vw #130847, 0 0 1.5vw #e537e887, 0 0 5vw #520880, 0 0 5vw #520880, 0 0 0.2vw #520880, 0.5vw 0.5vw 0.1vw #130847;
-    color: #ff004c; } }
+    color: #ef5abe; } }
 
 /*BANNER*/
 /*puse una imagen de fondo y le aplique gradientes para que resalte el texto y la imagen */
 .banner {
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../asset/imagenes/seccion_inicio_fondos/banner4-min.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   background-size: cover;
-  border-bottom: 2px solid #ff004c;
+  /*border-bottom: 2px solid $color-borde;*/
   box-shadow: 15px 15px 100px 15px #000000d4; }
   .banner .background-overlay1 {
     background: rgba(23, 23, 23, 0.437) f;
@@ -149,10 +156,10 @@ header {
     .banner .background-overlay1 div div {
       /* BOTON VER CATALOGO*/ }
       .banner .background-overlay1 div div h1 {
-        color: #ff004c;
+        color: #ff0d82;
         font-weight: bold; }
       .banner .background-overlay1 div div p {
-        font-family: poppins_2;
+        font-family: monserrat;
         font-size: 1em; }
       .banner .background-overlay1 div div .btn:hover {
         background: #00000032;
@@ -163,28 +170,32 @@ header {
 
 /*BANNER_2*/
 .banner_2 {
-  margin-top: 10vh;
-  margin-bottom: 10vh;
-  color: #ef5abe; }
+  background-color: rgba(3, 2, 25, 0.5);
+  height: 200px;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+  color: #cbcbcbe4;
+  text-shadow: 4px 5px 1px #930748; }
   .banner_2 div .contenedor_iconos {
-    width: 9vw;
+    width: 8vw;
     height: 12vh;
-    border: 7px solid #ff004c; }
+    border: 5px solid #ff0d82; }
   .banner_2 div p {
-    font-size: 1vw; }
+    font-size: 1vw;
+    text-shadow: none; }
 
 .banner_2 div .contenedor_iconos_tel {
-  width: 7vw;
+  width: 6vw;
   height: 12vh;
-  border: 7px solid #ff004c; }
+  border: 5px solid #ff0d82; }
 
 .banner_2 div p {
   font-size: 1vw; }
 
 .banner_2 div .contenedor_iconos_tarjeta {
-  width: 7vw;
+  width: 6vw;
   height: 12vh;
-  border: 7px solid #ff004c; }
+  border: 5px solid #ff0d82; }
 
 .banner_2 div p {
   font-size: 1vw; }
@@ -197,7 +208,7 @@ header {
   box-shadow: 3px 3px 50px 3px rgba(235, 8, 193, 0.453);
   background: #00000032;
   border-radius: 15px;
-  border: 2px solid #ff004c;
+  border: 2px solid #ff0d82;
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   transition: all 300ms; }
@@ -214,6 +225,7 @@ header {
       .caja_tarjetas .contenido_img img:hover {
         transform: scale(1.6); }
   .caja_tarjetas .borde_titulos {
+    text-shadow: 5px 3px 1px #930748;
     border: 2px solid #ff004c;
     background-color: #f168cf00;
     border-radius: 5px; }
@@ -221,7 +233,7 @@ header {
 .boton_comprar {
   font-weight: bold;
   width: 7em;
-  color: #ffffffe4;
+  color: #cbcbcbe4;
   background: #00000032;
   border-radius: 5px;
   border: 2px solid #ff004c; }
@@ -229,14 +241,30 @@ header {
     font-weight: bold;
     color: #000000;
     background: #f9f9f9d7;
-    box-shadow: 0 0 5px #e537e887, 0 0 25px #ff004c, 0 0 50px #ff004c, 0 0 200px #e537e887;
-    width: 9em;
-    height: 2em; }
+    box-shadow: 0 0 5px #e537e887, 0 0 25px #ff0d82, 0 0 50px #ff0d82, 0 0 200px #e537e887;
+    width: 8em;
+    height: 2em;
+    transition: all .5s; }
+
+.titulo {
+  /*background-color: rgba(22, 7, 36, 0);*/
+  font-size: 40px;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  margin-bottom: 20vh;
+  letter-spacing: 15px;
+  text-shadow: 7px 2px 2px #930748; }
 
 /*SECTION 80 Y 90 */
 .section_80_90 {
+  margin-top: 10%;
   padding-top: 10%;
   padding-bottom: 10%;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../asset/imagenes/seccion_inicio_fondos/pexels-cottonbro-4842564.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #00000032;
   /*box-shadow: 20px 20px 50px rgba(98, 8, 140, 0.57);*/
   border-radius: 2px;
@@ -246,7 +274,12 @@ header {
   .section_80_90 div div div a img {
     border-radius: 10px; }
     .section_80_90 div div div a img:hover {
-      box-shadow: 0 0 5px #000000, 0 0 25px #e537e887, 0 0 50px #ff004c, 0 0 200px #e537e887; }
+      box-shadow: 0 0 5px #000000, 0 0 25px #e537e887, 0 0 50px #ff0d82, 0 0 200px #e537e887; }
+  .section_80_90 div div p {
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 2;
+    word-spacing: 2px; }
 
 @keyframes float {
   0% {
@@ -279,7 +312,7 @@ header {
       color: white;
       text-shadow: 5px 0px 20px rgba(18, 62, 132, 0.696); }
     .contenedor_2x1 .section_propaganda div span {
-      color: #ff004c;
+      color: #ff0d82;
       font-size: 4vw; }
     .contenedor_2x1 .section_propaganda div p {
       font-size: 1vw;
@@ -288,7 +321,7 @@ header {
       letter-spacing: 2px;
       word-spacing: 5px;
       font-weight: 300;
-      color: #ff004c;
+      color: #ff0d82;
       text-shadow: 5px 0px 20px rgba(18, 62, 132, 0.696); }
     .contenedor_2x1 .section_propaganda .contenedor_propaganda {
       height: 30vw;
@@ -299,12 +332,13 @@ main .contenedor_productos {
 
 /* PAGINA INFORMACION*/
 main h3 {
-  font-size: 30px;
+  text-shadow: 5px 3px 1px #930748;
+  font-size: 40px;
   line-height: 2;
   word-spacing: 10px;
   letter-spacing: 10px;
   font-weight: bold;
-  text-shadow: 5px 0px 20px #ff00d0;
+  /*text-shadow: 5px 0px 20px rgb(255, 0, 208);*/
   padding-top: 150px;
   padding-bottom: 30px; }
 
@@ -325,11 +359,15 @@ main .contenedor_envios {
   main .contenedor_envios div {
     background-color: aqua; }
   main .contenedor_envios div {
-    background-color: black; }
+    background-color: rgba(0, 0, 0, 0); }
     main .contenedor_envios div h4 {
       letter-spacing: 10px;
       font-weight: bold;
-      color: #ff004c; }
+      color: #ff0d82; }
+    main .contenedor_envios div p {
+      letter-spacing: 1px;
+      line-height: 2;
+      color: #cbcbcbe4; }
 
 /* PAGINA CONTACTO*/
 /* Contenedor del formulario de contacto*/
@@ -339,7 +377,7 @@ section div .caja_contacto {
   box-shadow: 3px 3px 50px 3px rgba(235, 8, 193, 0.453);
   background: #00000032;
   border-radius: 15px;
-  border: 2px solid #ff004c;
+  border: 2px solid #ff0d82;
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   transition: all 300ms; }
@@ -363,7 +401,7 @@ section div .caja_contacto {
         color: #000000;
         border: 3px solid #520880;
         background: #ffffff;
-        box-shadow: 0 0 5px #ff004c, 0 0 25px #ff004c, 0 0 50px #ff004c, 0 0 200px #e537e887; }
+        box-shadow: 0 0 5px #ff0d82, 0 0 25px #ff0d82, 0 0 50px #ff0d82, 0 0 200px #e537e887; }
   section div .caja_contacto ul {
     list-style: none; }
   section div .caja_contacto div {
@@ -411,8 +449,9 @@ section div .caja_contacto {
   border-bottom: 3px solid #3f0823b8;
   height: 7vw; }
   .titulo_paginas div h4 {
-    color: #ff004c;
-    border-left: 4px solid #ff004c;
+    text-shadow: 5px 3px 1px #930748;
+    color: #cbcbcbe4;
+    border-left: 4px solid #ff0d82;
     padding-left: 15px;
     letter-spacing: 10px; }
 
@@ -427,21 +466,26 @@ section div .caja_contacto {
 /*FOOTER*/
 /* personace un poco mi footer para darle mas vida*/
 footer {
-  margin-top: 100px;
+  /*margin-top: $margen-secciones;*/
   width: 100%;
   /*border-top: 2px solid  #ed33e778;*/
   /*box-shadow: 15px 15px 50px 50px rgba(225, 83, 187, 0.549);*/
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.547), rgba(0, 0, 0, 0.5)), url(../asset/imagenes/seccion_footer/fondofooter11-min.jpg);
+  /* background-image: linear-gradient( 0deg,
+        $color-n-gradiente-1,
+        $color-n-gradiente-2)
+         ,url(../asset/imagenes/seccion_footer/fondofooter11-min.jpg)*/
+  font-size: 15px;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-color: rgba(3, 2, 25, 0.5);
   /*Estilos y ANIMACIONES REDES SOCIALES*/ }
   footer div div {
     /*Menu footer*/ }
     footer div div nav ul {
       list-style: none; }
       footer div div nav ul li a {
-        color: #ffffffe4;
+        color: #cbcbcbe4;
         font-size: 1em;
         text-decoration: none;
         display: flex;
@@ -449,7 +493,7 @@ footer {
         letter-spacing: 2px;
         padding-right: 30px; }
         footer div div nav ul li a:hover {
-          color: #ff004c;
+          color: #ff0d82;
           font-weight: bold; }
   footer div .contenedor_mp {
     width: 100%; }
@@ -482,6 +526,25 @@ footer {
       color: #13873e;
       animation-delay: 1s; }
 
+main div .contenedor_info_compras {
+  color: #cbcbcbe4;
+  /*color: rgb(255, 13, 130);*/
+  border: 2px solid #ff0d82;
+  border-radius: 15px;
+  box-shadow: 3px 3px 50px 3px rgba(235, 8, 193, 0.453); }
+  main div .contenedor_info_compras .borde_titulos {
+    text-shadow: 5px 3px 1px #930748; }
+  main div .contenedor_info_compras p {
+    font-size: 10px; }
+  main div .contenedor_info_compras div div .elegi_opcion {
+    font-size: 15px;
+    color: #ef5abe;
+    background-color: black;
+    width: 200px;
+    height: 40px;
+    border: solid 2px #ff0d82;
+    border-radius: 15px; }
+
 .caja_cuadros {
   height: 680px;
   width: 510px;
@@ -503,16 +566,12 @@ footer {
       /* aplique un poco de animacion al tocar con el cursor*/ }
       .caja_cuadros .contenido_cuadros img:hover {
         transform: scale(1.6); }
-  .caja_cuadros .borde_titulos {
-    border: 2px solid #ff004c;
-    background-color: #f168cf00;
-    border-radius: 5px; }
 
 .boton_comprar_cuadros {
   font-weight: bold;
   width: 17em;
   height: 3em;
-  color: #ffffffe4;
+  color: #cbcbcbe4;
   background: #00000032;
   border-radius: 5px;
   border: 2px solid #ff004c; }
@@ -520,38 +579,89 @@ footer {
     font-weight: bold;
     color: #000000;
     background: #f9f9f9d7;
-    box-shadow: 0 0 5px #e537e887, 0 0 25px #ff004c, 0 0 50px #ff004c, 0 0 200px #e537e887;
-    width: 20em;
-    height: 3.5em; }
-
-.elegi_opcion {
-  color: #868686;
-  background-color: black;
-  width: 200px;
-  border: solid 2px #ff004c;
-  border-radius: 15px; }
-
-.contenedor_info_compras {
-  color: #ff004c;
-  /*color: rgb(255, 13, 130);*/
-  border: 2px solid #ff004c;
-  border-radius: 15px;
-  box-shadow: 3px 3px 50px 3px rgba(235, 8, 193, 0.453); }
+    box-shadow: 0 0 5px #e537e887, 0 0 25px #ff0d82, 0 0 50px #ff0d82, 0 0 200px #e537e887;
+    transition: .5s; }
 
 .subtitulos_compras {
-  color: #ff004c;
-  border-left: 4px solid #ff004c;
+  color: #ff0d82;
+  border-left: 4px solid #ff0d82;
   padding-left: 15px;
   letter-spacing: 10px;
   font-weight: bold; }
   .subtitulos_compras:hover {
-    text-shadow: 4px 5px 3px #ff004c;
+    text-shadow: 4px 5px 3px #ff0d82;
     color: #ffffff; }
 
 .subtitulos_cuadros {
-  color: #ff004c;
+  color: #ff0d82;
   padding-left: 5px;
   letter-spacing: 5px; }
   .subtitulos_cuadros:hover {
-    text-shadow: 4px 5px 3px #ff004c;
+    text-shadow: 4px 5px 3px #ff0d82;
     color: #ffffff; }
+
+.boton_volver {
+  font-size: 20px;
+  letter-spacing: 10px;
+  font-weight: bold;
+  width: 25em;
+  height: 3em;
+  color: #cbcbcbe4;
+  background: #00000032;
+  border-radius: 5px;
+  border: 2px solid #ff004c; }
+  .boton_volver:hover {
+    font-weight: bold;
+    color: #000000;
+    background: #f9f9f9d7;
+    box-shadow: 0 0 5px #e537e887, 0 0 25px #ff0d82, 0 0 50px #ff0d82, 0 0 200px #e537e887;
+    width: 28em;
+    height: 3.5em; }
+
+.section_suscripcion {
+  background-color: black; }
+  .section_suscripcion .contenedor_suscripcion .resaltado {
+    text-shadow: 5px 3px 1px #930748; }
+  .section_suscripcion .contenedor_suscripcion .form_index {
+    width: 100%; }
+    .section_suscripcion .contenedor_suscripcion .form_index input, .section_suscripcion .contenedor_suscripcion .form_index section div .caja_contacto .form textarea, section div .caja_contacto .form .section_suscripcion .contenedor_suscripcion .form_index textarea, .section_suscripcion .contenedor_suscripcion .form_index section div .caja_contacto .form .boton_contacto, section div .caja_contacto .form .section_suscripcion .contenedor_suscripcion .form_index .boton_contacto {
+      width: 600px;
+      padding: .7em;
+      border: none;
+      background: rgba(0, 0, 0, 0);
+      outline: none;
+      color: #cbcbcbe4;
+      border: 2px solid rgba(70, 37, 69, 0.675); }
+    .section_suscripcion .contenedor_suscripcion .form_index div .btn_env {
+      background-color: aqua;
+      font-weight: bold;
+      width: 8em;
+      color: #cbcbcbe4;
+      background: #00000032;
+      border-radius: 5px;
+      border: 2px solid #ff004c; }
+      .section_suscripcion .contenedor_suscripcion .form_index div .btn_env:hover {
+        font-weight: bold;
+        color: #000000;
+        background: #f9f9f9d7;
+        box-shadow: 0 0 5px #e537e887, 0 0 25px #ff0d82, 0 0 50px #ff0d82, 0 0 200px #e537e887;
+        width: 8em;
+        transition: all .5s; }
+
+.boton_comprar1 {
+  font-weight: bold;
+  width: 13em;
+  height: 3em;
+  padding-top: 7px;
+  color: #cbcbcbe4;
+  background: #00000032;
+  border-radius: 5px;
+  border: 2px solid #ff004c; }
+  .boton_comprar1:hover {
+    font-weight: bold;
+    color: #000000;
+    background: #f9f9f9d7;
+    box-shadow: 0 0 5px #e537e887, 0 0 25px #ff0d82, 0 0 50px #ff0d82, 0 0 200px #e537e887;
+    width: 8em;
+    height: 2em;
+    transition: all .5s; }

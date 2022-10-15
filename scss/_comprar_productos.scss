@@ -1,4 +1,63 @@
+
+
+
+
+main{
+
+    div{
+
+
+
+
+        .contenedor_info_compras{
+            
+            color: $color-fuente;
+            /*color: rgb(255, 13, 130);*/
+            border: $borde-s solid $color-rosa ;
+            border-radius: $borde-m;
+            box-shadow: 3px 3px 50px 3px rgba(235, 8, 193, 0.453);
+        
+            .borde_titulos{
+               
+                text-shadow: 5px 3px 1px rgb(147, 7, 72);
+               
+            }
+
+          p{
+             font-size: 10px;
+          }
+
+            div{
+
+
+                div{
+
+                    .elegi_opcion{
+                     font-size: 15px;
+                     color: $color-rosa-2;
+                     background-color: rgb(0, 0, 0);
+                     width: 200px;
+                     height: 40px;
+                     border: solid 2px $color-rosa;
+                     border-radius: $borde-m;
+
+                      
+                    }
+                
+                }
+
+
+
+            }
+
+        }
+            
+    }
+}
+
+
 .caja_cuadros {
+    
     height: 680px;
     width: 510px ;
     margin-bottom: 5em;
@@ -35,12 +94,7 @@
      
     }
 
-    .borde_titulos{
-        border: $borde-s solid $color-violeta-2;
-        background-color: #f168cf00;
-        border-radius: $borde-sm;
-    }
-
+   
 
 }
 
@@ -58,37 +112,19 @@
         color: $color-negro;
         background: #f9f9f9d7;
         box-shadow: 0 0 5px $color-violeta, 0 0 25px $color-rosa, 0 0 50px $color-rosa, 0 0 200px $color-violeta;
-        width: 20em;
-        height: 3.5em;
+        transition: .5s;
     }
 
   
 }
 
 
-.elegi_opcion{
-    color: rgb(134, 134, 134);
-    background-color: rgb(0, 0, 0);
-    width: 200px;
-    border: solid 2px $color-rosa;
-    border-radius: $borde-m;
 
 
-}
 
-.contenedor_info_compras{
-    
-    color: $color-rosa;
-    /*color: rgb(255, 13, 130);*/
-    border: $borde-s solid $color-rosa ;
-    border-radius: $borde-m;
-    box-shadow: 3px 3px 50px 3px rgba(235, 8, 193, 0.453);
-
-    
-    
-}
 
 .subtitulos_compras{
+    
     color: $color-rosa;
     border-left: 4px solid $color-rosa;
     padding-left: 15px;

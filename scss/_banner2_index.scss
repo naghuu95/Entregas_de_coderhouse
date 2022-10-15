@@ -1,23 +1,29 @@
 /*BANNER_2*/
   
 .banner_2{
-  
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    color: $color-rosa-2;
+   
+    background-color: rgba(3, 2, 25, 0.5);
+    height: 200px;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    color: $color-fuente;
+    text-shadow: 4px 5px 1px rgb(147, 7, 72);
 
 
        div{
+
+            
            .contenedor_iconos{
-            width: 9vw;
+            width: 8vw;
             height: 12vh;
-            border: 7px solid $color-borde ;
+            border: 5px solid $color-borde ;
             
                
            }
 
            p{
             font-size: 1vw;
+            text-shadow: none
            }
 
            
@@ -28,9 +34,9 @@
 
        div{
            .contenedor_iconos_tel{
-            width: 7vw;
+            width: 6vw;
             height: 12vh;
-            border: 7px solid $color-borde;
+            border: 5px solid $color-borde;
 
            }
 
@@ -44,9 +50,9 @@
 
        div{
            .contenedor_iconos_tarjeta{
-            width: 7vw;
+            width: 6vw;
             height: 12vh;
-            border: 7px solid $color-borde;
+            border: 5px solid $color-borde;
 
            }
 
@@ -60,8 +66,9 @@
 
 
   
-  
 
+    
+   
 
 
 

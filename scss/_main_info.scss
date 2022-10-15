@@ -7,12 +7,13 @@ main{
 
 
     h3{
-        font-size: $fuente-xl;
+        text-shadow: 5px 3px 1px rgb(147, 7, 72);
+        font-size: 40px;
         line-height: 2;
         word-spacing: $espacio-palabra-2;
         letter-spacing: $espacio-letra-4;
         font-weight: map-get($fuente-grosor, negrita );
-        text-shadow: 5px 0px 20px rgb(255, 0, 208);
+        /*text-shadow: 5px 0px 20px rgb(255, 0, 208);*/
         padding-top: 150px;
         padding-bottom: $padding-30;
 

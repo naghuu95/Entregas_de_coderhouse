@@ -4,7 +4,7 @@
     height: 730px;
     width: 350px ;
     margin-bottom: 5em;
-    box-shadow: 3px 3px 50px 3px rgba(235, 8, 193, 0.453);
+    box-shadow: 3px 3px 50px 3px  rgba(235, 8, 193, 0.453);
     background: $color-transparente;
     border-radius: $borde-m;
     border: $borde-s solid $color-borde ;
@@ -37,6 +37,8 @@
     }
 
     .borde_titulos{
+        
+        text-shadow: 5px 3px 1px rgb(147, 7, 72);
         border: $borde-s solid $color-violeta-2;
         background-color: #f168cf00;
         border-radius: $borde-sm;
@@ -58,11 +60,22 @@
         color: $color-negro;
         background: #f9f9f9d7;
         box-shadow: 0 0 5px $color-violeta, 0 0 25px $color-rosa, 0 0 50px $color-rosa, 0 0 200px $color-violeta;
-        width: 9em;
+        width: 8em;
         height: 2em;
+        transition: all .5s;
     }
 
   
+}
+
+.titulo{
+/*background-color: rgba(22, 7, 36, 0);*/
+    font-size: 40px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    margin-bottom: 20vh;
+    letter-spacing: 15px;
+    text-shadow: 7px 2px 2px rgb(147, 7, 72);
 }
 
 
