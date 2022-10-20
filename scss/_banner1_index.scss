@@ -7,8 +7,8 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    
    
+    
     /*border-bottom: 2px solid $color-borde;*/
     box-shadow: 15px 15px 100px 15px $color-header;
 
@@ -22,14 +22,16 @@
         div{
           div{
             
-            h1{
+            .titulo_banner{
               
-              color: $color-rosa;
-              font-weight: map-get($fuente-grosor, negrita );
+              letter-spacing: 3px;
+              color: rgb(255, 55, 128);
+              font-weight: map-get($fuente-grosor, negrita ) !important; 
             }
 
             p{
-              font-family:$fuente-principal-2;
+              
+              font-family:$fuente-principal-2 !important;
               font-size: $fuente-m;
              
             }
@@ -37,8 +39,10 @@
             /* BOTON VER CATALOGO*/
   
             .btn:hover {
+              font-size: 25px;
               background: $color-transparente;
               box-shadow: 0 0 5px $color-blanco, 0 0 25px $color-blanco, 0 0 50px $color-blanco, 0 0 200px $color-blanco;
+              transition: all 0.5s;
             }
 
           }

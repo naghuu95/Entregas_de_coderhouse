@@ -80,6 +80,33 @@ body {
   color: #cbcbcbe4;
   font-weight: lighter; }
 
+.pantalla_principal {
+  position: relative;
+  background: linear-gradient(rgba(255, 0, 111, 0.196), black), url(../asset/imagenes/seccion_inicio_fondos/pantalla-principal-1440-768.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: vh; }
+  .pantalla_principal p {
+    font-size: 40px;
+    font-weight: bold;
+    word-spacing: 4px;
+    letter-spacing: 4px;
+    padding-top: 300px;
+    padding-bottom: 30px;
+    color: rgba(255, 255, 255, 0.693);
+    text-shadow: 5px 6px 1px #930748; }
+  .pantalla_principal span {
+    font-size: 60px;
+    color: #ff0d82; }
+  .pantalla_principal .salto_pagina {
+    padding-bottom: 100px; }
+    .pantalla_principal .salto_pagina .salto_pagina_icono {
+      font-size: 70px;
+      /* text-shadow: 0px 20px 2px black;*/
+      color: rgba(255, 255, 255, 0.234); }
+
 /*HEADER*/
 /*Aca comence a darle estilos al header*/
 /* queria hacer un header */
@@ -155,15 +182,18 @@ header {
     height: 100%; }
     .banner .background-overlay1 div div {
       /* BOTON VER CATALOGO*/ }
-      .banner .background-overlay1 div div h1 {
-        color: #ff0d82;
-        font-weight: bold; }
+      .banner .background-overlay1 div div .titulo_banner {
+        letter-spacing: 3px;
+        color: #ff3780;
+        font-weight: bold !important; }
       .banner .background-overlay1 div div p {
-        font-family: monserrat;
+        font-family: poppins_2 !important;
         font-size: 1em; }
       .banner .background-overlay1 div div .btn:hover {
+        font-size: 25px;
         background: #00000032;
-        box-shadow: 0 0 5px #ffffff, 0 0 25px #ffffff, 0 0 50px #ffffff, 0 0 200px #ffffff; }
+        box-shadow: 0 0 5px #ffffff, 0 0 25px #ffffff, 0 0 50px #ffffff, 0 0 200px #ffffff;
+        transition: all 0.5s; }
     .banner .background-overlay1 .imagenes {
       width: 25vw;
       border-radius: 15px;
@@ -352,15 +382,62 @@ main .contenedor_productos {
   padding-top: 100px; }
 
 /* PAGINA INFORMACION*/
-main .caja_video {
-  position: fixed;
-  min-width: 100%;
-  min-height: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  z-index: -1;
-  filter: brightness(30%); }
+main .section_80 {
+  height: 1000px;
+  position: relative;
+  background: url(../asset/imagenes/404/et-enbici-fondo.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #00000032;
+  /*box-shadow: 20px 20px 50px rgba(98, 8, 140, 0.57);*/
+  border-radius: 2px;
+  /*border: 3px solid rgba(161, 48, 218, 0.362);*/
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px); }
+  main .section_80 .info_80 {
+    margin-top: 60px;
+    padding-top: 80px; }
+    main .section_80 .info_80 .texto_80_90 {
+      font-size: 18px;
+      line-height: 2;
+      letter-spacing: 1px;
+      word-spacing: 2px; }
+  main .section_80 .caja_video {
+    padding-top: 5px;
+    margin-left: 150px;
+    margin-top: 700px;
+    width: 70%;
+    border: 4px solid rgba(0, 0, 0, 0.623); }
+
+main .section_90 {
+  height: 1000px;
+  position: relative;
+  background: url(../asset/imagenes/Seccion_ifo/mipobreangelito-fondo.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #00000032;
+  /*box-shadow: 20px 20px 50px rgba(98, 8, 140, 0.57);*/
+  border-radius: 2px;
+  /*border: 3px solid rgba(161, 48, 218, 0.362);*/
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  margin-top: 100vh; }
+  main .section_90 .info_80 {
+    margin-top: 60px;
+    padding-top: 80px; }
+    main .section_90 .info_80 .texto_80_90 {
+      font-size: 18px;
+      line-height: 2;
+      letter-spacing: 1px;
+      word-spacing: 2px; }
+  main .section_90 .caja_video {
+    padding-top: 5px;
+    margin-left: 80px;
+    margin-top: 700px;
+    width: 70%;
+    border: 4px solid rgba(0, 0, 0, 0.623); }
 
 main h3 {
   text-shadow: 5px 3px 1px #930748;
@@ -524,7 +601,8 @@ footer {
         letter-spacing: 2px;
         padding-right: 30px; }
         footer div div nav ul li a:hover {
-          color: #ff0d82;
+          color: #ffffff;
+          text-shadow: 5px 5px 2px #ff0d82;
           font-weight: bold; }
   footer div .contenedor_mp {
     width: 100%; }
@@ -546,9 +624,9 @@ footer {
       font-size: 18px;
       animation: float 4s ease-in-out infinite; }
     footer div div .icons-wrapper a .ri-instagram-line {
-      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-      background-clip: text;
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497, 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent; }
     footer div div .icons-wrapper a .ri-facebook-circle-line {
       color: #2b5c9c;
@@ -567,12 +645,14 @@ main div .contenedor_info_compras {
     text-shadow: 5px 3px 1px #930748; }
   main div .contenedor_info_compras p {
     font-size: 10px; }
-  main div .contenedor_info_compras div div .elegi_opcion {
-    font-size: 15px;
+  main div .contenedor_info_compras div div .form-label {
+    font-size: 12px; }
+  main div .contenedor_info_compras div div .form-select {
+    font-size: 13px;
     color: #ef5abe;
     background-color: black;
-    width: 200px;
-    height: 40px;
+    width: 160px;
+    height: 70%;
     border: solid 2px #ff0d82;
     border-radius: 15px; }
 
@@ -587,8 +667,10 @@ main div .contenedor_info_compras {
   -webkit-backdrop-filter: blur(2px);
   transition: all 300ms; }
   .caja_cuadros .contenido_cuadros {
-    height: 640px;
-    width: 470px;
+    /*height: 640px;
+        width:  470px;*/
+    height: 94%;
+    width: 80vw;
     overflow: hidden; }
     .caja_cuadros .contenido_cuadros img {
       height: 100%;
@@ -600,7 +682,7 @@ main div .contenedor_info_compras {
 
 .boton_comprar_cuadros {
   font-weight: bold;
-  width: 17em;
+  width: 100%;
   height: 3em;
   color: #cbcbcbe4;
   background: #00000032;
