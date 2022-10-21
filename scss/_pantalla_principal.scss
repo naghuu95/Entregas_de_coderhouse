@@ -1,14 +1,12 @@
 .pantalla_principal{
+
     position: relative;
     background:linear-gradient(rgba(255, 0, 111, 0.196), rgb(0, 0, 0) ),  url(../asset/imagenes/seccion_inicio_fondos/pantalla-principal-1440-768.jpg) ;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    height: vh;
     
-
-
+    
     
     p{
         font-size: 40px;
@@ -39,4 +37,65 @@
             color: rgba(255, 255, 255, 0.234);
         }
     }
+
 }
+
+
+/* Móviles en horizontal o tablets en vertical
+   ------------------------------------------------------------------------- */
+   @media (max-width: 767px) { 
+
+
+}
+
+ 
+
+/* Móviles en vertical 
+------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+
+    .pantalla_principal{
+
+         height: 100%;
+         background: rgb(0, 0, 0);
+       
+        p{
+            font-size:  1.6em;
+            line-height: 4;
+            word-spacing:10px;
+            letter-spacing: 2px;
+            padding-top:200px ;
+           
+        }
+        
+        span{
+            
+            font-size:  1em;
+            
+        }
+    
+        .salto_pagina{
+            padding-top: 50px;
+           
+    
+            .salto_pagina_icono{
+                font-size: 50px;
+               
+            }
+    
+        }
+
+   
+
+
+    }
+}
+
+
+
+
+
+  
+
+
+

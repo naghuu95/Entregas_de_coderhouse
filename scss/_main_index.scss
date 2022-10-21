@@ -1,88 +1,135 @@
 /*CARDS*/
-  
-.caja_tarjetas {
-   /* width:24% ;
-    height:97vh ;*/
-    height: 730px;
-    width: 350px ;
-    margin-bottom: 5em;
-    box-shadow: 3px 3px 50px 3px  rgba(235, 8, 193, 0.453);
-    background: $color-transparente;
-    border-radius: $borde-m;
-    border: $borde-s solid $color-borde ;
-    backdrop-filter: blur(2px );
-    -webkit-backdrop-filter: blur(2px);
-    transition: all 300ms;
 
-    
-    .contenido_img {
-        height: 400px;
-        width:  290px;
-        border-radius: $borde-m ;
-        overflow: hidden;
+.container-fluid{
 
-            img{
-             height: $alto-maximo;
-             width: $ancho-maximo-2;
-             transition: all 200ms;
-/* aplique un poco de animacion al tocar con el cursor*/
-            &:hover{
+    .titulo{
+        /*background-color: rgba(22, 7, 36, 0);*/
+            
+        font-size: 3em;
+        line-height: 3;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        margin-bottom: 20vh;
+        letter-spacing: 15px;
+        text-shadow: 7px 2px 2px rgb(147, 7, 72);
+    }
 
-                transform: scale(1.6);
+    .row{
 
-            }
-
+        .caja_tarjetas {
+            /* width:24% ;
+             height:97vh ;*/
+            height: 730px;
+            width: 350px ;
+            margin-bottom: 5em;
+            box-shadow: 3px 3px 50px 3px  rgba(235, 8, 193, 0.453);
+            background: $color-transparente;
+            border-radius: $borde-m;
+            border: $borde-s solid $color-borde ;
+            backdrop-filter: blur(2px );
+            -webkit-backdrop-filter: blur(2px);
+            transition: all 300ms;
+         
+             
+                .contenido_img {
+                 height: 400px;
+                 width:  290px;
+                 border-radius: $borde-m ;
+                 overflow: hidden;
+         
+                    img{
+                      height: $alto-maximo;
+                      width: $ancho-maximo-2;
+                      transition: all 200ms;
+         /* aplique un poco de animacion al tocar con el cursor*/
+                        &:hover{
+         
+                          transform: scale(1.6);
+         
+                        }
+         
+                       
+                     
+                    }
               
+                }
+         
+                .borde_titulos{
+                 
+                 text-shadow: 5px 3px 1px rgb(147, 7, 72);
+                 border: $borde-s solid $color-borde;
+                 background-color: #f168cf00;
+                 border-radius: $borde-sm;
+                }
+
+
+            div{
+
+                form{
+                    
+                    .boton_comprar {
+                        font-weight:map-get($fuente-grosor, negrita );
+                        width: 7em;
+                        color: $color-fuente;
+                        background: $color-transparente;
+                        border-radius: $borde-sm;
+                        border: $borde-s solid  $color-violeta-2;
+                        
+                        &:hover {
+                            font-weight: bold;
+                            color: $color-negro;
+                            background: #f9f9f9d7;
+                            box-shadow: 0 0 5px $color-violeta, 0 0 25px $color-rosa, 0 0 50px $color-rosa, 0 0 200px $color-violeta;
+                            width: 8em;
+                            height: 2em;
+                            transition: all .5s;
+                        }
+                    
+                      
+                    }
+
+
+                }
+            }
+         
+         
+        }
+
+    }
+
+
+}
+  
+
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+
+
+    .container-fluid{
+
+        .titulo{
+            
+            font-size: 1.6em;
+            line-height: 3;
+            padding-top: 1vh;
+            padding-bottom: 1vh;
+            margin-bottom: 5vh;
+            letter-spacing: 10px;
             
         }
-     
-    }
-
-    .borde_titulos{
-        
-        text-shadow: 5px 3px 1px rgb(147, 7, 72);
-        border: $borde-s solid $color-borde;
-        background-color: #f168cf00;
-        border-radius: $borde-sm;
-    }
-
-
-}
-
-.boton_comprar {
-    font-weight:map-get($fuente-grosor, negrita );
-    width: 7em;
-    color: $color-fuente;
-    background: $color-transparente;
-    border-radius: $borde-sm;
-    border: $borde-s solid  $color-violeta-2;
     
-    &:hover {
-        font-weight: bold;
-        color: $color-negro;
-        background: #f9f9f9d7;
-        box-shadow: 0 0 5px $color-violeta, 0 0 25px $color-rosa, 0 0 50px $color-rosa, 0 0 200px $color-violeta;
-        width: 8em;
-        height: 2em;
-        transition: all .5s;
+    
     }
 
-  
+
 }
 
-.titulo{
-/*background-color: rgba(22, 7, 36, 0);*/
-    
-    font-size: 3vw;
-    line-height: 3;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    margin-bottom: 20vh;
-    letter-spacing: 15px;
-    text-shadow: 7px 2px 2px rgb(147, 7, 72);
-}
-
-
-@media  screen and (min-width: 360px) and (max-width: 768px) {
+/*@media  screen and (min-width: 360px) and (max-width: 768px) {
 	
-}
+}*/

@@ -8,7 +8,9 @@ MODIFICAR TODO */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  /*Agregue esta propiedad porque nose porque me hacia una barra lateral cuando estaba en modo mobile y funciono*/
+  max-width: 100% !important; }
 
 /*CREE VARIABLES PARA NO REPETIR CODIGO Y DISTINGIR CADA ALGUN COLOR,FUENTE,ETC */
 /*TIPOGRAFIA*/
@@ -29,7 +31,9 @@ MODIFICAR TODO */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  /*Agregue esta propiedad porque nose porque me hacia una barra lateral cuando estaba en modo mobile y funciono*/
+  max-width: 100% !important; }
 
 /* MIXINS */
 /*ORDENE LAS FUENTES ACA*/
@@ -53,24 +57,15 @@ MODIFICAR TODO */
 /* APLICANDO ALGUNOS ESTILOS AL BODY DE TODAS LAS PAGINAS
 UTILICE VARIABLES PARA DAR ESPACIADOS,COLOR Y FUENTE*/
 body {
-  /*background-color: $color-fondo;*/
-  /*background-image: linear-gradient( 0deg,
-    rgba(0, 0, 0, 0.547),
-    rgba(0,0,0,0.5) )
-     ,url(../asset/imagenes/Backgrounds/fondo10.png);*/
   background-color: #01010a;
-  /* background-color: rgb(1, 1, 10);*/
-  /* background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;*/
   font-family: monserrat;
   letter-spacing: 2px;
   word-spacing: 5px;
   font-size: 1em;
   color: #cbcbcbe4;
   font-weight: 100;
-  max-width: 100% !important;
-  overflow-x: hidden !important; }
+  /* max-width: 100% !important;
+    overflow-x: hidden !important;*/ }
 
 .body_contacto {
   background-color: #01010a;
@@ -85,9 +80,7 @@ body {
   background: linear-gradient(rgba(255, 0, 111, 0.196), black), url(../asset/imagenes/seccion_inicio_fondos/pantalla-principal-1440-768.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: vh; }
+  background-size: cover; }
   .pantalla_principal p {
     font-size: 40px;
     font-weight: bold;
@@ -106,6 +99,27 @@ body {
       font-size: 70px;
       /* text-shadow: 0px 20px 2px black;*/
       color: rgba(255, 255, 255, 0.234); }
+
+/* Móviles en horizontal o tablets en vertical
+   ------------------------------------------------------------------------- */
+/* Móviles en vertical 
+------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+  .pantalla_principal {
+    height: 100%;
+    background: black; }
+    .pantalla_principal p {
+      font-size: 1.6em;
+      line-height: 4;
+      word-spacing: 10px;
+      letter-spacing: 2px;
+      padding-top: 200px; }
+    .pantalla_principal span {
+      font-size: 1em; }
+    .pantalla_principal .salto_pagina {
+      padding-top: 50px; }
+      .pantalla_principal .salto_pagina .salto_pagina_icono {
+        font-size: 50px; } }
 
 /*HEADER*/
 /*Aca comence a darle estilos al header*/
@@ -235,9 +249,19 @@ header {
   font-size: 1vw; }
 
 /*CARDS*/
-.caja_tarjetas {
+.container-fluid .titulo {
+  /*background-color: rgba(22, 7, 36, 0);*/
+  font-size: 3em;
+  line-height: 3;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  margin-bottom: 20vh;
+  letter-spacing: 15px;
+  text-shadow: 7px 2px 2px #930748; }
+
+.container-fluid .row .caja_tarjetas {
   /* width:24% ;
-    height:97vh ;*/
+             height:97vh ;*/
   height: 730px;
   width: 350px;
   margin-bottom: 5em;
@@ -248,50 +272,51 @@ header {
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   transition: all 300ms; }
-  .caja_tarjetas .contenido_img {
+  .container-fluid .row .caja_tarjetas .contenido_img {
     height: 400px;
     width: 290px;
     border-radius: 15px;
     overflow: hidden; }
-    .caja_tarjetas .contenido_img img {
+    .container-fluid .row .caja_tarjetas .contenido_img img {
       height: 100%;
       width: 110%;
       transition: all 200ms;
       /* aplique un poco de animacion al tocar con el cursor*/ }
-      .caja_tarjetas .contenido_img img:hover {
+      .container-fluid .row .caja_tarjetas .contenido_img img:hover {
         transform: scale(1.6); }
-  .caja_tarjetas .borde_titulos {
+  .container-fluid .row .caja_tarjetas .borde_titulos {
     text-shadow: 5px 3px 1px #930748;
     border: 2px solid #ff0d82;
     background-color: #f168cf00;
     border-radius: 5px; }
-
-.boton_comprar {
-  font-weight: bold;
-  width: 7em;
-  color: #cbcbcbe4;
-  background: #00000032;
-  border-radius: 5px;
-  border: 2px solid #ff004c; }
-  .boton_comprar:hover {
+  .container-fluid .row .caja_tarjetas div form .boton_comprar {
     font-weight: bold;
-    color: #000000;
-    background: #f9f9f9d7;
-    box-shadow: 0 0 5px #e537e887, 0 0 25px #ff0d82, 0 0 50px #ff0d82, 0 0 200px #e537e887;
-    width: 8em;
-    height: 2em;
-    transition: all .5s; }
+    width: 7em;
+    color: #cbcbcbe4;
+    background: #00000032;
+    border-radius: 5px;
+    border: 2px solid #ff004c; }
+    .container-fluid .row .caja_tarjetas div form .boton_comprar:hover {
+      font-weight: bold;
+      color: #000000;
+      background: #f9f9f9d7;
+      box-shadow: 0 0 5px #e537e887, 0 0 25px #ff0d82, 0 0 50px #ff0d82, 0 0 200px #e537e887;
+      width: 8em;
+      height: 2em;
+      transition: all .5s; }
 
-.titulo {
-  /*background-color: rgba(22, 7, 36, 0);*/
-  font-size: 3vw;
-  line-height: 3;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
-  margin-bottom: 20vh;
-  letter-spacing: 15px;
-  text-shadow: 7px 2px 2px #930748; }
+@media (max-width: 480px) {
+  .container-fluid .titulo {
+    font-size: 1.6em;
+    line-height: 3;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin-bottom: 5vh;
+    letter-spacing: 10px; } }
 
+/*@media  screen and (min-width: 360px) and (max-width: 768px) {
+	
+}*/
 /*SECTION 80 Y 90 */
 .section_80_90 {
   margin-top: 2%;
@@ -737,11 +762,11 @@ main div .contenedor_info_compras {
   padding-bottom: 15%; }
   .section_suscripcion .contenedor_suscripcion {
     font-size: 1em; }
-    .section_suscripcion .contenedor_suscripcion .resaltado {
-      text-shadow: 5px 3px 1px #930748; }
-    .section_suscripcion .contenedor_suscripcion .form_index {
+    .section_suscripcion .contenedor_suscripcion div .resaltado {
+      text-shadow: 2px 2px 2px #c4016f; }
+    .section_suscripcion .contenedor_suscripcion div .form_index {
       width: 100%; }
-      .section_suscripcion .contenedor_suscripcion .form_index input, .section_suscripcion .contenedor_suscripcion .form_index section div .caja_contacto .form textarea, section div .caja_contacto .form .section_suscripcion .contenedor_suscripcion .form_index textarea, .section_suscripcion .contenedor_suscripcion .form_index section div .caja_contacto .form .boton_contacto, section div .caja_contacto .form .section_suscripcion .contenedor_suscripcion .form_index .boton_contacto {
+      .section_suscripcion .contenedor_suscripcion div .form_index input, .section_suscripcion .contenedor_suscripcion section div .form_index .caja_contacto .form textarea, section .section_suscripcion .contenedor_suscripcion div .form_index .caja_contacto .form textarea, .section_suscripcion .contenedor_suscripcion section div .caja_contacto .form .form_index textarea, section .section_suscripcion .contenedor_suscripcion div .caja_contacto .form .form_index textarea, .section_suscripcion .contenedor_suscripcion section div .form_index .caja_contacto .form .boton_contacto, section .section_suscripcion .contenedor_suscripcion div .form_index .caja_contacto .form .boton_contacto, .section_suscripcion .contenedor_suscripcion section div .caja_contacto .form .form_index .boton_contacto, section .section_suscripcion .contenedor_suscripcion div .caja_contacto .form .form_index .boton_contacto {
         width: 600px;
         padding: .7em;
         border: none;
@@ -749,15 +774,14 @@ main div .contenedor_info_compras {
         outline: none;
         color: #cbcbcbe4;
         border: 2px solid rgba(70, 37, 69, 0.675); }
-      .section_suscripcion .contenedor_suscripcion .form_index div .btn_env {
-        background-color: aqua;
+      .section_suscripcion .contenedor_suscripcion div .form_index div .btn_env {
         font-weight: bold;
         width: 8em;
         color: #cbcbcbe4;
         background: #00000032;
         border-radius: 5px;
         border: 2px solid #ff004c; }
-        .section_suscripcion .contenedor_suscripcion .form_index div .btn_env:hover {
+        .section_suscripcion .contenedor_suscripcion div .form_index div .btn_env:hover {
           font-weight: bold;
           color: #000000;
           background: #f9f9f9d7;
@@ -782,3 +806,19 @@ main div .contenedor_info_compras {
     width: 8em;
     height: 2em;
     transition: all .5s; }
+
+@media (max-width: 480px) {
+  .section_suscripcion {
+    padding-bottom: 20%; }
+    .section_suscripcion .contenedor_suscripcion {
+      font-size: 1.2em; }
+      .section_suscripcion .contenedor_suscripcion div p {
+        line-height: 2; }
+      .section_suscripcion .contenedor_suscripcion div .form_index {
+        width: 100%; }
+        .section_suscripcion .contenedor_suscripcion div .form_index input, .section_suscripcion .contenedor_suscripcion section div .form_index .caja_contacto .form textarea, section .section_suscripcion .contenedor_suscripcion div .form_index .caja_contacto .form textarea, .section_suscripcion .contenedor_suscripcion section div .caja_contacto .form .form_index textarea, section .section_suscripcion .contenedor_suscripcion div .caja_contacto .form .form_index textarea, .section_suscripcion .contenedor_suscripcion section div .form_index .caja_contacto .form .boton_contacto, section .section_suscripcion .contenedor_suscripcion div .form_index .caja_contacto .form .boton_contacto, .section_suscripcion .contenedor_suscripcion section div .caja_contacto .form .form_index .boton_contacto, section .section_suscripcion .contenedor_suscripcion div .caja_contacto .form .form_index .boton_contacto {
+          width: 300px;
+          padding: .7em; }
+        .section_suscripcion .contenedor_suscripcion div .form_index div .btn_env {
+          margin-top: 40px;
+          font-size: 0.7em; } }

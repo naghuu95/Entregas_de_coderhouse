@@ -2,5 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   
+    /*Agregue esta propiedad porque nose porque me hacia una barra lateral cuando estaba en modo mobile y funciono*/
+    max-width: 100% !important;
+    
  }
