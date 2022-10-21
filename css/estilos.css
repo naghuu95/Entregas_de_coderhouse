@@ -94,6 +94,7 @@ body {
     font-size: 60px;
     color: #ff0d82; }
   .pantalla_principal .salto_pagina {
+    padding-top: 50px;
     padding-bottom: 100px; }
     .pantalla_principal .salto_pagina .salto_pagina_icono {
       font-size: 70px;
@@ -110,14 +111,13 @@ body {
     background: black; }
     .pantalla_principal p {
       font-size: 1.5em;
-      line-height: 4;
+      line-height: 3;
       word-spacing: 10px;
       letter-spacing: 2px;
       padding-top: 50px; }
     .pantalla_principal span {
       font-size: 1em; }
     .pantalla_principal .salto_pagina {
-      padding-top: 50px;
       padding-bottom: 5em; }
       .pantalla_principal .salto_pagina .salto_pagina_icono {
         font-size: 50px; } }
