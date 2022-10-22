@@ -13,9 +13,7 @@
         $color-n-gradiente-2)
          ,url(../asset/imagenes/seccion_footer/fondofooter11-min.jpg)*/;
          font-size: 15px;
-         background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
+       
         background-color: rgba(3, 2, 25, 0.5);
        
         div{
@@ -126,4 +124,16 @@
   
             }
         }
+    }
+
+
+
+
+
+
+    
+    @media (max-width: 480px) {
+
+
+
     }

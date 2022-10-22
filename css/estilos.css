@@ -409,7 +409,53 @@ header {
       height: 30vw;
       width: 30vw; }
 
-main .contenedor_productos {
+.container .row .caja_tarjetas {
+  /* width:24% ;
+             height:97vh ;*/
+  height: 730px;
+  width: 350px;
+  margin-bottom: 5em;
+  box-shadow: 3px 3px 50px 3px rgba(235, 8, 193, 0.453);
+  background: #00000032;
+  border-radius: 15px;
+  border: 2px solid #ff0d82;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  transition: all 300ms; }
+  .container .row .caja_tarjetas .contenido_img {
+    height: 400px;
+    width: 290px;
+    border-radius: 15px;
+    overflow: hidden; }
+    .container .row .caja_tarjetas .contenido_img img {
+      height: 100%;
+      width: 110%;
+      transition: all 200ms;
+      /* aplique un poco de animacion al tocar con el cursor*/ }
+      .container .row .caja_tarjetas .contenido_img img:hover {
+        transform: scale(1.6); }
+  .container .row .caja_tarjetas .borde_titulos {
+    text-shadow: 5px 3px 1px #930748;
+    border: 2px solid #ff0d82;
+    background-color: #f168cf00;
+    border-radius: 5px; }
+  .container .row .caja_tarjetas div form .boton_comprar {
+    font-weight: bold;
+    width: 7em;
+    color: #cbcbcbe4;
+    background: #00000032;
+    border-radius: 5px;
+    border: 2px solid #ff004c; }
+    .container .row .caja_tarjetas div form .boton_comprar:hover {
+      font-weight: bold;
+      color: #000000;
+      background: #f9f9f9d7;
+      box-shadow: 0 0 5px #e537e887, 0 0 25px #ff0d82, 0 0 50px #ff0d82, 0 0 200px #e537e887;
+      width: 8em;
+      height: 2em;
+      transition: all .5s; }
+
+.container .contenedor_productos {
   padding-top: 100px; }
 
 /* PAGINA INFORMACION*/
@@ -614,9 +660,6 @@ footer {
         $color-n-gradiente-2)
          ,url(../asset/imagenes/seccion_footer/fondofooter11-min.jpg)*/
   font-size: 15px;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
   background-color: rgba(3, 2, 25, 0.5);
   /*Estilos y ANIMACIONES REDES SOCIALES*/ }
   footer div div {
