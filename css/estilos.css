@@ -470,7 +470,6 @@ main .section_80 {
     padding-top: 10vh;
     padding-bottom: 10vh; }
     main .section_80 .info_80 .texto_80_90 {
-      font-size: 18px;
       line-height: 2;
       letter-spacing: 1px;
       word-spacing: 2px; }
@@ -514,7 +513,6 @@ main .section_90 {
     padding-top: 10vh;
     padding-bottom: 10vh; }
     main .section_90 .info_80 .texto_80_90 {
-      font-size: 18px;
       line-height: 2;
       letter-spacing: 1px;
       word-spacing: 2px; }
@@ -555,9 +553,9 @@ main div .contenedor_img {
       padding-top: 5vh;
       padding-bottom: 5vh; }
       main .section_80 .info_80 img {
+        margin-top: 3vh;
+        margin-bottom: 5vh;
         width: 40vw; }
-      main .section_80 .info_80 .texto_80_90 {
-        font-size: 12px; }
   main .container {
     padding-top: 5vh;
     padding-bottom: 5vh; }
@@ -587,9 +585,9 @@ main div .contenedor_img {
       padding-top: 5vh;
       padding-bottom: 5vh; }
       main .section_90 .info_80 img {
+        margin-top: 3vh;
+        margin-bottom: 5vh;
         width: 40vw; }
-      main .section_90 .info_80 .texto_80_90 {
-        font-size: 12px; }
   main h3 {
     text-shadow: 5px 3px 1px #930748;
     font-size: 40px;
@@ -612,7 +610,8 @@ main div .contenedor_img {
     background-image: linear-gradient(to right top, #33071c, #2d081a, #270818, #220715, #1d0512, #1a040f, #16020c, #110108, #0e0106, #0a0003, #050002, #000000); } }
 
 main .contenedor_envios {
-  margin-top: 80px; }
+  margin-top: 8vh;
+  margin-bottom: 8vh; }
   main .contenedor_envios div {
     background-color: aqua; }
   main .contenedor_envios div {
