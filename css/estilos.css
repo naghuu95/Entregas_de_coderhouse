@@ -459,92 +459,55 @@ header {
   padding-top: 100px; }
 
 /* PAGINA INFORMACION*/
-main .section_80 {
-  position: relative;
-  background: url(../asset/imagenes/404/et-enbici-fondo.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #00000032; }
-  main .section_80 .info_80 {
-    padding-top: 10vh;
-    padding-bottom: 10vh; }
-    main .section_80 .info_80 .texto_80_90 {
-      line-height: 2;
-      letter-spacing: 1px;
-      word-spacing: 2px; }
-  main .section_80 .caja_video {
-    padding-top: 5px;
-    margin-left: 150px;
-    margin-top: 700px;
-    width: 70%;
-    border: 4px solid rgba(0, 0, 0, 0.623); }
-
-main .container {
-  padding-top: 200px;
-  padding-bottom: 200px; }
-  main .container h4 {
-    font-family: poppins_2;
-    padding-bottom: 20px; }
-  main .container .caja_logos_peliculas {
-    padding-top: 130px; }
-    main .container .caja_logos_peliculas .contenedor_img_info {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #a1a0a100;
-      width: 250px;
-      height: 200px; }
-      main .container .caja_logos_peliculas .contenedor_img_info img {
-        width: 100%;
-        height: 100%s;
-        transition: all 700ms; }
-        main .container .caja_logos_peliculas .contenedor_img_info img:hover {
-          transform: scale(1.6); }
-
-main .section_90 {
-  position: relative;
-  background: url(../asset/imagenes/Seccion_ifo/mipobreangelito-fondo.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #00000032; }
-  main .section_90 .info_80 {
-    padding-top: 10vh;
-    padding-bottom: 10vh; }
-    main .section_90 .info_80 .texto_80_90 {
-      line-height: 2;
-      letter-spacing: 1px;
-      word-spacing: 2px; }
-  main .section_90 .caja_video {
-    padding-top: 5px;
-    margin-left: 80px;
-    margin-top: 700px;
-    width: 70%;
-    border: 4px solid rgba(0, 0, 0, 0.623); }
-
-main h3 {
-  text-shadow: 5px 3px 1px #930748;
-  font-size: 40px;
-  line-height: 2;
-  word-spacing: 10px;
-  letter-spacing: 10px;
-  font-weight: bold;
-  /*text-shadow: 5px 0px 20px rgb(255, 0, 208);*/
-  padding-top: 150px;
-  padding-bottom: 30px; }
-
-main .caja_informacion {
-  padding-top: 5px;
-  height: 35rem;
-  margin-top: 5px; }
-  main .caja_informacion .caja_texto .texto_info {
-    line-height: 2;
-    word-spacing: 2px;
-    font-weight: 100; }
-
-main div .contenedor_img {
-  background-image: linear-gradient(to right top, #33071c, #2d081a, #270818, #220715, #1d0512, #1a040f, #16020c, #110108, #0e0106, #0a0003, #050002, #000000); }
+main {
+  /*Cree esta clase con la finalidad de utilizarla para las peliculas de los 80 y 90  */ }
+  main .section_80 {
+    position: relative;
+    background: url(../asset/imagenes/404/et-enbici-fondo.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #00000032; }
+    main .section_80 .info_80 {
+      padding-top: 10vh;
+      padding-bottom: 10vh; }
+      main .section_80 .info_80 .texto_80_90 {
+        line-height: 2;
+        letter-spacing: 1px;
+        word-spacing: 2px; }
+  main .container-fluid {
+    padding-top: 200px;
+    padding-bottom: 200px; }
+    main .container-fluid h4 {
+      font-family: poppins_2;
+      padding-bottom: 20px; }
+    main .container-fluid .caja_logos_peliculas {
+      padding-top: 130px; }
+      main .container-fluid .caja_logos_peliculas .contenedor_img_info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #a1a0a100;
+        width: 250px;
+        height: 200px; }
+        main .container-fluid .caja_logos_peliculas .contenedor_img_info img {
+          transition: all 700ms; }
+          main .container-fluid .caja_logos_peliculas .contenedor_img_info img:hover {
+            transform: scale(1.6); }
+  main .section_90 {
+    position: relative;
+    background: url(../asset/imagenes/Seccion_ifo/mipobreangelito-fondo.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #00000032; }
+    main .section_90 .info_80 {
+      padding-top: 10vh;
+      padding-bottom: 10vh; }
+      main .section_90 .info_80 .texto_80_90 {
+        line-height: 2;
+        letter-spacing: 1px;
+        word-spacing: 2px; }
 
 @media (max-width: 480px) {
   main .section_80 {
@@ -556,27 +519,27 @@ main div .contenedor_img {
         margin-top: 3vh;
         margin-bottom: 5vh;
         width: 40vw; }
-  main .container {
+  main .container-fluid {
     padding-top: 5vh;
     padding-bottom: 5vh; }
-    main .container h4 {
+    main .container-fluid h4 {
       font-size: 14px;
       font-family: poppins_2;
       padding-bottom: 0px;
       line-height: 3; }
-    main .container .caja_logos_peliculas {
+    main .container-fluid .caja_logos_peliculas {
       padding-top: 1vh; }
-      main .container .caja_logos_peliculas .contenedor_img_info {
-        margin-top: 5vw;
-        margin-bottom: 5vw;
+      main .container-fluid .caja_logos_peliculas .contenedor_img_info {
+        margin-top: 10vw;
+        margin-bottom: 10vw;
         background-color: #a1a0a100;
         width: 90vw;
-        height: 40vw; }
-        main .container .caja_logos_peliculas .contenedor_img_info img {
+        height: 20vw; }
+        main .container-fluid .caja_logos_peliculas .contenedor_img_info img {
           width: 100%;
           height: 100%;
           transition: all 700ms; }
-          main .container .caja_logos_peliculas .contenedor_img_info img:hover {
+          main .container-fluid .caja_logos_peliculas .contenedor_img_info img:hover {
             transform: scale(1.6); }
   main .section_90 {
     background: none;
@@ -587,49 +550,29 @@ main div .contenedor_img {
       main .section_90 .info_80 img {
         margin-top: 3vh;
         margin-bottom: 5vh;
-        width: 40vw; }
-  main h3 {
-    text-shadow: 5px 3px 1px #930748;
-    font-size: 40px;
-    line-height: 2;
-    word-spacing: 10px;
-    letter-spacing: 10px;
-    font-weight: bold;
-    /*text-shadow: 5px 0px 20px rgb(255, 0, 208);*/
-    padding-top: 150px;
-    padding-bottom: 30px; }
-  main .caja_informacion {
-    padding-top: 5px;
-    height: 35rem;
-    margin-top: 5px; }
-    main .caja_informacion .caja_texto .texto_info {
-      line-height: 2;
-      word-spacing: 2px;
-      font-weight: 100; }
-  main div .contenedor_img {
-    background-image: linear-gradient(to right top, #33071c, #2d081a, #270818, #220715, #1d0512, #1a040f, #16020c, #110108, #0e0106, #0a0003, #050002, #000000); } }
+        width: 40vw; } }
 
 main .contenedor_envios {
   margin-top: 8vh;
   margin-bottom: 8vh; }
-  main .contenedor_envios div {
-    background-color: aqua; }
-  main .contenedor_envios div {
-    background-color: rgba(0, 0, 0, 0); }
-    main .contenedor_envios div h4 {
-      letter-spacing: 10px;
-      font-weight: bold;
-      color: #ff0d82; }
-    main .contenedor_envios div p {
-      letter-spacing: 1px;
-      line-height: 2;
-      color: #cbcbcbe4; }
+  main .contenedor_envios div h4 {
+    letter-spacing: 10px;
+    font-weight: bold;
+    color: #ff0d82; }
+  main .contenedor_envios div p {
+    letter-spacing: 1px;
+    line-height: 2; }
+
+@media (max-width: 480px) {
+  main .contenedor_envios {
+    margin-top: 4vh;
+    margin-bottom: 4vh; } }
 
 /* PAGINA CONTACTO*/
 /* Contenedor del formulario de contacto*/
 section div .caja_contacto {
   padding-top: 20px;
-  height: 600px;
+  padding-bottom: 2vh;
   box-shadow: 3px 3px 50px 3px rgba(235, 8, 193, 0.453);
   background: #00000032;
   border-radius: 15px;
@@ -699,6 +642,22 @@ section div .caja_contacto {
   */
 @media (min-width: 481px) and (max-width: 767px) {
   /* CSS */ }
+
+@media (max-width: 480px) {
+  section div .caja_contacto {
+    padding-bottom: 2vh;
+    margin-bottom: 4vh; }
+    section div .caja_contacto .form {
+      /*Utilice @extend para llevarme los estilos del input a los otros componentes del formulario*/ }
+      section div .caja_contacto .form input, section div .caja_contacto .form textarea, section div .caja_contacto .form .boton_contacto {
+        padding: .4em; }
+      section div .caja_contacto .form .boton_contacto {
+        margin-bottom: 0.7em;
+        width: 100%; }
+    section div .caja_contacto div {
+      /*Mapa de google*/ }
+      section div .caja_contacto div .mapa {
+        margin-bottom: 0.7em; } }
 
 .titulo_paginas {
   background-color: #100309ad;

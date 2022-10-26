@@ -8,7 +8,7 @@
     div{
         .caja_contacto {
             padding-top: $paddin-20;
-            height: 600px;
+            padding-bottom: 2vh;
             box-shadow: 3px 3px 50px 3px rgba(235, 8, 193, 0.453);
             background: $color-transparente;
             border-radius: 15px;
@@ -19,7 +19,7 @@
 
             .form {
                 
-                input {
+                input{
                 
                     width:$ancho-maximo;
                     padding: .7em;
@@ -53,6 +53,8 @@
                         box-shadow: 0 0 5px $color-rosa, 0 0 25px $color-rosa, 0 0 50px $color-rosa, 0 0 200px $color-violeta;
                         
                     }
+                    
+
                   
                 }
 
@@ -147,6 +149,57 @@
     
     /* CSS */
     
+  }
+
+  @media (max-width: 480px) {
+
+    section{
+        div{
+            .caja_contacto {
+               
+                padding-bottom: 2vh;
+                margin-bottom: 4vh;
+    
+                .form {
+                    
+                    input {
+                        
+                        padding: .4em;
+                       
+                    }
+    
+                  /*Utilice @extend para llevarme los estilos del input a los otros componentes del formulario*/
+    
+    
+    
+                    .boton_contacto {
+    
+                        margin-bottom: 0.7em;
+                        width: 100%;
+                        
+                      
+                    }
+    
+                }
+    
+               
+    
+                div{
+    
+                    /*Mapa de google*/
+                    .mapa{
+                        margin-bottom: 0.7em;
+                       
+                        
+                    }
+                }
+              
+            }
+        }
+    }
+    
+
+
   }
   
   

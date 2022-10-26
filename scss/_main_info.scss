@@ -20,7 +20,6 @@ main{
             padding-bottom: 10vh;
             
 
-
             img{
                 
 
@@ -36,18 +35,12 @@ main{
 
         }
 
-        .caja_video{
-            padding-top: 5px;
-            margin-left: 150px;
-            margin-top: 700px;
-            width:70%;
-            border: 4px solid rgba(0, 0, 0, 0.623);
-        }
-    
+       
 
     }
 
-    .container{
+    /*Cree esta clase con la finalidad de utilizarla para las peliculas de los 80 y 90  */
+    .container-fluid{
         
         padding-top: 200px;
         padding-bottom: 200px;
@@ -60,21 +53,19 @@ main{
 
         .caja_logos_peliculas{
             
-             padding-top: 130px;
+            padding-top: 130px;
 
             .contenedor_img_info{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-            
                 background-color: #a1a0a100;
                 width:250px ;
                 height: 200px;
             
             
                 img{
-                    width:100% ;
-                    height: 100%s;
+                   
                     transition: all 700ms;
 
                     &:hover {
@@ -114,64 +105,15 @@ main{
 
         }
 
-        .caja_video{
-            padding-top: 5px;
-            margin-left: 80px;
-            margin-top: 700px;
-            width:70%;
-            border: 4px solid rgba(0, 0, 0, 0.623);
-        }
+       
+    
+
+    }
+
     
 
 
-
-    }
-
-    h3{
-        text-shadow: 5px 3px 1px rgb(147, 7, 72);
-        font-size: 40px;
-        line-height: 2;
-        word-spacing: $espacio-palabra-2;
-        letter-spacing: $espacio-letra-4;
-        font-weight: map-get($fuente-grosor, negrita );
-        /*text-shadow: 5px 0px 20px rgb(255, 0, 208);*/
-        padding-top: 150px;
-        padding-bottom: $padding-30;
-
-        
-    }
-
-    .caja_informacion{
-
-        padding-top: 5px;
-        height: 35rem;
-        margin-top: 5px;
-
-        .caja_texto{
-           
-          
-            .texto_info{
-               
-                line-height: 2;
-                word-spacing: $espacio-letra-2;
-                font-weight:map-get($fuente-grosor, fina );
-                
-
-            }
-
-        }
-    }
-
-    div{
-        .contenedor_img{
-            
-            background-image: linear-gradient(to right top, #33071c, #2d081a, #270818, #220715, #1d0512, #1a040f, #16020c, #110108, #0e0106, #0a0003, #050002, #000000);
-              
-            
-            
-        }
-    }
-
+  
 }
 
 
@@ -197,6 +139,7 @@ main{
 
                 
             }
+
             .texto_80_90{
             
                 
@@ -207,7 +150,7 @@ main{
       
     }
 
-    .container{ 
+    .container-fluid{ 
        
         padding-top: 5vh;
         padding-bottom: 5vh;
@@ -226,16 +169,17 @@ main{
              padding-top: 1vh;
 
             .contenedor_img_info{
-                margin-top: 5vw;
-                margin-bottom: 5vw;
+                margin-top: 10vw;
+                margin-bottom: 10vw;
                 background-color: #a1a0a100;
                 width: 90vw ;
-                height: 40vw;
+                height: 20vw;
+                
             
             
                 img{
                     width:100% ;
-                    height: 100%;
+                    height:100%;
                     transition: all 700ms;
 
                     &:hover {
@@ -276,50 +220,11 @@ main{
 
     }
 
-    h3{
-        text-shadow: 5px 3px 1px rgb(147, 7, 72);
-        font-size: 40px;
-        line-height: 2;
-        word-spacing: $espacio-palabra-2;
-        letter-spacing: $espacio-letra-4;
-        font-weight: map-get($fuente-grosor, negrita );
-        /*text-shadow: 5px 0px 20px rgb(255, 0, 208);*/
-        padding-top: 150px;
-        padding-bottom: $padding-30;
+   
 
-        
-    }
+  
 
-    .caja_informacion{
-
-        padding-top: 5px;
-        height: 35rem;
-        margin-top: 5px;
-
-        .caja_texto{
-           
-          
-            .texto_info{
-               
-                line-height: 2;
-                word-spacing: $espacio-letra-2;
-                font-weight:map-get($fuente-grosor, fina );
-                
-
-            }
-
-        }
-    }
-
-    div{
-        .contenedor_img{
-            
-            background-image: linear-gradient(to right top, #33071c, #2d081a, #270818, #220715, #1d0512, #1a040f, #16020c, #110108, #0e0106, #0a0003, #050002, #000000);
-              
-            
-            
-        }
-    }
+   
 
 }
 

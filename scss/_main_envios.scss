@@ -8,14 +8,14 @@ main{
         margin-bottom: 8vh;
 
         div{
-            background-color: aqua;
+           
             img{
 
             }
         }
 
         div{
-            background-color: rgba(0, 0, 0, 0);
+           
             
             h4{
               letter-spacing: $espacio-letra-4;
@@ -26,7 +26,7 @@ main{
             p{
                 letter-spacing: 1px;
                line-height: 2;
-               color: $color-fuente;
+               
             }
             
         }
@@ -36,4 +36,25 @@ main{
       
       
 }
+
+
+@media (max-width: 480px) {
+
+    main{
+
+
+        .contenedor_envios{
+            margin-top: 4vh;
+            margin-bottom: 4vh;
+    
+           
+           
+        }
+    
+          
+          
+    }
+    
+}
+
 
