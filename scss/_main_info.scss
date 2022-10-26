@@ -5,22 +5,19 @@
 main{
    
     .section_80{
-        height: 1000px;
+      
         position: relative;
         background:  url(../asset/imagenes/404/et-enbici-fondo.jpg) ;
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
         background-color: $color-transparente;
-        /*box-shadow: 20px 20px 50px rgba(98, 8, 140, 0.57);*/
-        border-radius: $borde-s;
-        /*border: 3px solid rgba(161, 48, 218, 0.362);*/
-        backdrop-filter: blur(2px );
-        -webkit-backdrop-filter: blur(2px);
+        
 
         .info_80{
-            margin-top: 60px;
-            padding-top: 80px;
+           
+            padding-top: 10vh;
+            padding-bottom: 10vh;
             
 
 
@@ -50,25 +47,63 @@ main{
 
     }
 
+    .container{
+        
+        padding-top: 200px;
+        padding-bottom: 200px;
+
+        h4{
+            font-family: $fuente-principal-2;
+            padding-bottom: 20px;
+
+        }
+
+        .caja_logos_peliculas{
+            
+             padding-top: 130px;
+
+            .contenedor_img_info{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            
+                background-color: #a1a0a100;
+                width:250px ;
+                height: 200px;
+            
+            
+                img{
+                    width:100% ;
+                    height: 100%s;
+                    transition: all 700ms;
+
+                    &:hover {
+
+                        transform: scale(1.6);
+                      
+                    }
+                }
+            }
+
+        }
+
+        
+    }
+
     .section_90{
 
-        height: 1000px;
+        
         position: relative;
         background:  url(../asset/imagenes/Seccion_ifo/mipobreangelito-fondo.jpg) ;
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
         background-color: $color-transparente;
-        /*box-shadow: 20px 20px 50px rgba(98, 8, 140, 0.57);*/
-        border-radius: $borde-s;
-        /*border: 3px solid rgba(161, 48, 218, 0.362);*/
-        backdrop-filter: blur(2px );
-        -webkit-backdrop-filter: blur(2px);
-        margin-top: 100vh;
+       
 
         .info_80{
-            margin-top: 60px;
-            padding-top: 80px;
+            padding-top: 10vh;
+            padding-bottom: 10vh;
 
             .texto_80_90{
             
@@ -141,4 +176,155 @@ main{
 }
 
 
+@media (max-width: 480px) {
+
+  
+main{
+   
+    .section_80{
+        
+        background-color: $color-negro;
+       
+        .info_80{
+            
+            padding-top: 5vh;
+            padding-bottom: 5vh;
+
+
+            img{
+                width: 40vw;
+
+                
+            }
+            .texto_80_90{
+            
+                font-size: 12px;
+                
+            }
+
+        }
+
+      
+    }
+
+    .container{ 
+       
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+
+        h4{
+            font-size: 14px;
+            font-family: $fuente-principal-2;
+            padding-bottom: 0px;
+            line-height: 3;
+
+
+        }
+
+        .caja_logos_peliculas{
+             
+             padding-top: 1vh;
+
+            .contenedor_img_info{
+                margin-top: 5vw;
+                margin-bottom: 5vw;
+                background-color: #a1a0a100;
+                width: 90vw ;
+                height: 40vw;
+            
+            
+                img{
+                    width:100% ;
+                    height: 100%;
+                    transition: all 700ms;
+
+                    &:hover {
+
+                        transform: scale(1.6);
+                      
+                    }
+                }
+            }
+
+        }
+
+        
+    }
+
+    .section_90{
+
+        background: none;
+        background-color: $color-negro;
+    
+        .info_80{
+            padding-top: 5vh;
+            padding-bottom: 5vh;
+
+            img{
+                width: 40vw;
+            }
+
+            .texto_80_90{
+            
+                font-size: 12px;
+            }
+
+        }
+
+       
+
+    }
+
+    h3{
+        text-shadow: 5px 3px 1px rgb(147, 7, 72);
+        font-size: 40px;
+        line-height: 2;
+        word-spacing: $espacio-palabra-2;
+        letter-spacing: $espacio-letra-4;
+        font-weight: map-get($fuente-grosor, negrita );
+        /*text-shadow: 5px 0px 20px rgb(255, 0, 208);*/
+        padding-top: 150px;
+        padding-bottom: $padding-30;
+
+        
+    }
+
+    .caja_informacion{
+
+        padding-top: 5px;
+        height: 35rem;
+        margin-top: 5px;
+
+        .caja_texto{
+           
+          
+            .texto_info{
+               
+                line-height: 2;
+                word-spacing: $espacio-letra-2;
+                font-weight:map-get($fuente-grosor, fina );
+                
+
+            }
+
+        }
+    }
+
+    div{
+        .contenedor_img{
+            
+            background-image: linear-gradient(to right top, #33071c, #2d081a, #270818, #220715, #1d0512, #1a040f, #16020c, #110108, #0e0106, #0a0003, #050002, #000000);
+              
+            
+            
+        }
+    }
+
+}
+
+
+
+
+
+}
    

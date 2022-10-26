@@ -460,21 +460,15 @@ header {
 
 /* PAGINA INFORMACION*/
 main .section_80 {
-  height: 1000px;
   position: relative;
   background: url(../asset/imagenes/404/et-enbici-fondo.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #00000032;
-  /*box-shadow: 20px 20px 50px rgba(98, 8, 140, 0.57);*/
-  border-radius: 2px;
-  /*border: 3px solid rgba(161, 48, 218, 0.362);*/
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px); }
+  background-color: #00000032; }
   main .section_80 .info_80 {
-    margin-top: 60px;
-    padding-top: 80px; }
+    padding-top: 10vh;
+    padding-bottom: 10vh; }
     main .section_80 .info_80 .texto_80_90 {
       font-size: 18px;
       line-height: 2;
@@ -487,23 +481,38 @@ main .section_80 {
     width: 70%;
     border: 4px solid rgba(0, 0, 0, 0.623); }
 
+main .container {
+  padding-top: 200px;
+  padding-bottom: 200px; }
+  main .container h4 {
+    font-family: poppins_2;
+    padding-bottom: 20px; }
+  main .container .caja_logos_peliculas {
+    padding-top: 130px; }
+    main .container .caja_logos_peliculas .contenedor_img_info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #a1a0a100;
+      width: 250px;
+      height: 200px; }
+      main .container .caja_logos_peliculas .contenedor_img_info img {
+        width: 100%;
+        height: 100%s;
+        transition: all 700ms; }
+        main .container .caja_logos_peliculas .contenedor_img_info img:hover {
+          transform: scale(1.6); }
+
 main .section_90 {
-  height: 1000px;
   position: relative;
   background: url(../asset/imagenes/Seccion_ifo/mipobreangelito-fondo.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #00000032;
-  /*box-shadow: 20px 20px 50px rgba(98, 8, 140, 0.57);*/
-  border-radius: 2px;
-  /*border: 3px solid rgba(161, 48, 218, 0.362);*/
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
-  margin-top: 100vh; }
+  background-color: #00000032; }
   main .section_90 .info_80 {
-    margin-top: 60px;
-    padding-top: 80px; }
+    padding-top: 10vh;
+    padding-bottom: 10vh; }
     main .section_90 .info_80 .texto_80_90 {
       font-size: 18px;
       line-height: 2;
@@ -538,6 +547,69 @@ main .caja_informacion {
 
 main div .contenedor_img {
   background-image: linear-gradient(to right top, #33071c, #2d081a, #270818, #220715, #1d0512, #1a040f, #16020c, #110108, #0e0106, #0a0003, #050002, #000000); }
+
+@media (max-width: 480px) {
+  main .section_80 {
+    background-color: #000000; }
+    main .section_80 .info_80 {
+      padding-top: 5vh;
+      padding-bottom: 5vh; }
+      main .section_80 .info_80 img {
+        width: 40vw; }
+      main .section_80 .info_80 .texto_80_90 {
+        font-size: 12px; }
+  main .container {
+    padding-top: 5vh;
+    padding-bottom: 5vh; }
+    main .container h4 {
+      font-size: 14px;
+      font-family: poppins_2;
+      padding-bottom: 0px;
+      line-height: 3; }
+    main .container .caja_logos_peliculas {
+      padding-top: 1vh; }
+      main .container .caja_logos_peliculas .contenedor_img_info {
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+        background-color: #a1a0a100;
+        width: 90vw;
+        height: 40vw; }
+        main .container .caja_logos_peliculas .contenedor_img_info img {
+          width: 100%;
+          height: 100%;
+          transition: all 700ms; }
+          main .container .caja_logos_peliculas .contenedor_img_info img:hover {
+            transform: scale(1.6); }
+  main .section_90 {
+    background: none;
+    background-color: #000000; }
+    main .section_90 .info_80 {
+      padding-top: 5vh;
+      padding-bottom: 5vh; }
+      main .section_90 .info_80 img {
+        width: 40vw; }
+      main .section_90 .info_80 .texto_80_90 {
+        font-size: 12px; }
+  main h3 {
+    text-shadow: 5px 3px 1px #930748;
+    font-size: 40px;
+    line-height: 2;
+    word-spacing: 10px;
+    letter-spacing: 10px;
+    font-weight: bold;
+    /*text-shadow: 5px 0px 20px rgb(255, 0, 208);*/
+    padding-top: 150px;
+    padding-bottom: 30px; }
+  main .caja_informacion {
+    padding-top: 5px;
+    height: 35rem;
+    margin-top: 5px; }
+    main .caja_informacion .caja_texto .texto_info {
+      line-height: 2;
+      word-spacing: 2px;
+      font-weight: 100; }
+  main div .contenedor_img {
+    background-image: linear-gradient(to right top, #33071c, #2d081a, #270818, #220715, #1d0512, #1a040f, #16020c, #110108, #0e0106, #0a0003, #050002, #000000); } }
 
 main .contenedor_envios {
   margin-top: 80px; }
@@ -632,13 +704,21 @@ section div .caja_contacto {
 .titulo_paginas {
   background-color: #100309ad;
   border-bottom: 3px solid #3f0823b8;
-  height: 7vw; }
+  height: 12vh; }
   .titulo_paginas div h4 {
     text-shadow: 5px 3px 1px #930748;
     color: #cbcbcbe4;
     border-left: 4px solid #ff0d82;
     padding-left: 15px;
     letter-spacing: 10px; }
+
+@media (max-width: 480px) {
+  .titulo_paginas {
+    border-bottom: 2px solid #3f0823b8;
+    height: 7vh; }
+    .titulo_paginas div h4 {
+      font-size: 18px;
+      border-left: 4px solid #ff0d82; } }
 
 /* 
     UTILICE MEDIAQUERIE PARA MODIFICAR LA SECTION DEL TITULO QUE SE ME QUEDABA MUY CHICA CUANDO ESTABA EN MODO MOBILE Y TABLET
