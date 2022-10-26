@@ -607,7 +607,7 @@ section div .caja_contacto {
     /*Mapa de google*/ }
     section div .caja_contacto div .mapa {
       border-radius: 15px;
-      width: 300px;
+      width: 90%;
       height: 280px; }
 
 /* 
@@ -657,7 +657,8 @@ section div .caja_contacto {
     section div .caja_contacto div {
       /*Mapa de google*/ }
       section div .caja_contacto div .mapa {
-        margin-bottom: 0.7em; } }
+        margin-bottom: 0.7em;
+        /*width: 90%;*/ } }
 
 .titulo_paginas {
   background-color: #100309ad;
