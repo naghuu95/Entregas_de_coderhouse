@@ -748,83 +748,127 @@ footer {
       color: #13873e;
       animation-delay: 1s; }
 
-main div .contenedor_info_compras {
-  color: #cbcbcbe4;
-  /*color: rgb(255, 13, 130);*/
-  border: 2px solid #ff0d82;
-  border-radius: 15px;
-  box-shadow: 3px 3px 50px 3px rgba(235, 8, 193, 0.453); }
-  main div .contenedor_info_compras .borde_titulos {
-    text-shadow: 5px 3px 1px #930748; }
-  main div .contenedor_info_compras p {
-    font-size: 10px; }
-  main div .contenedor_info_compras div div .form-label {
-    font-size: 12px; }
-  main div .contenedor_info_compras div div .form-select {
-    font-size: 13px;
-    color: #ef5abe;
-    background-color: black;
-    width: 160px;
-    height: 70%;
-    border: solid 2px #ff0d82;
-    border-radius: 15px; }
+main {
+  margin-bottom: 5vw; }
+  main div .caja_cuadros {
+    margin-bottom: 5em;
+    box-shadow: 3px 3px 50px 3px rgba(235, 8, 193, 0.453);
+    background: #00000032;
+    border-radius: 15px;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    transition: all 300ms; }
+    main div .caja_cuadros .contenido_cuadros {
+      /*height: 640px;
+                width:  470px;*/
+      height: 94%;
+      width: 80vw;
+      overflow: hidden; }
+      main div .caja_cuadros .contenido_cuadros img {
+        height: 100%;
+        width: 110%;
+        transition: all 500ms;
+        /* aplique un poco de animacion al tocar con el cursor*/ }
+        main div .caja_cuadros .contenido_cuadros img:hover {
+          transform: scale(1.6); }
+  main div .contenedor_info_compras {
+    color: #cbcbcbe4;
+    /*color: rgb(255, 13, 130);*/
+    border: 2px solid #ff0d82;
+    border-radius: 15px;
+    box-shadow: 3px 3px 50px 3px rgba(235, 8, 193, 0.453); }
+    main div .contenedor_info_compras .borde_titulos {
+      text-shadow: 5px 3px 1px #930748; }
+    main div .contenedor_info_compras p {
+      font-size: 10px; }
+    main div .contenedor_info_compras .container .row {
+      width: 35vw; }
+      main div .contenedor_info_compras .container .row div .form-label {
+        font-size: 12px; }
+      main div .contenedor_info_compras .container .row div .form-select {
+        font-size: 13px;
+        color: #ef5abe;
+        background-color: black;
+        width: 160px;
+        height: 70%;
+        border: solid 2px #ff0d82;
+        border-radius: 15px; }
+    main div .contenedor_info_compras div form .boton_comprar_cuadros {
+      font-weight: bold;
+      width: 100%;
+      height: 3em;
+      color: #cbcbcbe4;
+      background: #00000032;
+      border-radius: 5px;
+      border: 2px solid #ff004c; }
+      main div .contenedor_info_compras div form .boton_comprar_cuadros:hover {
+        font-weight: bold;
+        color: #000000;
+        background: #f9f9f9d7;
+        box-shadow: 0 0 5px #e537e887, 0 0 25px #ff0d82, 0 0 50px #ff0d82, 0 0 200px #e537e887;
+        transition: .5s; }
+    main div .contenedor_info_compras .texto_compra {
+      font-size: 0.8em; }
+    main div .contenedor_info_compras .container .row {
+      width: 35vw; }
+      main div .contenedor_info_compras .container .row .acordion_compra .accordion-flush {
+        background-color: red !important;
+        color: black; }
+        main div .contenedor_info_compras .container .row .acordion_compra .accordion-flush .acordion-item {
+          background: red !important; }
+          main div .contenedor_info_compras .container .row .acordion_compra .accordion-flush .acordion-item .acordion-header {
+            background: red !important; }
+            main div .contenedor_info_compras .container .row .acordion_compra .accordion-flush .acordion-item .acordion-header .acordion-button {
+              background-color: red !important; }
+          main div .contenedor_info_compras .container .row .acordion_compra .accordion-flush .acordion-item .accordion-collapse {
+            background: red !important; }
+            main div .contenedor_info_compras .container .row .acordion_compra .accordion-flush .acordion-item .accordion-collapse .accordion-body {
+              background: red !important; }
 
-.caja_cuadros {
-  height: 680px;
-  width: 510px;
-  margin-bottom: 5em;
-  box-shadow: 3px 3px 50px 3px rgba(235, 8, 193, 0.453);
-  background: #00000032;
-  border-radius: 15px;
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
-  transition: all 300ms; }
-  .caja_cuadros .contenido_cuadros {
-    /*height: 640px;
-        width:  470px;*/
-    height: 94%;
-    width: 80vw;
-    overflow: hidden; }
-    .caja_cuadros .contenido_cuadros img {
-      height: 100%;
-      width: 110%;
-      transition: all 200ms;
-      /* aplique un poco de animacion al tocar con el cursor*/ }
-      .caja_cuadros .contenido_cuadros img:hover {
-        transform: scale(1.6); }
-
-.boton_comprar_cuadros {
-  font-weight: bold;
+.accordion-button {
+  position: relative;
+  display: flex;
+  align-items: center;
   width: 100%;
-  height: 3em;
-  color: #cbcbcbe4;
-  background: #00000032;
-  border-radius: 5px;
-  border: 2px solid #ff004c; }
-  .boton_comprar_cuadros:hover {
-    font-weight: bold;
-    color: #000000;
-    background: #f9f9f9d7;
-    box-shadow: 0 0 5px #e537e887, 0 0 25px #ff0d82, 0 0 50px #ff0d82, 0 0 200px #e537e887;
-    transition: .5s; }
+  padding: 0.8rem 1.25rem;
+  font-size: 0.9rem;
+  color: #ffffff;
+  text-align: left;
+  background-color: black;
+  border: 3px solid #c2046c;
+  border-radius: 20px;
+  overflow-anchor: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease; }
 
-.subtitulos_compras {
-  color: #ff0d82;
+.accordion-button:not(.collapsed) {
+  font-weight: bold;
+  font-size: 15px;
+  color: #e30079;
+  background-color: #000000;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125); }
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color: #fd64b083;
+  outline: 0;
+  box-shadow: 0 0 2px #ffffff, 0 0 20px #ff0d82, 0 0 40px #ff0d82, 0 0 50px #e537e887; }
+
+.accordion-item {
+  font-size: 0.8em;
+  color: #ffffff;
+  background-color: black;
+  border: 1px solid rgba(0, 0, 0, 0.125); }
+
+.subtitulos_cuadros {
+  text-shadow: 5px 3px 1px #930748;
+  color: #cbcbcbe4;
   border-left: 4px solid #ff0d82;
   padding-left: 15px;
   letter-spacing: 10px;
   font-weight: bold; }
-  .subtitulos_compras:hover {
-    text-shadow: 4px 5px 3px #ff0d82;
-    color: #ffffff; }
-
-.subtitulos_cuadros {
-  color: #ff0d82;
-  padding-left: 5px;
-  letter-spacing: 5px; }
   .subtitulos_cuadros:hover {
-    text-shadow: 4px 5px 3px #ff0d82;
-    color: #ffffff; }
+    text-shadow: none;
+    color: #ff0d82; }
 
 .boton_volver {
   font-size: 20px;
