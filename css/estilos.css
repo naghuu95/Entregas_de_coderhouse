@@ -409,6 +409,13 @@ header {
       height: 30vw;
       width: 30vw; }
 
+.container .titulo {
+  margin-top: 25vh;
+  margin-bottom: 25vh;
+  color: #ff05a8;
+  text-shadow: 5px 3px 1px rgba(255, 255, 255, 0.56);
+  letter-spacing: 10px; }
+
 .container .row .caja_tarjetas {
   /* width:24% ;
              height:97vh ;*/
@@ -457,6 +464,12 @@ header {
 
 .container .contenedor_productos {
   padding-top: 100px; }
+
+@media (max-width: 480px) {
+  .container .titulo {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    letter-spacing: 10px; } }
 
 /* PAGINA INFORMACION*/
 main {

@@ -3,6 +3,12 @@
 
     .titulo{
 
+        margin-top:25vh ;
+        margin-bottom: 25vh;
+        color: rgb(255, 5, 168);
+        text-shadow: 5px 3px 1px rgba(255, 255, 255, 0.56);
+        letter-spacing: $espacio-palabra-2;
+
     }
 
 
@@ -94,4 +100,25 @@
       
        padding-top: $paddin-100;
     }
+}
+
+
+
+
+@media (max-width: 480px) {
+
+    .container{
+
+        .titulo{
+            
+            margin-top:10vh ;
+            margin-bottom: 10vh;
+            
+            letter-spacing: $espacio-palabra-2;
+    
+        }
+
+    }   
+
+
 }
