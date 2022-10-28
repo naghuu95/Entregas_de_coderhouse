@@ -72,11 +72,11 @@
   </header>
 
 
-  <div class="container-fluid d-flex align-items-center titulo_paginas"> 
-    <div class="container d-flex align-items-center">
+  <div class="container-fluid d-flex align-items-center titulo_paginas_cuadros"> 
+    <div class="container d-flex flex-column flex-md-row align-items-md-center ">
 
-        <a class="text-decoration-none fs-5 subtitulos_cuadros" href="./productos.html"> PRODUCTOS</a> 
-        <a class="text-decoration-none fs-5 mx-4 subtitulos_cuadros" href="">Caza Fantasmas</a>
+        <a class="text-decoration-none fs-5 mt-2 mt-md-0 subtitulos_cuadros" href="./productos.html"> PRODUCTOS</a> 
+        <a class="text-decoration-none fs-5 mx-md-4 my-3 my-md-0 subtitulos_cuadros" href="">Caza Fantasmas</a>
 
        
 
@@ -115,14 +115,14 @@
             <p class="fs-6 text-center pb-4">3 cuotas sin interés de $670</p>
 
             <div class="container d-flex flex-column align-items-center ">
-              <div class="row justify-content-evenly   ">
+              <div class="row justify-content-evenly  w-100  ">
                 <div class="col-4"> 
                      <label for="exampleFormControlInput1" class="form-label">TIPO</label>
                 
                 </div>
 
-                <div class=" col-5">
-                  <select class="  form-select form-select-md mb-3" aria-label=".form-select-md example">
+                <div class=" col-8 col-md-5">
+                  <select class="  form-select form-select-md mb-3 " aria-label=".form-select-md example">
              
                    <option selected>Elige una opcion</option>
                    <option value="1">Cuadro</option>
@@ -133,14 +133,14 @@
                 </div>
               </div>
 
-              <div class="row justify-content-evenly  py-1">
+              <div class="row justify-content-evenly  w-100 py-1">
                 <div class="col-4"> 
                      <label for="exampleFormControlInput1" class="form-label ">ENMARCADO</label>
                      
                 </div>
 
 
-                <div class=" col-5">
+                <div class=" col-8 col-md-5">
 
                     <select class=" elegi_opcion form-select form-select-md mb-3 " aria-label=".form-select-md example">
                
@@ -157,7 +157,7 @@
 
               </div>
 
-              <div class="row justify-content-evenly py-1">
+              <div class="row justify-content-md-evenly justify-content-around w-100 py-1">
 
                 <div class="col-4"> 
                     <label for="exampleFormControlInput1" class="form-label">MEDIDAS</label>
@@ -165,7 +165,7 @@
                 </div>
 
 
-                  <div class=" col-5">
+                  <div class=" col-8 col-md-5">
                     <select class=" elegi_opcion form-select form-select-md mb-3" aria-label=".form-select-md example">
                
                      <option selected>Elige una opcion</option>
@@ -222,7 +222,7 @@
               
             <div class="container d-flex justify-content-center">
 
-              <div class="row justify-content-center align-items-center pb-4  ">
+              <div class="row justify-content-center align-items-center pb-4 w-100 ">
 
                 <div class="col-md-12 align-items-center acordion_compra">
                   <div class="accordion accordion-flush " id="accordionFlushExample">
@@ -244,7 +244,7 @@
                         </button>
                       </h2>
                       <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Entra aqui y te explicamos todo sobre el  <a href="./envios.html">envio</a> <a href="./pago_multas.html"></a>.</div>
+                        <div class="accordion-body">Entra aqui y te explicamos todo sobre el  <a href="./envios.html" class="text-decoration-none">envio</a> <a href="./pago_multas.html"></a>.</div>
                       </div>
                     </div>
               
@@ -278,67 +278,68 @@
     <!-- se me hizo mas facil con el sistema de filas y columnas de boodstrap hacer el footer  -->
     <!-- tiene una una propaganda o eslogan a la izquierda , en el medio un menu y a la derecha las redes sociales por ultimo los derechos de autor abajo del todo -->
 
-    <footer class="footer ">
+    <footer class="footer d-flex justify-content-center  ">
 
       
 
-        <div class="row justify-content-center align-items-center">
+      <div class="row d-flex justify-content-center align-items-center ">
   
-          <div class="col-12 col-md-3 pt-3 ">
+        <div class="col-10 col-md-3 pt-3 ">
   
-            <h3 class="pt-3 pb-3  text-center flux fs-2"data-aos="fade-up" data-aos-duration="1500"> NINETY 90</h3>
-            <p class="py-4  text-center d-none d-md-block ">Solo estamos aca para hacerte feliz teniendo un pedaso de tu niñes en las paredes de tu hogar</p>
-            <p class="py-4  text-center d-none d-md-block">SOMOS NINETY 90</p>
-  
-  
-          </div>
-  
-          <div class="col-12 col-md-3  d-flex flex-column justify-content-center align-items-center mt-5  ">
-  
-            <p class=" pt-4  text-center">MENU PRINCIPAL</p>
-
-          <nav class=" mt-3">
-            <ul class="ul ">
-              <li><a  href="../index.html"> Inicio</a></li>
-              <li><a  href="#">Productos</a></li>
-              <li><a href="./informacion.html">Informacion</a></li>
-              <li><a   href="./envios.html">Envios</a></li>
-              <li><a   href="./contacto.html">Contacto</a></li>
-            </ul>
-          </nav>
-  
-          </div>
-
-          <div class="col-8 col-md-2 d-flex flex-column justify-content-center align-items-center  mt-5 ">
-             <p class="pt-5">MEDIOS DE PAGO</p>
-
-             <div class="contenedor_mp " ><img class="img-fluid" src="../asset/imagenes/Footer/medios_de_pagos-removebg-preview (1).png" alt=""></div>
-
-          </div>
-  
-          <div class="col-12 col-md-3  d-flex flex-column justify-content-center align-items-center  ">
-  
-            <p class=" d-flex pt-4 ">REDES SOCIALES</p>
-  
-              <div class="icons-wrapper mt-5">
-                <a href="https://www.instagram.com/cuadros.modernos/"target="_blank"> <i class="ri-instagram-line icon fs-1 px-3"></i></a>
-                <a href="https://www.facebook.com/cuadrosvintageweb"target="_blank"><i class="ri-facebook-circle-line fs-1 icon px-3"></i> </a>
-                <a href="https://www.whatsapp.com/?lang=es"target="_blank"> <i class="ri-whatsapp-line icon fs-1 px-3"></i></a>
-              </div>
-  
-          </div>
-            
+          <h3 class="pt-3 pb-3 d-none d-md-block text-center flux fs-2"> NINETY 90</h3>
+          <p class="py-4  text-center d-none d-md-block ">Solo estamos aca para hacerte feliz teniendo un pedaso de tu niñes en las paredes de tu hogar</p>
+          <p class="py-4  text-center d-none d-md-block">SOMOS NINETY 90</p>
   
   
-        <div class=" container-fluid row ">
-  
-          <div class="col ">
-            <p class="h6 fw-light copy text-center text-md-end py-2"> &copy; Derechos reservado NINETY90 2022</p>
-          </div>
         </div>
   
-        
-      </footer>
+        <div class="col-8 col-md-3  d-flex flex-column justify-content-center align-items-center mt-5 ">
+  
+          <p class=" pt-2 pt-sm-2 pt-md-4 pt-lg-4 pt-xl-4 pt-xxl-4  text-center">MENU PRINCIPAL</p>
+  
+        <nav class=" mt-3">
+          <ul class="ul ">
+            <li><a  href="../index.html"> Inicio</a></li>
+            <li><a  href="./productos.html">Productos</a></li>
+            <li><a href="./informacion.html">Informacion</a></li>
+            <li><a   href="./envios.html">Envios</a></li>
+            <li><a   href="./contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+  
+        </div>
+  
+        <div class="col-8 col-md-2 d-flex flex-column justify-content-center align-items-center  mt-5  ">
+           <p class="pt-2 pt-sm-2 pt-md-5 pt-lg-5 pt-xl-5 pt-xxl-5">MEDIOS DE PAGO</p>
+  
+           <div class="contenedor_mp " ><img class="img-fluid" src="../asset/imagenes/Footer/medios_de_pagos-removebg-preview (1).png" alt=""></div>
+  
+        </div>
+  
+        <div class="col-8 col-md-3  d-flex flex-column justify-content-center align-items-center  ">
+  
+          <p class=" d-flex pt-2 pt-sm-2 pt-md-4 pt-lg-4 pt-xl-4 pt-xxl-4 ">REDES SOCIALES</p>
+  
+            <div class="icons-wrapper mt-5">
+              <a href="https://www.instagram.com/cuadros.modernos/"target="_blank"> <i class="ri-instagram-line icon fs-1 px-3"></i></a>
+              <a href="https://www.facebook.com/cuadrosvintageweb"target="_blank"><i class="ri-facebook-circle-line fs-1 icon px-3"></i> </a>
+              <a href="https://www.whatsapp.com/?lang=es"target="_blank"> <i class="ri-whatsapp-line icon fs-1 px-3"></i></a>
+            </div>
+  
+        </div>
+          
+  
+  
+      <div class=" container-fluid row ">
+  
+        <div class="col ">
+          <p class="h6 fw-light copy text-center text-md-end py-2"> &copy; Derechos reservado NINETY90 2022</p>
+        </div>
+      </div>
+  
+      
+    </footer>
+  
   
   
   

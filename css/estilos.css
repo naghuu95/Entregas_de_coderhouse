@@ -748,6 +748,21 @@ footer {
       color: #13873e;
       animation-delay: 1s; }
 
+.titulo_paginas_cuadros {
+  background-color: #100309ad;
+  border-bottom: 3px solid #3f0823b8;
+  height: 12vh; }
+  .titulo_paginas_cuadros .subtitulos_cuadros {
+    text-shadow: 5px 3px 1px #930748;
+    color: #cbcbcbe4;
+    border-left: 4px solid #ff0d82;
+    padding-left: 15px;
+    letter-spacing: 10px;
+    font-weight: bold; }
+    .titulo_paginas_cuadros .subtitulos_cuadros:hover {
+      text-shadow: none;
+      color: #ff0d82; }
+
 main {
   margin-bottom: 5vw; }
   main div .caja_cuadros {
@@ -809,21 +824,6 @@ main {
         transition: .5s; }
     main div .contenedor_info_compras .texto_compra {
       font-size: 0.8em; }
-    main div .contenedor_info_compras .container .row {
-      width: 35vw; }
-      main div .contenedor_info_compras .container .row .acordion_compra .accordion-flush {
-        background-color: red !important;
-        color: black; }
-        main div .contenedor_info_compras .container .row .acordion_compra .accordion-flush .acordion-item {
-          background: red !important; }
-          main div .contenedor_info_compras .container .row .acordion_compra .accordion-flush .acordion-item .acordion-header {
-            background: red !important; }
-            main div .contenedor_info_compras .container .row .acordion_compra .accordion-flush .acordion-item .acordion-header .acordion-button {
-              background-color: red !important; }
-          main div .contenedor_info_compras .container .row .acordion_compra .accordion-flush .acordion-item .accordion-collapse {
-            background: red !important; }
-            main div .contenedor_info_compras .container .row .acordion_compra .accordion-flush .acordion-item .accordion-collapse .accordion-body {
-              background: red !important; }
 
 .accordion-button {
   position: relative;
@@ -859,16 +859,63 @@ main {
   background-color: black;
   border: 1px solid rgba(0, 0, 0, 0.125); }
 
-.subtitulos_cuadros {
-  text-shadow: 5px 3px 1px #930748;
-  color: #cbcbcbe4;
-  border-left: 4px solid #ff0d82;
-  padding-left: 15px;
-  letter-spacing: 10px;
-  font-weight: bold; }
-  .subtitulos_cuadros:hover {
-    text-shadow: none;
-    color: #ff0d82; }
+@media (max-width: 480px) {
+  .titulo_paginas_cuadros {
+    height: 13vh; }
+    .titulo_paginas_cuadros .subtitulos_cuadros {
+      letter-spacing: 4px; }
+  main {
+    margin-bottom: 20vw; }
+    main div .contenedor_info_compras .container .row {
+      width: 35vw; }
+      main div .contenedor_info_compras .container .row div .form-label {
+        font-size: 10.5px; }
+    main div .contenedor_info_compras div form .boton_comprar_cuadros {
+      font-weight: bold;
+      width: 100%;
+      height: 3em;
+      color: #cbcbcbe4;
+      background: #00000032;
+      border-radius: 5px;
+      border: 2px solid #ff004c; }
+      main div .contenedor_info_compras div form .boton_comprar_cuadros:hover {
+        font-weight: bold;
+        color: #000000;
+        background: #f9f9f9d7;
+        box-shadow: 0 0 5px #e537e887, 0 0 25px #ff0d82, 0 0 50px #ff0d82, 0 0 200px #e537e887;
+        transition: .5s; }
+    main div .contenedor_info_compras .texto_compra {
+      font-size: 0.8em; }
+  .accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.8rem 1.25rem;
+    font-size: 0.9rem;
+    color: #ffffff;
+    text-align: left;
+    background-color: black;
+    border: 3px solid #c2046c;
+    border-radius: 20px;
+    overflow-anchor: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease; }
+  .accordion-button:not(.collapsed) {
+    font-weight: bold;
+    font-size: 15px;
+    color: #e30079;
+    background-color: #000000;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125); }
+  .accordion-button:focus {
+    z-index: 3;
+    border-color: #fd64b083;
+    outline: 0;
+    box-shadow: 0 0 2px #ffffff, 0 0 20px #ff0d82, 0 0 40px #ff0d82, 0 0 50px #e537e887; }
+  .accordion-item {
+    font-size: 0.8em;
+    color: #ffffff;
+    background-color: black;
+    border: 1px solid rgba(0, 0, 0, 0.125); } }
 
 .boton_volver {
   font-size: 20px;
