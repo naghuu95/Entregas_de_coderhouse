@@ -17,6 +17,20 @@
     border-bottom:1px solid #4b0b2b78;
 
     .navbar{
+      .ninety{
+        font-weight: bold;
+        font-family: orbi;
+        color: rgb(53, 172, 246);
+        text-shadow: 0px 0px 6px rgba(40, 130, 255, 0.796);
+        letter-spacing: $espacio-palabra-2;
+        transition: all 0.5s;
+
+        &:hover{
+          color: rgb(255, 59, 157);
+        text-shadow: 0px 0px 7px rgba(255, 48, 124, 0.796);
+        
+        }
+      }
       .container-fluid{
 
         .navbar-brand{
