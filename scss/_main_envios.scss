@@ -19,9 +19,9 @@ main{
             
             h4{
                /*letter-spacing: $espacio-letra-4;*/
-               font-weight:map-get($fuente-grosor, negrita );
-               color: rgb(53, 172, 246);
-               text-shadow: 0px 0px 6px rgba(40, 130, 255, 0.796);
+               text-shadow: 5px 3px 1px rgb(147, 7, 72);
+               color:$color-fuente ;
+               font-weight: bold;
                letter-spacing: $espacio-palabra-2;
             }
 

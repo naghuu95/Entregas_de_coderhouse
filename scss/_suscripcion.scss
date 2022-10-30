@@ -45,10 +45,12 @@
                         border: $borde-s solid  $color-violeta-2;
                         
                         &:hover {
+                            
                             font-weight: bold;
                             color: $color-negro;
-                            background: #f9f9f9d7;
+                            background: #ffffffd7;
                             box-shadow: 0 0 5px $color-violeta, 0 0 25px $color-rosa, 0 0 50px $color-rosa, 0 0 200px $color-violeta;
+                            
                             width: 8em;
                             transition: all .5s;
                         }
