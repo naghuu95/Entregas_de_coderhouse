@@ -23,12 +23,14 @@
           div{
             
             .titulo_banner{
-              
+              line-height: 1.5;
               /*letter-spacing: 3px;
               color: rgb(255, 55, 128);*/
               font-weight: map-get($fuente-grosor, negrita ) !important; 
-              color: rgb(255, 255, 255);
-              text-shadow: 0px 0px 6px rgb(237, 76, 223);
+              text-shadow: 0px 0px 10px rgba(255, 36, 157, 0.63);
+              color:rgba(255, 101, 181, 0.63) ;
+             /* color: rgba(255, 53, 144, 0.688);
+              text-shadow: 0px 0px 10px rgba(255, 0, 204, 0.686);*/
               
             }
 
@@ -52,7 +54,7 @@
         }
 
         .imagenes{
-            width: 25vw;
+            width: 26.5vw;
             border-radius: $borde-m;
             box-shadow: 20px 20px 30px 15px $color-negro;
         }
@@ -63,3 +65,41 @@
 
  
 
+  @media (max-width: 480px) {
+
+    .banner {
+      background:none;
+      background-color: black;
+ 
+  
+      .background-overlay1 {
+          
+  
+          div{
+            div{
+              
+              .titulo_banner{
+                line-height: 1.7;
+                letter-spacing: 2px;
+                font-size: 7vw;
+               
+                
+              }
+  
+             
+  
+              
+  
+            }
+          }
+  
+          
+      
+      }
+  
+    }
+  
+
+
+
+  }

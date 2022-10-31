@@ -21,8 +21,10 @@ main{
 
             .titulo_80_90{
                 font-family: orbi;
-                text-shadow: 7px 7px 0px rgb(2, 90, 198);
-                color:rgba(246, 85, 198, 0.63) ;
+                text-shadow: 0px 0px 10px rgba(240, 1, 133, 0.63);
+                color:rgba(255, 101, 181, 0.63) ;
+                /*text-shadow: 7px 7px 0px rgb(2, 90, 198);
+                color:rgba(246, 85, 198, 0.63) ;*/
                 font-size: 10rem;
                 padding-bottom: 15vh;
             }
@@ -106,9 +108,11 @@ main{
 
 
             .titulo_90{
+                text-shadow: 0px 0px 10px rgba(174, 85, 246, 0.63);
+                color:rgba(0, 176, 240, 0.63) ;
                 font-family: orbi;
-                text-shadow: 7px 7px 0px rgb(250, 65, 170);
-                color:rgba(174, 85, 246, 0.63) ;
+                /*text-shadow: 7px 7px 0px rgb(250, 65, 170);
+                color:rgba(174, 85, 246, 0.63) ;*/
                 font-size: 10rem;
                 padding-bottom: 15vh;
             }
@@ -150,7 +154,7 @@ main{
 
             .titulo_80_90{
                
-                font-size: 6rem;
+                font-size: 5rem;
                 padding-bottom: 5vh;
             }
             
@@ -230,7 +234,7 @@ main{
 
             .titulo_90{
                
-                font-size: 6rem;
+                font-size: 5rem;
                 padding-bottom: 5vh;
             }
 
