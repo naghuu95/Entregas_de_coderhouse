@@ -1,5 +1,5 @@
 .pantalla_principal{
-
+    
     position: relative;
     background:linear-gradient(rgba(255, 0, 111, 0.196), rgb(0, 0, 0) ),  url(../asset/imagenes/index/pantalla-principal-1440-768-min.jpg) ;
     background-attachment: fixed;
@@ -16,7 +16,8 @@
         padding-top:300px ;
         padding-bottom:30px;
         color: rgba(255, 255, 255, 0.693);
-        text-shadow: 5px 6px 1px rgb(147, 7, 72);
+        text-shadow: 5px 2px 1px rgb(196, 1, 111);
+        /*text-shadow: 5px 6px 1px rgb(147, 7, 72);*/
     }
     
     span{
@@ -79,7 +80,7 @@
             line-height: 3;
             word-spacing:10px;
             letter-spacing: 2px;
-            padding-top:150px ;
+            padding-top:30vh ;
            
         }
         
@@ -90,8 +91,8 @@
         }
     
         .salto_pagina{
-            
-            padding-bottom: 6em;
+            padding-top: 10vh;
+            padding-bottom: 10em;
            
     
             .salto_pagina_icono{
