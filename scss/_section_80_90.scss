@@ -24,13 +24,16 @@
 
         div{
             div{
+                
+               
+                
                 a{
                     img{
-
+                      transition: all 600ms;
                       border-radius: 10px;
 
                         &:hover {
-
+                          transform: translateY(-20px);
                           box-shadow: 0 0 5px $color-negro, 0 0 25px $color-violeta, 0 0 50px $color-rosa, 0 0 200px $color-violeta;
                         }
                     }
@@ -59,11 +62,11 @@
           div{
               a{
                   img{
-
+                    transition: all 600ms;
                     border-radius: 10px;
 
                       &:hover {
-
+                        transform: translateY(-20px);
                         box-shadow: 0 0 5px $color-negro, 0 0 25px $color-violeta, 0 0 50px $color-rosa, 0 0 200px $color-violeta;
                       }
                   }

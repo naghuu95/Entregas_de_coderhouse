@@ -34,12 +34,13 @@
                                justify-content: center;
                                letter-spacing: $espacio-letra-2;
                                padding-right: $padding-30;
+                               transition: all 0.4s;
   
                                 &:hover{
                                   color: rgb(255, 35, 248);
                                   text-shadow: 0px 0px 10px rgb(255, 35, 248);
-                                  font-weight: map-get($fuente-grosor, negrita );
-                                  transition: all 0.4s;
+                                  font-weight: map-get($fuente-grosor, negrita ); 
+                                  transform: scale(1.1);
                                   
   
                                 }

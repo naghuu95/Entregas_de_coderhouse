@@ -162,13 +162,15 @@ header {
     transition: all 0.8s; }
     header .navbar .ninety:hover {
       color: #ff3b9d;
-      text-shadow: 0px 0px 7px rgba(255, 48, 124, 0.796); }
+      text-shadow: 0px 0px 7px rgba(255, 48, 124, 0.796);
+      transform: scale(1.1); }
   header .navbar .navbar-nav .nav-item .nav-link {
     color: #ff0d82;
     letter-spacing: 5px;
     margin-right: 15px;
     font-size: 12px;
     font-weight: bold;
+    transition: all 0.8s;
     /* UTILICE CASI TODO VARIABLES PARA HACER EL HOVER*/ }
     header .navbar .navbar-nav .nav-item .nav-link:hover {
       font-weight: bold;
@@ -180,7 +182,7 @@ header {
       border-radius: 5px;
       background-color: #10000dfc;
       box-shadow: 2px 2px 50px 2px #ff0d82;
-      transition: all 0.6s; }
+      transform: scale(1.2); }
 
 /* FLUX*/
 /* Efecto neon PARA LOGO
@@ -217,7 +219,8 @@ header {
   transition: all 0.8s; }
   .ninety:hover {
     color: #ff3b9d;
-    text-shadow: 0px 0px 7px rgba(255, 48, 124, 0.796); }
+    text-shadow: 0px 0px 7px rgba(255, 48, 124, 0.796);
+    transform: scale(1.1); }
 
 /*BANNER*/
 /*puse una imagen de fondo y le aplique gradientes para que resalte el texto y la imagen */
@@ -327,7 +330,7 @@ header {
   border: 2px solid #ff0d82;
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
-  transition: all 300ms; }
+  transition: all 600ms; }
   .container-fluid .row .caja_tarjetas:hover {
     transform: translateY(-20px); }
   .container-fluid .row .caja_tarjetas .contenido_img {
@@ -396,8 +399,10 @@ header {
   .section_80_90 .fila_80 {
     padding-bottom: 15%; }
     .section_80_90 .fila_80 div div a img {
+      transition: all 600ms;
       border-radius: 10px; }
       .section_80_90 .fila_80 div div a img:hover {
+        transform: translateY(-20px);
         box-shadow: 0 0 5px #000000, 0 0 25px #e537e887, 0 0 50px #ff0d82, 0 0 200px #e537e887; }
     .section_80_90 .fila_80 div p {
       font-size: 20px;
@@ -407,8 +412,10 @@ header {
   .section_80_90 .fila_90 {
     padding-top: 10%; }
     .section_80_90 .fila_90 div div a img {
+      transition: all 600ms;
       border-radius: 10px; }
       .section_80_90 .fila_90 div div a img:hover {
+        transform: translateY(-20px);
         box-shadow: 0 0 5px #000000, 0 0 25px #e537e887, 0 0 50px #ff0d82, 0 0 200px #e537e887; }
     .section_80_90 .fila_90 div p {
       font-size: 20px;
@@ -688,15 +695,17 @@ section div .caja_contacto {
       border-bottom: 2px solid rgba(70, 37, 69, 0.675); }
     section div .caja_contacto .form .boton_contacto {
       font-weight: bold;
-      width: 18em;
+      width: 16em;
       background: rgba(0, 0, 0, 0.5);
       border-radius: 5px;
-      border: solid #a4a4a497; }
+      border: solid #a4a4a497;
+      transition: all 600ms; }
       section div .caja_contacto .form .boton_contacto:hover {
         color: #000000;
         border: 3px solid #520880;
         background: #ffffff;
-        box-shadow: 0 0 5px #ff0d82, 0 0 25px #ff0d82, 0 0 50px #ff0d82, 0 0 200px #e537e887; }
+        box-shadow: 0 0 5px #ff0d82, 0 0 25px #ff0d82, 0 0 50px #ff0d82, 0 0 200px #e537e887;
+        transform: scale(1.1); }
   section div .caja_contacto ul {
     list-style: none; }
   section div .caja_contacto div {
@@ -809,12 +818,13 @@ footer {
         display: flex;
         justify-content: center;
         letter-spacing: 2px;
-        padding-right: 30px; }
+        padding-right: 30px;
+        transition: all 0.4s; }
         footer div div nav ul li a:hover {
           color: #ff23f8;
           text-shadow: 0px 0px 10px #ff23f8;
           font-weight: bold;
-          transition: all 0.4s; }
+          transform: scale(1.1); }
   footer div .contenedor_mp {
     width: 100%; }
   footer div div .icons-wrapper {
@@ -1100,14 +1110,15 @@ main {
         color: #cbcbcbe4;
         background: #00000032;
         border-radius: 5px;
-        border: 2px solid #ff004c; }
+        border: 2px solid #ff004c;
+        transition: all 600ms; }
         .section_suscripcion .contenedor_suscripcion div .form_index div .btn_env:hover {
           font-weight: bold;
           color: #000000;
           background: #ffffffd7;
           box-shadow: 0 0 5px #e537e887, 0 0 25px #ff0d82, 0 0 50px #ff0d82, 0 0 200px #e537e887;
           width: 8em;
-          transition: all .5s; }
+          transform: scale(1.1); }
 
 .boton_comprar1 {
   font-weight: bold;

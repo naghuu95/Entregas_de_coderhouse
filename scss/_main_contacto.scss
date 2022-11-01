@@ -41,16 +41,17 @@
 
                     @extend input ;
                     font-weight: map-get($fuente-grosor, negrita );
-                    width: 18em;
+                    width: 16em;
                     background: $color-n-gradiente-2;
                     border-radius: $borde-sm;
                     border: solid $color-gris-fuente;
-
+                    transition: all 600ms;
                     &:hover {
                         color: $color-negro;
                         border: 3px solid $color-violeta-medio;
                         background: $color-blanco;
                         box-shadow: 0 0 5px $color-rosa, 0 0 25px $color-rosa, 0 0 50px $color-rosa, 0 0 200px $color-violeta;
+                        transform: scale(1.1);
                         
                     }
                     

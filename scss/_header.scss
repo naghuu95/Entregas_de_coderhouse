@@ -28,7 +28,7 @@
         &:hover{
           color: rgb(255, 59, 157);
           text-shadow: 0px 0px 7px rgba(255, 48, 124, 0.796);
-        
+          transform: scale(1.1);
         }
       }
       .container-fluid{
@@ -49,6 +49,7 @@
                   margin-right: $margen-s ;
                   font-size: $fuente-s;
                   font-weight: bold;
+                  transition: all 0.8s;
                   
                   
                   
@@ -63,7 +64,8 @@
                       border-radius: $borde-sm;
                       background-color: $color-violeta-obscuro ;
                       box-shadow:2px 2px 50px 2px $color-rosa;
-                      transition: all 0.6s;
+                      
+                      transform: scale(1.2);
                       
                   }
               }
