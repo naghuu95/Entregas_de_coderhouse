@@ -75,6 +75,7 @@ body {
   color: #cbcbcbe4;
   font-weight: lighter; }
 
+/*PORTADA DE LA PAGINA*/
 .pantalla_principal {
   position: relative;
   background: linear-gradient(rgba(255, 0, 111, 0.196), black), url(../asset/imagenes/index/pantalla-principal-1440-768-min.jpg);
@@ -90,8 +91,7 @@ body {
     padding-top: 300px;
     padding-bottom: 30px;
     color: rgba(255, 255, 255, 0.693);
-    text-shadow: 5px 2px 1px #c4016f;
-    /*text-shadow: 5px 6px 1px rgb(147, 7, 72);*/ }
+    text-shadow: 5px 2px 1px #c4016f; }
   .pantalla_principal span {
     font-size: 60px;
     font-weight: bold;
@@ -114,7 +114,7 @@ body {
 /* Móviles en horizontal o tablets en vertical
    ------------------------------------------------------------------------- */
 /* Móviles en vertical 
-------------------------------------------------------------------------- */
+Aca cambie la imagen de fonto por otra que sea alargada y se vea mejor en mobile, aparte de que pesa menos e hice mas chica la letra*/
 @media (max-width: 480px) {
   .pantalla_principal {
     position: relative;
@@ -154,6 +154,7 @@ header {
   -webkit-backdrop-filter: blur(2px);
   border-bottom: 1px solid #4b0b2b78; }
   header .navbar .ninety {
+    font-size: 1.6rem;
     font-weight: bold;
     font-family: orbi;
     color: #35acf6;
@@ -183,6 +184,11 @@ header {
       background-color: #10000dfc;
       box-shadow: 2px 2px 50px 2px #ff0d82;
       transform: scale(1.2); }
+
+@media (max-width: 480px) {
+  header .navbar .ninety {
+    font-size: 1.2rem;
+    letter-spacing: 6px; } }
 
 /* FLUX*/
 /* Efecto neon PARA LOGO

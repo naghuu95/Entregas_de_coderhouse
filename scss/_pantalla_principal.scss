@@ -1,3 +1,6 @@
+
+/*PORTADA DE LA PAGINA*/
+
 .pantalla_principal{
     
     position: relative;
@@ -8,7 +11,8 @@
     
     
     
-    p{  line-height: 2;
+    p{ 
+         line-height: 2;
         font-size: 40px;
         font-weight: bold;
         word-spacing:4px;
@@ -17,7 +21,7 @@
         padding-bottom:30px;
         color: rgba(255, 255, 255, 0.693);
         text-shadow: 5px 2px 1px rgb(196, 1, 111);
-        /*text-shadow: 5px 6px 1px rgb(147, 7, 72);*/
+       
     }
     
     span{
@@ -62,7 +66,7 @@
  
 
 /* Móviles en vertical 
-------------------------------------------------------------------------- */
+Aca cambie la imagen de fonto por otra que sea alargada y se vea mejor en mobile, aparte de que pesa menos e hice mas chica la letra*/
 @media (max-width: 480px) {
 
     .pantalla_principal{

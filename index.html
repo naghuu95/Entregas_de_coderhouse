@@ -30,12 +30,11 @@
  <!-- NINETY90 es una pagina de venta de cuadros de pelicula de los 80 y 90 -->
 
 
-  
- <!-- HEADER -->
+  <!--PORTADA DE LA PAGINA-->
+  <!--Define de que se trata la pagina -->
+ 
 
- <!-- Use boodstrap para crear el header con el nav que esta en la pagina estan incluida las 4 navegaciones y tambien el logo de la empresa que es ninety 90 es un link que te lleva a la pagina principal -->
- <!-- Es respondive y tiene el menu hamburguesa -->
-
+ 
   <div class="container-fluid pantalla_principal d-flex justify-content-center">
 
     <div class="row justify-content-center ">
@@ -55,19 +54,22 @@
    
   </div>
 
+<!-- HEADER -->
+ <!-- Use boodstrap para crear el header con el nav que esta en la pagina estan incluida las 4 navegaciones y tambien el logo de la empresa que es ninety 90 es un link que te lleva a la pagina principal -->
+ <!-- Es responsive y tiene el menu hamburguesa -->
 
   <header class=" container-fluid header" id="pagina">
 
      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent ">
        <div class="container-fluid">
-         <a class="navbar-brand px-2 flu ninety fs-5 fs-sm-5 fs-md-3 fs-lg-3 fs-xl-3 fs-xxl-3" href="#">NINETY 90</a>
+         <a class="navbar-brand px-1 px-md-2 py-2 ninety " href="#">NINETY 90</a>
          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
            <span class="navbar-toggler-icon"></span>
          </button>
          <div class="collapse navbar-collapse" id="navbarNav">
            <ul class="navbar-nav ms-auto  ">
              <li class="nav-item ">
-               <a class="nav-link fs-bold px-4  " aria-current="page" href="#">INICIO</a>
+               <a class="nav-link  px-4  " aria-current="page" href="#">INICIO</a>
              </li>
              <li class="nav-item">
                <a class="nav-link px-4" href="./paginas/productos.html">PRODUCTOS</a>
@@ -88,6 +90,10 @@
 
        
   </header>
+
+  <!--CAROUSEL-->
+  <!--Edite 3 imagenes por mi cuenta y las introduje al codigo ya creado de bootstrap 
+   Hay 2 formatos de imagenes una en 200px (desktop) y otra en 500px (mobile)-->
 
   <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -137,8 +143,6 @@
               </picture>
 
              
-             <!-- <img src="./asset/imagenes/index/carrousel-2x1-500x225.jpg" class="d-block w-100 ro-img" alt="..." width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/>
-            -->
             
             
             </a>
@@ -159,23 +163,13 @@
 
 
 
+ <!--BANNER INFORMATIVO-->
+ <!--Cree es un banner que informa un poco de la marca lo hice haciendo cajas en forma de circulo y metiendo iconos dentro-->
 
-
-
-
- <!-- BANNER -->
- <!-- Es con propaganda y una imagen de un producto , lo que cree con el sistema de filas y columnas en boodstrap 
- Cuando se esta en modo mobile el producto desaparece y solo queda la propaganda -->
-
-
-  
-
-  
-   
 
   <section class=" section_ayuda container-fluid py-5 ">
 
-    <div class="row banner_2  d-none d-sm-none d-md-flex  d-lg-flex   d-xl-flex d-xxl-d-flex justify-content-evenly">
+    <div class="row banner_informativo  d-none d-sm-none d-md-flex  d-lg-flex   d-xl-flex d-xxl-d-flex justify-content-evenly">
        
       <div class="col-3  d-flex align-items-center" >
 
@@ -185,7 +179,7 @@
 
         </div>
        
-         <p class="ps-3 pt-2 color_gris">ENVIOS A TODA LA ARGENTINA </p>
+         <p class="ps-3 pt-2 color_gris">ENVÍOS A TODA LA ARGENTINA </p>
 
          
       </div>

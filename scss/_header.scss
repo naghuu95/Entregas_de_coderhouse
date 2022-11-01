@@ -17,7 +17,10 @@
     border-bottom:1px solid #4b0b2b78;
 
     .navbar{
+
       .ninety{
+
+        font-size:1.6rem ;
         font-weight: bold;
         font-family: orbi;
         color: rgb(53, 172, 246);
@@ -31,6 +34,7 @@
           transform: scale(1.1);
         }
       }
+
       .container-fluid{
 
         .navbar-brand{
@@ -78,4 +82,21 @@
 
 
 
- 
+  @media (max-width: 480px) {
+
+
+    header{
+      
+  
+      .navbar{
+        
+        .ninety{
+          font-size:1.2rem ;
+          letter-spacing: 6px;
+
+        }
+       
+      }
+  
+    }
+  }
