@@ -90,7 +90,8 @@
                             box-shadow: 0 0 5px $color-violeta, 0 0 25px $color-rosa, 0 0 50px $color-rosa, 0 0 200px $color-violeta;
                             width: 8em;
                             height: 2em;
-                            transition: all .5s;
+                            transform: scale(1.1);
+                            transition: all 0.8s;
                         }
                     
                       

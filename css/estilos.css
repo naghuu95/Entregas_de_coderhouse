@@ -222,6 +222,20 @@ header {
     text-shadow: 0px 0px 7px rgba(255, 48, 124, 0.796);
     transform: scale(1.1); }
 
+.boton_vermas {
+  font-weight: bold;
+  color: #cbcbcbe4;
+  background: #00000032;
+  border-radius: 5px;
+  border: 2px solid #ff004c; }
+  .boton_vermas:hover {
+    font-weight: bold;
+    color: #000000;
+    background: #f9f9f9d7;
+    box-shadow: 0 0 5px #e537e887, 0 0 25px #ff0d82, 0 0 50px #ff0d82, 0 0 200px #e537e887;
+    transform: scale(1.1);
+    transition: all 0.8s; }
+
 /*BANNER*/
 /*puse una imagen de fondo y le aplique gradientes para que resalte el texto y la imagen */
 .banner {
@@ -364,7 +378,8 @@ header {
       box-shadow: 0 0 5px #e537e887, 0 0 25px #ff0d82, 0 0 50px #ff0d82, 0 0 200px #e537e887;
       width: 8em;
       height: 2em;
-      transition: all .5s; }
+      transform: scale(1.1);
+      transition: all 0.8s; }
 
 @media (max-width: 480px) {
   .container-fluid .titulo {
@@ -525,7 +540,8 @@ header {
       box-shadow: 0 0 5px #e537e887, 0 0 25px #ff0d82, 0 0 50px #ff0d82, 0 0 200px #e537e887;
       width: 8em;
       height: 2em;
-      transition: all .5s; }
+      transform: scale(1.1);
+      transition: all 0.8s; }
 
 .container .contenedor_productos {
   padding-top: 100px; }
