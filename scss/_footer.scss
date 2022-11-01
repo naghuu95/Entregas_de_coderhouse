@@ -2,7 +2,7 @@
     /* personace un poco mi footer para darle mas vida*/
   
     footer{
-      
+        
         /*margin-top: $margen-secciones;*/
         width: $ancho-maximo;
         /*border-top: 2px solid  #ed33e778;*/
@@ -12,7 +12,7 @@
         $color-n-gradiente-1,
         $color-n-gradiente-2)
          ,url(../asset/imagenes/seccion_footer/fondofooter11-min.jpg)*/;
-         font-size: 15px;
+         font-size: 13px;
        
         background-color: rgba(3, 2, 25, 0.5);
        
@@ -25,9 +25,10 @@
                     ul{
                     list-style: none;
                         li{
-                            a{
+                            a{ 
+                               padding-top: 8px;
                                color: $color-fuente;
-                               font-size: $fuente-m;
+                               font-size: 13px;
                                text-decoration: none;
                                display: flex;
                                justify-content: center;
@@ -35,9 +36,10 @@
                                padding-right: $padding-30;
   
                                 &:hover{
-                                  color: $color-blanco;
-                                  text-shadow: 5px 5px 2px $color-rosa;
+                                  color: rgb(255, 35, 248);
+                                  text-shadow: 0px 0px 10px rgb(255, 35, 248);
                                   font-weight: map-get($fuente-grosor, negrita );
+                                  transition: all 0.4s;
                                   
   
                                 }
@@ -124,6 +126,20 @@
   
             }
         }
+
+        div{
+           
+            .caja_copy{
+                .fuente_pequeña{
+
+                    font-size: 0.9em;
+                    letter-spacing: 2px;
+                    word-spacing: 2px;
+                    color: rgb(99, 99, 99);
+                  }
+                  
+            }
+        }
     }
 
 
@@ -134,6 +150,22 @@
     
     @media (max-width: 480px) {
 
+        footer{
 
+            div{
+           
+                .caja_copy{
+
+                    .fuente_pequeña{
+                     line-height: 2;
+                     font-size: 0.9em;
+                     letter-spacing: 2px;
+                     word-spacing: 2px;
+                     color: rgb(99, 99, 99);
+                    }
+                  
+                }
+            }
+        }
 
     }

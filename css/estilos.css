@@ -129,7 +129,7 @@ body {
       line-height: 3;
       word-spacing: 10px;
       letter-spacing: 2px;
-      padding-top: 30vh; }
+      padding-top: 20vh; }
     .pantalla_principal span {
       font-size: 1em; }
     .pantalla_principal .salto_pagina {
@@ -172,8 +172,10 @@ header {
     /* UTILICE CASI TODO VARIABLES PARA HACER EL HOVER*/ }
     header .navbar .navbar-nav .nav-item .nav-link:hover {
       font-weight: bold;
-      color: #ffffff;
-      text-shadow: 2px 2px 10px #130847;
+      /*color: $color-blanco;
+                      text-shadow: 2px 2px 10px $color-azul-obscuro;*/
+      color: #25d6f9;
+      text-shadow: 0px 0px 6px #38a9ff;
       border: 2px solid #ff0d82;
       border-radius: 5px;
       background-color: #10000dfc;
@@ -204,6 +206,18 @@ header {
   50% {
     text-shadow: 0 0 0.5vw #130847, 0 0 1.5vw #e537e887, 0 0 5vw #520880, 0 0 5vw #520880, 0 0 0.2vw #520880, 0.5vw 0.5vw 0.1vw #130847;
     color: #ef5abe; } }
+
+.ninety {
+  text-decoration: none;
+  font-weight: bold;
+  font-family: orbi;
+  color: #35acf6;
+  text-shadow: 0px 0px 6px rgba(40, 130, 255, 0.796);
+  letter-spacing: 10px;
+  transition: all 0.8s; }
+  .ninety:hover {
+    color: #ff3b9d;
+    text-shadow: 0px 0px 7px rgba(255, 48, 124, 0.796); }
 
 /*BANNER*/
 /*puse una imagen de fondo y le aplique gradientes para que resalte el texto y la imagen */
@@ -351,7 +365,7 @@ header {
 
 @media (max-width: 480px) {
   .container-fluid .titulo {
-    padding-top: 5vh;
+    padding-top: 0vh;
     padding-bottom: 5vh;
     margin-top: 0vh;
     margin-bottom: 5vh;
@@ -780,7 +794,7 @@ footer {
         $color-n-gradiente-1,
         $color-n-gradiente-2)
          ,url(../asset/imagenes/seccion_footer/fondofooter11-min.jpg)*/
-  font-size: 15px;
+  font-size: 13px;
   background-color: rgba(3, 2, 25, 0.5);
   /*Estilos y ANIMACIONES REDES SOCIALES*/ }
   footer div div {
@@ -788,17 +802,19 @@ footer {
     footer div div nav ul {
       list-style: none; }
       footer div div nav ul li a {
+        padding-top: 8px;
         color: #cbcbcbe4;
-        font-size: 1rem;
+        font-size: 13px;
         text-decoration: none;
         display: flex;
         justify-content: center;
         letter-spacing: 2px;
         padding-right: 30px; }
         footer div div nav ul li a:hover {
-          color: #ffffff;
-          text-shadow: 5px 5px 2px #ff0d82;
-          font-weight: bold; }
+          color: #ff23f8;
+          text-shadow: 0px 0px 10px #ff23f8;
+          font-weight: bold;
+          transition: all 0.4s; }
   footer div .contenedor_mp {
     width: 100%; }
   footer div div .icons-wrapper {
@@ -829,21 +845,35 @@ footer {
     footer div div .icons-wrapper a .ri-whatsapp-line {
       color: #13873e;
       animation-delay: 1s; }
+  footer div .caja_copy .fuente_pequeña {
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #636363; }
+
+@media (max-width: 480px) {
+  footer div .caja_copy .fuente_pequeña {
+    line-height: 2;
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #636363; } }
 
 .titulo_paginas_cuadros {
   background-color: #100309ad;
   border-bottom: 3px solid #3f0823b8;
   height: 12vh; }
-  .titulo_paginas_cuadros .subtitulos_cuadros {
+  .titulo_paginas_cuadros .subtitulos_cuadros h4 {
     text-shadow: 2px 2px 2px #c4016f;
     color: #cbcbcbe4;
     border-left: 4px solid #ff0d82;
     padding-left: 15px;
     letter-spacing: 10px;
     font-weight: bold; }
-    .titulo_paginas_cuadros .subtitulos_cuadros:hover {
+    .titulo_paginas_cuadros .subtitulos_cuadros h4:hover {
       text-shadow: none;
-      color: #ff0d82; }
+      color: #ff0d82;
+      transition: all 0.6s; }
 
 main {
   margin-bottom: 5vw; }
@@ -903,7 +933,7 @@ main {
         color: #000000;
         background: #f9f9f9d7;
         box-shadow: 0 0 5px #e537e887, 0 0 25px #ff0d82, 0 0 50px #ff0d82, 0 0 200px #e537e887;
-        transition: .5s; }
+        transition: all 0.6s; }
     main div .contenedor_info_compras .texto_compra {
       font-size: 0.8em; }
 
@@ -944,8 +974,10 @@ main {
 @media (max-width: 480px) {
   .titulo_paginas_cuadros {
     height: 13vh; }
-    .titulo_paginas_cuadros .subtitulos_cuadros {
-      letter-spacing: 4px; }
+    .titulo_paginas_cuadros .subtitulos_cuadros h4 {
+      font-size: 18px;
+      border-left: 4px solid #ff0d82;
+      letter-spacing: 8px; }
   main {
     margin-bottom: 20vw; }
     main div .contenedor_info_compras p {
