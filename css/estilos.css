@@ -1033,23 +1033,48 @@ main {
     background-color: black;
     border: 1px solid rgba(0, 0, 0, 0.125); } }
 
+.body_error {
+  height: 100%;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../asset/imagenes/productos/banner4-min.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+  .body_error .error {
+    width: 30vw; }
+
 .boton_volver {
   font-size: 20px;
   letter-spacing: 10px;
   font-weight: bold;
   width: 25em;
-  height: 3em;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: #cbcbcbe4;
   background: #00000032;
   border-radius: 5px;
   border: 2px solid #ff004c; }
   .boton_volver:hover {
+    font-size: 25px;
     font-weight: bold;
     color: #000000;
     background: #f9f9f9d7;
     box-shadow: 0 0 5px #e537e887, 0 0 25px #ff0d82, 0 0 50px #ff0d82, 0 0 200px #e537e887;
-    width: 28em;
-    height: 3.5em; }
+    transition: all 0.9s; }
+
+@media (max-width: 480px) {
+  .boton_volver {
+    font-size: 15px;
+    line-height: 2;
+    letter-spacing: 5px;
+    font-weight: bold;
+    width: 15em;
+    color: #cbcbcbe4;
+    background: #00000032;
+    border-radius: 5px;
+    border: 2px solid #ff004c; }
+  .body_error .error {
+    width: 100vw; } }
 
 .section_suscripcion {
   background-color: black;

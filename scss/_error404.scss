@@ -1,22 +1,73 @@
+.body_error{
+    height: 100%;
+    position: relative;
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5) ),  url(../asset/imagenes/productos/banner4-min.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .error{
+
+        width: 30vw;
+    }
+}
+
+
+
+
 .boton_volver{
     
     font-size: 20px;
     letter-spacing: 10px;
     font-weight:map-get($fuente-grosor, negrita );
     width: 25em;
-    height: 3em;
+    padding-top: 10px;
+    padding-bottom: 10px;
     color: $color-fuente;
     background: $color-transparente;
     border-radius: $borde-sm;
     border: $borde-s solid  $color-violeta-2;
     
     &:hover {
+        font-size: 25px;
         font-weight: bold;
         color: $color-negro;
         background: #f9f9f9d7;
         box-shadow: 0 0 5px $color-violeta, 0 0 25px $color-rosa, 0 0 50px $color-rosa, 0 0 200px $color-violeta;
-        width: 28em;
-        height: 3.5em;
+        
+        transition: all (0.9s);
     }
 
+   
+
+}
+
+@media (max-width: 480px) {
+
+    .boton_volver{
+    
+        font-size: 15px;
+        line-height: 2;
+        letter-spacing: 5px;
+        font-weight:map-get($fuente-grosor, negrita );
+        width: 15em;
+        
+        color: $color-fuente;
+        background: $color-transparente;
+        border-radius: $borde-sm;
+        border: $borde-s solid  $color-violeta-2;
+        
+       
+    
+    }
+
+    .body_error{
+        
+    
+        .error{
+    
+            width:100vw;
+        }
+    }
+    
 }
