@@ -1,10 +1,10 @@
- /* PAGINA CONTACTO*/
+ /* MAIN CONTACTO*/
   
  
   
   /* Contenedor del formulario de contacto*/
 
-  section{
+  main{
     div{
         .caja_contacto {
             padding-top: $paddin-20;
@@ -40,7 +40,7 @@
                 .boton_contacto {
 
                     @extend input ;
-                    font-weight: map-get($fuente-grosor, negrita );
+                    font-weight: map-get($fw, f-bold );
                     width: 16em;
                     background: $color-n-gradiente-2;
                     border-radius: $borde-sm;
@@ -93,7 +93,7 @@
   
   @media (min-width: 992px) and (max-width: 1199px) {
     
-    section{
+    main{
         div{
             .caja_contacto{
                 margin-bottom: 30px;
@@ -120,7 +120,7 @@
   
   @media (min-width: 768px) and (max-width: 991px) {
     
-   section{
+   main{
     div{
         .caja_contacto{
             margin-bottom: 30px;
@@ -141,20 +141,17 @@
     
   }
   
-  /* 
-    ##Device = Baja resolución Tablets, Mobiles (Landscape/horizontal)
-    ##Screen = B/w 481px to 767px
-  */
+ 
   
   @media (min-width: 481px) and (max-width: 767px) {
     
-    /* CSS */
+ 
     
   }
 
   @media (max-width: 480px) {
 
-    section{
+    main{
         div{
             .caja_contacto {
                

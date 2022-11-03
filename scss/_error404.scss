@@ -1,10 +1,11 @@
 .body_error{
     height: 100%;
     position: relative;
-    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5) ),  url(../asset/imagenes/productos/banner4-min.jpg) ;
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5) ),  url(../asset/imagenes/productos/banner4-min-min.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+   
 
     .error{
 
@@ -17,9 +18,9 @@
 
 .boton_volver{
     
-    font-size: 20px;
-    letter-spacing: 10px;
-    font-weight:map-get($fuente-grosor, negrita );
+    font-size: map-get($fs,fs-1 );
+    letter-spacing: 7px;
+    font-weight:map-get($fw, f-bold );
     width: 25em;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -46,10 +47,10 @@
 
     .boton_volver{
     
-        font-size: 15px;
+        font-size: map-get($fs,fs-1 );
         line-height: 2;
         letter-spacing: 5px;
-        font-weight:map-get($fuente-grosor, negrita );
+        font-weight:map-get($fw, f-bold );
         width: 15em;
         
         color: $color-fuente;

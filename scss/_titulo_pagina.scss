@@ -1,4 +1,7 @@
+/*TITULO PAGINA*/
+
 .titulo_paginas{
+    
     background-color: #100309ad;
     border-bottom: 3px solid #3f0823b8;
     height: 12vh;
@@ -37,10 +40,10 @@
     }
 }
 
-  /* 
-    UTILICE MEDIAQUERIE PARA MODIFICAR LA SECTION DEL TITULO QUE SE ME QUEDABA MUY CHICA CUANDO ESTABA EN MODO MOBILE Y TABLET
+
+/*Aca modifique un poco la seccion del titulo porque quedaba muy mal como estaba para tablet */
    
-  */
+  
   
 @media (min-width: 481px) and (max-width: 1024px) {
     

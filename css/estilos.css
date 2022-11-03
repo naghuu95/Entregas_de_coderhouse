@@ -17,8 +17,8 @@ MODIFICAR TODO */
 /*TAMAÑO FUENTE*/
 /* hice solo un mapa que es este GROSOR FUENTE*/
 /*COLORES*/
-/*$color-borde :#42063eb3;*/
-/*$color-violeta-2: rgba(121, 7, 81, 0.689);*/
+/*colores del logo*/
+/*colores para el footer*/
 /*ESPACIADOS*/
 /*letras*/
 /*palabras*/
@@ -26,7 +26,6 @@ MODIFICAR TODO */
 /*BORDES*/
 /*MARGENES*/
 /*PADDING*/
-/*SOMBRAS*/
 /*ESTE ES EL RESETEO DEL SITIO WEB */
 * {
   margin: 0;
@@ -36,6 +35,7 @@ MODIFICAR TODO */
   max-width: 100% !important; }
 
 /* MIXINS */
+/*lo utilice para los iconos del footer*/
 /*ORDENE LAS FUENTES ACA*/
 /*FUENTES*/
 @font-face {
@@ -43,16 +43,12 @@ MODIFICAR TODO */
   src: url(../asset/Fuentes/Orbitron-Regular.ttf); }
 
 @font-face {
-  font-family: poppins;
-  src: url(../asset/Fuentes/Poppins-Regular.ttf); }
-
-@font-face {
-  font-family: poppins_2;
-  src: url(../asset/Fuentes/Poppins-ExtraLight.ttf); }
-
-@font-face {
   font-family: monserrat;
   src: url(../asset/Fuentes/Montserrat-Regular.ttf); }
+
+@font-face {
+  font-family: monserrat_fina;
+  src: url(../asset/Fuentes/Montserrat-ExtraLight.ttf); }
 
 /* APLICANDO ALGUNOS ESTILOS AL BODY DE TODAS LAS PAGINAS
 UTILICE VARIABLES PARA DAR ESPACIADOS,COLOR Y FUENTE*/
@@ -63,7 +59,6 @@ body {
   word-spacing: 5px;
   font-size: 1rem;
   color: #cbcbcbe4;
-  font-weight: 100;
   /* max-width: 100% !important;
     overflow-x: hidden !important;*/ }
 
@@ -72,8 +67,7 @@ body {
   font-family: monserrat;
   letter-spacing: 1px;
   word-spacing: 5px;
-  color: #cbcbcbe4;
-  font-weight: lighter; }
+  color: #cbcbcbe4; }
 
 /*PORTADA DE LA PAGINA*/
 .pantalla_principal {
@@ -154,7 +148,7 @@ header {
   -webkit-backdrop-filter: blur(2px);
   border-bottom: 1px solid #4b0b2b78; }
   header .navbar .ninety {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     font-weight: bold;
     font-family: orbi;
     color: #35acf6;
@@ -190,31 +184,7 @@ header {
     font-size: 1.2rem;
     letter-spacing: 6px; } }
 
-/* FLUX*/
-/* Efecto neon PARA LOGO
-  ACA TMBN UTILICE VARIABLES */
-.flux {
-  font-weight: bold;
-  letter-spacing: 10px;
-  font-family: orbi;
-  color: #f789d2;
-  font-size: 6vw;
-  text-shadow: 0 0 3vw #ffffff;
-  animation: flux 4s linear infinite;
-  -moz-animation: flux 4s linear infinite;
-  -webkit-animation: flux 4s linear infinite;
-  -o-animation: flux 4s linear infinite; }
-
-/*UTILICE VARIABLES PARA DARLE EL EFECTO NEON EN EL TEXT-SHADOW Y EL COLOR*/
-@keyframes flux {
-  0%,
-  100% {
-    text-shadow: 0 0 1vw #ff0d82, 0 0 3vw #ff0d82, 0 0 10vw #ffffff, 0 0 10vw #000000, 0 0 0.4vw #000000, 0.5vw 0.5vw 0.1vw #130847;
-    color: #3ce7ed; }
-  50% {
-    text-shadow: 0 0 0.5vw #130847, 0 0 1.5vw #e537e887, 0 0 5vw #520880, 0 0 5vw #520880, 0 0 0.2vw #520880, 0.5vw 0.5vw 0.1vw #130847;
-    color: #ef5abe; } }
-
+/*LOGO DE LA EMPRESA NINETY90*/
 .ninety {
   text-decoration: none;
   font-weight: bold;
@@ -228,32 +198,17 @@ header {
     text-shadow: 0px 0px 7px rgba(255, 48, 124, 0.796);
     transform: scale(1.1); }
 
-.boton_vermas {
-  font-weight: bold;
-  color: #cbcbcbe4;
-  background: #00000032;
-  border-radius: 5px;
-  border: 2px solid #ff004c; }
-  .boton_vermas:hover {
-    font-weight: bold;
-    color: #000000;
-    background: #f9f9f9d7;
-    box-shadow: 0 0 5px #e537e887, 0 0 25px #ff0d82, 0 0 50px #ff0d82, 0 0 200px #e537e887;
-    transform: scale(1.1);
-    transition: all 0.8s; }
-
 /*BANNER*/
 /*puse una imagen de fondo y le aplique gradientes para que resalte el texto y la imagen */
 .banner {
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../asset/imagenes/productos/banner4-min.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../asset/imagenes/productos/banner4-min-min.jpg);
   background-attachment: fixed;
-  background-repeat: no-repeat;
   background-size: cover;
-  /*border-bottom: 2px solid $color-borde;*/
+  background-repeat: no-repeat;
   box-shadow: 15px 15px 100px 15px #000000d4; }
   .banner .background-overlay1 {
-    background: rgba(23, 23, 23, 0.437) f;
+    background: rgba(0, 0, 0, 0.285);
     top: 0;
     left: 0;
     width: 100%;
@@ -262,18 +217,13 @@ header {
       /* BOTON VER CATALOGO*/ }
       .banner .background-overlay1 div div .titulo_banner {
         line-height: 1.5;
-        /*letter-spacing: 3px;
-              color: rgb(255, 55, 128);*/
         font-weight: bold !important;
         text-shadow: 0px 0px 10px rgba(255, 36, 157, 0.63);
-        color: rgba(255, 101, 181, 0.63);
-        /* color: rgba(255, 53, 144, 0.688);
-              text-shadow: 0px 0px 10px rgba(255, 0, 204, 0.686);*/ }
+        color: rgba(255, 101, 181, 0.63); }
       .banner .background-overlay1 div div p {
-        font-family: poppins_2 !important;
-        font-size: 1rem; }
+        font-family: monserrat_fina !important; }
       .banner .background-overlay1 div div .btn:hover {
-        font-size: 25px;
+        font-size: 1.5rem;
         background: #00000032;
         box-shadow: 0 0 5px #ffffff, 0 0 25px #ffffff, 0 0 50px #ffffff, 0 0 200px #ffffff;
         transition: all 0.5s; }
@@ -289,58 +239,48 @@ header {
     .banner .background-overlay1 div div .titulo_banner {
       line-height: 1.7;
       letter-spacing: 2px;
-      font-size: 7vw; } }
+      font-size: 2rem; } }
 
-/*BANNER_2*/
-.banner_2 {
+/*BANNER_INFORMATIVO*/
+.section_ayuda {
   background-color: rgba(3, 2, 25, 0.5);
   height: 200px;
-  margin-top: 34vh;
-  margin-bottom: 30vh;
-  color: #cbcbcbe4;
-  text-shadow: 4px 5px 1px #930748; }
-  .banner_2 div .contenedor_iconos {
-    font-size: 15px;
-    width: 8vw;
-    height: 12vh;
-    border: 6px solid #ff004c; }
-  .banner_2 div p {
-    font-size: 1vw;
-    text-shadow: none; }
+  margin-top: 35vh;
+  margin-bottom: 35vh; }
+  .section_ayuda .banner_informativo {
+    height: 200px;
+    background-color: rgba(3, 2, 25, 0.5);
+    text-shadow: 4px 5px 1px #930748; }
+    .section_ayuda .banner_informativo div .contenedor_iconos {
+      font-size: 1rem;
+      width: 8vw;
+      height: 12vh;
+      border: 6px solid #ff004c; }
+    .section_ayuda .banner_informativo div .contenedor_iconos_tel {
+      font-size: 1rem;
+      width: 6vw;
+      height: 12vh;
+      border: 6px solid #ff004c; }
+    .section_ayuda .banner_informativo div .contenedor_iconos_tarjeta {
+      font-size: 1rem;
+      width: 6vw;
+      height: 12vh;
+      border: 6px solid #ff004c; }
+    .section_ayuda .banner_informativo div p {
+      font-size: 1rem;
+      text-shadow: none; }
 
-.banner_2 div .contenedor_iconos_tel {
-  font-size: 15px;
-  width: 6vw;
-  height: 12vh;
-  border: 6px solid #ff004c; }
-
-.banner_2 div p {
-  font-size: 1vw; }
-
-.banner_2 div .contenedor_iconos_tarjeta {
-  font-size: 14px;
-  width: 6vw;
-  height: 12vh;
-  border: 6px solid #ff004c; }
-
-.banner_2 div p {
-  font-size: 1vw; }
-
-/*CARDS*/
+/*CARDS de los cuadros*/
 .container-fluid .titulo {
-  /*background-color: rgba(22, 7, 36, 0);*/
   font-size: 2.3rem;
   line-height: 3;
   padding-top: 7vh;
   padding-bottom: 25vh;
   margin-bottom: 20vh;
   letter-spacing: 15px;
-  /* text-shadow: 7px 2px 2px rgb(147, 7, 72);*/
   text-shadow: 2px 2px 2px #c4016f; }
 
 .container-fluid .row .caja_tarjetas {
-  /* width:24% ;
-             height:97vh ;*/
   height: 730px;
   width: 350px;
   margin-bottom: 5em;
@@ -387,12 +327,26 @@ header {
       transform: scale(1.1);
       transition: all 0.8s; }
 
+.container-fluid .row div form .boton_vermas {
+  font-weight: bold;
+  color: #cbcbcbe4;
+  background: #00000032;
+  border-radius: 5px;
+  border: 2px solid #ff004c; }
+  .container-fluid .row div form .boton_vermas:hover {
+    font-weight: bold;
+    color: #000000;
+    background: #f9f9f9d7;
+    box-shadow: 0 0 5px #e537e887, 0 0 25px #ff0d82, 0 0 50px #ff0d82, 0 0 200px #e537e887;
+    transform: scale(1.1);
+    transition: all 0.8s; }
+
 @media (max-width: 480px) {
   .container-fluid .titulo {
-    padding-top: 0vh;
+    padding-top: 7vh;
     padding-bottom: 5vh;
     margin-top: 0vh;
-    margin-bottom: 5vh;
+    margin-bottom: 0vh;
     line-height: 2;
     line-height: 3;
     letter-spacing: 6px; } }
@@ -400,95 +354,31 @@ header {
 /*@media  screen and (min-width: 360px) and (max-width: 768px) {
 	
 }*/
-/* LINK 3 */
 /*SECTION 80 Y 90 */
 .section_80_90 {
-  margin-top: 2%;
-  padding-top: 15%;
-  padding-bottom: 15%;
+  padding-top: 20%;
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../asset/imagenes/index/fondo-section_80_90_grande.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #00000032;
-  /*box-shadow: 20px 20px 50px rgba(98, 8, 140, 0.57);*/
   border-radius: 2px;
-  /*border: 3px solid rgba(161, 48, 218, 0.362);*/
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px); }
-  .section_80_90 .fila_80 {
-    padding-bottom: 15%; }
-    .section_80_90 .fila_80 div div a img {
-      transition: all 600ms;
-      border-radius: 10px; }
-      .section_80_90 .fila_80 div div a img:hover {
+  .section_80_90 .fila_80_90 {
+    padding-bottom: 20%; }
+    .section_80_90 .fila_80_90 div div a img {
+      border-radius: 10px;
+      transition: all 600ms; }
+      .section_80_90 .fila_80_90 div div a img:hover {
         transform: translateY(-20px);
         box-shadow: 0 0 5px #000000, 0 0 25px #e537e887, 0 0 50px #ff0d82, 0 0 200px #e537e887; }
-    .section_80_90 .fila_80 div p {
+    .section_80_90 .fila_80_90 div p {
       font-size: 20px;
       font-weight: lighter;
       line-height: 2;
       word-spacing: 2px; }
-  .section_80_90 .fila_90 {
-    padding-top: 10%; }
-    .section_80_90 .fila_90 div div a img {
-      transition: all 600ms;
-      border-radius: 10px; }
-      .section_80_90 .fila_90 div div a img:hover {
-        transform: translateY(-20px);
-        box-shadow: 0 0 5px #000000, 0 0 25px #e537e887, 0 0 50px #ff0d82, 0 0 200px #e537e887; }
-    .section_80_90 .fila_90 div p {
-      font-size: 20px;
-      font-weight: lighter;
-      line-height: 2;
-      word-spacing: 2px; }
-
-@keyframes float {
-  0% {
-    transform: translateY(0); }
-  50% {
-    transform: translateY(-25px); }
-  100% {
-    transform: translateY(0); } }
-
-.contenedor_2x1 {
-  border-top: 2px solid #e537e887;
-  border-bottom: 2px solid #e537e887;
-  box-shadow: 3px 3px 50px 3px rgba(235, 8, 193, 0.453);
-  background-color: black !important;
-  width: 100%; }
-  .contenedor_2x1 .section_propaganda {
-    /*margin-top: 10vh;*/
-    /*box-shadow: 3px 3px 50px 3px rgba(235, 8, 193, 0.453);*/
-    /*box-shadow: 0px 0px 50px rgb(255, 1, 208);*/
-    /* border-top: $borde-s solid $color-violeta;
-        border-bottom: $borde-s solid $color-violeta;*/
-    height: 35vw;
-    width: 100%; }
-    .contenedor_2x1 .section_propaganda div h2 {
-      font-size: 2vw;
-      line-height: 2;
-      letter-spacing: 2px;
-      word-spacing: 5px;
-      font-weight: bold;
-      color: white;
-      text-shadow: 5px 0px 20px rgba(18, 62, 132, 0.696); }
-    .contenedor_2x1 .section_propaganda div span {
-      color: #ff0d82;
-      font-size: 4vw; }
-    .contenedor_2x1 .section_propaganda div p {
-      font-size: 1vw;
-      padding-top: 0.8vh;
-      line-height: 2;
-      letter-spacing: 2px;
-      word-spacing: 5px;
-      font-weight: 300;
-      color: #ff0d82;
-      text-shadow: 5px 0px 20px rgba(18, 62, 132, 0.696); }
-    .contenedor_2x1 .section_propaganda .contenedor_propaganda {
-      height: 30vw;
-      width: 30vw; }
 
 .container .titulo {
   font-size: 2.3rem;
@@ -500,8 +390,6 @@ header {
   letter-spacing: 10px; }
 
 .container .row .caja_tarjetas {
-  /* width:24% ;
-             height:97vh ;*/
   height: 730px;
   width: 350px;
   margin-bottom: 5em;
@@ -528,7 +416,6 @@ header {
         transform: scale(1.2); }
   .container .row .caja_tarjetas .borde_titulos {
     text-shadow: 2px 2px 2px #c4016f;
-    /*text-shadow: 5px 3px 1px rgb(147, 7, 72);*/
     border: 2px solid #ff0d82;
     background-color: #f168cf00;
     border-radius: 5px; }
@@ -549,19 +436,17 @@ header {
       transform: scale(1.1);
       transition: all 0.8s; }
 
-.container .contenedor_productos {
-  padding-top: 100px; }
-
 @media (max-width: 480px) {
   .container .titulo {
+    font-size: 1.6rem;
     margin-top: 10vh;
     margin-bottom: 8vh;
     line-height: 2;
-    letter-spacing: 10px; } }
+    letter-spacing: 5px; } }
 
-/* PAGINA INFORMACION*/
+/* MAIN INFORMACION*/
 main {
-  /*Cree esta clase con la finalidad de utilizarla para las peliculas de los 80 y 90  */ }
+  /*Estilos para los logos de las peliculas*/ }
   main .section_80 {
     position: relative;
     background: url(../asset/imagenes/info/et-enbici-fondo-min.jpg);
@@ -570,14 +455,13 @@ main {
     background-size: cover;
     background-color: #00000032; }
     main .section_80 .info_80 {
+      padding-left: 15vh;
       padding-top: 2vh;
       padding-bottom: 10vh; }
-      main .section_80 .info_80 .titulo_80_90 {
+      main .section_80 .info_80 .titulo_80 {
         font-family: orbi;
         text-shadow: 0px 0px 10px rgba(240, 1, 133, 0.63);
         color: rgba(255, 101, 181, 0.63);
-        /*text-shadow: 7px 7px 0px rgb(2, 90, 198);
-                color:rgba(246, 85, 198, 0.63) ;*/
         font-size: 10rem;
         padding-bottom: 15vh; }
       main .section_80 .info_80 .texto_80_90 {
@@ -588,7 +472,7 @@ main {
     padding-top: 200px;
     padding-bottom: 200px; }
     main .container-fluid h4 {
-      font-family: poppins_2;
+      font-family: monserrat_3;
       padding-bottom: 20px; }
     main .container-fluid .caja_logos_peliculas {
       padding-top: 130px; }
@@ -610,76 +494,69 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #00000032; }
-    main .section_90 .info_80 {
+    main .section_90 .info_90 {
+      padding-right: 15vh;
       padding-top: 2vh;
       padding-bottom: 10vh; }
-      main .section_90 .info_80 .titulo_90 {
+      main .section_90 .info_90 .titulo_90 {
         text-shadow: 0px 0px 10px rgba(174, 85, 246, 0.63);
         color: rgba(0, 176, 240, 0.63);
         font-family: orbi;
-        /*text-shadow: 7px 7px 0px rgb(250, 65, 170);
-                color:rgba(174, 85, 246, 0.63) ;*/
         font-size: 10rem;
         padding-bottom: 15vh; }
-      main .section_90 .info_80 .texto_80_90 {
+      main .section_90 .info_90 .texto_80_90 {
         line-height: 2;
         letter-spacing: 1px;
         word-spacing: 2px; }
 
 @media (max-width: 480px) {
-  main .section_80 {
-    background-color: #000000; }
-    main .section_80 .info_80 {
-      padding-top: 2vh;
-      padding-bottom: 5vh; }
-      main .section_80 .info_80 .titulo_80_90 {
-        font-size: 5rem;
+  main {
+    /* Logos de peliculas*/ }
+    main .section_80 {
+      background-color: #000000; }
+      main .section_80 .info_80 {
+        padding-left: 0vh;
         padding-bottom: 5vh; }
-      main .section_80 .info_80 img {
-        margin-top: 3vh;
-        margin-bottom: 5vh;
-        width: 40vw; }
-  main .container-fluid {
-    padding-top: 5vh;
-    padding-bottom: 5vh; }
-    main .container-fluid h4 {
-      font-size: 14px;
-      font-family: poppins_2;
-      padding-bottom: 0px;
-      line-height: 3; }
-    main .container-fluid .caja_logos_peliculas {
-      padding-top: 1vh; }
-      main .container-fluid .caja_logos_peliculas .contenedor_img_info {
-        margin-top: 10vw;
-        margin-bottom: 10vw;
-        background-color: #a1a0a100;
-        width: 90vw;
-        height: 20vw; }
-        main .container-fluid .caja_logos_peliculas .contenedor_img_info img {
-          width: 100%;
-          height: 100%;
-          transition: all 700ms; }
-          main .container-fluid .caja_logos_peliculas .contenedor_img_info img:hover {
-            transform: scale(1.6); }
-  main .section_90 {
-    background: none;
-    background-color: #000000; }
-    main .section_90 .info_80 {
-      padding-top: 2vh;
+        main .section_80 .info_80 .titulo_80 {
+          font-size: 0.5rem;
+          padding-bottom: 5vh; }
+    main .container-fluid {
+      padding-top: 5vh;
       padding-bottom: 5vh; }
-      main .section_90 .info_80 .titulo_90 {
-        font-size: 5rem;
+      main .container-fluid h4 {
+        font-size: 14px;
+        padding-bottom: 0px;
+        line-height: 3; }
+      main .container-fluid .caja_logos_peliculas {
+        padding-top: 1vh; }
+        main .container-fluid .caja_logos_peliculas .contenedor_img_info {
+          margin-top: 10vw;
+          margin-bottom: 10vw;
+          background-color: #a1a0a100;
+          width: 90vw;
+          height: 20vw; }
+          main .container-fluid .caja_logos_peliculas .contenedor_img_info img {
+            width: 100%;
+            height: 100%;
+            transition: all 700ms; }
+            main .container-fluid .caja_logos_peliculas .contenedor_img_info img:hover {
+              transform: scale(1.6); }
+    main .section_90 {
+      background: none;
+      background-color: #000000; }
+      main .section_90 .info_90 {
+        padding-right: 0vh;
+        padding-top: 2vh;
         padding-bottom: 5vh; }
-      main .section_90 .info_80 img {
-        margin-top: 3vh;
-        margin-bottom: 5vh;
-        width: 40vw; } }
+        main .section_90 .info_90 .titulo_90 {
+          font-size: 0.5rem;
+          padding-bottom: 5vh; } }
 
+/*MAIN ENVÍOS*/
 main .contenedor_envios {
   margin-top: 8vh;
   margin-bottom: 8vh; }
   main .contenedor_envios div h4 {
-    /*letter-spacing: $espacio-letra-4;*/
     text-shadow: 5px 3px 1px #930748;
     color: #cbcbcbe4;
     font-weight: bold;
@@ -693,9 +570,9 @@ main .contenedor_envios {
     margin-top: 4vh;
     margin-bottom: 4vh; } }
 
-/* PAGINA CONTACTO*/
+/* MAIN CONTACTO*/
 /* Contenedor del formulario de contacto*/
-section div .caja_contacto {
+main div .caja_contacto {
   padding-top: 20px;
   padding-bottom: 2vh;
   box-shadow: 3px 3px 50px 3px rgba(235, 8, 193, 0.453);
@@ -705,9 +582,9 @@ section div .caja_contacto {
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   transition: all 300ms; }
-  section div .caja_contacto .form {
+  main div .caja_contacto .form {
     /*Utilice @extend para llevarme los estilos del input a los otros componentes del formulario*/ }
-    section div .caja_contacto .form input, section div .caja_contacto .form textarea, section div .caja_contacto .form .boton_contacto {
+    main div .caja_contacto .form input, main div .caja_contacto .form textarea, main div .caja_contacto .form .boton_contacto {
       width: 100%;
       padding: .7em;
       border: none;
@@ -715,24 +592,24 @@ section div .caja_contacto {
       outline: none;
       color: #ffffff;
       border-bottom: 2px solid rgba(70, 37, 69, 0.675); }
-    section div .caja_contacto .form .boton_contacto {
+    main div .caja_contacto .form .boton_contacto {
       font-weight: bold;
       width: 16em;
       background: rgba(0, 0, 0, 0.5);
       border-radius: 5px;
       border: solid #a4a4a497;
       transition: all 600ms; }
-      section div .caja_contacto .form .boton_contacto:hover {
+      main div .caja_contacto .form .boton_contacto:hover {
         color: #000000;
         border: 3px solid #520880;
         background: #ffffff;
         box-shadow: 0 0 5px #ff0d82, 0 0 25px #ff0d82, 0 0 50px #ff0d82, 0 0 200px #e537e887;
         transform: scale(1.1); }
-  section div .caja_contacto ul {
+  main div .caja_contacto ul {
     list-style: none; }
-  section div .caja_contacto div {
+  main div .caja_contacto div {
     /*Mapa de google*/ }
-    section div .caja_contacto div .mapa {
+    main div .caja_contacto div .mapa {
       border-radius: 15px;
       width: 90%;
       height: 280px; }
@@ -741,11 +618,11 @@ section div .caja_contacto {
    LO ADAPTE PARA TODOS LOS BREAKPOINT DE BOOTSTRAP
   */
 @media (min-width: 992px) and (max-width: 1199px) {
-  section div .caja_contacto {
+  main div .caja_contacto {
     margin-bottom: 30px; }
-    section div .caja_contacto div {
+    main div .caja_contacto div {
       /*Mapa de google*/ }
-      section div .caja_contacto div .mapa {
+      main div .caja_contacto div .mapa {
         border-radius: 15px;
         width: 260px;
         height: 270px; } }
@@ -754,39 +631,33 @@ section div .caja_contacto {
     ADAPTADO PARA TABLET MODIFIQUE UN POCO LA CAJA QUE CONTIENE EL MAPA PORQUE SE VEIA MAL
   */
 @media (min-width: 768px) and (max-width: 991px) {
-  section div .caja_contacto {
+  main div .caja_contacto {
     margin-bottom: 30px; }
-    section div .caja_contacto div {
+    main div .caja_contacto div {
       /*Mapa de google*/ }
-      section div .caja_contacto div .mapa {
+      main div .caja_contacto div .mapa {
         border-radius: 15px;
         width: 400px;
         height: 270px; } }
 
-/* 
-    ##Device = Baja resolución Tablets, Mobiles (Landscape/horizontal)
-    ##Screen = B/w 481px to 767px
-  */
-@media (min-width: 481px) and (max-width: 767px) {
-  /* CSS */ }
-
 @media (max-width: 480px) {
-  section div .caja_contacto {
+  main div .caja_contacto {
     padding-bottom: 2vh;
     margin-bottom: 4vh; }
-    section div .caja_contacto .form {
+    main div .caja_contacto .form {
       /*Utilice @extend para llevarme los estilos del input a los otros componentes del formulario*/ }
-      section div .caja_contacto .form input, section div .caja_contacto .form textarea, section div .caja_contacto .form .boton_contacto {
+      main div .caja_contacto .form input, main div .caja_contacto .form textarea, main div .caja_contacto .form .boton_contacto {
         padding: .4em; }
-      section div .caja_contacto .form .boton_contacto {
+      main div .caja_contacto .form .boton_contacto {
         margin-bottom: 0.7em;
         width: 100%; }
-    section div .caja_contacto div {
+    main div .caja_contacto div {
       /*Mapa de google*/ }
-      section div .caja_contacto div .mapa {
+      main div .caja_contacto div .mapa {
         margin-bottom: 0.7em;
         /*width: 90%;*/ } }
 
+/*TITULO PAGINA*/
 .titulo_paginas {
   background-color: #100309ad;
   border-bottom: 3px solid #3f0823b8;
@@ -806,26 +677,16 @@ section div .caja_contacto {
       font-size: 18px;
       border-left: 4px solid #ff0d82; } }
 
-/* 
-    UTILICE MEDIAQUERIE PARA MODIFICAR LA SECTION DEL TITULO QUE SE ME QUEDABA MUY CHICA CUANDO ESTABA EN MODO MOBILE Y TABLET
-   
-  */
+/*Aca modifique un poco la seccion del titulo porque quedaba muy mal como estaba para tablet */
 @media (min-width: 481px) and (max-width: 1024px) {
   .titulo_paginas {
     height: 8vh; } }
 
 /*FOOTER*/
-/* personace un poco mi footer para darle mas vida*/
+/* */
 footer {
-  /*margin-top: $margen-secciones;*/
   width: 100%;
-  /*border-top: 2px solid  #ed33e778;*/
-  /*box-shadow: 15px 15px 50px 50px rgba(225, 83, 187, 0.549);*/
-  /* background-image: linear-gradient( 0deg,
-        $color-n-gradiente-1,
-        $color-n-gradiente-2)
-         ,url(../asset/imagenes/seccion_footer/fondofooter11-min.jpg)*/
-  font-size: 13px;
+  font-size: 0.8rem;
   background-color: rgba(3, 2, 25, 0.5);
   /*Estilos y ANIMACIONES REDES SOCIALES*/ }
   footer div div {
@@ -847,8 +708,6 @@ footer {
           text-shadow: 0px 0px 10px #ff23f8;
           font-weight: bold;
           transform: scale(1.1); }
-  footer div .contenedor_mp {
-    width: 100%; }
   footer div div .icons-wrapper {
     position: relative;
     display: flex;
@@ -877,19 +736,15 @@ footer {
     footer div div .icons-wrapper a .ri-whatsapp-line {
       color: #13873e;
       animation-delay: 1s; }
-  footer div .caja_copy .fuente_pequeña {
+  footer div .caja_copy p {
     font-size: 0.9em;
     letter-spacing: 2px;
     word-spacing: 2px;
     color: #636363; }
 
 @media (max-width: 480px) {
-  footer div .caja_copy .fuente_pequeña {
-    line-height: 2;
-    font-size: 0.9em;
-    letter-spacing: 2px;
-    word-spacing: 2px;
-    color: #636363; } }
+  footer div .caja_copy p {
+    line-height: 2; } }
 
 .titulo_paginas_cuadros {
   background-color: #100309ad;
@@ -915,24 +770,20 @@ main {
     background: #00000032;
     border-radius: 15px;
     backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
-    transition: all 300ms; }
+    -webkit-backdrop-filter: blur(2px); }
     main div .caja_cuadros .contenido_cuadros {
-      /*height: 640px;
-                width:  470px;*/
       height: 96%;
       width: 80vw;
       overflow: hidden; }
       main div .caja_cuadros .contenido_cuadros img {
         height: 100%;
         width: 110%;
-        transition: all 500ms;
+        transition: all 600ms;
         /* aplique un poco de animacion al tocar con el cursor*/ }
         main div .caja_cuadros .contenido_cuadros img:hover {
           transform: scale(1.2); }
   main div .contenedor_info_compras {
     color: #cbcbcbe4;
-    /*color: rgb(255, 13, 130);*/
     border: 2px solid #ff0d82;
     border-radius: 15px;
     box-shadow: 3px 3px 50px 3px rgba(235, 8, 193, 0.453); }
@@ -943,9 +794,9 @@ main {
     main div .contenedor_info_compras .container .row {
       width: 35vw; }
       main div .contenedor_info_compras .container .row div .form-label {
-        font-size: 12px; }
+        font-size: 0.8rem; }
       main div .contenedor_info_compras .container .row div .form-select {
-        font-size: 13px;
+        font-size: 0.8rem;
         color: #ef5abe;
         background-color: black;
         width: 160px;
@@ -968,7 +819,7 @@ main {
         box-shadow: 0 0 5px #e537e887, 0 0 25px #ff0d82, 0 0 50px #ff0d82, 0 0 200px #e537e887;
         transform: scale(1.2); }
     main div .contenedor_info_compras .texto_compra {
-      font-size: 0.8em; }
+      font-size: 0.8rem; }
 
 .accordion-button {
   position: relative;
@@ -981,9 +832,8 @@ main {
   text-align: left;
   background-color: black;
   border: 3px solid #c2046c;
-  border-radius: 20px;
-  overflow-anchor: none;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease; }
+  border-radius: 20px !important;
+  overflow-anchor: none; }
 
 .accordion-button:not(.collapsed) {
   font-weight: bold;
@@ -1002,7 +852,8 @@ main {
   font-size: 0.8em;
   color: #ffffff;
   background-color: black;
-  border: 1px solid rgba(0, 0, 0, 0.125); }
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 20px !important; }
 
 @media (max-width: 480px) {
   .titulo_paginas_cuadros {
@@ -1020,58 +871,12 @@ main {
     main div .contenedor_info_compras .container .row {
       width: 35vw; }
       main div .contenedor_info_compras .container .row div .form-label {
-        font-size: 10.5px; }
-    main div .contenedor_info_compras div form .boton_comprar_cuadros {
-      font-weight: bold;
-      width: 100%;
-      height: 3em;
-      color: #cbcbcbe4;
-      background: #00000032;
-      border-radius: 5px;
-      border: 2px solid #ff004c; }
-      main div .contenedor_info_compras div form .boton_comprar_cuadros:hover {
-        font-weight: bold;
-        color: #000000;
-        background: #f9f9f9d7;
-        box-shadow: 0 0 5px #e537e887, 0 0 25px #ff0d82, 0 0 50px #ff0d82, 0 0 200px #e537e887;
-        transition: .5s; }
-    main div .contenedor_info_compras .texto_compra {
-      font-size: 0.8em; }
-  .accordion-button {
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: 0.8rem 1.25rem;
-    font-size: 0.9rem;
-    color: #ffffff;
-    text-align: left;
-    background-color: black;
-    border: 3px solid #c2046c;
-    border-radius: 20px;
-    overflow-anchor: none;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease; }
-  .accordion-button:not(.collapsed) {
-    font-weight: bold;
-    font-size: 15px;
-    color: #e30079;
-    background-color: #000000;
-    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125); }
-  .accordion-button:focus {
-    z-index: 3;
-    border-color: #fd64b083;
-    outline: 0;
-    box-shadow: 0 0 2px #ffffff, 0 0 20px #ff0d82, 0 0 40px #ff0d82, 0 0 50px #e537e887; }
-  .accordion-item {
-    font-size: 0.8em;
-    color: #ffffff;
-    background-color: black;
-    border: 1px solid rgba(0, 0, 0, 0.125); } }
+        font-size: 10.5px; } }
 
 .body_error {
   height: 100%;
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../asset/imagenes/productos/banner4-min.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../asset/imagenes/productos/banner4-min-min.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; }
@@ -1079,8 +884,8 @@ main {
     width: 30vw; }
 
 .boton_volver {
-  font-size: 20px;
-  letter-spacing: 10px;
+  font-size: 1rem;
+  letter-spacing: 7px;
   font-weight: bold;
   width: 25em;
   padding-top: 10px;
@@ -1099,7 +904,7 @@ main {
 
 @media (max-width: 480px) {
   .boton_volver {
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 2;
     letter-spacing: 5px;
     font-weight: bold;
@@ -1111,17 +916,18 @@ main {
   .body_error .error {
     width: 100vw; } }
 
-.section_suscripcion {
+/*SUSCRIPCION*/
+.suscripcion {
   background-color: black;
   padding-top: 15%;
   padding-bottom: 15%; }
-  .section_suscripcion .contenedor_suscripcion {
+  .suscripcion .suscripcion_contenedor {
     font-size: 1em; }
-    .section_suscripcion .contenedor_suscripcion div .resaltado {
+    .suscripcion .suscripcion_contenedor div .resaltado {
       text-shadow: 2px 2px 2px #c4016f; }
-    .section_suscripcion .contenedor_suscripcion div .form_index {
+    .suscripcion .suscripcion_contenedor div .suscripcion_contenedor_div_form {
       width: 100%; }
-      .section_suscripcion .contenedor_suscripcion div .form_index input, .section_suscripcion .contenedor_suscripcion section div .form_index .caja_contacto .form textarea, section .section_suscripcion .contenedor_suscripcion div .form_index .caja_contacto .form textarea, .section_suscripcion .contenedor_suscripcion section div .caja_contacto .form .form_index textarea, section .section_suscripcion .contenedor_suscripcion div .caja_contacto .form .form_index textarea, .section_suscripcion .contenedor_suscripcion section div .form_index .caja_contacto .form .boton_contacto, section .section_suscripcion .contenedor_suscripcion div .form_index .caja_contacto .form .boton_contacto, .section_suscripcion .contenedor_suscripcion section div .caja_contacto .form .form_index .boton_contacto, section .section_suscripcion .contenedor_suscripcion div .caja_contacto .form .form_index .boton_contacto {
+      .suscripcion .suscripcion_contenedor div .suscripcion_contenedor_div_form input, .suscripcion .suscripcion_contenedor main div .suscripcion_contenedor_div_form .caja_contacto .form textarea, main .suscripcion .suscripcion_contenedor div .suscripcion_contenedor_div_form .caja_contacto .form textarea, .suscripcion .suscripcion_contenedor main div .caja_contacto .form .suscripcion_contenedor_div_form textarea, main .suscripcion .suscripcion_contenedor div .caja_contacto .form .suscripcion_contenedor_div_form textarea, .suscripcion .suscripcion_contenedor main div .suscripcion_contenedor_div_form .caja_contacto .form .boton_contacto, main .suscripcion .suscripcion_contenedor div .suscripcion_contenedor_div_form .caja_contacto .form .boton_contacto, .suscripcion .suscripcion_contenedor main div .caja_contacto .form .suscripcion_contenedor_div_form .boton_contacto, main .suscripcion .suscripcion_contenedor div .caja_contacto .form .suscripcion_contenedor_div_form .boton_contacto {
         width: 600px;
         padding: .7em;
         border: none;
@@ -1129,7 +935,7 @@ main {
         outline: none;
         color: #cbcbcbe4;
         border: 2px solid rgba(70, 37, 69, 0.675); }
-      .section_suscripcion .contenedor_suscripcion div .form_index div .btn_env {
+      .suscripcion .suscripcion_contenedor div .suscripcion_contenedor_div_form div .btn_enviar {
         font-weight: bold;
         width: 8em;
         color: #cbcbcbe4;
@@ -1137,44 +943,26 @@ main {
         border-radius: 5px;
         border: 2px solid #ff004c;
         transition: all 600ms; }
-        .section_suscripcion .contenedor_suscripcion div .form_index div .btn_env:hover {
+        .suscripcion .suscripcion_contenedor div .suscripcion_contenedor_div_form div .btn_enviar:hover {
           font-weight: bold;
           color: #000000;
           background: #ffffffd7;
           box-shadow: 0 0 5px #e537e887, 0 0 25px #ff0d82, 0 0 50px #ff0d82, 0 0 200px #e537e887;
-          width: 8em;
           transform: scale(1.1); }
 
-.boton_comprar1 {
-  font-weight: bold;
-  width: 13em;
-  height: 3em;
-  padding-top: 7px;
-  color: #cbcbcbe4;
-  background: #00000032;
-  border-radius: 5px;
-  border: 2px solid #ff004c; }
-  .boton_comprar1:hover {
-    font-weight: bold;
-    color: #000000;
-    background: #f9f9f9d7;
-    box-shadow: 0 0 5px #e537e887, 0 0 25px #ff0d82, 0 0 50px #ff0d82, 0 0 200px #e537e887;
-    width: 8em;
-    height: 2em;
-    transition: all .5s; }
-
+/*OPTIMIZANDO para mobile hasta 480px de maximo*/
 @media (max-width: 480px) {
-  .section_suscripcion {
+  .suscripcion {
     padding-bottom: 20%; }
-    .section_suscripcion .contenedor_suscripcion {
+    .suscripcion .suscripcion_contenedor {
       font-size: 0.9em; }
-      .section_suscripcion .contenedor_suscripcion div p {
+      .suscripcion .suscripcion_contenedor div p {
         line-height: 2; }
-      .section_suscripcion .contenedor_suscripcion div .form_index {
+      .suscripcion .suscripcion_contenedor div .suscripcion_contenedor_div_form {
         width: 100%; }
-        .section_suscripcion .contenedor_suscripcion div .form_index input, .section_suscripcion .contenedor_suscripcion section div .form_index .caja_contacto .form textarea, section .section_suscripcion .contenedor_suscripcion div .form_index .caja_contacto .form textarea, .section_suscripcion .contenedor_suscripcion section div .caja_contacto .form .form_index textarea, section .section_suscripcion .contenedor_suscripcion div .caja_contacto .form .form_index textarea, .section_suscripcion .contenedor_suscripcion section div .form_index .caja_contacto .form .boton_contacto, section .section_suscripcion .contenedor_suscripcion div .form_index .caja_contacto .form .boton_contacto, .section_suscripcion .contenedor_suscripcion section div .caja_contacto .form .form_index .boton_contacto, section .section_suscripcion .contenedor_suscripcion div .caja_contacto .form .form_index .boton_contacto {
+        .suscripcion .suscripcion_contenedor div .suscripcion_contenedor_div_form input, .suscripcion .suscripcion_contenedor main div .suscripcion_contenedor_div_form .caja_contacto .form textarea, main .suscripcion .suscripcion_contenedor div .suscripcion_contenedor_div_form .caja_contacto .form textarea, .suscripcion .suscripcion_contenedor main div .caja_contacto .form .suscripcion_contenedor_div_form textarea, main .suscripcion .suscripcion_contenedor div .caja_contacto .form .suscripcion_contenedor_div_form textarea, .suscripcion .suscripcion_contenedor main div .suscripcion_contenedor_div_form .caja_contacto .form .boton_contacto, main .suscripcion .suscripcion_contenedor div .suscripcion_contenedor_div_form .caja_contacto .form .boton_contacto, .suscripcion .suscripcion_contenedor main div .caja_contacto .form .suscripcion_contenedor_div_form .boton_contacto, main .suscripcion .suscripcion_contenedor div .caja_contacto .form .suscripcion_contenedor_div_form .boton_contacto {
           width: 300px;
           padding: .7em; }
-        .section_suscripcion .contenedor_suscripcion div .form_index div .btn_env {
+        .suscripcion .suscripcion_contenedor div .suscripcion_contenedor_div_form div .btn_enviar {
           margin-top: 40px;
           font-size: 0.7em; } }

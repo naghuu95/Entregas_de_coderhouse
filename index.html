@@ -69,7 +69,7 @@
          <div class="collapse navbar-collapse" id="navbarNav">
            <ul class="navbar-nav ms-auto  ">
              <li class="nav-item ">
-               <a class="nav-link  px-4  " aria-current="page" href="#">INICIO</a>
+               <a class="nav-link  px-4  " aria-current="page" href="#pagina">INICIO</a>
              </li>
              <li class="nav-item">
                <a class="nav-link px-4" href="./paginas/productos.html">PRODUCTOS</a>
@@ -78,7 +78,7 @@
                <a class="nav-link px-4" href="./paginas/informacion.html">INFORMACIÓN</a>
              </li>
              <li class="nav-item">
-               <a class="nav-link  px-4" href="./paginas/envios.html" tabindex="-1" aria-disabled="true">ENVIOS</a>
+               <a class="nav-link  px-4" href="./paginas/envios.html" tabindex="-1" aria-disabled="true">ENVÍOS</a>
              </li>
              <li class="nav-item">
                <a class="nav-link px-4 " href="./paginas/contacto.html" tabindex="-1" aria-disabled="true">CONTACTO</a>
@@ -167,11 +167,11 @@
  <!--Cree es un banner que informa un poco de la marca lo hice haciendo cajas en forma de circulo y metiendo iconos dentro-->
 
 
-  <section class=" section_ayuda container-fluid py-5 ">
+  <section class=" section_ayuda container-fluid  d-none d-md-flex justify-content-md-center">
 
-    <div class="row banner_informativo  d-none d-sm-none d-md-flex  d-lg-flex   d-xl-flex d-xxl-d-flex justify-content-evenly">
+    <div class="row banner_informativo d-none d-sm-none d-md-flex  d-lg-flex w-100  d-xl-flex d-xxl-d-flex justify-content-evenly">
        
-      <div class="col-3  d-flex align-items-center" >
+      <div class="col-3 d-flex align-items-center" >
 
         <div class=" contenedor_iconos d-flex justify-content-center align-items-center rounded-circle ">
 
@@ -179,7 +179,7 @@
 
         </div>
        
-         <p class="ps-3 pt-2 color_gris">ENVÍOS A TODA LA ARGENTINA </p>
+         <p class="ps-3 pt-2 ">ENVÍOS A TODA LA ARGENTINA </p>
 
          
       </div>
@@ -196,7 +196,7 @@
 
           </div>
        
-         <p class="ps-3 pt-2 color_gris ">3 CUOTAS SIN INTERES </p>
+         <p class="ps-3 pt-2  ">3 CUOTAS SIN INTERES </p>
 
          
         </div> 
@@ -210,13 +210,15 @@
           </div>
        
        
-         <p class="ps-3 pt-2 color_gris">¿TENES UNA CONSULTA?</p>
+         <p class="ps-3 pt-2 ">¿TENES UNA CONSULTA?</p>
 
          
         </div> 
        
        
     </div>
+
+   
        
   </section>
      
@@ -230,150 +232,138 @@
  <!-- Hice 3 cards tambien utilice el sistema de filas y columnas de boodstrap es totalmente responsive para mobile y desktop -->
  
 
-   <main class="container-fluid  ">
+  <main class="container-fluid  ">
 
       
-
-
       
-     <h3 class=" titulo  text-center fs-md-1 fs-3 fw-bold">NUESTROS PRODUCTOS</h3>
+    <h3 class=" titulo  text-center fs-md-1 fs-3 fw-bold">NUESTROS PRODUCTOS</h3>
       
     
 
 
-     <div class="row w-100 m-auto d-flex flex-column align-items-center flex-md-row justify-content-md-evenly pt-5 pt-md-3 pb-5 mb-5" >
+    <div class="row  w-100 m-auto d-flex flex-column align-items-center flex-md-row justify-content-md-evenly pt-5 pt-md-3 pb-5 mb-5" >
 
-       <div class=" col-5 col-sm-5  col-md-3 col-lg-3 col-xl-3 col-xxl-3 mt-md-1 caja_tarjetas" >
+      <div class=" col-5 col-sm-5  col-md-3 col-lg-3 col-xl-3 col-xxl-3 mt-md-1 caja_tarjetas" >
 
-         <div class="contenido_img ms-3 ms-md-3 mt-4 mt-md-4">
-           
+        <div class="contenido_img ms-3 ms-md-3 mt-4 mt-md-4"> 
 
-           <a  href="./paginas/mi_pobre_angelito.html"><img  class="w-100 me-3 w"  src="./asset/imagenes/productos/Cuadros/mi_pobre_angelito_cuadro-480px-min.jpg" alt="Cuadro de Indiana jones" loading="lazy">
-           </a>
-
-         </div>
-
-         <h2 class="fs-5 mt-4 fw-bolder borde_titulos text-center py-1" > MI POBRE ANGELITO</h2>
-
-         <p class="mt-3 mt-md-4  text-center fuente_pequeña ">  Impresion en Ecocuero <br> 60 cm x 40 cm <br>  </p>
-         <p class="text-center fs-4 fw-bolder">$1.999</p>
-         <p class="fuente_pequeña text-center">3 cuotas sin interés de $670</p>
- 
-         <hr>
- 
-         <div class="d-flex justify-content-center ">
- 
-           <form action="./paginas/mi_pobre_angelito.html">
- 
-               <button class="boton_comprar ">Comprar</button>
- 
-           </form>
- 
-         </div>
-
-       </div>
-
-       <div class="col-10 col-sm-10  col-md-3 col-lg-3 col-xl-3 col-xxl-3  caja_tarjetas mt-5 mt-md-1 ">
-
-         <div class="contenido_img ms-3 ms-md-3 mt-4 mt-md-4 bg-dark">
-
-           <a  href="./paginas/rocky.html"><img  class="w-100 me-3 w"  src="./asset/imagenes/productos/Cuadros/cuadro_rocky-min.jpg" alt="cuadro de Star Wars" loading="lazy">
-           </a>
-
-         </div>
-
-         <h2 class="fs-5 mt-4 fw-bolder borde_titulos text-center py-1" >ROCKY</h2>
-
-         <p class="mt-3 mt-md-4  text-center fuente_pequeña ">  Impresion en Ecocuero <br> 60 cm x 40 cm <br>  </p>
-         <p class="text-center fs-4 fw-bolder">$1.999</p>
-         <p class="fuente_pequeña text-center">3 cuotas sin interés de $670</p>
- 
-         <hr>
- 
-         <div class="d-flex justify-content-center ">
- 
-           <form action="./paginas/rocky.html">
- 
-               <button class="boton_comprar ">Comprar</button>
- 
-           </form>
- 
- 
-         </div>
-       
-
-       </div>
-
-       <div class="col-10 col-sm-10  col-md-3 col-lg-3 col-xl-3 col-xxl-3 mt-md-1 caja_tarjetas" >
-
-         <div class="contenido_img ms-3 ms-md-3 mt-4 mt-md-4 bg-dark">
-
-           <a  href="./paginas/volver_al_futuro.html"><img  class="w-100 me-3 w"  src="./asset/imagenes/productos/Cuadros/cuadro_poster_volver_al_futuro-min.jpg" alt="cuadro de volver al futuro" loading="lazy" >
-           </a>
-
-         </div>
-
-         <h2 class="fs-5 mt-4 fw-bolder borde_titulos text-center py-1" > VOLVER AL FUTURO</h2>
-
-         <p class="mt-3 mt-md-4  text-center fuente_pequeña ">  Impresion en Ecocuero <br> 60 cm x 40 cm <br>  </p>
-         <p class="text-center fs-4 fw-bolder">$1.999</p>
-         <p class="fuente_pequeña text-center">3 cuotas sin interés de $670</p>
- 
-         <hr>
- 
-         <div class="d-flex justify-content-center ">
- 
-           <form action="./paginas/volver_al_futuro.html">
- 
-               <button class="boton_comprar ">Comprar</button>
- 
-           </form>
- 
- 
-         </div>
-
-       
-
-
-       </div>
-
-        <div class="col-12 d-flex justify-content-center">
-          <form action="./paginas/productos.html">
-
-            <button class="boton_vermas py-2 px-5">VER MÁS</button>
-
-          </form>
+          <a  href="./paginas/mi_pobre_angelito.html"><img  class="w-100 me-3 w"  src="./asset/imagenes/productos/Cuadros/mi_pobre_angelito_cuadro-480px-min.jpg" alt="Cuadro de Indiana jones" loading="lazy"></a>
+          
         </div>
 
+        <h2 class="fs-5 mt-4 fw-bolder borde_titulos text-center py-1" > MI POBRE ANGELITO</h2>
 
-     </div>
+        <p class="mt-3 mt-md-4  text-center fuente_pequeña ">  Impresion en Ecocuero <br> 60 cm x 40 cm <br>  </p>
+        <p class="text-center fs-4 fw-bolder">$1.999</p>
+        <p class="fuente_pequeña text-center">3 cuotas sin interés de $670</p>
+ 
+        <hr>
+ 
+        <div class="d-flex justify-content-center ">
+ 
+          <form action="./paginas/mi_pobre_angelito.html">
+ 
+            <button class="boton_comprar ">Comprar</button>
+ 
+          </form>
+ 
+        </div>
 
+      </div>
 
-   </main>
+      <div class="col-10 col-sm-10  col-md-3 col-lg-3 col-xl-3 col-xxl-3  caja_tarjetas mt-5 mt-md-1 ">
 
-  
+        <div class="contenido_img ms-3 ms-md-3 mt-4 mt-md-4 bg-dark">
 
+          <a  href="./paginas/rocky.html"><img  class="w-100 me-3 w"  src="./asset/imagenes/productos/Cuadros/cuadro_rocky-min.jpg" alt="cuadro de Star Wars" loading="lazy"></a>
 
-  
+        </div>
 
+        <h2 class="fs-5 mt-4 fw-bolder borde_titulos text-center py-1" >ROCKY</h2>
 
-  
+        <p class="mt-3 mt-md-4  text-center fuente_pequeña ">  Impresion en Ecocuero <br> 60 cm x 40 cm <br>  </p>
+        <p class="text-center fs-4 fw-bolder">$1.999</p>
+        <p class="fuente_pequeña text-center">3 cuotas sin interés de $670</p>
+ 
+        <hr>
+ 
+        <div class="d-flex justify-content-center ">
+ 
+          <form action="./paginas/rocky.html">
+ 
+            <button class="boton_comprar ">Comprar</button>
+ 
+          </form>
+ 
+ 
+        </div>
+       
 
-   
+      </div>
 
-   <!-- SECTION 80 Y 90 -->
-   <!-- Cree una 2 fila y 2 columnas para hacer esta section tambien con boodstrap utilice flexbox a traves de boodstrap para posicionar los elementos -->
+      <div class="col-10 col-sm-10  col-md-3 col-lg-3 col-xl-3 col-xxl-3 mt-md-1 caja_tarjetas" >
 
+        <div class="contenido_img ms-3 ms-md-3 mt-4 mt-md-4 bg-dark">
 
-   <section class=" container-fluid  d-flex flex-column justify-content-center align-items-center d-md-block section_80_90 "  >
+          <a  href="./paginas/volver_al_futuro.html"><img  class="w-100 me-3 w"  src="./asset/imagenes/productos/Cuadros/cuadro_poster_volver_al_futuro-min.jpg" alt="cuadro de volver al futuro" loading="lazy" ></a>
+
+        </div>
+
+        <h2 class="fs-5 mt-4 fw-bolder borde_titulos text-center py-1" > VOLVER AL FUTURO</h2>
+
+        <p class="mt-3 mt-md-4  text-center fuente_pequeña ">  Impresion en Ecocuero <br> 60 cm x 40 cm <br>  </p>
+        <p class="text-center fs-4 fw-bolder">$1.999</p>
+        <p class="fuente_pequeña text-center">3 cuotas sin interés de $670</p>
+ 
+        <hr>
+ 
+        <div class="d-flex justify-content-center ">
+ 
+          <form action="./paginas/volver_al_futuro.html">
+ 
+            <button class="boton_comprar ">Comprar</button>
+ 
+          </form>
+ 
+        </div>
 
        
 
-    <div class="row  fila_80 d-flex justify-content-around align-items-center  ">
+      </div>
+
+
+      <div class="col-12 d-flex justify-content-center">
+
+        <form action="./paginas/productos.html">
+
+          <button class="boton_vermas py-2 px-5">VER MÁS</button>
+
+        </form>
+
+      </div>
+
+
+    </div>
+
+
+  </main>
+
+  
+
+
+  <!-- SECTION 80 Y 90 -->
+  <!-- Cree una 2 fila y 2 columnas para hacer esta section y posiciones los elementos con flexbox todo de boodstrap  -->
+
+
+  <section class="section_80_90 container-fluid  d-flex flex-column justify-content-center align-items-center d-md-block  "  >
+
+       
+
+    <div class="row  fila_80_90 d-flex justify-content-around align-items-center  ">
 
       <div class=" col-8 col-md-4 ">
 
-        <div class="">
+        <div>
            
           <a href="./paginas/informacion.html " >
 
@@ -397,7 +387,7 @@
     </div>
 
 
-    <div class="row fila_90  d-flex justify-content-around align-items-center ">
+    <div class="row fila_80_90  d-flex justify-content-around align-items-center ">
 
        
       <div class="col-8 col-md-6 d-none d-md-block ">
@@ -425,13 +415,15 @@
 
     </div>
 
-   </section>
+  </section>
 
+  <!--SUSCRIPCIÓN-->
+  
 
-   <section class="section_suscripcion container-fluid  d-flex justify-content-center">
+  <section class="suscripcion container-fluid  d-flex justify-content-center">
     
 
-    <div class=" row contenedor_suscripcion justify-content-center pt-5  "  >
+    <div class=" row suscripcion_contenedor justify-content-center pt-5  "  >
 
 
       <div class="col-10 col-10-sm col-md-12 ">
@@ -441,37 +433,36 @@
         <p class="text-center f-4 py-3">¿Queres recibir info de todos nuestros ingresos? Registrate y se parte de NINETY 90</p>
  
  
-       <form class="form_index  d-flex flex-column flex-sm-column flex-md-row justify-content-evenly align-items-center py-5 " action="./paginas/error_404.html">
+        <form class="suscripcion_contenedor_div_form d-flex flex-column flex-sm-column flex-md-row justify-content-evenly align-items-center py-5 " action="./paginas/error_404.html">
  
-         <div class="">
+          <div>
            <label for="exampleFormControlInput1" class="form-label"> </label>
            <input type="email" required id="exampleFormControlInput1" placeholder="Escribe aqui tu e-mail">
-         </div>
+          </div>
  
-         <div class="">
-           <input  class="btn_env" type="submit" value="Enviar">
+          <div>
+           <input  class="btn_enviar" type="submit" value="Enviar">
            
-         </div>
+          </div>
  
          
  
-       </form>
+        </form>
 
       </div>
       
     
-
     </div>
 
-   </section>
+  </section>
 
 
 
-   <!-- FOOTER -->
-   <!-- se me hizo mas facil con el sistema de filas y columnas de boodstrap hacer el footer  -->
-   <!-- tiene una una propaganda o eslogan a la izquierda , en el medio un menu y a la derecha las redes sociales por ultimo los derechos de autor abajo del todo -->
+  <!-- FOOTER -->
+  <!-- se me hizo mas facil con el sistema de filas y columnas de boodstrap hacer el footer  -->
+  <!-- tiene una una propaganda o eslogan a la izquierda , en el medio un menu junto con los medios de pago y a la derecha las redes sociales por ultimo los derechos de autor abajo del todo -->
 
-   <footer class="footer d-flex justify-content-center  ">
+  <footer class="footer d-flex justify-content-center flex-column align-items-center">
 
       
 
@@ -480,7 +471,7 @@
       <div class="col-10 col-md-3 pt-5 ">
 
         <a href="#" class="text-decoration-none" > <h3 class="pt-3 pb-3 d-none d-md-block text-center flu ninety fs-3"> NINETY 90</h3> </a>
-        <p class="pt-4  text-center d-none d-md-block ">Solo estamos aca para hacerte feliz teniendo un pedaso de tu niñes en las paredes de tu hogar</p>
+        <p class="pt-4  text-center d-none d-md-block ">Solo estamos aca para hacerte felíz teniendo un pedasito de tu niñes en las paredes de tu hogar</p>
         <p class="pt-4  text-center d-none d-md-block">SOMOS NINETY 90</p>
 
 
@@ -490,28 +481,28 @@
 
         <p class=" pt-2 pt-sm-2 pt-md-4 pt-lg-4 pt-xl-4 pt-xxl-4  text-center">MENU PRINCIPAL</p>
 
-      <nav class=" mt-3">
-        <ul class="ul ">
-          <li><a  href="../index.html"> Inicio</a></li>
-          <li><a  href="./productos.html">Productos</a></li>
-          <li><a href="./informacion.html">Información</a></li>
-          <li><a   href="./envios.html">Envios</a></li>
-          <li><a   href="./contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
+        <nav class=" mt-3">
+          <ul class="ul ">
+           <li><a href="#pagina"> Inicio</a></li>
+           <li><a href="./paginas/productos.html">Productos</a></li>
+           <li><a href="./paginas/informacion.html">Información</a></li>
+           <li><a href="./paginas/envios.html">Envíos</a></li>
+           <li><a href="./paginas/contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
 
       </div>
 
-      <div class="col-8 col-md-2 d-flex flex-column justify-content-center align-items-center  mt-5  ">
-         <p class="pt-2 pt-sm-2 pt-md-5 pt-lg-1 pt-xl-1 pt-xxl-1 pb-3">MEDIOS DE PAGO</p>
+      <div class="col-8 col-md-2 d-flex flex-column justify-content-center align-items-center mt-5  mt-md-4    ">
+        <p class="pt-2 pt-sm-2 pt-md-5 pt-lg-1 pt-xl-1 pt-xxl-1 pb-3">MEDIOS DE PAGO</p>
 
-         <div class="contenedor_mp " ><img class="img-fluid" src="./asset/imagenes/Footer/medios_de_pagos-300px.png" alt=""></div>
+        <div><img class="img-fluid" src="./asset/imagenes/Footer/medios_de_pagos-300px.png" alt=""></div>
 
       </div>
 
-      <div class="col-8 col-md-3  d-flex flex-column justify-content-center align-items-center  ">
+      <div class="col-8 col-md-3  d-flex flex-column justify-content-center align-items-center mt-4 mt-md-0  ">
 
-        <p class=" d-flex pt-5 pt-sm-5 pt-md-4 pt-lg-4 pt-xl-4 pt-xxl-4 ">REDES SOCIALES</p>
+          <p class=" d-flex pt-5 pt-sm-5 pt-md-1 pt-lg-1 pt-xl-1 pt-xxl-1 ">REDES SOCIALES</p>
 
           <div class="icons-wrapper mt-5">
             <a href="https://www.instagram.com/cuadros.modernos/"target="_blank"> <i class="ri-instagram-line icon fs-1 px-3"></i></a>
@@ -522,12 +513,14 @@
       </div>
         
 
+    </div>
 
     <div class=" container-fluid row d-flex justify-content-center  ">
 
       <div class="col-10 col-md-12 caja_copy "> 
-        <p class="h6 fw-light fuente_pequeña text-center mt-5 py-4">&copy; Derechos reservados NINETY90 2022. Hecho por Braian Mercado. </p>
+        <p class="h6 fw-light  text-center mt-5 py-4">&copy; Derechos reservados NINETY90 2022. Hecho por Braian Mercado. </p>
       </div>
+
     </div>
 
     
@@ -535,16 +528,11 @@
 
 
 
-   <!-- Scripts para animaciones y transiciones -->
+  <!-- Scripts para animaciones y transiciones -->
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"> </script>
 
-  </script>
-
-  <script>
-     AOS.init();
-  </script>
-  
+  <script> AOS.init();</script>
 
   <script src="./js/bootstrap.bundle.min.js"> </script>
 

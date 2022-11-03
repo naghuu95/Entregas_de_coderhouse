@@ -25,19 +25,19 @@
 </head>
 <body>
 
-    <!-- NINETY90 es una pagina de venta de cuadros de pelicula de los 90 y 80 -->
+  <!-- NINETY90 es una pagina de venta de cuadros de pelicula de los 90 y 80 -->
 
    
   
 
-  <!-- Use boodstrap para crear el header con el nav que esta en la pagina estan incluida las 4 navegaciones y tambien el logo de la empresa que es ninety 90 es un link que te lleva a la pagina principal -->
-  <!-- Es respondive y tiene el menu hamburguesa -->
+ <!-- Use boodstrap para crear el header con el nav que esta en la pagina estan incluida las 4 navegaciones y tambien el logo de la empresa que es ninety 90 es un link que te lleva a la pagina principal -->
+ <!-- Es respondive y tiene el menu hamburguesa -->
 
   <header class=" container-fluid header">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
       <div class="container-fluid">
-        <a class="navbar-brand px-2 flu ninety  fs-3" href="../index.html">NINETY 90</a>
+        <a class="navbar-brand px-1 px-md-2 py-2  ninety " href="../index.html">NINETY 90</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -68,29 +68,27 @@
   </header>
 
   <div class="container-fluid d-flex align-items-center titulo_paginas"> 
+
     <div class="container ">
+
       <h4 class="fw-bold">INFORMACIÓN</h4>
 
     </div>
     
   </div>
 
-    <main class="text-center ">
+  <!--MAIN INFORMACIÓN-->
+
+  <main class="text-center ">
 
 
       <div class="container-fluid d-flex justify-content-center section_80  " >
 
         <div class="row align-items-center justify-content-center justify-content-md-start ">
 
-          <div class="col-none col-md-1 ">
+          <div class="col-12 col-md-7 info_80 ">
 
-          </div>
-
-          <div class="col-12 col-md-6 info_80 ">
-            <h1 class="titulo_80_90">80</h1>
-
-            
-            <!--<img src="../asset/imagenes/info/80s2-300px.png"  loading="lazy" alt="logo 80s">-->
+            <h1 class="titulo_80">80</h1>
             <p class=" texto_80_90 text-center"> “E.T, “Terminator”, “Las aventuras de Indiana Jones”, “Volver al Futuro”, “Los Cazafantasmas, “Cuenta conmigo”, “Karate Kid” o “Pesadilla en lo profundo de la noche” fueron algunos de los filmes representativos de los 80. Era un cine de entretenimiento, en el que sobresalían los géneros de aventura, ciencia ficción y terror, pero con una mirada juvenil. De hecho, muchas películas de esos años fueron protagonizadas por niños o adolescentes. Steven Spielberg, Rob Reiner, James Cameron, John Hughes y Robert Zemeckis son algunos de los cineastas destacados de ese tipo de cine que supo convivir con producciones más artísticas, hoy consideradas joyas u obras maestras de todos los tiempos.</p>
   
           </div>
@@ -121,7 +119,7 @@
   
             <div class="contenedor_img_info "  >
 
-
+              <!--Utilice dos imagenes para cada logo para que se cargue mejor y ande mas fluido en mobile-->
             
               <a href="https://www.youtube.com/watch?v=zM2mFjD-Hws" target="_blank">
                 
@@ -136,6 +134,8 @@
             </div>
     
             <div class="contenedor_img_info " >
+
+             
 
 
               <a href="https://www.youtube.com/watch?v=iXAASBfV6gY"target="_blank">
@@ -164,7 +164,6 @@
                   <img src="../asset/imagenes/info/Back_to_the_Future_film_series_logo-200px.png" alt="Logo Volver al futuro"loading="lazy">
                 </picture>
 
-                <!--src="../asset/imagenes/info/Back_to_the_Future_film_series_logo-200px.png 200w"  alt="Logo Volver al futuro" loading="lazy">-->
                 
                
               
@@ -207,17 +206,13 @@
 
         <div class="row align-items-center justify-content-center justify-content-md-end " >
 
-          <div class="col-none col-md-1 order-2" >
 
-          </div>
+          <div class="col-12 col-md-7 info_90 ">
 
-           <div class="col-12 col-md-6 order-1 info_80 ">
             <h1 class="titulo_90" >90</h1>
-            
-           <!-- <img src="../asset/imagenes/info/90s2-300px.png"  alt="logo 90s" loading="lazy">-->
             <p class=" texto_80_90 text-center"> Los años 90 fueron particularmente prolíficos, no sólo en materia cinematográfica, sino también en los
-              aspectos tecnológicos, de tal manera que modificaron sustancialmente las formas de distribución y de
-              consumo de las películas. Abordaremos esta década tomando tres ejes temáticos: la construcción de la
+             aspectos tecnológicos, de tal manera que modificaron sustancialmente las formas de distribución y de
+             consumo de las películas. Abordaremos esta década tomando tres ejes temáticos: la construcción de la
               realidad; la conspiración y creación del miedo; las cuestiones de género y las convenciones sociales. Sin
               perder de vista el contexto histórico-social en el que la violencia se impone como constante</p>
   
@@ -319,88 +314,92 @@
 
 
 
-    </main>
+  </main>
 
        
 
-    <footer class="footer d-flex justify-content-center  ">
+  <!-- FOOTER -->
+  <!-- se me hizo mas facil con el sistema de filas y columnas de boodstrap hacer el footer  -->
+  <!-- tiene una una propaganda o eslogan a la izquierda , en el medio un menu y a la derecha las redes sociales por ultimo los derechos de autor abajo del todo -->
+
+  <footer class="footer d-flex justify-content-center flex-column align-items-center">
 
       
 
-      <div class="row d-flex justify-content-center align-items-center ">
+    <div class="row d-flex justify-content-center align-items-center ">
   
-        <div class="col-10 col-md-3 pt-5 ">
+      <div class="col-10 col-md-3 pt-5 ">
   
-          <a href="#" class="text-decoration-none" > <h3 class="pt-3 pb-3 d-none d-md-block text-center flu ninety fs-3"> NINETY 90</h3> </a>
-          <p class="pt-4  text-center d-none d-md-block ">Solo estamos aca para hacerte feliz teniendo un pedaso de tu niñes en las paredes de tu hogar</p>
-          <p class="pt-4  text-center d-none d-md-block">SOMOS NINETY 90</p>
+        <a href="#" class="text-decoration-none" > <h3 class="pt-3 pb-3 d-none d-md-block text-center flu ninety fs-3"> NINETY 90</h3> </a>
+        <p class="pt-4  text-center d-none d-md-block ">Solo estamos aca para hacerte felíz teniendo un pedasito de tu niñes en las paredes de tu hogar</p>
+        <p class="pt-4  text-center d-none d-md-block">SOMOS NINETY 90</p>
   
   
-        </div>
+      </div>
   
-        <div class="col-8 col-md-3  d-flex flex-column justify-content-center align-items-center mt-5 ">
+      <div class="col-8 col-md-3  d-flex flex-column justify-content-center align-items-center mt-5 ">
   
-          <p class=" pt-2 pt-sm-2 pt-md-4 pt-lg-4 pt-xl-4 pt-xxl-4  text-center">MENU PRINCIPAL</p>
+        <p class=" pt-2 pt-sm-2 pt-md-4 pt-lg-4 pt-xl-4 pt-xxl-4  text-center">MENU PRINCIPAL</p>
   
         <nav class=" mt-3">
           <ul class="ul ">
-            <li><a  href="../index.html"> Inicio</a></li>
-            <li><a  href="./productos.html">Productos</a></li>
-            <li><a href="./informacion.html">Información</a></li>
-            <li><a   href="./envios.html">Envios</a></li>
-            <li><a   href="./contacto.html">Contacto</a></li>
+            <li><a href="../index.html"> Inicio</a></li>
+            <li><a href="./productos.html">Productos</a></li>
+            <li><a href="#">Información</a></li>
+            <li><a href="./envios.html">Envios</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
           </ul>
         </nav>
   
-        </div>
-  
-        <div class="col-8 col-md-2 d-flex flex-column justify-content-center align-items-center  mt-5  ">
-           <p class="pt-2 pt-sm-2 pt-md-5 pt-lg-1 pt-xl-1 pt-xxl-1 pb-3">MEDIOS DE PAGO</p>
-  
-           <div class="contenedor_mp " ><img class="img-fluid" src="../asset/imagenes/Footer/medios_de_pagos-300px.png" alt=""></div>
-  
-        </div>
-  
-        <div class="col-8 col-md-3  d-flex flex-column justify-content-center align-items-center  ">
-  
-          <p class=" d-flex pt-5 pt-sm-5 pt-md-4 pt-lg-4 pt-xl-4 pt-xxl-4 ">REDES SOCIALES</p>
-  
-            <div class="icons-wrapper mt-5">
-              <a href="https://www.instagram.com/cuadros.modernos/"target="_blank"> <i class="ri-instagram-line icon fs-1 px-3"></i></a>
-              <a href="https://www.facebook.com/cuadrosvintageweb"target="_blank"><i class="ri-facebook-circle-line fs-1 icon px-3"></i> </a>
-              <a href="https://www.whatsapp.com/?lang=es"target="_blank"> <i class="ri-whatsapp-line icon fs-1 px-3"></i></a>
-            </div>
-  
-        </div>
-          
-  
-  
-      <div class=" container-fluid row d-flex justify-content-center  ">
-  
-        <div class="col-10 col-md-12 caja_copy "> 
-          <p class="h6 fw-light fuente_pequeña text-center mt-5 py-4">&copy; Derechos reservados NINETY90 2022. Hecho por Braian Mercado. </p>
-        </div>
       </div>
   
+      <div class="col-8 col-md-2 d-flex flex-column justify-content-center align-items-center mt-5  mt-md-4    ">
+        <p class="pt-2 pt-sm-2 pt-md-5 pt-lg-1 pt-xl-1 pt-xxl-1 pb-3">MEDIOS DE PAGO</p>
+  
+        <div><img class="img-fluid" src="../asset/imagenes/Footer/medios_de_pagos-300px.png" alt=""></div>
+  
+      </div>
+  
+      <div class="col-8 col-md-3  d-flex flex-column justify-content-center align-items-center mt-4 mt-md-0  ">
+  
+        <p class=" d-flex pt-5 pt-sm-5 pt-md-1 pt-lg-1 pt-xl-1 pt-xxl-1 ">REDES SOCIALES</p>
+  
+        <div class="icons-wrapper mt-5">
+          <a href="https://www.instagram.com/cuadros.modernos/"target="_blank"> <i class="ri-instagram-line icon fs-1 px-3"></i></a>
+          <a href="https://www.facebook.com/cuadrosvintageweb"target="_blank"><i class="ri-facebook-circle-line fs-1 icon px-3"></i> </a>
+          <a href="https://www.whatsapp.com/?lang=es"target="_blank"> <i class="ri-whatsapp-line icon fs-1 px-3"></i></a>
+        </div>
+  
+      </div>
+          
+  
+    </div>
       
-    </footer>
+    <div class=" container-fluid row d-flex justify-content-center  ">
+  
+      <div class="col-10 col-md-12 caja_copy "> 
+        <p class="h6 fw-light  text-center mt-5 py-4">&copy; Derechos reservados NINETY90 2022. Hecho por Braian Mercado. </p>
+      </div>
+  
+    </div>
+  
+      
+  </footer>
   
   
-
-
-      <script src="https://kit.fontawesome.com/847d0fea0d.js" crossorigin="anonymous"></script>
   
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   
-      <script>
-        AOS.init();
-      </script>
-   
   
-   <script src="../js/bootstrap.bundle.min.js"> </script>
+  <!-- Scripts para animaciones y transiciones -->
   
-   <script src="../js/wow.min.js"></script>
-   <script>new WOW().init();</script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <script> AOS.init();</script>
+     
+  <script src="../js/bootstrap.bundle.min.js"> </script>
+  
+  <script src="../js/wow.min.js"></script>
+  <script>new WOW().init();</script>
     
     
 </body>

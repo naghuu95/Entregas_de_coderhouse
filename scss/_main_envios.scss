@@ -1,24 +1,18 @@
-
+/*MAIN ENVÍOS*/
 
 main{
 
 
     .contenedor_envios{
-        margin-top: 8vh;
-        margin-bottom: 8vh;
+        margin-top: map-get($margenes,m-8 );
+        margin-bottom: map-get($margenes,m-8 );
 
-        div{
-           
-            img{
-
-            }
-        }
+       
 
         div{
            
             
             h4{
-               /*letter-spacing: $espacio-letra-4;*/
                text-shadow: 5px 3px 1px rgb(147, 7, 72);
                color:$color-fuente ;
                font-weight: bold;
@@ -26,7 +20,7 @@ main{
             }
 
             p{
-                letter-spacing: 1px;
+                letter-spacing: $espacio-letra-1;
                line-height: 2;
                
             }
@@ -46,8 +40,8 @@ main{
 
 
         .contenedor_envios{
-            margin-top: 4vh;
-            margin-bottom: 4vh;
+            margin-top: map-get($margenes, m-4);
+            margin-bottom: map-get($margenes, m-4);
     
            
            

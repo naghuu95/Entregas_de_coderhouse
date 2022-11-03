@@ -4,11 +4,10 @@
     .titulo{
         font-size: 2.3rem;
         font-weight: bold;
-        margin-top:25vh ;
-        margin-bottom: 25vh;
+        margin-top: map-get($margenes , m-25 );
+        margin-bottom: map-get($margenes , m-25 );
         text-shadow: 2px 2px 2px rgb(196, 1, 111);
         color:$color-fuente ;
-        
         letter-spacing: $espacio-palabra-2;
 
     }
@@ -17,8 +16,7 @@
     .row{
         
         .caja_tarjetas {
-            /* width:24% ;
-             height:97vh ;*/
+
             height: 730px;
             width: 350px ;
             margin-bottom: 5em;
@@ -64,7 +62,6 @@
          
                 .borde_titulos{
                     text-shadow: 2px 2px 2px rgb(196, 1, 111);
-                 /*text-shadow: 5px 3px 1px rgb(147, 7, 72);*/
                  border: $borde-s solid $color-borde;
                  background-color: #f168cf00;
                  border-radius: $borde-sm;
@@ -76,7 +73,7 @@
                 form{
                     
                     .boton_comprar {
-                        font-weight:map-get($fuente-grosor, negrita );
+                        font-weight:map-get($fw, f-bold );
                         width: 7em;
                         color: $color-fuente;
                         background: $color-transparente;
@@ -107,10 +104,7 @@
     }
 
 
-    .contenedor_productos{
-      
-       padding-top: $paddin-100;
-    }
+    
 }
 
 
@@ -121,13 +115,12 @@
     .container{
 
         .titulo{
-            
-            margin-top:10vh ;
-            margin-bottom: 8vh;
+            font-size: 1.6rem;
+            margin-top:map-get($margenes , m-10 );
+            margin-bottom: map-get($margenes , m-8) ;
             line-height: 2;
-          
+            letter-spacing: $espacio-letra-3;
             
-            letter-spacing: $espacio-palabra-2;
     
         }
 

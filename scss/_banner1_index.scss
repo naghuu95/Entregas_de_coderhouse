@@ -3,17 +3,14 @@
   
   .banner {
     position: relative;
-    background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8) ),  url(../asset/imagenes/productos/banner4-min.jpg) ;
+    background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8) ),  url(../asset/imagenes/productos/banner4-min-min.jpg) ;
     background-attachment: fixed;
-    background-repeat: no-repeat;
     background-size: cover;
-   
-    
-    /*border-bottom: 2px solid $color-borde;*/
+    background-repeat: no-repeat;
     box-shadow: 15px 15px 100px 15px $color-header;
 
     .background-overlay1 {
-        background: $color-negro-transparente;
+        background: $c-negro-transparente;
         top: 0;
         left: 0;
         width: $ancho-maximo;
@@ -24,27 +21,22 @@
             
             .titulo_banner{
               line-height: 1.5;
-              /*letter-spacing: 3px;
-              color: rgb(255, 55, 128);*/
-              font-weight: map-get($fuente-grosor, negrita ) !important; 
+              font-weight: map-get($fw,f-bold ) !important; 
               text-shadow: 0px 0px 10px rgba(255, 36, 157, 0.63);
               color:rgba(255, 101, 181, 0.63) ;
-             /* color: rgba(255, 53, 144, 0.688);
-              text-shadow: 0px 0px 10px rgba(255, 0, 204, 0.686);*/
               
             }
 
             p{
               
-              font-family:$fuente-principal-2 !important;
-              font-size: $fuente-m;
+              font-family: monserrat_fina !important;
              
             }
 
             /* BOTON VER CATALOGO*/
   
             .btn:hover {
-              font-size: 25px;
+              font-size: map-get($fs, fs-1-5);
               background: $color-transparente;
               box-shadow: 0 0 5px $color-blanco, 0 0 25px $color-blanco, 0 0 50px $color-blanco, 0 0 200px $color-blanco;
               transition: all 0.5s;
@@ -54,6 +46,7 @@
         }
 
         .imagenes{
+
             width: 26.5vw;
             border-radius: $borde-m;
             box-shadow: 20px 20px 30px 15px $color-negro;
@@ -69,7 +62,7 @@
 
     .banner {
       background:none;
-      background-color: black;
+      background-color: $c-negro;
  
   
       .background-overlay1 {
@@ -81,14 +74,12 @@
               .titulo_banner{
                 line-height: 1.7;
                 letter-spacing: 2px;
-                font-size: 7vw;
+                font-size: map-get($fs,fs-2 );
                
                 
               }
   
              
-  
-              
   
             }
           }

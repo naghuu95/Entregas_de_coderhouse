@@ -1,17 +1,15 @@
-/*CARDS*/
+/*CARDS de los cuadros*/
 
 .container-fluid{
 
     .titulo{
-        /*background-color: rgba(22, 7, 36, 0);*/
-            
+     
         font-size: 2.3rem;
         line-height: 3;
         padding-top: 7vh;
         padding-bottom: 25vh;
         margin-bottom: 20vh;
         letter-spacing: 15px;
-       /* text-shadow: 7px 2px 2px rgb(147, 7, 72);*/
         text-shadow: 2px 2px 2px rgb(196, 1, 111);
     }
 
@@ -21,8 +19,7 @@
     .row{
 
         .caja_tarjetas {
-            /* width:24% ;
-             height:97vh ;*/
+            
             height: 730px;
             width: 350px ;
             margin-bottom: 5em;
@@ -33,10 +30,10 @@
             backdrop-filter: blur(2px );
             -webkit-backdrop-filter: blur(2px);
             transition: all 600ms;
-               &:hover{
 
-                transform: translateY(-20px);
-              }
+                &:hover{
+                 transform: translateY(-20px);
+                }
              
                 .contenido_img {
                  height: 400px;
@@ -75,7 +72,7 @@
                 form{
                     
                     .boton_comprar {
-                        font-weight:map-get($fuente-grosor, negrita );
+                        font-weight:map-get($fw, f-bold );
                         width: 7em;
                         color: $color-fuente;
                         background: $color-transparente;
@@ -103,6 +100,33 @@
          
         }
 
+
+        div{
+
+            form{
+
+                .boton_vermas{
+
+                    font-weight:map-get($fw, f-bold );
+                    color: $color-fuente;
+                    background: $color-transparente;
+                    border-radius: $borde-sm;
+                    border: $borde-s solid  $color-violeta-2;
+                                      
+                   &:hover {
+                    
+                    font-weight: bold;
+                    color: $color-negro;
+                    background: #f9f9f9d7;
+                    box-shadow: 0 0 5px $color-violeta, 0 0 25px $color-rosa, 0 0 50px $color-rosa, 0 0 200px $color-violeta;
+                    transform: scale(1.1);
+                    transition: all 0.8s;
+                   }
+
+                }
+            }
+        }
+
     }
 
 
@@ -122,11 +146,10 @@
     .container-fluid{
 
         .titulo{
-            padding-top: 0vh;
+            padding-top: 7vh;
             padding-bottom: 5vh;
-            
             margin-top:0vh ;
-            margin-bottom: 5vh;
+            margin-bottom: 0vh;
             line-height: 2;
           
             line-height: 3;
@@ -137,18 +160,13 @@
     }
 
 
-
-   
-
-
-
 }
 
 /*@media  screen and (min-width: 360px) and (max-width: 768px) {
 	
 }*/
 
-/* LINK 3 */
+
 
 
 

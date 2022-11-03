@@ -1,71 +1,18 @@
+/*LOGO DE LA EMPRESA NINETY90*/
 
-/* FLUX*/
-  /* Efecto neon PARA LOGO
-  ACA TMBN UTILICE VARIABLES */
-  
-.flux {
-    font-weight:map-get($fuente-grosor, negrita );
-    letter-spacing:$espacio-letra-4;
-    font-family:$fuente-logo;
-    color: $color-rosa-claro;
-    font-size: $fuente-grande;
-    text-shadow: 0 0 3vw #ffffff;
- 
-    animation: flux 4s linear infinite;
-    -moz-animation: flux 4s linear infinite;
-    -webkit-animation: flux 4s linear infinite;
-    -o-animation: flux 4s linear infinite;
-   }
-   
-   /*UTILICE VARIABLES PARA DARLE EL EFECTO NEON EN EL TEXT-SHADOW Y EL COLOR*/
-   @keyframes flux {
-   0%,
-   100% {
-     text-shadow: 0 0 1vw $color-borde, 0 0 3vw $color-rosa, 0 0 10vw $color-blanco, 0 0 10vw $color-negro, 0 0 .4vw $color-negro, .5vw .5vw .1vw $color-azul-obscuro;
-     color:  $color-celeste ;
-   }
-   50% {
-     text-shadow: 0 0 .5vw $color-azul-obscuro, 0 0 1.5vw $color-violeta, 0 0 5vw $color-violeta-medio, 0 0 5vw $color-violeta-medio, 0 0 .2vw $color-violeta-medio, .5vw .5vw .1vw $color-azul-obscuro;
-     color: $color-rosa-2;
-   }
-   }
-
-
-
-   .ninety{
+  .ninety{
     text-decoration: none;
     font-weight: bold;
     font-family: orbi;
-    color: rgb(53, 172, 246);
-    text-shadow: 0px 0px 6px rgba(40, 130, 255, 0.796);
+    color: $c-celeste-1;
+    text-shadow: 0px 0px 6px $c-celeste-2;
     letter-spacing: $espacio-palabra-2;
     transition: all 0.8s;
 
     &:hover{
-      color: rgb(255, 59, 157);
-      text-shadow: 0px 0px 7px rgba(255, 48, 124, 0.796);
+      color: $c-rosa-1;
+      text-shadow: 0px 0px 7px $c-rosa-2;
       transform: scale(1.1);
     }
   }
 
-
-
-  .boton_vermas{
-
-      font-weight:map-get($fuente-grosor, negrita );
-      
-      color: $color-fuente;
-      background: $color-transparente;
-      border-radius: $borde-sm;
-      border: $borde-s solid  $color-violeta-2;
-                        
-    &:hover {
-      
-      font-weight: bold;
-      color: $color-negro;
-      background: #f9f9f9d7;
-      box-shadow: 0 0 5px $color-violeta, 0 0 25px $color-rosa, 0 0 50px $color-rosa, 0 0 200px $color-violeta;
-      transform: scale(1.1);
-      transition: all 0.8s;
-    }
-  }

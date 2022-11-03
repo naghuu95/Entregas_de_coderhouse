@@ -1,5 +1,5 @@
 
-/* PAGINA INFORMACION*/
+/* MAIN INFORMACION*/
   
 
 main{
@@ -15,32 +15,27 @@ main{
         
 
         .info_80{
-           
-            padding-top: 2vh;
-            padding-bottom: 10vh;
 
-            .titulo_80_90{
+            padding-left: map-get($padding, p-15 );
+            padding-top: map-get($padding, p-2 );
+            padding-bottom: map-get($padding, p-10 );
+
+            .titulo_80{
+
                 font-family: orbi;
                 text-shadow: 0px 0px 10px rgba(240, 1, 133, 0.63);
                 color:rgba(255, 101, 181, 0.63) ;
-                /*text-shadow: 7px 7px 0px rgb(2, 90, 198);
-                color:rgba(246, 85, 198, 0.63) ;*/
                 font-size: 10rem;
                 padding-bottom: 15vh;
             }
             
 
-            img{
-                
-
-                
-            }
+            
             .texto_80_90{
             
-               
                 line-height: 2;
-                letter-spacing: 1px;
-                word-spacing: 2px;
+                letter-spacing: $espacio-letra-1;
+                word-spacing:$espacio-palabra;
             }
 
         }
@@ -49,14 +44,16 @@ main{
 
     }
 
-    /*Cree esta clase con la finalidad de utilizarla para las peliculas de los 80 y 90  */
+
+    /*Estilos para los logos de las peliculas*/
+
     .container-fluid{
         
         padding-top: 200px;
         padding-bottom: 200px;
 
         h4{
-            font-family: $fuente-principal-2;
+            font-family:monserrat_3;
             padding-bottom: 20px;
 
         }
@@ -102,26 +99,25 @@ main{
         background-color: $color-transparente;
        
 
-        .info_80{
+        .info_90{
+            padding-right:  map-get($padding , p-15 );
             padding-top: 2vh;
-            padding-bottom: 10vh;
+            padding-bottom:  map-get($padding , p-10 );
 
 
             .titulo_90{
                 text-shadow: 0px 0px 10px rgba(174, 85, 246, 0.63);
                 color:rgba(0, 176, 240, 0.63) ;
                 font-family: orbi;
-                /*text-shadow: 7px 7px 0px rgb(250, 65, 170);
-                color:rgba(174, 85, 246, 0.63) ;*/
                 font-size: 10rem;
-                padding-bottom: 15vh;
+                padding-bottom:  map-get($padding , p-15 );
             }
 
             .texto_80_90{
             
                 line-height: 2;
-                letter-spacing: 1px;
-                word-spacing: 2px;
+                letter-spacing: $espacio-letra-1;
+                word-spacing: $espacio-palabra;
             }
 
         }
@@ -148,44 +144,33 @@ main{
         background-color: $color-negro;
        
         .info_80{
-            
-            padding-top: 2vh;
-            padding-bottom: 5vh;
+            padding-left: 0vh;
+            padding-bottom:  map-get($padding , p-5 );
 
-            .titulo_80_90{
+            .titulo_80{
                
-                font-size: 5rem;
-                padding-bottom: 5vh;
+                font-size:  map-get($fs , fs-05 );
+                padding-bottom:  map-get($padding , p-5 );
             }
             
 
 
-            img{
-                margin-top: 3vh ;
-                margin-bottom:5vh ;
-                width: 40vw;
 
-                
-            }
-
-            .texto_80_90{
             
-                
-            }
-
         }
 
       
     }
 
+    /* Logos de peliculas*/
+
     .container-fluid{ 
        
-        padding-top: 5vh;
-        padding-bottom: 5vh;
+        padding-top: map-get($padding , p-5 );
+        padding-bottom:  map-get($padding , p-5 );
 
         h4{
             font-size: 14px;
-            font-family: $fuente-principal-2;
             padding-bottom: 0px;
             line-height: 3;
 
@@ -194,7 +179,7 @@ main{
 
         .caja_logos_peliculas{
              
-             padding-top: 1vh;
+            padding-top: 1vh;
 
             .contenedor_img_info{
                 margin-top: 10vw;
@@ -228,25 +213,18 @@ main{
         background: none;
         background-color: $color-negro;
     
-        .info_80{
+        .info_90{
+            padding-right: 0vh;
             padding-top:2vh;
-            padding-bottom: 5vh;
+            padding-bottom:  map-get($padding , p-5 );
 
             .titulo_90{
                
-                font-size: 5rem;
-                padding-bottom: 5vh;
+                font-size: map-get($fs , fs-05 );
+                padding-bottom: map-get($padding, p-5 );
             }
 
-            img{
-                margin-top: 3vh ;
-                margin-bottom:5vh ;
-                width: 40vw;
-            }
-
-            .texto_80_90{
-            
-            }
+          
 
         }
 
@@ -254,10 +232,7 @@ main{
 
     }
 
-   
-
   
-
    
 
 }

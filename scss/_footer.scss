@@ -1,25 +1,18 @@
  /*FOOTER*/
-    /* personace un poco mi footer para darle mas vida*/
+/* */
   
     footer{
-        
-        /*margin-top: $margen-secciones;*/
+
         width: $ancho-maximo;
-        /*border-top: 2px solid  #ed33e778;*/
-        /*box-shadow: 15px 15px 50px 50px rgba(225, 83, 187, 0.549);*/
-        
-       /* background-image: linear-gradient( 0deg,
-        $color-n-gradiente-1,
-        $color-n-gradiente-2)
-         ,url(../asset/imagenes/seccion_footer/fondofooter11-min.jpg)*/;
-         font-size: 13px;
-       
+        font-size: map-get($fs, fs-08 );
         background-color: rgba(3, 2, 25, 0.5);
        
         div{
    
             div{
-                  /*Menu footer*/
+
+                /*Menu footer*/
+
                 nav{
                   
                     ul{
@@ -39,7 +32,7 @@
                                 &:hover{
                                   color: rgb(255, 35, 248);
                                   text-shadow: 0px 0px 10px rgb(255, 35, 248);
-                                  font-weight: map-get($fuente-grosor, negrita ); 
+                                  font-weight: map-get($fw, f-bold ); 
                                   transform: scale(1.1);
                                   
   
@@ -51,22 +44,15 @@
   
             }
         }
-        div{
 
-            .contenedor_mp{
-                width:100% ;
-            }
-
-
-        }
-          /*Estilos y ANIMACIONES REDES SOCIALES*/
+       
+        /*Estilos y ANIMACIONES REDES SOCIALES*/
+        
         div{
 
             div{
                 .icons-wrapper{
-                    position: relative;
-                    display:flex;
-                    justify-content: center;
+                    @include flex_centrado ;
                     margin-top:$margen-s;
   
                     &:after{
@@ -95,11 +81,7 @@
                             background-clip: text;
                             -webkit-text-fill-color: transparent;
 
-                            &:hover{
-                                
-                                
-
-                            }
+                          
                               
                               
                         }
@@ -131,13 +113,14 @@
         div{
            
             .caja_copy{
-                .fuente_pequeña{
+
+                p{
 
                     font-size: 0.9em;
                     letter-spacing: 2px;
                     word-spacing: 2px;
-                    color: rgb(99, 99, 99);
-                  }
+                    color: $c-gris;
+                }
                   
             }
         }
@@ -157,12 +140,9 @@
            
                 .caja_copy{
 
-                    .fuente_pequeña{
+                    p{
                      line-height: 2;
-                     font-size: 0.9em;
-                     letter-spacing: 2px;
-                     word-spacing: 2px;
-                     color: rgb(99, 99, 99);
+                     
                     }
                   
                 }
