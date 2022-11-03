@@ -101,15 +101,14 @@
 
                         @keyframes float {
                             0%{
-                                transform: translateY(0); /*The starting point of the animation is 0.*/
+                                transform: translateY(0);
                             }
                             50%{
-                                transform: translateY(-25px); /*The middle point of the animation is -15xp. This will move the element up.*/
+                                transform: translateY(-25px); 
                             }
                             100%{
-                                transform: translateY(0); /*The last point of the animation is going back to the starting state of 0.*/
+                                transform: translateY(0); 
                             }
-                        }
   
   
   
