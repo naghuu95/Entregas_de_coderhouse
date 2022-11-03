@@ -1,11 +1,38 @@
-@mixin fondo_img {
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: fixed;
-}
-/*lo utilice para los iconos del footer*/
+
+/*Lo utilice para los iconos del footer*/
+
 @mixin flex_centrado {
     position: relative;
     display:flex;
     justify-content: center;
+}
+/* Los dos mixins los uso en el main de productos y de index*/
+
+@mixin cards_peliculas {
+    height: 730px;
+    width: 350px ;
+    margin-bottom: 5em;
+    box-shadow: 3px 3px 50px 3px  rgba(235, 8, 193, 0.453);
+    background: $color-transparente;
+    border-radius: $borde-m;
+    border: $borde-s solid $color-borde ;
+    backdrop-filter: blur(2px );
+    -webkit-backdrop-filter: blur(2px);
+    transition: all 600ms;
+}
+
+@mixin cards_img {
+    height: 400px;
+    width:  290px;
+    border-radius: $borde-m ;
+    overflow: hidden;
+         
+}
+
+/*Utilizo este mixin en el main de informacion*/
+
+@mixin logo_info {
+    font-family: orbi;
+    font-size: map-get($fs,fs-10);
+    padding-bottom:  map-get($padding , p-15 );
 }

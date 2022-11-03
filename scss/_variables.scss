@@ -5,104 +5,6 @@ $fuente-principal: monserrat;
 $fuente-principal-2: monserrat_fina;
 $fuente-logo: orbi ;
 
-/*TAMAÑO FUENTE*/
-
-$fs:(  
-
-    fs-05: 0.5rem,
-    fs-08:0.8rem,
-    fs-1: 1rem,
-    fs-1-2:1.2rem,
-    fs-1-5: 1.5rem,
-    fs-2: 2rem,
-    fs-2-5: 2.5rem,
-    fs-3: 3rem,
-    fs-3-5: 3.5rem,
-
-
-);
-
-$fuente-s:12px;
-$fuente-m: 1rem;
-$fuente-l: 18px;
-$fuente-xl:30px;
-$fuente-xxl:44px;
-$fuente-grande: 6vw;
-
-
-
-/* hice solo un mapa que es este GROSOR FUENTE*/
-
-$fw: (
-
-    f-1:100,
-    f-2: 200,
-    f-3: 300,
-    f-4: 400,
-    f-5: 500,
-    f-6: 600,
-    f-bold:bold,
-    f-8:900,
-
-);
-
-
-
-/*COLORES*/
-
-
-$c-fondo:rgb(1, 1, 10);
-$c-banner-info: rgba(3, 2, 25, 0.5);
-$c-negro:black;
-$c-negro-transparente :rgba(0, 0, 0, 0.285);
-$c-fondo-titulos:#100309ad;
-$c-sombra-violeta:rgba(235, 8, 193, 0.453);
-$color-fuente: #cbcbcbe4 ;
-$color-header : #000000d4 ;
-$color-rosa: rgb(255, 13, 130);
-
-/*colores del logo*/
-$c-celeste-1:rgb(53, 172, 246);
-$c-celeste-2:rgba(40, 130, 255, 0.796) ;
-$c-rosa-1:rgb(255, 59, 157);
-$c-rosa-2:rgba(255, 48, 124, 0.796);
-
-/*colores para el footer*/
-
-$c-gris:rgb(99, 99, 99);
-$color-facebook: #2b5c9c;
-$color-wp: #13873e;
-
-
-
-
-
-
-
-$color-fondo : #000000 ;
-
-$color-rosa-2 :rgb(239, 90, 190);
-$color-borde :rgb(255, 13, 130);
-$color-violeta-medio:#520880;
-$color-violeta:#e537e887;
-$color-violeta-2: rgb(255, 0, 76);
-$color-violeta-obscuro :#10000dfc;
-
-$color-transparente:#00000032;
-$color-transparente-blanco: #ffffff36;
-$color-blanco :#ffffff;
-$color-gris-fuente: #a4a4a497;
-$color-negro:#000000;
-$color-n-gradiente-1: rgba(0, 0, 0, 0.547);
-$color-n-gradiente-2:rgba(0,0,0,0.5);
-
-$color-rosa-claro: rgb(247, 137, 210);
-$color-azul-obscuro : #130847;
-$color-celeste: #3ce7ed;
-$color-rosa-3: rgb(255, 13, 130);
-$color-rosa-4: rgb(255, 0, 76);
-
-
 
 
 /*ESPACIADOS*/
@@ -111,6 +13,7 @@ $color-rosa-4: rgb(255, 0, 76);
 $espacio-letra-1: 1px;
 $espacio-letra-2: 2px;
 $espacio-letra-3:5px;
+$espacio-letra-3-5:8px;
 $espacio-letra-4:10px;
 
 /*palabras*/
@@ -131,47 +34,49 @@ $borde-sm:5px;
 $borde-m: 15px;
 $borde-l: 20px;
 
-/*MARGENES*/
-
-$margenes:(
-    
-    m-4:4vh,
-    m-5: 5vh,
-    m-8:8vh,
-    m-10: 10vh,
-    m-15: 15vh,
-    m-20: 20vh,
-    m-25: 25vh,
-    m-30: 30vh,
-    m-35: 35vh,
-    m-40: 40vh,
-
-);
-
-$margen-s: 15px; 
 
 
 
-
-/*PADDING*/
-
-$padding:(
-    p-2:2vh,
-    p-5: 5vh,
-    p-10: 10vh,
-    p-15: 15vh,
-    p-20: 20vh,
-    p-25: 25vh,
-    p-30: 30vh,
-    p-35: 35vh,
-    p-40: 40vh,
-
-);
+/*COLORES*/
 
 
 
-$paddin-20: 20px;
-$padding-30: 30px;
-$paddin-100:100px;
+/*colores del logo*/
+$c-celeste-1:rgb(53, 172, 246);
+$c-celeste-2:rgba(40, 130, 255, 0.796) ;
+$c-rosa-1:rgb(255, 59, 157);
+$c-rosa-2:rgba(255, 48, 124, 0.796);
+
+/*colores para el footer*/
+
+$c-gris:rgb(99, 99, 99);
+$color-facebook: #2b5c9c;
+$color-wp: #13873e;
+
+$c-fondo:rgb(1, 1, 10);
+$c-banner-info: rgba(3, 2, 25, 0.5);
+$c-negro:black;
+$c-negro-transparente :rgba(0, 0, 0, 0.285);
+$c-fondo-titulos:#100309ad;
+$c-sombra-violeta:rgba(235, 8, 193, 0.453);
+$color-fuente: #cbcbcbe4 ;
+$color-header : #000000d4 ;
+$color-rosa: rgb(255, 13, 130);
+$color-fondo : #000000 ;
+$color-rosa-2 :rgb(239, 90, 190);
+$color-borde :rgb(255, 13, 130);
+$color-violeta-medio:#520880;
+$color-violeta:#e537e887;
+$color-violeta-2: rgb(255, 0, 76);
+$color-violeta-obscuro :#10000dfc;
+$color-transparente:#00000032;
+$color-transparente-blanco: #ffffff36;
+$color-blanco :#ffffff;
+$color-gris-fuente: #a4a4a497;
+$color-n-gradiente-1: rgba(0, 0, 0, 0.547);
+$color-n-gradiente-2:rgba(0,0,0,0.5);
+$color-rosa-claro: rgb(247, 137, 210);
+$color-rosa-3: rgb(255, 13, 130);
+$color-rosa-4: rgb(255, 0, 76);
 
 

@@ -22,11 +22,9 @@ main{
 
             .titulo_80{
 
-                font-family: orbi;
+                @include logo_info;
                 text-shadow: 0px 0px 10px rgba(240, 1, 133, 0.63);
                 color:rgba(255, 101, 181, 0.63) ;
-                font-size: 10rem;
-                padding-bottom: 15vh;
             }
             
 
@@ -49,18 +47,18 @@ main{
 
     .container-fluid{
         
-        padding-top: 200px;
-        padding-bottom: 200px;
+        padding-top: map-get($padding, p-30 );
+        padding-bottom: map-get($padding, p-30 );
 
         h4{
-            font-family:monserrat_3;
-            padding-bottom: 20px;
+            font-family:monserrat_fina;
+            padding-bottom: map-get($padding, p-5 );
 
         }
 
         .caja_logos_peliculas{
             
-            padding-top: 130px;
+            padding-top: map-get($padding,p-20 );
 
             .contenedor_img_info{
                 display: flex;
@@ -101,16 +99,14 @@ main{
 
         .info_90{
             padding-right:  map-get($padding , p-15 );
-            padding-top: 2vh;
+            padding-top: map-get($padding, p-2 );
             padding-bottom:  map-get($padding , p-10 );
 
 
             .titulo_90{
+                @include logo_info;
                 text-shadow: 0px 0px 10px rgba(174, 85, 246, 0.63);
                 color:rgba(0, 176, 240, 0.63) ;
-                font-family: orbi;
-                font-size: 10rem;
-                padding-bottom:  map-get($padding , p-15 );
             }
 
             .texto_80_90{
@@ -141,7 +137,7 @@ main{
    
     .section_80{
         
-        background-color: $color-negro;
+        background-color: $c-negro;
        
         .info_80{
             padding-left: 0vh;
@@ -149,7 +145,7 @@ main{
 
             .titulo_80{
                
-                font-size:  map-get($fs , fs-05 );
+                font-size:  map-get($fs , fs-5 );
                 padding-bottom:  map-get($padding , p-5 );
             }
             
@@ -170,7 +166,7 @@ main{
         padding-bottom:  map-get($padding , p-5 );
 
         h4{
-            font-size: 14px;
+            font-size:map-get($fs,fs-1 );
             padding-bottom: 0px;
             line-height: 3;
 
@@ -179,11 +175,12 @@ main{
 
         .caja_logos_peliculas{
              
-            padding-top: 1vh;
+            padding-top:map-get($padding,p-1 );
+            padding-bottom:map-get($padding,p-5 ) ;
 
             .contenedor_img_info{
-                margin-top: 10vw;
-                margin-bottom: 10vw;
+                margin-top: map-get($margenes , m-10 );
+                margin-bottom: map-get($margenes ,m-1 );
                 background-color: #a1a0a100;
                 width: 90vw ;
                 height: 20vw;
@@ -211,16 +208,16 @@ main{
     .section_90{
 
         background: none;
-        background-color: $color-negro;
+        background-color: $c-negro;
     
         .info_90{
             padding-right: 0vh;
-            padding-top:2vh;
+            padding-top:map-get($padding, p-10 );
             padding-bottom:  map-get($padding , p-5 );
 
             .titulo_90{
                
-                font-size: map-get($fs , fs-05 );
+                font-size:  map-get($fs , fs-5 );
                 padding-bottom: map-get($padding, p-5 );
             }
 

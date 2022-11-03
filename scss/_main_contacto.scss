@@ -7,7 +7,7 @@
   main{
     div{
         .caja_contacto {
-            padding-top: $paddin-20;
+            padding-top: map-get($padding, p-2 );
             padding-bottom: 2vh;
             box-shadow: 3px 3px 50px 3px rgba(235, 8, 193, 0.453);
             background: $color-transparente;
@@ -47,7 +47,7 @@
                     border: solid $color-gris-fuente;
                     transition: all 600ms;
                     &:hover {
-                        color: $color-negro;
+                        color: $c-negro;
                         border: 3px solid $color-violeta-medio;
                         background: $color-blanco;
                         box-shadow: 0 0 5px $color-rosa, 0 0 25px $color-rosa, 0 0 50px $color-rosa, 0 0 200px $color-violeta;

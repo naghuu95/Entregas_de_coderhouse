@@ -3,13 +3,12 @@
 .container-fluid{
 
     .titulo{
-     
-        font-size: 2.3rem;
+        font-size: map-get($fs, fs-2 );
         line-height: 3;
-        padding-top: 7vh;
-        padding-bottom: 25vh;
-        margin-bottom: 20vh;
-        letter-spacing: 15px;
+        padding-top: map-get($padding,p-5 );
+        padding-bottom: map-get($padding, p-25);
+        margin-bottom: map-get($margenes,m-20 );
+        letter-spacing: $espacio-letra-4;
         text-shadow: 2px 2px 2px rgb(196, 1, 111);
     }
 
@@ -19,28 +18,16 @@
     .row{
 
         .caja_tarjetas {
-            
-            height: 730px;
-            width: 350px ;
-            margin-bottom: 5em;
-            box-shadow: 3px 3px 50px 3px  rgba(235, 8, 193, 0.453);
-            background: $color-transparente;
-            border-radius: $borde-m;
-            border: $borde-s solid $color-borde ;
-            backdrop-filter: blur(2px );
-            -webkit-backdrop-filter: blur(2px);
-            transition: all 600ms;
 
+            @include cards_peliculas;
+          
                 &:hover{
                  transform: translateY(-20px);
                 }
              
                 .contenido_img {
-                 height: 400px;
-                 width:  290px;
-                 border-radius: $borde-m ;
-                 overflow: hidden;
-         
+                    @include cards_img;
+
                     img{
                       height: $alto-maximo;
                       width: $ancho-maximo-2;
@@ -81,8 +68,8 @@
                         
                         &:hover {
                             font-weight: bold;
-                            color: $color-negro;
-                            background: #f9f9f9d7;
+                            color: $c-negro;
+                            background: $color-blanco;
                             box-shadow: 0 0 5px $color-violeta, 0 0 25px $color-rosa, 0 0 50px $color-rosa, 0 0 200px $color-violeta;
                             width: 8em;
                             height: 2em;
@@ -116,7 +103,7 @@
                    &:hover {
                     
                     font-weight: bold;
-                    color: $color-negro;
+                    color: $c-negro;
                     background: #f9f9f9d7;
                     box-shadow: 0 0 5px $color-violeta, 0 0 25px $color-rosa, 0 0 50px $color-rosa, 0 0 200px $color-violeta;
                     transform: scale(1.1);
@@ -146,14 +133,13 @@
     .container-fluid{
 
         .titulo{
-            padding-top: 7vh;
-            padding-bottom: 5vh;
+            font-size:map-get($fs,fs-1-5 ) ;
+            padding-top: map-get($padding, p-7 );
+            padding-bottom: map-get($padding, p-5 );
             margin-top:0vh ;
             margin-bottom: 0vh;
             line-height: 2;
-          
-            line-height: 3;
-            letter-spacing: 6px;
+            letter-spacing:$espacio-letra-3-5;
     
         }
 

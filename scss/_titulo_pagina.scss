@@ -2,7 +2,7 @@
 
 .titulo_paginas{
     
-    background-color: #100309ad;
+    background-color: $c-fondo-titulos;
     border-bottom: 3px solid #3f0823b8;
     height: 12vh;
 
@@ -12,7 +12,7 @@
             text-shadow: 2px 2px 2px rgb(196, 1, 111);
             color:$color-fuente ;
             border-left: 4px solid $color-rosa;
-            padding-left: 15px;
+            padding-left: map-get($padding, p-2 );
             letter-spacing: $espacio-palabra-2;
             
         }
@@ -26,12 +26,14 @@
         
         border-bottom: 2px solid #3f0823b8;
         height: 7vh;
+
     
         div{
     
             h4{
-                font-size: 18px;
+                font-size: map-get($fs, fs-1-2);
                 border-left: 4px solid $color-rosa;
+                letter-spacing: $espacio-letra-3-5;
              
                 
             }

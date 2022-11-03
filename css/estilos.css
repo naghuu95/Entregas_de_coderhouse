@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /* NINETY 90 QUISE HACERLA CON ESTILO OCHENTOSO Y CON COSAS DE NEON PORQUE SE TRATA DE VENTAS DE CUADROS DE ESA EPOCA Y DE LOS 90 */
-/*ESPERO QUE TE GUSTE EL ESTILO QUE LE PUSE ME COSTO MUCHO TRABAJO LLEGAR A ESTO NO QUEDO NADA QUE VER A LO QUE ERA LA PRIMERA PRE ENTREGA 
-TRATE DE APLICAR TODAS LAS COSAS QUE ME ENSEÑARON ME QUEDA TODAVIA MEJORAR LAS OTRAS PAGINAS*/
+/*Espero que le guste profe me esforze mucho y le pido disculpas por entregar con lo justo , pasa que trabajo y me queda poco tiempo para estudiar y practicar, pero igual le meti muchas ganas porque me gusta*/
 /*DE MANERA ORDENADA ORGANICE TODO EN SECCIONES
 CREE VARIOS ARCHIVOS DE SCSS DE CADA SECCION DE LA PAGINA PARA QUE SE ME HAGA MAS FACIL
 MODIFICAR TODO */
@@ -14,16 +13,18 @@ MODIFICAR TODO */
 
 /*CREE VARIABLES PARA NO REPETIR CODIGO Y DISTINGIR CADA ALGUN COLOR,FUENTE,ETC */
 /*TIPOGRAFIA*/
-/*TAMAÑO FUENTE*/
-/* hice solo un mapa que es este GROSOR FUENTE*/
-/*COLORES*/
-/*colores del logo*/
-/*colores para el footer*/
 /*ESPACIADOS*/
 /*letras*/
 /*palabras*/
 /*TAMAÑOS*/
 /*BORDES*/
+/*COLORES*/
+/*colores del logo*/
+/*colores para el footer*/
+/*CREE MAPAS PARA ORGANIZAR TODO MEJOR*/
+/* Hice mapas para que sea mas ordenado*/
+/*TAMAÑO FUENTE*/
+/*GROSOR FUENTE*/
 /*MARGENES*/
 /*PADDING*/
 /*ESTE ES EL RESETEO DEL SITIO WEB */
@@ -35,7 +36,9 @@ MODIFICAR TODO */
   max-width: 100% !important; }
 
 /* MIXINS */
-/*lo utilice para los iconos del footer*/
+/*Lo utilice para los iconos del footer*/
+/* Los dos mixins los uso en el main de productos y de index*/
+/*Utilizo este mixin en el main de informacion*/
 /*ORDENE LAS FUENTES ACA*/
 /*FUENTES*/
 @font-face {
@@ -119,18 +122,18 @@ Aca cambie la imagen de fonto por otra que sea alargada y se vea mejor en mobile
     height: 100%;
     /* background: rgb(0, 0, 0);*/ }
     .pantalla_principal p {
-      font-size: 1.5em;
+      font-size: 1.5rem;
       line-height: 3;
       word-spacing: 10px;
       letter-spacing: 2px;
       padding-top: 20vh; }
     .pantalla_principal span {
-      font-size: 1em; }
+      font-size: 2.5rem; }
     .pantalla_principal .salto_pagina {
       padding-top: 10vh;
-      padding-bottom: 10em; }
+      padding-bottom: 15vh; }
       .pantalla_principal .salto_pagina .salto_pagina_icono {
-        font-size: 50px; } }
+        font-size: 3.5rem; } }
 
 /*HEADER*/
 /*Aca comence a darle estilos al header*/
@@ -162,15 +165,12 @@ header {
   header .navbar .navbar-nav .nav-item .nav-link {
     color: #ff0d82;
     letter-spacing: 5px;
-    margin-right: 15px;
-    font-size: 12px;
+    font-size: 0.8rem;
     font-weight: bold;
     transition: all 0.8s;
     /* UTILICE CASI TODO VARIABLES PARA HACER EL HOVER*/ }
     header .navbar .navbar-nav .nav-item .nav-link:hover {
       font-weight: bold;
-      /*color: $color-blanco;
-                      text-shadow: 2px 2px 10px $color-azul-obscuro;*/
       color: #25d6f9;
       text-shadow: 0px 0px 6px #38a9ff;
       border: 2px solid #ff0d82;
@@ -182,64 +182,7 @@ header {
 @media (max-width: 480px) {
   header .navbar .ninety {
     font-size: 1.2rem;
-    letter-spacing: 6px; } }
-
-/*LOGO DE LA EMPRESA NINETY90*/
-.ninety {
-  text-decoration: none;
-  font-weight: bold;
-  font-family: orbi;
-  color: #35acf6;
-  text-shadow: 0px 0px 6px rgba(40, 130, 255, 0.796);
-  letter-spacing: 10px;
-  transition: all 0.8s; }
-  .ninety:hover {
-    color: #ff3b9d;
-    text-shadow: 0px 0px 7px rgba(255, 48, 124, 0.796);
-    transform: scale(1.1); }
-
-/*BANNER*/
-/*puse una imagen de fondo y le aplique gradientes para que resalte el texto y la imagen */
-.banner {
-  position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../asset/imagenes/productos/banner4-min-min.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  box-shadow: 15px 15px 100px 15px #000000d4; }
-  .banner .background-overlay1 {
-    background: rgba(0, 0, 0, 0.285);
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
-    .banner .background-overlay1 div div {
-      /* BOTON VER CATALOGO*/ }
-      .banner .background-overlay1 div div .titulo_banner {
-        line-height: 1.5;
-        font-weight: bold !important;
-        text-shadow: 0px 0px 10px rgba(255, 36, 157, 0.63);
-        color: rgba(255, 101, 181, 0.63); }
-      .banner .background-overlay1 div div p {
-        font-family: monserrat_fina !important; }
-      .banner .background-overlay1 div div .btn:hover {
-        font-size: 1.5rem;
-        background: #00000032;
-        box-shadow: 0 0 5px #ffffff, 0 0 25px #ffffff, 0 0 50px #ffffff, 0 0 200px #ffffff;
-        transition: all 0.5s; }
-    .banner .background-overlay1 .imagenes {
-      width: 26.5vw;
-      border-radius: 15px;
-      box-shadow: 20px 20px 30px 15px #000000; }
-
-@media (max-width: 480px) {
-  .banner {
-    background: none;
-    background-color: black; }
-    .banner .background-overlay1 div div .titulo_banner {
-      line-height: 1.7;
-      letter-spacing: 2px;
-      font-size: 2rem; } }
+    letter-spacing: 8px; } }
 
 /*BANNER_INFORMATIVO*/
 .section_ayuda {
@@ -272,12 +215,12 @@ header {
 
 /*CARDS de los cuadros*/
 .container-fluid .titulo {
-  font-size: 2.3rem;
+  font-size: 2rem;
   line-height: 3;
-  padding-top: 7vh;
+  padding-top: 5vh;
   padding-bottom: 25vh;
   margin-bottom: 20vh;
-  letter-spacing: 15px;
+  letter-spacing: 10px;
   text-shadow: 2px 2px 2px #c4016f; }
 
 .container-fluid .row .caja_tarjetas {
@@ -319,8 +262,8 @@ header {
     border: 2px solid #ff004c; }
     .container-fluid .row .caja_tarjetas div form .boton_comprar:hover {
       font-weight: bold;
-      color: #000000;
-      background: #f9f9f9d7;
+      color: black;
+      background: #ffffff;
       box-shadow: 0 0 5px #e537e887, 0 0 25px #ff0d82, 0 0 50px #ff0d82, 0 0 200px #e537e887;
       width: 8em;
       height: 2em;
@@ -335,7 +278,7 @@ header {
   border: 2px solid #ff004c; }
   .container-fluid .row div form .boton_vermas:hover {
     font-weight: bold;
-    color: #000000;
+    color: black;
     background: #f9f9f9d7;
     box-shadow: 0 0 5px #e537e887, 0 0 25px #ff0d82, 0 0 50px #ff0d82, 0 0 200px #e537e887;
     transform: scale(1.1);
@@ -343,20 +286,20 @@ header {
 
 @media (max-width: 480px) {
   .container-fluid .titulo {
+    font-size: 1.5rem;
     padding-top: 7vh;
     padding-bottom: 5vh;
     margin-top: 0vh;
     margin-bottom: 0vh;
     line-height: 2;
-    line-height: 3;
-    letter-spacing: 6px; } }
+    letter-spacing: 8px; } }
 
 /*@media  screen and (min-width: 360px) and (max-width: 768px) {
 	
 }*/
 /*SECTION 80 Y 90 */
 .section_80_90 {
-  padding-top: 20%;
+  padding-top: 25vh;
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../asset/imagenes/index/fondo-section_80_90_grande.jpg);
   background-attachment: fixed;
@@ -367,21 +310,29 @@ header {
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px); }
   .section_80_90 .fila_80_90 {
-    padding-bottom: 20%; }
+    padding-bottom: 20vh; }
     .section_80_90 .fila_80_90 div div a img {
       border-radius: 10px;
       transition: all 600ms; }
       .section_80_90 .fila_80_90 div div a img:hover {
         transform: translateY(-20px);
-        box-shadow: 0 0 5px #000000, 0 0 25px #e537e887, 0 0 50px #ff0d82, 0 0 200px #e537e887; }
+        box-shadow: 0 0 5px black, 0 0 25px #e537e887, 0 0 50px #ff0d82, 0 0 200px #e537e887; }
     .section_80_90 .fila_80_90 div p {
-      font-size: 20px;
+      font-size: 1.2rem;
       font-weight: lighter;
       line-height: 2;
       word-spacing: 2px; }
 
+@media (max-width: 750px) {
+  .section_80_90 {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../asset/imagenes/index/fondo-section_80_90_750px-min.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover; } }
+
 .container .titulo {
-  font-size: 2.3rem;
+  font-size: 2rem;
   font-weight: bold;
   margin-top: 25vh;
   margin-bottom: 25vh;
@@ -428,8 +379,8 @@ header {
     border: 2px solid #ff004c; }
     .container .row .caja_tarjetas div form .boton_comprar:hover {
       font-weight: bold;
-      color: #000000;
-      background: #f9f9f9d7;
+      color: black;
+      background: #ffffff;
       box-shadow: 0 0 5px #e537e887, 0 0 25px #ff0d82, 0 0 50px #ff0d82, 0 0 200px #e537e887;
       width: 8em;
       height: 2em;
@@ -438,11 +389,54 @@ header {
 
 @media (max-width: 480px) {
   .container .titulo {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin-top: 10vh;
     margin-bottom: 8vh;
     line-height: 2;
     letter-spacing: 5px; } }
+
+/*BANNER*/
+/*puse una imagen de fondo y le aplique gradientes para que resalte el texto y la imagen */
+.banner {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../asset/imagenes/productos/banner4-min-min.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 15px 15px 100px 15px #000000d4; }
+  .banner .background-overlay1 {
+    background: rgba(0, 0, 0, 0.285);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+    .banner .background-overlay1 div div {
+      /* BOTON VER CATALOGO*/ }
+      .banner .background-overlay1 div div .titulo_banner {
+        line-height: 1.5;
+        font-weight: bold !important;
+        text-shadow: 0px 0px 10px rgba(255, 36, 157, 0.63);
+        color: rgba(255, 101, 181, 0.63); }
+      .banner .background-overlay1 div div p {
+        font-family: monserrat_fina !important; }
+      .banner .background-overlay1 div div .btn:hover {
+        font-size: 1.5rem;
+        background: #00000032;
+        box-shadow: 0 0 5px #ffffff, 0 0 25px #ffffff, 0 0 50px #ffffff, 0 0 200px #ffffff;
+        transition: all 0.5s; }
+    .banner .background-overlay1 .imagenes {
+      width: 26.5vw;
+      border-radius: 15px;
+      box-shadow: 20px 20px 30px 15px black; }
+
+@media (max-width: 480px) {
+  .banner {
+    background: none;
+    background-color: black; }
+    .banner .background-overlay1 div div .titulo_banner {
+      line-height: 1.7;
+      letter-spacing: 2px;
+      font-size: 2rem; } }
 
 /* MAIN INFORMACION*/
 main {
@@ -460,22 +454,22 @@ main {
       padding-bottom: 10vh; }
       main .section_80 .info_80 .titulo_80 {
         font-family: orbi;
-        text-shadow: 0px 0px 10px rgba(240, 1, 133, 0.63);
-        color: rgba(255, 101, 181, 0.63);
         font-size: 10rem;
-        padding-bottom: 15vh; }
+        padding-bottom: 15vh;
+        text-shadow: 0px 0px 10px rgba(240, 1, 133, 0.63);
+        color: rgba(255, 101, 181, 0.63); }
       main .section_80 .info_80 .texto_80_90 {
         line-height: 2;
         letter-spacing: 1px;
         word-spacing: 2px; }
   main .container-fluid {
-    padding-top: 200px;
-    padding-bottom: 200px; }
+    padding-top: 30vh;
+    padding-bottom: 30vh; }
     main .container-fluid h4 {
-      font-family: monserrat_3;
-      padding-bottom: 20px; }
+      font-family: monserrat_fina;
+      padding-bottom: 5vh; }
     main .container-fluid .caja_logos_peliculas {
-      padding-top: 130px; }
+      padding-top: 20vh; }
       main .container-fluid .caja_logos_peliculas .contenedor_img_info {
         display: flex;
         justify-content: center;
@@ -499,11 +493,11 @@ main {
       padding-top: 2vh;
       padding-bottom: 10vh; }
       main .section_90 .info_90 .titulo_90 {
-        text-shadow: 0px 0px 10px rgba(174, 85, 246, 0.63);
-        color: rgba(0, 176, 240, 0.63);
         font-family: orbi;
         font-size: 10rem;
-        padding-bottom: 15vh; }
+        padding-bottom: 15vh;
+        text-shadow: 0px 0px 10px rgba(174, 85, 246, 0.63);
+        color: rgba(0, 176, 240, 0.63); }
       main .section_90 .info_90 .texto_80_90 {
         line-height: 2;
         letter-spacing: 1px;
@@ -513,25 +507,26 @@ main {
   main {
     /* Logos de peliculas*/ }
     main .section_80 {
-      background-color: #000000; }
+      background-color: black; }
       main .section_80 .info_80 {
         padding-left: 0vh;
         padding-bottom: 5vh; }
         main .section_80 .info_80 .titulo_80 {
-          font-size: 0.5rem;
+          font-size: 5rem;
           padding-bottom: 5vh; }
     main .container-fluid {
       padding-top: 5vh;
       padding-bottom: 5vh; }
       main .container-fluid h4 {
-        font-size: 14px;
+        font-size: 1rem;
         padding-bottom: 0px;
         line-height: 3; }
       main .container-fluid .caja_logos_peliculas {
-        padding-top: 1vh; }
+        padding-top: 1vh;
+        padding-bottom: 5vh; }
         main .container-fluid .caja_logos_peliculas .contenedor_img_info {
-          margin-top: 10vw;
-          margin-bottom: 10vw;
+          margin-top: 10vh;
+          margin-bottom: 1vh;
           background-color: #a1a0a100;
           width: 90vw;
           height: 20vw; }
@@ -543,13 +538,13 @@ main {
               transform: scale(1.6); }
     main .section_90 {
       background: none;
-      background-color: #000000; }
+      background-color: black; }
       main .section_90 .info_90 {
         padding-right: 0vh;
-        padding-top: 2vh;
+        padding-top: 10vh;
         padding-bottom: 5vh; }
         main .section_90 .info_90 .titulo_90 {
-          font-size: 0.5rem;
+          font-size: 5rem;
           padding-bottom: 5vh; } }
 
 /*MAIN ENVÍOS*/
@@ -573,7 +568,7 @@ main .contenedor_envios {
 /* MAIN CONTACTO*/
 /* Contenedor del formulario de contacto*/
 main div .caja_contacto {
-  padding-top: 20px;
+  padding-top: 2vh;
   padding-bottom: 2vh;
   box-shadow: 3px 3px 50px 3px rgba(235, 8, 193, 0.453);
   background: #00000032;
@@ -600,7 +595,7 @@ main div .caja_contacto {
       border: solid #a4a4a497;
       transition: all 600ms; }
       main div .caja_contacto .form .boton_contacto:hover {
-        color: #000000;
+        color: black;
         border: 3px solid #520880;
         background: #ffffff;
         box-shadow: 0 0 5px #ff0d82, 0 0 25px #ff0d82, 0 0 50px #ff0d82, 0 0 200px #e537e887;
@@ -666,7 +661,7 @@ main div .caja_contacto {
     text-shadow: 2px 2px 2px #c4016f;
     color: #cbcbcbe4;
     border-left: 4px solid #ff0d82;
-    padding-left: 15px;
+    padding-left: 2vh;
     letter-spacing: 10px; }
 
 @media (max-width: 480px) {
@@ -674,8 +669,9 @@ main div .caja_contacto {
     border-bottom: 2px solid #3f0823b8;
     height: 7vh; }
     .titulo_paginas div h4 {
-      font-size: 18px;
-      border-left: 4px solid #ff0d82; } }
+      font-size: 1.2rem;
+      border-left: 4px solid #ff0d82;
+      letter-spacing: 8px; } }
 
 /*Aca modifique un poco la seccion del titulo porque quedaba muy mal como estaba para tablet */
 @media (min-width: 481px) and (max-width: 1024px) {
@@ -701,7 +697,7 @@ footer {
         display: flex;
         justify-content: center;
         letter-spacing: 2px;
-        padding-right: 30px;
+        padding-right: 5vh;
         transition: all 0.4s; }
         footer div div nav ul li a:hover {
           color: #ff23f8;
@@ -711,8 +707,7 @@ footer {
   footer div div .icons-wrapper {
     position: relative;
     display: flex;
-    justify-content: center;
-    margin-top: 15px; }
+    justify-content: center; }
     footer div div .icons-wrapper:after {
       position: absolute;
       width: 100%;
@@ -723,7 +718,6 @@ footer {
       bottom: 0; }
     footer div div .icons-wrapper a .icon {
       display: inline-block;
-      font-size: 18px;
       animation: float 4s ease-in-out infinite; }
     footer div div .icons-wrapper a .ri-instagram-line {
       background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497, 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
@@ -814,7 +808,7 @@ main {
       transition: all 0.6s; }
       main div .contenedor_info_compras div form .boton_comprar_cuadros:hover {
         font-weight: bold;
-        color: #000000;
+        color: black;
         background: #f9f9f9d7;
         box-shadow: 0 0 5px #e537e887, 0 0 25px #ff0d82, 0 0 50px #ff0d82, 0 0 200px #e537e887;
         transform: scale(1.2); }
@@ -897,7 +891,7 @@ main {
   .boton_volver:hover {
     font-size: 25px;
     font-weight: bold;
-    color: #000000;
+    color: black;
     background: #f9f9f9d7;
     box-shadow: 0 0 5px #e537e887, 0 0 25px #ff0d82, 0 0 50px #ff0d82, 0 0 200px #e537e887;
     transition: all 0.9s; }
@@ -919,17 +913,17 @@ main {
 /*SUSCRIPCION*/
 .suscripcion {
   background-color: black;
-  padding-top: 15%;
-  padding-bottom: 15%; }
+  padding-top: 25vh;
+  padding-bottom: 25vh; }
   .suscripcion .suscripcion_contenedor {
-    font-size: 1em; }
+    font-size: 1rem; }
     .suscripcion .suscripcion_contenedor div .resaltado {
       text-shadow: 2px 2px 2px #c4016f; }
     .suscripcion .suscripcion_contenedor div .suscripcion_contenedor_div_form {
       width: 100%; }
       .suscripcion .suscripcion_contenedor div .suscripcion_contenedor_div_form input, .suscripcion .suscripcion_contenedor main div .suscripcion_contenedor_div_form .caja_contacto .form textarea, main .suscripcion .suscripcion_contenedor div .suscripcion_contenedor_div_form .caja_contacto .form textarea, .suscripcion .suscripcion_contenedor main div .caja_contacto .form .suscripcion_contenedor_div_form textarea, main .suscripcion .suscripcion_contenedor div .caja_contacto .form .suscripcion_contenedor_div_form textarea, .suscripcion .suscripcion_contenedor main div .suscripcion_contenedor_div_form .caja_contacto .form .boton_contacto, main .suscripcion .suscripcion_contenedor div .suscripcion_contenedor_div_form .caja_contacto .form .boton_contacto, .suscripcion .suscripcion_contenedor main div .caja_contacto .form .suscripcion_contenedor_div_form .boton_contacto, main .suscripcion .suscripcion_contenedor div .caja_contacto .form .suscripcion_contenedor_div_form .boton_contacto {
         width: 600px;
-        padding: .7em;
+        padding: 1.5vh;
         border: none;
         background: rgba(0, 0, 0, 0);
         outline: none;
@@ -945,24 +939,37 @@ main {
         transition: all 600ms; }
         .suscripcion .suscripcion_contenedor div .suscripcion_contenedor_div_form div .btn_enviar:hover {
           font-weight: bold;
-          color: #000000;
-          background: #ffffffd7;
+          color: black;
+          background: #ffffff;
           box-shadow: 0 0 5px #e537e887, 0 0 25px #ff0d82, 0 0 50px #ff0d82, 0 0 200px #e537e887;
           transform: scale(1.1); }
 
 /*OPTIMIZANDO para mobile hasta 480px de maximo*/
 @media (max-width: 480px) {
   .suscripcion {
-    padding-bottom: 20%; }
-    .suscripcion .suscripcion_contenedor {
-      font-size: 0.9em; }
-      .suscripcion .suscripcion_contenedor div p {
-        line-height: 2; }
-      .suscripcion .suscripcion_contenedor div .suscripcion_contenedor_div_form {
-        width: 100%; }
-        .suscripcion .suscripcion_contenedor div .suscripcion_contenedor_div_form input, .suscripcion .suscripcion_contenedor main div .suscripcion_contenedor_div_form .caja_contacto .form textarea, main .suscripcion .suscripcion_contenedor div .suscripcion_contenedor_div_form .caja_contacto .form textarea, .suscripcion .suscripcion_contenedor main div .caja_contacto .form .suscripcion_contenedor_div_form textarea, main .suscripcion .suscripcion_contenedor div .caja_contacto .form .suscripcion_contenedor_div_form textarea, .suscripcion .suscripcion_contenedor main div .suscripcion_contenedor_div_form .caja_contacto .form .boton_contacto, main .suscripcion .suscripcion_contenedor div .suscripcion_contenedor_div_form .caja_contacto .form .boton_contacto, .suscripcion .suscripcion_contenedor main div .caja_contacto .form .suscripcion_contenedor_div_form .boton_contacto, main .suscripcion .suscripcion_contenedor div .caja_contacto .form .suscripcion_contenedor_div_form .boton_contacto {
-          width: 300px;
-          padding: .7em; }
-        .suscripcion .suscripcion_contenedor div .suscripcion_contenedor_div_form div .btn_enviar {
-          margin-top: 40px;
-          font-size: 0.7em; } }
+    padding-top: 15vh;
+    padding-bottom: 15vh; }
+    .suscripcion .suscripcion_contenedor div p {
+      line-height: 2; }
+    .suscripcion .suscripcion_contenedor div .suscripcion_contenedor_div_form {
+      width: 100%; }
+      .suscripcion .suscripcion_contenedor div .suscripcion_contenedor_div_form input, .suscripcion .suscripcion_contenedor main div .suscripcion_contenedor_div_form .caja_contacto .form textarea, main .suscripcion .suscripcion_contenedor div .suscripcion_contenedor_div_form .caja_contacto .form textarea, .suscripcion .suscripcion_contenedor main div .caja_contacto .form .suscripcion_contenedor_div_form textarea, main .suscripcion .suscripcion_contenedor div .caja_contacto .form .suscripcion_contenedor_div_form textarea, .suscripcion .suscripcion_contenedor main div .suscripcion_contenedor_div_form .caja_contacto .form .boton_contacto, main .suscripcion .suscripcion_contenedor div .suscripcion_contenedor_div_form .caja_contacto .form .boton_contacto, .suscripcion .suscripcion_contenedor main div .caja_contacto .form .suscripcion_contenedor_div_form .boton_contacto, main .suscripcion .suscripcion_contenedor div .caja_contacto .form .suscripcion_contenedor_div_form .boton_contacto {
+        width: 300px;
+        padding: 1vh; }
+      .suscripcion .suscripcion_contenedor div .suscripcion_contenedor_div_form div .btn_enviar {
+        margin-top: 5vh;
+        font-size: 1rem; } }
+
+/*LOGO DE LA EMPRESA NINETY90*/
+.ninety {
+  text-decoration: none;
+  font-weight: bold;
+  font-family: orbi;
+  color: #35acf6;
+  text-shadow: 0px 0px 6px rgba(40, 130, 255, 0.796);
+  letter-spacing: 10px;
+  transition: all 0.8s; }
+  .ninety:hover {
+    color: #ff3b9d;
+    text-shadow: 0px 0px 7px rgba(255, 48, 124, 0.796);
+    transform: scale(1.1); }

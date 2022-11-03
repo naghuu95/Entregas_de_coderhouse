@@ -1,7 +1,6 @@
 /* NINETY 90 QUISE HACERLA CON ESTILO OCHENTOSO Y CON COSAS DE NEON PORQUE SE TRATA DE VENTAS DE CUADROS DE ESA EPOCA Y DE LOS 90 */
 
-/*ESPERO QUE TE GUSTE EL ESTILO QUE LE PUSE ME COSTO MUCHO TRABAJO LLEGAR A ESTO NO QUEDO NADA QUE VER A LO QUE ERA LA PRIMERA PRE ENTREGA 
-TRATE DE APLICAR TODAS LAS COSAS QUE ME ENSEÑARON ME QUEDA TODAVIA MEJORAR LAS OTRAS PAGINAS*/
+/*Espero que le guste profe me esforze mucho y le pido disculpas por entregar con lo justo , pasa que trabajo y me queda poco tiempo para estudiar y practicar, pero igual le meti muchas ganas porque me gusta*/
 
 /*DE MANERA ORDENADA ORGANICE TODO EN SECCIONES
 CREE VARIOS ARCHIVOS DE SCSS DE CADA SECCION DE LA PAGINA PARA QUE SE ME HAGA MAS FACIL
@@ -9,6 +8,9 @@ MODIFICAR TODO */
 @import "reset";
 /*CREE VARIABLES PARA NO REPETIR CODIGO Y DISTINGIR CADA ALGUN COLOR,FUENTE,ETC */
 @import "variables";
+/*CREE MAPAS PARA ORGANIZAR TODO MEJOR*/
+@import "mapas";
+
 /*ESTE ES EL RESETEO DEL SITIO WEB */
 @import "reset";
 /* MIXINS */
@@ -19,12 +21,11 @@ MODIFICAR TODO */
 @import "body_contacto";
 @import "pantalla_principal";
 @import "header";
-@import"efect_neon";
-@import "banner1_index";
 @import "banner_informativo";
 @import "main_index";
 @import "section_80_90";
 @import "main_productos";
+@import "banner_productos";
 @import "main_info";
 @import "main_envios";
 @import "main_contacto";
@@ -33,6 +34,7 @@ MODIFICAR TODO */
 @import "comprar_productos";
 @import "error404";
 @import "suscripcion";
+@import "logo_ninety";
 
 
   

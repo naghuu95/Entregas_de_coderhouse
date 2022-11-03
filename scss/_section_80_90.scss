@@ -2,7 +2,7 @@
   
   
 .section_80_90{
-    padding-top: 20%;
+    padding-top: map-get($padding, p-25);
     position: relative;
     background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6) ),  url(../asset/imagenes/index/fondo-section_80_90_grande.jpg) ;
     background-attachment: fixed;
@@ -15,7 +15,7 @@
 
     .fila_80_90{
         
-        padding-bottom: 20%;
+        padding-bottom: map-get($padding, p-20);
           
 
         div{
@@ -31,7 +31,7 @@
 
                         &:hover {
                           transform: translateY(-20px);
-                          box-shadow: 0 0 5px $color-negro, 0 0 25px $color-violeta, 0 0 50px $color-rosa, 0 0 200px $color-violeta;
+                          box-shadow: 0 0 5px $c-negro, 0 0 25px $color-violeta, 0 0 50px $color-rosa, 0 0 200px $color-violeta;
                         }
                     }
                 }
@@ -41,10 +41,10 @@
         div{
 
             p{
-                font-size: 20px;
+                font-size:map-get($fs , fs-1-2);
                 font-weight: lighter;
                 line-height: 2;
-                word-spacing: 2px;
+                word-spacing: $espacio-palabra;
             }
         }
         
@@ -52,6 +52,19 @@
 
 
      
+}
+
+
+
+@media (max-width:750px) {
+    
+    .section_80_90{
+        position: relative;
+        background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6) ),  url(../asset/imagenes/index/fondo-section_80_90_750px-min.jpg) ;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 

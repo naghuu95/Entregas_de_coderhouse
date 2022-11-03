@@ -80,27 +80,27 @@ Aca cambie la imagen de fonto por otra que sea alargada y se vea mejor en mobile
         /* background: rgb(0, 0, 0);*/
        
         p{
-            font-size:  1.5em;
+            font-size: map-get($fs, fs-1-5 );
             line-height: 3;
-            word-spacing:10px;
-            letter-spacing: 2px;
-            padding-top:20vh ;
+            word-spacing:$espacio-letra-4;
+            letter-spacing: $espacio-letra-2;
+            padding-top:map-get($padding ,p-20 ) ;
            
         }
         
         span{
             
-            font-size:  1em;
+            font-size:  map-get($fs, fs-2-5 );
             
         }
     
         .salto_pagina{
-            padding-top: 10vh;
-            padding-bottom: 10em;
+            padding-top: map-get($padding, p-10 );
+            padding-bottom: map-get($padding, p-15);
            
     
             .salto_pagina_icono{
-                font-size: 50px;
+                font-size: map-get($fs,fs-3-5);
                
             }
     
