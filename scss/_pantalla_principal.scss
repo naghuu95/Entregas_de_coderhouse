@@ -12,12 +12,12 @@
     
     
     p{ 
-         line-height: 2;
+        line-height: 2;
         font-size: 40px;
         font-weight: bold;
         word-spacing:4px;
         letter-spacing: 4px;
-        padding-top:300px ;
+        padding-top:200px ;
         padding-bottom:30px;
         color: rgba(255, 255, 255, 0.693);
         text-shadow: 5px 2px 1px rgb(196, 1, 111);
@@ -48,7 +48,6 @@
 
         .salto_pagina_icono{
             font-size: 70px;
-           /* text-shadow: 0px 20px 2px black;*/
             color: rgba(255, 255, 255, 0.234);
         }
     }
@@ -56,14 +55,6 @@
 }
 
 
-/* Móviles en horizontal o tablets en vertical
-   ------------------------------------------------------------------------- */
-   @media (max-width: 767px) { 
-
-
-}
-
- 
 
 /* Móviles en vertical 
 Aca cambie la imagen de fonto por otra que sea alargada y se vea mejor en mobile, aparte de que pesa menos e hice mas chica la letra*/

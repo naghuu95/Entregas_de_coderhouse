@@ -85,7 +85,7 @@ body {
     font-weight: bold;
     word-spacing: 4px;
     letter-spacing: 4px;
-    padding-top: 300px;
+    padding-top: 200px;
     padding-bottom: 30px;
     color: rgba(255, 255, 255, 0.693);
     text-shadow: 5px 2px 1px #c4016f; }
@@ -105,11 +105,8 @@ body {
     padding-bottom: 100px; }
     .pantalla_principal .salto_pagina .salto_pagina_icono {
       font-size: 70px;
-      /* text-shadow: 0px 20px 2px black;*/
       color: rgba(255, 255, 255, 0.234); }
 
-/* Móviles en horizontal o tablets en vertical
-   ------------------------------------------------------------------------- */
 /* Móviles en vertical 
 Aca cambie la imagen de fonto por otra que sea alargada y se vea mejor en mobile, aparte de que pesa menos e hice mas chica la letra*/
 @media (max-width: 480px) {
@@ -733,14 +730,11 @@ footer {
 
 @keyframes float {
   0% {
-    transform: translateY(0);
-    /*The starting point of the animation is 0.*/ }
+    transform: translateY(0); }
   50% {
-    transform: translateY(-25px);
-    /*The middle point of the animation is -15xp. This will move the element up.*/ }
+    transform: translateY(-25px); }
   100% {
-    transform: translateY(0);
-    /*The last point of the animation is going back to the starting state of 0.*/ } }
+    transform: translateY(0); } }
   footer div .caja_copy p {
     font-size: 0.9em;
     letter-spacing: 2px;
