@@ -740,6 +740,9 @@ footer {
     letter-spacing: 2px;
     word-spacing: 2px;
     color: #636363; }
+  footer div .caja_copy a {
+    text-decoration: none;
+    color: #f65cc5; }
 
 @media (max-width: 480px) {
   footer div .caja_copy p {
