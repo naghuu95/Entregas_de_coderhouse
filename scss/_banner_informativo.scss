@@ -12,7 +12,10 @@
     
     
         div{
-    
+            a{
+                color: $color-fuente;
+                text-decoration: none;
+            }
                 
             .contenedor_iconos{
 
@@ -23,20 +26,30 @@
                 
                    
             }
-    
+           
+            
             .contenedor_iconos_tel{
                 font-size: map-get($fs,fs-1 );
                 width: 6vw;
                 height: 12vh;
                 border: 6px solid $color-violeta-2;
-    
+
+                   
             }
+
+            
+            
     
             .contenedor_iconos_tarjeta{
                 font-size: map-get($fs,fs-1 );
                 width: 6vw;
                 height: 12vh;
                 border: 6px solid $color-violeta-2;
+
+                a{
+                   color: $color-fuente;
+
+                }
     
             }
     
