@@ -5,70 +5,119 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+
+    .contenedor_error404{
+
+       .row{
+
+        div{
+            .error{
+
+                width: 20vw;
+            }
+            p{
+                font-size: map-get($fs, fs-1-5 );
+            }
+
+            div{
+                form{
+
+                    .boton_volver{
+    
+                        font-size: map-get($fs,fs-1 );
+                        letter-spacing: 7px;
+                        font-weight:map-get($fw, f-bold );
+                        width: 25em;
+                        padding-top: map-get($padding, p-1 );
+                        padding-bottom: map-get($padding, p-1 );
+                        color: $color-fuente;
+                        background: $color-transparente;
+                        border-radius: $borde-sm;
+                        border: $borde-s solid  $color-violeta-2;
+                        
+                        &:hover {
+                            font-size:map-get($fs, fs-1-5 );
+                            font-weight: bold;
+                            color: $c-negro;
+                            background: #f9f9f9d7;
+                            box-shadow: 0 0 5px $color-violeta, 0 0 25px $color-rosa, 0 0 50px $color-rosa, 0 0 200px $color-violeta;
+                            
+                            transition: all (0.9s);
+                        }
+                    
+                       
+                    
+                    }
+
+                }
+            }
+
+        }
+       }
+
+    }
    
 
-    .error{
+   
 
-        width: 30vw;
-    }
+
+   
+
 }
 
 
 
 
-.boton_volver{
-    
-    font-size: map-get($fs,fs-1 );
-    letter-spacing: 7px;
-    font-weight:map-get($fw, f-bold );
-    width: 25em;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: $color-fuente;
-    background: $color-transparente;
-    border-radius: $borde-sm;
-    border: $borde-s solid  $color-violeta-2;
-    
-    &:hover {
-        font-size: 25px;
-        font-weight: bold;
-        color: $c-negro;
-        background: #f9f9f9d7;
-        box-shadow: 0 0 5px $color-violeta, 0 0 25px $color-rosa, 0 0 50px $color-rosa, 0 0 200px $color-violeta;
-        
-        transition: all (0.9s);
-    }
 
-   
-
-}
 
 @media (max-width: 480px) {
 
-    .boton_volver{
-    
-        font-size: map-get($fs,fs-1 );
-        line-height: 2;
-        letter-spacing: 5px;
-        font-weight:map-get($fw, f-bold );
-        width: 15em;
-        
-        color: $color-fuente;
-        background: $color-transparente;
-        border-radius: $borde-sm;
-        border: $borde-s solid  $color-violeta-2;
-        
-       
-    
-    }
+   
 
     .body_error{
-        
+       
     
-        .error{
+        .contenedor_error404{
     
-            width:100vw;
+           .row{
+    
+            div{
+                .error{
+    
+                    width:100vw;
+                }
+                p{
+                    font-size: map-get($fs, fs-1 );
+                }
+
+                div{
+                    form{
+
+                        .boton_volver{
+    
+                            font-size: map-get($fs,fs-07 );
+                            line-height: 2;
+                            letter-spacing: 2px;
+                            font-weight:map-get($fw, f-bold );
+                            width: 100vw;
+                            color: $color-fuente;
+                            background: $color-transparente;
+                            border-radius: $borde-sm;
+                            border: $borde-s solid  $color-violeta-2;
+                            
+                           
+                        
+                        }
+                    
+                    }
+                }
+    
+            }
+           }
+    
         }
+       
+
     }
     
 }

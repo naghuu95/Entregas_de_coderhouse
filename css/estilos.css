@@ -882,41 +882,44 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; }
-  .body_error .error {
-    width: 30vw; }
-
-.boton_volver {
-  font-size: 1rem;
-  letter-spacing: 7px;
-  font-weight: bold;
-  width: 25em;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: #cbcbcbe4;
-  background: #00000032;
-  border-radius: 5px;
-  border: 2px solid #ff004c; }
-  .boton_volver:hover {
-    font-size: 25px;
-    font-weight: bold;
-    color: black;
-    background: #f9f9f9d7;
-    box-shadow: 0 0 5px #e537e887, 0 0 25px #ff0d82, 0 0 50px #ff0d82, 0 0 200px #e537e887;
-    transition: all 0.9s; }
-
-@media (max-width: 480px) {
-  .boton_volver {
+  .body_error .contenedor_error404 .row div .error {
+    width: 20vw; }
+  .body_error .contenedor_error404 .row div p {
+    font-size: 1.5rem; }
+  .body_error .contenedor_error404 .row div div form .boton_volver {
     font-size: 1rem;
-    line-height: 2;
-    letter-spacing: 5px;
+    letter-spacing: 7px;
     font-weight: bold;
-    width: 15em;
+    width: 25em;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     color: #cbcbcbe4;
     background: #00000032;
     border-radius: 5px;
     border: 2px solid #ff004c; }
-  .body_error .error {
-    width: 100vw; } }
+    .body_error .contenedor_error404 .row div div form .boton_volver:hover {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: black;
+      background: #f9f9f9d7;
+      box-shadow: 0 0 5px #e537e887, 0 0 25px #ff0d82, 0 0 50px #ff0d82, 0 0 200px #e537e887;
+      transition: all 0.9s; }
+
+@media (max-width: 480px) {
+  .body_error .contenedor_error404 .row div .error {
+    width: 100vw; }
+  .body_error .contenedor_error404 .row div p {
+    font-size: 1rem; }
+  .body_error .contenedor_error404 .row div div form .boton_volver {
+    font-size: 0.7rem;
+    line-height: 2;
+    letter-spacing: 2px;
+    font-weight: bold;
+    width: 100vw;
+    color: #cbcbcbe4;
+    background: #00000032;
+    border-radius: 5px;
+    border: 2px solid #ff004c; } }
 
 /*SUSCRIPCION*/
 .suscripcion {
